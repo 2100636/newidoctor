@@ -57,7 +57,6 @@
 <html<?php print $html_attributes;?><?php print $rdf_namespaces;?>>
 <head>
   <link rel="profile" href="<?php print $grddl_profile; ?>" />
-  <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
@@ -75,10 +74,6 @@
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
-  <!-- <script src="/sites/all/themes/idoctor_theme/bootstrap/dist/js/jquery-3.3.1.min.js"></script> -->
-
-  <!-- Bootstrap 3 -->
-  <!-- <script src="/sites/all/themes/bootstrap/js/bootstrap.js"></script>  -->
 
 </body>
 </html>
