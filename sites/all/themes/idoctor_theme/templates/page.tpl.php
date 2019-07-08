@@ -75,7 +75,8 @@
  */
 ?>
 
-<header id="navbar" class="<?php print $navbar_classes; ?>">
+<!-- <header id="navbar" class="<?php print $navbar_classes; ?>"> -->
+<header id="navbar">
   <div class="<?php print $container_class; ?>">
     <div class="navbar-header">
       <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
