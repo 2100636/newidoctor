@@ -522,10 +522,12 @@
           <p class="content">+7 (382) 33-22-77</p>
         </div>
       </div>
-      <div class="row d-flex j-content-between bannerContacts">
-        <div class="banner"></div>
-        <div class="banner"></div>
-        <div class="banner"></div>
+      <div class="row">
+        <div class="bannerContacts d-flex j-content-between">
+            <div class="banner"></div>
+            <div class="banner"></div>
+            <div class="banner"></div>
+          </div>
       </div>
     </div>
   </div>
