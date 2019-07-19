@@ -217,11 +217,11 @@
         <div class="col-md-3 bottomModelsItem"><p class="model">SAMSUNG</p></div>
       </div>
     </div>
-    <div class="container">
+    <div class="container" id="dinamicBlock1">
       <div class="line"></div>
     </div>
     <div class="container3">
-      <div class="row d-flex j-content-around buttons">
+      <div class="row d-flex j-content-around buttons" id="dinamicBlock2">
         <a href="" class="btn btn-primary">iphone 8</a>
         <a href="" class="btn btn-primary">iphone 8 plus</a>
         <a href="" class="btn btn-primary">iphone 8</a>
@@ -568,6 +568,54 @@
   </div>
 
 
+   <!-- футер -->
+  <div class="footer">
+    <div class="container">
+      <div class="row d-flex j-content-between footerContent a-items-flex-start">
+        <div class="col-md-3 addressWorkTime">
+          <div class="address">
+            <p class="title">Адрес:</p>
+            <p class="content">г. Томск, пер. 1905 года, д.18</p>
+            <p class="find-us green">Как ДОБРАТЬСЯ?</p>
+          </div>
+          <div class="workTime">
+            <p class="title">Часы работы:</p>
+            <p class="content">Пн - Пт с 10:00 до 19:00,<br>
+            Сб с 11:00 до 16:00</p>
+          </div>
+        </div>
+        <div class="col-md-3 leftList list">
+          <ul>
+            <li><a href="">О компании</a></li>
+            <li><a href="">Реквизиты</a></li>
+            <li><a href="">Вакансии</a></li>
+            <li><a href="">Гарантия качества</a></li>
+            <li><a href="">Вакансии</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 rightList list">
+          <ul>
+            <li><a href="">О компании</a></li>
+            <li><a href="">Реквизиты</a></li>
+            <li><a href="">Вакансии</a></li>
+            <li><a href="">Гарантия качества</a></li>
+            <li><a href="">Вакансии</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 social">
+          <p class="title">Наши соцсети:</p>
+          <div class="socialDiv d-flex j-content-between">
+            <div class="socialItem vkIcon"><a href=""></a></div>
+            <div class="socialItem fbIcon"><a href=""></a></div>
+            <div class="socialItem instaIcon"><a href=""></a></div>
+          </div>
+          <div class="copy">Copyright © iDoctor 2019</div>
+        </div>        
+      </div>
+    </div>
+  </div>
+
+
 
 
   
@@ -637,58 +685,10 @@
 
 
 
-
-<!--  футер надо -->
-
 <?php if (!empty($page['footer'])): ?>
   <footer class="footer <?php print $container_class; ?>">
 
-    <!-- футер -->
-  <div class="footer">
-    <div class="container">
-      <div class="row d-flex j-content-between footerContent a-items-flex-start">
-        <div class="col-md-3 addressWorkTime">
-          <div class="address">
-            <p class="title">Адрес:</p>
-            <p class="content">г. Томск, пер. 1905 года, д.18</p>
-            <p class="find-us green">Как ДОБРАТЬСЯ?</p>
-          </div>
-          <div class="workTime">
-            <p class="title">Часы работы:</p>
-            <p class="content">Пн - Пт с 10:00 до 19:00,<br>
-            Сб с 11:00 до 16:00</p>
-          </div>
-        </div>
-        <div class="col-md-3 leftList list">
-          <ul>
-            <li><a href="">О компании</a></li>
-            <li><a href="">Реквизиты</a></li>
-            <li><a href="">Вакансии</a></li>
-            <li><a href="">Гарантия качества</a></li>
-            <li><a href="">Вакансии</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 rightList list">
-          <ul>
-            <li><a href="">О компании</a></li>
-            <li><a href="">Реквизиты</a></li>
-            <li><a href="">Вакансии</a></li>
-            <li><a href="">Гарантия качества</a></li>
-            <li><a href="">Вакансии</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 social">
-          <p class="title">Наши соцсети:</p>
-          <div class="socialDiv d-flex j-content-between">
-            <div class="socialItem vkIcon"><a href=""></a></div>
-            <div class="socialItem fbIcon"><a href=""></a></div>
-            <div class="socialItem instaIcon"><a href=""></a></div>
-          </div>
-          <div class="copy">Copyright © iDoctor 2019</div>
-        </div>        
-      </div>
-    </div>
-  </div>
+   
 
     <!-- первый столбец - через БЛОК  -->
     <!-- второй столбец - через МЕНЮ  -->

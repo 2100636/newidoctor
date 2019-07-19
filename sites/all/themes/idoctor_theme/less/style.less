@@ -54,7 +54,7 @@ a {
 .maket img {
   position: absolute;
   opacity: 0.7;
-  left: -16px;
+  left: -11px;
   top: 1px;
 }
 
@@ -346,7 +346,6 @@ header#navbar {
   background: #f9f9f9;
   text-align: center;
   padding: 91px 0 70px;
-  margin-bottom: 464px;
   .container3 {
     max-width: 1270px;
     margin-left: auto;
@@ -358,6 +357,7 @@ header#navbar {
       font-size: 30px;
         padding-top: 14px;
         text-transform: uppercase;
+        margin-bottom: -3px;
     }
     .topModels {
       .topModelsItem {
@@ -371,8 +371,6 @@ header#navbar {
           font-weight: 600;
         }
       }
-
-      /*
       .topModelsItem:nth-child(1) {
         background: url(/sites/all/themes/idoctor_theme/image/iphone-pic.png) no-repeat 98px 118px;
         height: 500px;
@@ -425,7 +423,6 @@ header#navbar {
         top: 50px;
         left: 215px;
       }
-      */
 
       .topModelsItem:hover p.model {
         color: #f5a720;
@@ -442,7 +439,6 @@ header#navbar {
         transition: 0.3s ease;
       }
 
-      /*
       .topModelsItem:nth-child(1):after {
         top: 46px;
         left: 161px;
@@ -455,13 +451,12 @@ header#navbar {
         top: 46px;
         left: 210px;
       }
-      */
     }
 
 
     .bottomModels {
       max-width: 1130px;
-      margin: 25px auto 23px;
+      margin: 25px auto 2px;
       padding-right: 30px;
       .bottomModelsItem {
         height: 350px;
@@ -488,7 +483,6 @@ header#navbar {
         transition: 0.3s ease;
       }
 
-      /*
       .bottomModelsItem:nth-child(1) {
         background: url(/sites/all/themes/idoctor_theme/image/xiomi-pic.png)no-repeat 65% 60%;
         p.model {
@@ -548,7 +542,6 @@ header#navbar {
         top: 48px;
         left: 103px;
       }
-      */
 
 
       .bottomModelsItem:hover:after {
@@ -561,7 +554,6 @@ header#navbar {
         transition: 0.3s ease;
       }
 
-      /*
       .bottomModelsItem:nth-child(1):after {
         top: 45px;;
         left: 105px;
@@ -582,17 +574,18 @@ header#navbar {
         top: 45px;;
         left: 98px;
       }
-      */
     }
   }
-  .container {
+  .container#dinamicBlock1 {
+    display: none;
     .line {
       border-top: 1px solid #e0e0e0;
       margin-top: 20px;
     }
   }
   .container3 {
-    .buttons {
+    .buttons#dinamicBlock2 {
+      display: none;
       padding: 40px 80px;
       a.btn.btn-primary {
         padding: 8px 46px;
@@ -1209,6 +1202,7 @@ header#navbar {
 .footer {
 background: #f9f9f9;
   padding: 80px 0;
+  margin-top: 0;
   .container {
     .footerContent {
       p.content {
