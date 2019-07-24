@@ -108,9 +108,9 @@
 
 
 
-<div class="maket">
+<!-- <div class="maket">
   <img src="/sites/all/themes/idoctor_theme/image/maket.png" alt="">
-</div>
+</div> -->
 
 <!-- шапка с логотипом  -->
 <div class="header">
