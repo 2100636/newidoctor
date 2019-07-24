@@ -95,22 +95,25 @@
           <?php if (!empty($primary_nav)): ?>
             <?php print render($primary_nav); ?>
           <?php endif; ?>
+           <div class="btn btn-primary">
+      <a href="">статус заказа</a>
+    </div>
         </nav>
       </div>
     <?php endif; ?>
 
-    <div>
-      статус заказа
-    </div>
+    
+    
+    
 
   </div>
 </header>
 
 
 
-<!-- <div class="maket">
-  <img src="/sites/all/themes/idoctor_theme/image/maket.png" alt="">
-</div> -->
+<div class="maket">
+  <!-- <img src="/sites/all/themes/idoctor_theme/image/maket.png" alt=""> -->
+</div>
 
 <!-- шапка с логотипом  -->
 <div class="header">

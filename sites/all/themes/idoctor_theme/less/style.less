@@ -54,33 +54,77 @@ a {
 .maket img {
   position: absolute;
   opacity: 0.7;
-  left: -26px;
-  top: -132px;
+  left: -9px;
+  top: 0px;
 }
 
 
 header#navbar {
-  background: #818384;
+  background: #4a4c4e;
   height: 60px;
   .container {
-      .navbar-collapse {
-          nav {
-              ul.menu.nav.navbar-nav {
-                  display: flex;
-                  justify-content: space-between;
-                  width: 65%;
-                  li {
-                    a {
-                      color: #afb0b2;
-                      text-transform: uppercase;
-                    }
-                  }
-              }
+    .navbar-collapse {
+      padding: 0;
+      nav {
+        display: flex;
+        justify-content: space-between;
+        ul.menu.nav.navbar-nav {
+          li {
+            margin-right: 90px;
+            a {
+              color: #fff;
+              text-transform: uppercase;
+              padding: 0px 14px;
+              line-height: 60px;
+              position: relative;
+              font-weight: 300;
+            }
+            a:hover {
+              background: none;
+              text-decoration: underline;
+              transition: ease 1s;
+            }
           }
+          li:first-child a:after {
+              content: '';
+              position: absolute;
+              width: 13px;
+              height: 5px;
+              right: -10px;
+              top: 28px;
+              background: url(/sites/all/themes/idoctor_theme/image/strDown.png) no-repeat;
+            }
+        }
+
+        ul.menu.nav.navbar-nav:first-child li a {
+          padding-left: 0;
+        }
+        .btn.btn-primary {
+          width: 200px;
+          height: 30px;
+          border-radius: 50px;
+          margin: 15px 0;
+          background: #00bdf1;
+          border: none;
+          a {
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 600;
+            font-size: 14px;
+          }
+        }
+        .btn.btn-primary:hover {
+          background: #f5a720;
+          a {
+            color: #000;
+            transition: ease 0.3s;
+            text-decoration: none;
+          }
+        }
       }
+    }
   }
 }
-
 
 
 
@@ -93,109 +137,115 @@ header#navbar {
       color: #4a4c4e; 
       padding: 40px 0;
       .row {
-        p {
-          margin: 0;
-          span {
-            font-weight: 600;
-            font-size: 21px;
-          }
-        }
-        .logotype {
-          margin-top: 2px;
-          img {
-            margin: -5px 0 0 0;
-          }
-          p.logo {
-            font-size: 51px;
-            margin: -14px 0 0 11px;
-              font-weight: 600;
-          }
-        }
-        .find-us {
-            margin-left: -7px;
-            font-weight: 400;
-          p.find-us-top {
-              font-size: 17px;
-              margin-top: -4px;
-              letter-spacing: 0.4px;
-          }
-          p.find-us-bottom {
-            font-size: 24px;
-            text-transform: uppercase;
-            position: relative;
-            padding-left: 36px;
-            cursor: pointer;
-          }
-          p.find-us-bottom:before {
-            position: absolute;
-            content: '';
-            top: 3px;
-            left: 0;
-            background: url(/sites/all/themes/idoctor_theme/image/logo-map.png);
-            width: 28px;
-            height: 25px;
-          }
-        }
-        .address {
-          text-align: center;
-          text-transform: uppercase;
-          p.addTop {
-            font-weight: 600;
-              font-size: 21px;
-              margin: -11px 0 0px 28px;
-              letter-spacing: 0.2px;
-          }
-          p.addBottom {
-            margin: 4px -137px 0 0;
-              font-size: 15px;
-              letter-spacing: 0.5px;
-              span {
-                text-transform: lowercase;
-                font-size: 15px;
-                font-weight: normal;
-              }
-          }
-        }
-        .telephone {
-          text-transform: uppercase;
-          text-align: right;
-          position: relative;
-          p.telTop {
-            font-size: 24px;
-              font-weight: 600;
-              margin: -11px -28px 7px 0;
+        .col-md-3 {
+          padding: 0;
+          p {
+            margin: 0;
             span {
-              font-size: 20px;
+              font-weight: 600;
+              font-size: 21px;
             }
           }
-          p.telBottom {
-            position: relative;
-            font-size: 24px;
-            margin: -11px -22px 0 0;
-            letter-spacing: 0.3px;
-            cursor: pointer;
+          .logotype {
+            margin-top: 2px;
+            img {
+            margin: -5px 0 0 0;
+            }
+            p.logo {
+              font-size: 51px;
+              margin: -14px 0 0 11px;
+                font-weight: 600;
+              }
+           }
+          .find-us {
+              margin-left: -7px;
+              font-weight: 400;
+              p.find-us-top {
+                font-size: 17px;
+                margin-top: -4px;
+                letter-spacing: 0.4px;
+              }
+              p.find-us-bottom {
+                font-size: 24px;
+                text-transform: uppercase;
+                position: relative;
+                padding-left: 36px;
+                cursor: pointer;
+              }
+              p.find-us-bottom:before {
+                position: absolute;
+                content: '';
+                top: 3px;
+                left: 0;
+                background: url(/sites/all/themes/idoctor_theme/image/logo-map.png);
+                width: 28px;
+                height: 25px;
+              }
+            }
+            .address {
+              text-align: center;
+              text-transform: uppercase;
+              p.addTop {
+                font-weight: 600;
+                font-size: 21px;
+                margin: -11px 0 0px 28px;
+                letter-spacing: 0.2px;
+              }
+              p.addBottom {
+                margin: 4px -137px 0 0;
+                font-size: 15px;
+                letter-spacing: 0.5px;
+                span {
+                  text-transform: lowercase;
+                  font-size: 15px;
+                  font-weight: normal;
+                }
+              }
+            }
+            .telephone {
+              text-transform: uppercase;
+              text-align: right;
+              position: relative;
+              p.telTop {
+              font-size: 24px;
+              font-weight: 600;
+              margin: -11px -28px 7px 0;
+              span {
+                font-size: 20px;
+              }
+            }
+            p.telBottom {
+              position: relative;
+              font-size: 24px;
+              margin: -11px -22px 0 0;
+              letter-spacing: 0.3px;
+              cursor: pointer;
+            }
+            p.telBottom:before {
+              content: '';
+              top: -17px;
+              left: 149px;
+              position: absolute;
+              width: 41px;
+              height: 44px;
+              background: url(/sites/all/themes/idoctor_theme/image/logo-whatsapp.png);
+            }
           }
-          p.telBottom:before {
+          .telephone:before {
             content: '';
-            top: -17px;
-            left: 149px;
-            position: absolute;
-            width: 41px;
-            height: 44px;
-            background: url(/sites/all/themes/idoctor_theme/image/logo-whatsapp.png);
-          }
-        }
-        .telephone:before {
-          content: '';
             border-left: 1px solid #000;
             position: absolute;
             top: 13px;
             left: 90px;
             height: 45px;
+          }
         }
+        .col-md-3:nth-child(4) {
+        margin-right: 30px;
       }
-    }   
-  }
+      }   
+    }
+  } 
   .headerBottomBanner {
     .bannerContent {
       position: relative;
@@ -203,7 +253,7 @@ header#navbar {
         background: url(/sites/all/themes/idoctor_theme/image/headerBottomBanner.jpg) no-repeat;
         background-size: cover;
         max-width: 866px;
-        padding: 84px 86px 81px 139px;
+        padding: 84px 86px 81px 125px;
         .heading {
           text-transform: uppercase;
           color: #feffff;
