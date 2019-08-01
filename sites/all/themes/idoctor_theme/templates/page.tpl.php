@@ -112,7 +112,7 @@
 
 
 <div class="maket">
-  <!-- <img src="/sites/all/themes/idoctor_theme/image/maket.png" alt=""> -->
+  <img src="/sites/all/themes/idoctor_theme/image/maket.png" alt="">
 </div>
 
 <!-- шапка с логотипом  -->
@@ -164,7 +164,7 @@
           </div>
         </div>
         <div class="rightBanner">
-          <div class="twentyBlock">
+          <div class="twentyBlock twentytwenty-container">
             <img src="/sites/all/themes/idoctor_theme/image/before.jpg" alt="">
             <!-- <img src="/sites/all/themes/idoctor_theme/image/after.jpg" alt=""> -->
           </div>  

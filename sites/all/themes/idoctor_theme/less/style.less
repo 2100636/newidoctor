@@ -416,66 +416,44 @@ header#navbar {
         position: relative;
         width: 33%;
         cursor: pointer;
+        background-position: center 73%;
+        background-repeat: no-repeat;
+        height: 500px;
         p.model {
           position: absolute;
             color: #00bdf1;
             font-size: 18px;
-          font-weight: 600;
+            font-weight: 600;
+            bottom: -3.5%;
+            left: 41%;
         }
+      }
+       .topModelsItem:before {
+        content: '';
+        background: url(/sites/all/themes/idoctor_theme/image/unselected-model.png) no-repeat;
+        position: absolute;
+        width: 39px;
+        height: 39px;
+        top: 9.5%;
+        left: 45.5%;
       }
       .topModelsItem:nth-child(1) {
-        background: url(/sites/all/themes/idoctor_theme/image/iphone-pic.png) no-repeat 98px 118px;
-        height: 500px;
-        position: relative;
-        p.model {
-          bottom: -19px;
-            left: 151px;
-        }
-      }
-      .topModelsItem:nth-child(1):before {
-        content: '';
-        background: url(/sites/all/themes/idoctor_theme/image/unselected-model.png) no-repeat;
-        position: absolute;
-        width: 39px;
-        height: 39px;
-        top: 50px;
-        left: 166px;
+        background-image: url(/sites/all/themes/idoctor_theme/image/iphone-pic.png);
       }
       .topModelsItem:nth-child(2) {
-        background: url(/sites/all/themes/idoctor_theme/image/ipad-pic.png)no-repeat 86px 117px;
-        height: 500px;
+        background-image: url(/sites/all/themes/idoctor_theme/image/ipad-pic.png);
+        margin: 0 60px;
         p.model {
-          bottom: -19px;
-            left: 188px;
+            left: 45%;
         }
-      }
-      .topModelsItem:nth-child(2):before {
-        content: '';
-        background: url(/sites/all/themes/idoctor_theme/image/unselected-model.png) no-repeat;
-        position: absolute;
-        width: 39px;
-        height: 39px;
-        top: 50px;
-        left: 187px;
       }
       .topModelsItem:nth-child(3) {
-        background: url(/sites/all/themes/idoctor_theme/image/macbook-pic.png)no-repeat 51px 196px;
-        height: 500px;
-        p.model {
-          bottom: -19px;
-            left: 184px;
-        }
+        background-image: url(/sites/all/themes/idoctor_theme/image/macbook-pic.png);
+        background-position: 180% 67.3%;
+      }  
+      .topModelsItem:nth-child(3):before, .topModelsItem:nth-child(3):after  {
+        left: 47.5%;
       }
-      .topModelsItem:nth-child(3):before {
-        content: '';
-        background: url(/sites/all/themes/idoctor_theme/image/unselected-model.png) no-repeat;
-        position: absolute;
-        width: 39px;
-        height: 39px;
-        top: 50px;
-        left: 215px;
-      }
-
       .topModelsItem:hover p.model {
         color: #f5a720;
         text-decoration: underline;
@@ -491,17 +469,9 @@ header#navbar {
         transition: 0.3s ease;
       }
 
-      .topModelsItem:nth-child(1):after {
-        top: 46px;
-        left: 164px;
-      }
-      .topModelsItem:nth-child(2):after {
-        top: 46px;
-        left: 185px;
-      }
-      .topModelsItem:nth-child(3):after {
-        top: 46px;
-        left: 213px;
+      .topModelsItem:after {
+        top: 9.5%;
+        left: 45.5%;
       }
     }
 
@@ -515,12 +485,15 @@ header#navbar {
         width: 20%;
         cursor: pointer;
         position: relative;
+        background-repeat: no-repeat;
+        background-position: 63% 59%;
         p.model {
           position: absolute;
-            color: #00bdf1;
-            font-size: 18px;
+          color: #00bdf1;
+          font-size: 18px;
           font-weight: 600;
-          bottom: 13px;
+          bottom: 4%;
+          left: 43%;
         }
       }
       .bottomModelsItem:before {
@@ -528,6 +501,10 @@ header#navbar {
         position: absolute;
         width: 39px;
         height: 39px;
+        background: url(/sites/all/themes/idoctor_theme/image/unselected-model.png) no-repeat;
+        top: 13%;
+        left: 50%;
+      }
       }
       .bottomModelsItem:hover p.model {
         color: #f5a720;
@@ -536,63 +513,26 @@ header#navbar {
       }
 
       .bottomModelsItem:nth-child(1) {
-        background: url(/sites/all/themes/idoctor_theme/image/xiomi-pic.png)no-repeat 65% 60%;
-        p.model {
-            left: 99px;
-        }
+        background-image: url(/sites/all/themes/idoctor_theme/image/xiomi-pic.png);
       }
-      .bottomModelsItem:nth-child(1):before {
-        background: url(/sites/all/themes/idoctor_theme/image/unselected-model.png) no-repeat;
-        top: 48px;
-        left: 110px;
-      }
-
       .bottomModelsItem:nth-child(2) {
-        background: url(/sites/all/themes/idoctor_theme/image/honor-pic.png)no-repeat 66% 60%;
-        p.model {
-            left: 97px;
-        }
+        background-image: url(/sites/all/themes/idoctor_theme/image/honor-pic.png);
       }
-      .bottomModelsItem:nth-child(2):before {
-        background: url(/sites/all/themes/idoctor_theme/image/unselected-model.png) no-repeat;
-        top: 48px;
-        left: 112px;
-      }
-
       .bottomModelsItem:nth-child(3) {
-        background: url(/sites/all/themes/idoctor_theme/image/huawei-pic.png)no-repeat 62% 60%;
-        p.model {
-            left: 94px;
-        }
+        background-image: url(/sites/all/themes/idoctor_theme/image/huawei-pic.png);
+        margin: 0 -10px;
       }
-      .bottomModelsItem:nth-child(3):before {
-        background: url(/sites/all/themes/idoctor_theme/image/unselected-model.png) no-repeat;
-        top: 48px;
-        left: 107px;
-      }
-
       .bottomModelsItem:nth-child(4) {
-        background: url(/sites/all/themes/idoctor_theme/image/meizu-pic.png)no-repeat 60% 61%;
+        background-image: url(/sites/all/themes/idoctor_theme/image/meizu-pic.png);
         p.model {
-            left: 98px;
+          left: 48%;
         }
       }
-      .bottomModelsItem:nth-child(4):before {
-        background: url(/sites/all/themes/idoctor_theme/image/unselected-model.png) no-repeat;
-        top: 48px;
-        left: 104px;
-      }
-
       .bottomModelsItem:nth-child(5) {
-        background: url(/sites/all/themes/idoctor_theme/image/samsung-pic.png)no-repeat 59% 61%;
+        background-image: url(/sites/all/themes/idoctor_theme/image/samsung-pic.png);
         p.model {
-            left: 76px;
+          left: 38%;
         }
-      }
-      .bottomModelsItem:nth-child(5):before {
-        background: url(/sites/all/themes/idoctor_theme/image/unselected-model.png) no-repeat;
-        top: 48px;
-        left: 103px;
       }
 
 
@@ -606,28 +546,14 @@ header#navbar {
         transition: 0.3s ease;
       }
 
-      .bottomModelsItem:nth-child(1):after {
-        top: 45px;;
-        left: 108px;
-      }
-      .bottomModelsItem:nth-child(2):after {
-        top: 45px;;
-        left: 110px;
-      }
-      .bottomModelsItem:nth-child(3):after {
-        top: 45px;;
-        left: 105px;
-      }
-      .bottomModelsItem:nth-child(4):after {
-        top: 45px;;
-        left: 102px;
-      }
-      .bottomModelsItem:nth-child(5):after {
-        top: 45px;;
-        left: 101px;
+      .bottomModelsItem:after {
+        top: 13%;
+        left: 50%;
       }
     }
   }
+
+
   .container#dinamicBlock1 {
     display: none;
     .line {
@@ -655,7 +581,6 @@ header#navbar {
       }
     }
   }
-}
 
 .completing {
   padding: 75px 0 0;
