@@ -101,18 +101,13 @@
         </nav>
       </div>
     <?php endif; ?>
-
-    
-    
-    
-
   </div>
 </header>
 
 
 
 <div class="maket">
-  <img src="/sites/all/themes/idoctor_theme/image/maket.png" alt="">
+  <!-- <img src="/sites/all/themes/idoctor_theme/image/maket.png" alt=""> -->
 </div>
 
 <!-- шапка с логотипом  -->
@@ -701,3 +696,12 @@
     <?php print render($page['footer']); ?>
   </footer>
 <?php endif; ?>
+
+
+
+
+
+
+
+
+
