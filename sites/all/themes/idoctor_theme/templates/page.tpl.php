@@ -114,7 +114,7 @@
 <div class="header">
     <div class="container">
       <div class="headerTop">
-        <div class="row d-flex j-content-between">
+        <div class="row d-flex j-content-between headerTopContent">
           <div class="col-md-3">
             <div class="logotype d-flex">
               <img src="/sites/all/themes/idoctor_theme/image/logo-id.png" alt="">
@@ -124,7 +124,7 @@
           <div class="col-md-3">
             <div class="find-us">
               <p class="find-us-top">Сервисный центр в Томске</p>
-              <p class="find-us-bottom green">Как нас найти?</p>
+              <p class="find-us-bottom green"><a href="#maps" class="green">Как нас найти?</a></p>
             </div>
           </div>    
           <div class="col-md-3">
@@ -136,7 +136,7 @@
           <div class="col-md-3">
             <div class="telephone">
               <p class="telTop"><span>Городской номер</span></p>
-              <p class="green telBottom">+7 (382) 33-22-77</p>
+              <p class="green telBottom"><a href="tel:8382332277" class="green">+7 (382) 33-22-77</a></p>
             </div>
           </div>
         </div>
@@ -144,18 +144,20 @@
     </div>
     <div class="headerBottomBanner">
       <div class="bannerContent d-flex j-content-between a-items-flex-start">
-        <div class="leftBanner">
-          <div class="heading">ремонт СМАРТФОНОВ в томске</div>
-          <p class="title">от 390 руб за 15 минут</p>
-          <ul>
-            <li>Работаем в Томске уже 8 лет!</li>
-            <li>Сертифицированное оборудование, не имеющее аналогов в Томске</li>
-            <li>Оригинальные запчасти Apple</li>
-            <li>Гарантия  от 1 месяца</li>
-          </ul>
-          <div class="phoneBanner d-flex j-content-between">
-            <p class="phone">+7 (382) 33-22-77</p>
-            <a href="" class="btn btn-warning">записаться на ремонт</a>
+        <div class="container">
+          <div class="leftBanner">
+            <div class="heading">ремонт СМАРТФОНОВ в томске</div>
+            <p class="title">от 390 руб за 15 минут</p>
+            <ul>
+              <li>Работаем в Томске уже 8 лет!</li>
+              <li>Сертифицированное оборудование, не имеющее аналогов в Томске</li>
+              <li>Оригинальные запчасти Apple</li>
+              <li>Гарантия  от 1 месяца</li>
+            </ul>
+            <div class="phoneBanner d-flex j-content-between">
+              <p class="phone">+7 (382) 33-22-77</p>
+              <a href="" class="btn btn-warning">записаться на ремонт</a>
+            </div>
           </div>
         </div>
         <div class="rightBanner">
@@ -277,7 +279,7 @@
         <form action="">
           <div class="selectBreakageContent">
             <div class="row d-flex j-content-between a-items-flex-start selectBreakRow selectBreakRowTop">
-              <div class="col-md-4 selectBreakRowItem">
+              <div class="col-lg-4 col-md-12 selectBreakRowItem">
                 <p class="title">ЭКРАН / ДИСПЛЕЙ</p>
                 <label for="break-1" class="checkbox-label">
                   <input type="checkbox" id="break-1" value="1"><span></span>
@@ -292,7 +294,7 @@
                   <p class="check">нет подсветки</p>
                 </label><br>
               </div>
-              <div class="col-md-4 selectBreakRowItem">
+              <div class="col-lg-4 col-md-12 selectBreakRowItem">
                 <p class="title">ЗАРЯДКА</p>
                 <label for="break-4" class="checkbox-label">
                   <input type="checkbox" id="break-4"><span></span>
@@ -311,7 +313,7 @@
                   <p class="check">не работает беспр. зарядка</p>
                 </label><br>
               </div>
-              <div class="col-md-4 selectBreakRowItem">
+              <div class="col-lg-4 col-md-12 selectBreakRowItem">
                 <p class="title">КНОПКИ</p>
                 <label for="break-8" class="checkbox-label">
                   <input type="checkbox" id="break-8"><span></span>
@@ -328,7 +330,7 @@
               </div>
             </div>
             <div class="row d-flex j-content-between a-items-flex-start selectBreakRow selectBreakRowMiddle">
-              <div class="col-md-4 selectBreakRowItem">
+              <div class="col-lg-4 col-md-12 selectBreakRowItem">
                 <p class="title">ОБЩЕЕ</p>
                 <label for="break-11" class="checkbox-label">
                   <input type="checkbox" id="break-11"><span></span>
@@ -343,7 +345,7 @@
                   <p class="check">не работает wi-Fi</p>
                 </label><br>
               </div>
-              <div class="col-md-4 selectBreakRowItem">
+              <div class="col-lg-4 col-md-12 selectBreakRowItem">
                 <p class="title">ПО</p>
                 <label for="break-14" class="checkbox-label">
                   <input type="checkbox" id="break-14"><span></span>
@@ -358,7 +360,7 @@
                   <p class="check">не обновляется</p>
                 </label><br>
               </div>
-              <div class="col-md-4 selectBreakRowItem">
+              <div class="col-lg-4 col-md-12 selectBreakRowItem">
                 <p class="title">КАМЕРА</p>
                 <label for="break-17" class="checkbox-label">
                   <input type="checkbox" id="break-17"><span></span>
@@ -375,7 +377,7 @@
               </div>
             </div>
             <div class="row d-flex j-content-between a-items-flex-start selectBreakRow selectBreakRowBottom">
-              <div class="col-md-4 selectBreakRowItem">
+              <div class="col-lg-4 col-md-12 selectBreakRowItem">
                 <p class="title">ДИНАМИКИ / МИКРОФОН</p>
                 <label for="break-20" class="checkbox-label">
                   <input type="checkbox" id="break-20"><span></span>
@@ -394,7 +396,7 @@
                   <p class="check">не слышу собеседника</p>
                 </label><br>
               </div>
-              <div class="col-md-4 selectBreakRowItem">
+              <div class="col-lg-4 col-md-12 selectBreakRowItem">
                 <p class="title">КОРПУС</p>
                 <label for="break-24" class="checkbox-label">
                   <input type="checkbox" id="break-24"><span></span>
@@ -409,7 +411,7 @@
                   <p class="check">разбито стекло камеры</p>
                 </label><br>
               </div>
-              <div class="col-md-4 selectBreakRowItem">
+              <div class="col-lg-4 col-md-12 selectBreakRowItem">
                 <p class="title">ДРУГОЕ</p>
                 <label for="break-27" class="checkbox-label">
                   <input type="checkbox" id="break-27"><span></span>
@@ -447,6 +449,7 @@
 
   <!-- БЛОК с какимто текстом   -->
   <div class="another">
+    <div class="container">
     <div class="row d-flex j-content-between anotherContent">
       <div class="col-md-6 left">
         <div class="heading div-heading">Какой-то заголовок</div>
@@ -460,6 +463,7 @@
       <div class="col-md-6 right"></div>
     </div>
   </div>
+</div>
 
 
 
@@ -504,23 +508,23 @@
     <div class="container">
       <div class="heading div-heading">Контакты</div>
       <div class="row d-flex j-content-around contactsContent">
-        <div class="col-md-4 addressContacts">
+        <div class="col-lg-4 col-md-12 addressContacts item">
           <p class="title">Адрес:</p>
           <p class="content">г. Томск, пер. 1905 года, д.18</p>
           <p class="find-us green">Как ДОБРАТЬСЯ?</p>
         </div>
-        <div class="col-md-4 workTimeContacts">
+        <div class="col-lg-4 col-md-12 workTimeContacts item">
           <p class="title">Часы работы:</p>
           <p class="content">Пн - пт с 10 до 19,</p>
           <p class="content">сб с 11 до 16, вс выходной</p>
         </div>
-        <div class="col-md-4 phoneContacts">
+        <div class="col-lg-4 col-md-12 phoneContacts item">
           <p class="title">ТЕЛЕФОН:</p>
           <p class="content">+7 (382) 33-22-77</p>
           <p class="content">+7 (382) 33-22-77</p>
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="maps">
         <div class="bannerContacts d-flex j-content-between">
             <div class="banner"></div>
             <div class="banner"></div>
@@ -570,11 +574,11 @@
   <div class="footer">
     <div class="container">
       <div class="row d-flex j-content-between footerContent a-items-flex-start">
-        <div class="col-md-3 addressWorkTime">
+        <div class="col-lg-3 col-md-6 addressWorkTime item">
           <div class="address">
             <p class="title">Адрес:</p>
             <p class="content">г. Томск, пер. 1905 года, д.18</p>
-            <p class="find-us green">Как ДОБРАТЬСЯ?</p>
+            <p class="find-us green"><a href="#maps" class="green">Как ДОБРАТЬСЯ?</a></p>
           </div>
           <div class="workTime">
             <p class="title">Часы работы:</p>
@@ -582,7 +586,7 @@
             Сб с 11:00 до 16:00</p>
           </div>
         </div>
-        <div class="col-md-3 leftList list">
+        <div class="col-lg-3 col-md-6 leftList list item">
           <ul>
             <li><a href="">О компании</a></li>
             <li><a href="">Реквизиты</a></li>
@@ -591,7 +595,7 @@
             <li><a href="">Вакансии</a></li>
           </ul>
         </div>
-        <div class="col-md-3 rightList list">
+        <div class="col-lg-3 col-md-6 rightList list item">
           <ul>
             <li><a href="">О компании</a></li>
             <li><a href="">Реквизиты</a></li>
@@ -600,12 +604,12 @@
             <li><a href="">Вакансии</a></li>
           </ul>
         </div>
-        <div class="col-md-3 social">
+        <div class="col-lg-3 col-md-6 social item">
           <p class="title">Наши соцсети:</p>
           <div class="socialDiv d-flex j-content-between">
-            <div class="socialItem vkIcon"><a href=""></a></div>
-            <div class="socialItem fbIcon"><a href=""></a></div>
-            <div class="socialItem instaIcon"><a href=""></a></div>
+            <div class="socialItem vkIcon"><a href="https://vk.com/" target="_blank"></a></div>
+            <div class="socialItem fbIcon"><a href="https://facebook.com/" target="_blank"></a></div>
+            <div class="socialItem instaIcon"><a href="https://instagram.com/" target="_blank"></a></div>
           </div>
           <div class="copy">Copyright © iDoctor 2019</div>
         </div>        
