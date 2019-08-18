@@ -259,7 +259,7 @@ header#navbar {
         height: 565px;
         position: relative;
         .leftBanner {
-          background: url(/sites/all/themes/idoctor_theme/image/headerBottomBanner.jpg) no-repeat;
+          background: url(/sites/all/themes/idoctor_theme/image/headerBottomBanner.jpg) no-repeat center;
           background-size: cover;
           width: 848px;
           padding: 84px 86px 81px 132px;
@@ -461,7 +461,7 @@ header#navbar {
         background-image: url(/sites/all/themes/idoctor_theme/image/ipad-pic.png);
         margin: 0 60px;
         p.model {
-            left: 45%;
+          left: 45%;
         }
       }
       .topModelsItem:nth-child(3) {
@@ -1315,21 +1315,24 @@ background: #f9f9f9;
             height: 25px;
             top: 22px;
             left: 11px;
-            background: url(/sites/all/themes/idoctor_theme/image/vk-icon.png) no-repeat;
+            background-image: url(/sites/all/themes/idoctor_theme/image/vk-icon.png);
+            background-repeat: no-repeat;
           }
           .fbIcon a:before {
             width: 19px;
             height: 41px;
             top: 13px;
             left: 23px;
-            background: url(/sites/all/themes/idoctor_theme/image/fb-icon.png) no-repeat;
+            background-image: url(/sites/all/themes/idoctor_theme/image/fb-icon.png);
+            background-repeat: no-repeat;
           }
           .instaIcon a:before {
             width: 42px;
             height: 42px;
             top: 12px;
             left: 12px;
-            background: url(/sites/all/themes/idoctor_theme/image/insta-icon.png) no-repeat;
+            background-image: url(/sites/all/themes/idoctor_theme/image/insta-icon.png);
+            background-repeat: no-repeat;
           }
         }
       }
@@ -1534,7 +1537,7 @@ background: #f9f9f9;
 } 
 
 
-@media (min-width: 768px) and (max-width: 1499px) {
+@media (min-width: 576px) and (max-width: 1499px) {
 
   header#navbar .container .navbar-collapse nav ul.menu.nav.navbar-nav li {
     margin-right: 45px;
@@ -1839,7 +1842,7 @@ background: #f9f9f9;
 
 
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 576px) and (max-width: 1199px) {
 
   .serviceCenter, .lowPrices, .completing, .selectBreakage, .another, .anotherThree, .contacts, .footer {
     padding: 40px 0;
@@ -1902,9 +1905,23 @@ background: #f9f9f9;
   .header .headerBottomBanner .bannerContent {
     display: block;
   }
+  .header .headerBottomBanner .bannerContent .container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: auto;
+  }
   .header .headerBottomBanner .bannerContent .container .leftBanner {
     position: static;
     width: 100%;
+    padding: 80px 0;
+  }
+  .header .headerBottomBanner .bannerContent .container .leftBanner .wrapper {
+    width: 970px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .header .headerBottomBanner .bannerContent .rightBanner {
     position: static;
@@ -2061,6 +2078,370 @@ background: #f9f9f9;
   }
   .footer .container .footerContent .copy {
     padding: 0;
+  }
+}
+
+
+
+@media (min-width: 576px) and (max-width: 991px) {
+
+  .another, .anotherThree, .completing, .contacts, .footer, .lowPrices, .selectBreakage, .serviceCenter {
+    padding: 30px 0;
+  }
+
+  header#navbar .container .navbar-collapse nav ul.menu.nav.navbar-nav li {
+    margin-right: 9px;
+  }
+  header#navbar .container .navbar-collapse nav ul.menu.nav.navbar-nav:first-child li a {
+    padding-left: 0;
+    font-size: 12px;
+  } 
+  header#navbar .container .navbar-collapse nav ul.menu.nav.navbar-nav    li:first-child a:after {
+    background-size: 70%;
+    right: -5px;
+  }
+  header#navbar .container .navbar-collapse nav .btn.btn-primary {
+    width: 160px;
+    height: 30px;
+    margin: 15px 0;
+    line-height: 16px;
+  }
+  header#navbar .container .navbar-collapse nav .btn.btn-primary a {
+    font-size: 11px;
+  }
+  .header .container .headerTop .row .col-md-3 .address {
+    margin-left: 0;
+  }
+  .header .container .headerTop .row .col-md-3 .find-us {
+    display: none;
+  }
+  .header .container .headerTop .row .col-md-3 .telephone p.telTop span {
+    font-size: 16px;
+    margin-left: 20px;
+  }
+
+  .header .headerBottomBanner .bannerContent .container {
+    height: 372px;
+  }
+  .header .headerBottomBanner .bannerContent .container .leftBanner {
+    padding: 30px 0;
+  }
+  .header .headerBottomBanner .bannerContent .container .leftBanner .wrapper {
+    width: 750px;
+  }
+  .header .headerBottomBanner .bannerContent .container .leftBanner .heading {
+    font-size: 28px;
+  }
+  .header .headerBottomBanner .bannerContent .container .leftBanner p.title {
+    font-size: 22px;
+    padding-bottom: 10px;
+    width: 260px;
+    margin-top: 0px;
+  }
+  .header .headerBottomBanner .bannerContent .container .leftBanner ul li {
+    font-size: 19px;
+    padding-bottom: 8px;
+  }
+  .header .headerBottomBanner .bannerContent .container .leftBanner .phoneBanner p.phone {
+    font-size: 24px;
+  }
+  .header .headerBottomBanner .bannerContent .container .leftBanner .phoneBanner a.btn.btn-warning {
+    padding: 8px 24px;
+    margin: 0 40px 0 0;
+    font-size: 14px;
+  }
+
+  .serviceCenter .container2 .heading {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .serviceCenter .container2 .serviceContent {
+    font-size: 17px;
+  }
+  .serviceCenter .container2 .serviceContent .serviceItem {
+    background-size: 70%;
+    background-position: center;
+  }
+  .serviceCenter .container2 .serviceContent .serviceItem:nth-child(1) {
+    padding-left: 50px;
+  }
+  .serviceCenter .container2 .serviceContent .serviceItem:nth-child(1):before {
+    top: -15px;
+    left: -6px;
+  }
+  .serviceCenter .container2 .serviceContent .serviceItem:nth-child(2) {
+    padding-left: 55px;
+  }
+  .serviceCenter .container2 .serviceContent .serviceItem:nth-child(2):before {
+    top: -19px;
+    left: -9px;
+  }
+   .serviceCenter .container2 .serviceContent .serviceItem:nth-child(3) {
+    padding-left: 50px;
+  }
+  .serviceCenter .container2 .serviceContent .serviceItem:nth-child(3):before {
+    top: -18px;
+    left: 3px;
+  }
+
+  .equipment {
+    margin-top: 0;
+    height: 300px;
+  }
+
+  .div-heading {
+    font-size: 32px;
+  }
+
+  .lowPrices .container3 p.heading {
+    font-size: 24px;
+    padding-top: 14px;
+    margin-bottom: 0;
+  }
+  .lowPrices .container3 .topModels .topModelsItem {
+      height: 440px;
+  }
+  .lowPrices .container3 .topModels .topModelsItem:before {
+    left: 41%;
+  }
+  .lowPrices .container3 .topModels .topModelsItem:after {
+    left: 41%;
+  }
+  .lowPrices .container3 .topModels .topModelsItem:nth-child(3):after, .lowPrices .container3 .topModels .topModelsItem:nth-child(3):before {
+    left: 40%;
+  }
+  .lowPrices .container3 .topModels .topModelsItem:nth-child(1) {
+    background-size: 57%;
+  }
+  .lowPrices .container3 .topModels .topModelsItem:nth-child(2) {
+    margin: 0 30px;
+    background-size: 90%;
+  }
+  .lowPrices .container3 .topModels .topModelsItem:nth-child(3) {
+    background-position: 180% 67.3%;
+    background-size: 100%;
+  }
+  .lowPrices .container3 .bottomModels .bottomModelsItem:before {
+    left: 40%;
+  }.lowPrices .container3 .bottomModels .bottomModelsItem:after {
+    left: 40%;
+  }
+
+
+  .completing .container .completingContent .left ul {
+    padding-left: 62px;
+  }
+  .completing .container .completingContent .left ul li {   
+    margin-bottom: 20px;
+  }
+  .completing .container .completingContent .left ul li p.title {
+    font-size: 22px;
+  }
+  .completing .container .completingContent .left ul li p.content {
+    font-size: 20px;
+    line-height: 25px;
+    padding-top: 0;
+  }
+  .completing .container .completingContent .right iframe {
+    height: 426px;
+  }
+
+  .discounts {
+    background: #c58181;
+    height: 300px;
+  }
+
+  .selectBreakage .container p.heading {
+    font-size: 24px;
+    margin-top: 11px;
+    margin-bottom: 32px;
+  }
+
+  .selectBreakage .container .wrap .selectBreakageContent {
+    padding: 30px;
+  }
+  .selectBreakage .container .wrap .selectBreakageContent .selectBreakRow p.title {
+    height: 26px;
+    line-height: 20px;
+  }
+  .selectBreakage .container .wrap .selectBreakageContent .selectBreakRow, .selectBreakage .container .wrap .selectBreakageContent .selectBreakRowMiddle {
+    margin-bottom: 20px;
+  }
+  .selectBreakage .container .wrap .selectBreakageContent .selectBreakRow .selectBreakRowItem:nth-child(1) {
+    padding-left: 0;
+    padding-right: 15px;
+    width: 300px;
+  }
+  .selectBreakage .container .wrap .selectBreakageContent .selectBreakRow .selectBreakRowItem:nth-child(2) {
+    padding-left: 0;
+    padding-right: 15px;
+    width: 300px;
+    border: none;
+  }
+  .selectBreakage .container .wrap .selectBreakageContent .selectBreakRow .selectBreakRowItem:nth-child(3) {
+    padding-left: 0;
+    padding-right: 0;
+    width: 314px;
+    border: none;
+  }
+
+  .masters {
+    background: #c58181;
+    height: 300px;
+  }
+
+  .another .container {
+    width: 750px!important;
+  }
+  .another .container .anotherContent .left .heading {
+    width: 400px;
+  }
+  .another .container .anotherContent .left .leftContent ul li {
+    padding: 30px 0 0 36px;
+  }
+  .another .container .anotherContent .left .leftContent ul li p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .another .container .anotherContent .right {
+    height: 388px;
+  }
+
+  .anotherTwo .container .anotherTwoContent {
+    padding: 40px 0;
+  }
+  .anotherTwo .container .anotherTwoContent p.title {
+    font-size: 28px;
+  }
+  .anotherTwo .container .anotherTwoContent p.content {
+    font-size: 16px;
+    margin: 15px 0 20px;
+  }
+  .anotherTwo .container .anotherTwoContent a.btn.btn-warning {
+    font-size: 12px;
+  }
+
+  .comments {
+    background: #c58181;
+    height: 300px;
+  }
+
+  .anotherThree .container .anotherThreeContent {
+    padding: 30px 15px 0;
+  }
+  .anotherThree .container .anotherThreeContent .left iframe {
+    margin: 0 0 40px;
+    height: 370px;
+  }
+  .anotherThree .container .anotherThreeContent .right p.title {
+    font-size: 19px;
+    text-align: center;
+  }
+  .anotherThree .container .anotherThreeContent .right p.content {
+    padding: 0 0 20px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts .container .contactsContent .item:before {
+    left: 150px;
+    top: 25px;
+  }
+  .contacts .container .contactsContent .addressContacts p.find-us {
+    margin: -11px 0 0px 60px;
+  }
+  .contacts .container .contactsContent .addressContacts p.find-us:before {
+    left: 200px;
+  }
+  .contacts .container .contactsContent .phoneContacts:before {
+    left: 140px;
+  }
+
+  .contacts .container .bannerContacts .banner {
+    height: 383px;
+    margin-bottom: 15px;
+  }
+
+  .forma .container .formWrapp {
+    margin-top: -70px;
+    padding: 20px 0 10px;
+    background-position: -229px 0;
+    background-image: none;
+    background: #056694;
+  }
+  .forma .container .formContent {
+    padding: 30px 0;
+  }
+  .forma .container .formContent form .formInputs input.name {
+    width: 400px;
+    padding: 13px 0 13px 31px;
+    margin-right: 0;
+  }
+  .forma .container .formContent form .formInputs input.phone {
+    width: 400px;
+    padding: 13px 0 13px 27px;
+    line-height: 22px;
+  }
+  .forma .container .formContent form .formInputs input.reason {
+    padding: 12px 34px 11px;
+    width: 400px;
+    margin-right: 0;
+  }
+  .forma .container .formContent form .formInputs .btn-primary {
+    padding: 8px 60px;
+    line-height: 24px;
+    font-size: 17px;
+    width: 246px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .footer .container .footerContent p.find-us {
+    margin: 0 0 0 45px;
+  }
+  .footer .container .footerContent p.find-us:before {
+    left: 30px;
+  }
+
+  footer .container .footerContent .addressWorkTime .workTime p.content {
+    margin: 10px auto 0;
+    letter-spacing: -.2px;
+    line-height: 25px;
+    width: 200px;
+  }
+
+  .footer .container .footerContent .social .socialDiv {
+    width: 170px;
+  } 
+  .footer .container .footerContent .social .socialDiv .socialItem {
+    width: 50px;
+    height: 50px;
+  }
+  .footer .container .footerContent .social .socialDiv .vkIcon a:before {
+    width: 40px;
+    height: 18px;
+    top: 17px;
+    left: 4px;
+    background-image: url(/sites/all/themes/idoctor_theme/image/vk-icon.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+  }
+  .footer .container .footerContent .social .socialDiv .fbIcon a:before {
+    width: 19px;
+    height: 41px;
+    top: 6px;
+    left: 15px;
+    background-size: 70%;
+    background-position: center;
+  }
+  .footer .container .footerContent .social .socialDiv .instaIcon a:before {
+    width: 42px;
+    height: 42px;
+    top: 5px;
+    left: 5px;
+    background-position: center;
+    background-size: 70%;
   }
 }
 

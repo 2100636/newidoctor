@@ -146,17 +146,19 @@
       <div class="bannerContent d-flex j-content-between a-items-flex-start">
         <div class="container">
           <div class="leftBanner">
-            <div class="heading">ремонт СМАРТФОНОВ в томске</div>
-            <p class="title">от 390 руб за 15 минут</p>
-            <ul>
-              <li>Работаем в Томске уже 8 лет!</li>
-              <li>Сертифицированное оборудование, не имеющее аналогов в Томске</li>
-              <li>Оригинальные запчасти Apple</li>
-              <li>Гарантия  от 1 месяца</li>
-            </ul>
-            <div class="phoneBanner d-flex j-content-between">
-              <p class="phone">+7 (382) 33-22-77</p>
-              <a href="" class="btn btn-warning">записаться на ремонт</a>
+            <div class="wrapper">
+              <div class="heading">ремонт СМАРТФОНОВ в томске</div>
+              <p class="title">от 390 руб за 15 минут</p>
+              <ul>
+                <li>Работаем в Томске уже 8 лет!</li>
+                <li>Сертифицированное оборудование, не имеющее аналогов в Томске</li>
+                <li>Оригинальные запчасти Apple</li>
+                <li>Гарантия  от 1 месяца</li>
+              </ul>
+              <div class="phoneBanner d-flex j-content-between">
+                <p class="phone">+7 (382) 33-22-77</p>
+                <a href="" class="btn btn-warning">записаться на ремонт</a>
+              </div>
             </div>
           </div>
         </div>
