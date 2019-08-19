@@ -75,6 +75,7 @@
  */
 ?>
 
+
 <!-- <header id="navbar" class="<?php print $navbar_classes; ?>"> -->
 <header id="navbar">
   <div class="<?php print $container_class; ?>">
@@ -162,12 +163,23 @@
             </div>
           </div>
         </div>
+        <link href="/sites/all/themes/idoctor_theme/css/twentytwenty.css" rel="stylesheet" type="text/css" />
+        <script src="/sites/all/themes/idoctor_theme/js/jquery.event.move.js"></script>
+        <script src="/sites/all/themes/idoctor_theme/js/jquery.twentytwenty.js"></script>
         <div class="rightBanner">
           <div class="twentyBlock twentytwenty-container">
             <img src="/sites/all/themes/idoctor_theme/image/before.jpg" alt="">
-            <!-- <img src="/sites/all/themes/idoctor_theme/image/after.jpg" alt=""> -->
+            <img src="/sites/all/themes/idoctor_theme/image/after.jpg" alt="">
           </div>  
         </div>
+         <script>
+
+          (function($) {
+
+            $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
+
+            })(jQuery);
+        </script>
       </div>
     </div>
   </div>
