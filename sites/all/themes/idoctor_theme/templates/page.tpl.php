@@ -172,13 +172,10 @@
             <img src="/sites/all/themes/idoctor_theme/image/after.jpg" alt="">
           </div>  
         </div>
-         <script>
-
+        <script>
           (function($) {
-
             $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
-
-            })(jQuery);
+          })(jQuery);
         </script>
       </div>
     </div>
@@ -199,7 +196,7 @@
           <p>Выполняем сложный ремонт мобильной техники,<br> опыт более <b>40000 ремонтов</b></p>
         </div>
         <div class="col-md-3 serviceItem">
-          <p><b>170 единиц</b> современного оборудования, не имеющего аналогов в томске</p>
+          <p><b>170 единиц</b> современного оборудования, не имеющего аналогов в Томске</p>
         </div>
       </div>
     </div>
@@ -294,7 +291,7 @@
           <div class="selectBreakageContent">
             <div class="row d-flex j-content-between a-items-flex-start selectBreakRow selectBreakRowTop">
               <div class="col-lg-4 col-md-12 selectBreakRowItem">
-                <p class="title">ЭКРАН / ДИСПЛЕЙ</p>
+                <p class="title" id="title1">ЭКРАН / ДИСПЛЕЙ</p>
                 <label for="break-1" class="checkbox-label">
                   <input type="checkbox" id="break-1" value="1"><span></span>
                   <p class="check">разбилось стекло</p>
@@ -309,7 +306,7 @@
                 </label><br>
               </div>
               <div class="col-lg-4 col-md-12 selectBreakRowItem">
-                <p class="title">ЗАРЯДКА</p>
+                <p class="title" id="title2">ЗАРЯДКА</p>
                 <label for="break-4" class="checkbox-label">
                   <input type="checkbox" id="break-4"><span></span>
                   <p class="check">не заряжается</p>
@@ -328,7 +325,7 @@
                 </label><br>
               </div>
               <div class="col-lg-4 col-md-12 selectBreakRowItem">
-                <p class="title">КНОПКИ</p>
+                <p class="title"  id="title3">КНОПКИ</p>
                 <label for="break-8" class="checkbox-label">
                   <input type="checkbox" id="break-8"><span></span>
                   <p class="check">не работает вкл / выкл</p>
@@ -345,7 +342,7 @@
             </div>
             <div class="row d-flex j-content-between a-items-flex-start selectBreakRow selectBreakRowMiddle">
               <div class="col-lg-4 col-md-12 selectBreakRowItem">
-                <p class="title">ОБЩЕЕ</p>
+                <p class="title" id="title4">ОБЩЕЕ</p>
                 <label for="break-11" class="checkbox-label">
                   <input type="checkbox" id="break-11"><span></span>
                   <p class="check">не включается</p>
@@ -360,7 +357,7 @@
                 </label><br>
               </div>
               <div class="col-lg-4 col-md-12 selectBreakRowItem">
-                <p class="title">ПО</p>
+                <p class="title" id="title5">ПО</p>
                 <label for="break-14" class="checkbox-label">
                   <input type="checkbox" id="break-14"><span></span>
                   <p class="check">зависает</p><br>
@@ -375,7 +372,7 @@
                 </label><br>
               </div>
               <div class="col-lg-4 col-md-12 selectBreakRowItem">
-                <p class="title">КАМЕРА</p>
+                <p class="title" id="title6">КАМЕРА</p>
                 <label for="break-17" class="checkbox-label">
                   <input type="checkbox" id="break-17"><span></span>
                   <p class="check">не работает задняя камера</p>
@@ -392,7 +389,7 @@
             </div>
             <div class="row d-flex j-content-between a-items-flex-start selectBreakRow selectBreakRowBottom">
               <div class="col-lg-4 col-md-12 selectBreakRowItem">
-                <p class="title">ДИНАМИКИ / МИКРОФОН</p>
+                <p class="title" id="title7">ДИНАМИКИ / МИКРОФОН</p>
                 <label for="break-20" class="checkbox-label">
                   <input type="checkbox" id="break-20"><span></span>
                   <p class="check">не работает динамик</p>
@@ -411,7 +408,7 @@
                 </label><br>
               </div>
               <div class="col-lg-4 col-md-12 selectBreakRowItem">
-                <p class="title">КОРПУС</p>
+                <p class="title" id="title8">КОРПУС</p>
                 <label for="break-24" class="checkbox-label">
                   <input type="checkbox" id="break-24"><span></span>
                   <p class="check">разбилось заднее стекло</p>
@@ -426,7 +423,7 @@
                 </label><br>
               </div>
               <div class="col-lg-4 col-md-12 selectBreakRowItem">
-                <p class="title">ДРУГОЕ</p>
+                <p class="title" id="title9">ДРУГОЕ</p>
                 <label for="break-27" class="checkbox-label">
                   <input type="checkbox" id="break-27"><span></span>
                   <p class="check">не работают наушники</p>
@@ -529,8 +526,8 @@
         </div>
         <div class="col-lg-4 col-md-12 workTimeContacts item">
           <p class="title">Часы работы:</p>
-          <p class="content">Пн - пт с 10 до 19,</p>
-          <p class="content">сб с 11 до 16, вс выходной</p>
+          <p class="content">Пн - Пт с 10 до 19,</p>
+          <p class="content">Сб с 11 до 16, вс выходной</p>
         </div>
         <div class="col-lg-4 col-md-12 phoneContacts item">
           <p class="title">ТЕЛЕФОН:</p>
@@ -538,12 +535,12 @@
           <p class="content">+7 (382) 33-22-77</p>
         </div>
       </div>
-      <div class="row" id="maps">
+      <div class="row">
         <div class="bannerContacts d-flex j-content-between">
-            <div class="banner"></div>
-            <div class="banner"></div>
-            <div class="banner"></div>
-          </div>
+          <div class="banner"></div>
+          <div class="banner"></div>
+          <div class="banner"></div>
+        </div>
       </div>
     </div>
   </div>
