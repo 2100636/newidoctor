@@ -1686,6 +1686,9 @@ background: #f9f9f9;
   header#navbar .container .navbar-collapse nav ul.menu.nav.navbar-nav li {
     margin-right: 55px;
   }
+  header#navbar .container .navbar-collapse nav ul.menu.nav.navbar-nav li a {
+    font-size: 1.2em;
+  }
   header#navbar .container .navbar-collapse nav ul.menu.nav.navbar-nav li:first-child a:after {
     top: 18px;
     right: -9px;
@@ -1741,6 +1744,8 @@ background: #f9f9f9;
   }
   .header .container .headerTop .row .col-md-3 .address p.addBottom {
     margin: 4px 0 0;
+    font-size: 1em;
+    letter-spacing: 0;
   }
   .header .container .headerTop .row .col-md-3:nth-child(4) {
     margin-right: 0;
@@ -1801,9 +1806,12 @@ background: #f9f9f9;
   .serviceCenter .container2 .heading {
     margin-bottom: 37px;
   }
+  .serviceCenter .container2 .serviceContent {
+    font-size: 1.2em
+  }
   .serviceCenter .container2 .serviceContent .serviceItem {
-    line-height: 15px;
-    width: 233px;
+    line-height: 19px;
+    width: 240px;
   }
   .serviceCenter .container2 .serviceContent .serviceItem:nth-child(1) {
     padding: 0 5px 40px 60px;
@@ -1883,7 +1891,11 @@ background: #f9f9f9;
     background-size: 28px;
   }
   .lowPrices .container3 .topModels .topModelsItem p.model {
-    left: 41%;
+    left: 39%;
+    font-size: 1.3em;
+  }
+  lowPrices .container3 .topModels .topModelsItem:nth-child(2) p.model {
+    left: 43%;
   }
   .lowPrices .container3 .topModels .topModelsItem:hover:after {
     width: 30px;
@@ -1913,13 +1925,14 @@ background: #f9f9f9;
     background-size: 28px;
   }
   .lowPrices .container3 .bottomModels .bottomModelsItem p.model {
-    left: 34%;
+    left: 30%;
+    font-size: 1.3em;
   }
   .lowPrices .container3 .bottomModelsItem:nth-child(4) p.model {
-    left: 38%;
+    left: 35%;
   }
   .lowPrices .container3 .bottomModelsItem:nth-child(5) p.model {
-    left: 30%;
+    left: 25%;
   }
   .lowPrices .container3 .bottomModelsItem:hover:after {
     width: 30px;
@@ -1928,14 +1941,14 @@ background: #f9f9f9;
     left: 39%;
   }
   .lowPrices div#dinamicBlock1 {
-    max-width: 784px;
+    max-width: 850px;
   }
   .lowPrices .container3 .buttons#dinamicBlock2 {
     padding: 28px 210px;
   }
   .lowPrices .container3 .buttons#dinamicBlock2 a.btn.btn-primary {
     padding: 6px 32px;
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
 
@@ -1984,11 +1997,14 @@ background: #f9f9f9;
   .selectBreakage .container .wrap .selectBreakageContent .selectBreakRow {
     margin-bottom: 25px;
   }
+  .selectBreakage .container .wrap .selectBreakageContent .selectBreakRow:nth-child(3) {
+    margin-top: 0;
+  }
   .selectBreakage .container .wrap .selectBreakageContent .selectBreakRow .selectBreakRowItem {
     padding-left: 105px;
   }
   .selectBreakage .container .wrap .selectBreakageContent .selectBreakRow p.title {
-    margin-bottom: 7px;
+    margin-bottom: 10px;
     padding-left: 20px;
   }
   .selectBreakage .container .wrap .selectBreakageContent .selectBreakRow .selectBreakRowItem p.title:before {
@@ -2048,6 +2064,7 @@ background: #f9f9f9;
   .selectBreakage .container .wrap .selectBreakageContent .selectBreakRow p.check {
     line-height: 7px;
     padding: 5px 0 4px 20px;
+    font-size: 1em;
   }
   .selectBreakage .container .wrap .selectBreakageContent .buttonForm a.btn.btn-primary {
     padding: 9px 21px;
@@ -2073,10 +2090,13 @@ background: #f9f9f9;
     margin: 0;
   }
   .another .container .anotherContent .left .leftContent ul li {
-    padding: 17px 0 0 27px;
+    padding: 17px 0 0 35px;
   }
   .another .container .anotherContent .left .leftContent ul li p {
     line-height: 21px;
+  }
+  .another .container .anotherContent .left .leftContent ul li p:before {
+    left: -34px;
   }
   .another .container .anotherContent .right {
     height: 317px;
@@ -2343,8 +2363,15 @@ background: #f9f9f9;
   .header .container .headerTop .row .col-md-3:nth-child(1) {
     margin-right: 0px;
   }
+  .header .container .headerTop .row .col-md-3 .find-us p.find-us-bottom {
+    padding-left: 23px;
+  }
+  .header .container .headerTop .row .col-md-3 .find-us p.find-us-bottom:before {
+    background-size: 18px;
+  }
   .header .container .headerTop .row .col-md-3 .address p.addBottom {
-    letter-spacing: 0px;
+    letter-spacing: -0.3px;
+    font-size: 1.1em;
   }
   .header .container .headerTop .row .col-md-3 .telephone:before {
     top: 5px;
@@ -2393,6 +2420,12 @@ background: #f9f9f9;
   .serviceCenter {
     padding: 34px 0 0;
   }
+  .serviceCenter .container2 .serviceContent {
+    font-size: 1.3em;
+  }
+  .serviceCenter .container2 .serviceContent .serviceItem {
+    width: 250px;
+  }
 
 
   .equipment {
@@ -2424,6 +2457,9 @@ background: #f9f9f9;
     background-position: center 120px;
     background-size: 190px;
   }
+  .lowPrices .container3 .topModels .topModelsItem p.model {
+    bottom: -4.5%;
+  }
   .lowPrices .container3 .bottomModels {
     max-width: 630px;
   }
@@ -2431,6 +2467,9 @@ background: #f9f9f9;
     height: 252px;
     background-position: center 80px;
     background-size: 71px 140px;
+  }
+  .lowPrices .container3 .bottomModels .bottomModelsItem p.model {
+    bottom: 3%;
   }
   .lowPrices div#dinamicBlock1 {
     max-width: 680px;
@@ -2440,7 +2479,7 @@ background: #f9f9f9;
   }
   .lowPrices .container3 .buttons#dinamicBlock2 a.btn.btn-primary {
     padding: 6px 24px;
-    font-size: 0.9em;
+    font-size: 1.1em;
   }
 
 
@@ -2449,14 +2488,10 @@ background: #f9f9f9;
   }
   .completing .container .completingContent {
     padding: 40px 0 0 53px;
-    align-items: center;
   }
   .completing .container .completingContent .left ul {
     margin: 0;
     padding-left: 0;
-  }
-  .completing .container .completingContent .left ul li {
-    margin-bottom: 7px;
   }
   .completing .container .completingContent .left ul li:nth-child(1):before {
     width: 24px;
@@ -2479,8 +2514,8 @@ background: #f9f9f9;
     left: -49px;
     background-size: 30px;
   }
-  .completing .container .completingContent .left ul li p.title {
-    margin-bottom: 5px;
+  .completing .container .completingContent .left ul li p.content {
+    font-size: 1.5em;
   }
   .completing .container .completingContent .right {
     margin-left: 15px;
@@ -2517,6 +2552,8 @@ background: #f9f9f9;
   .selectBreakage .container .wrap .selectBreakageContent .selectBreakRow p.check {
     line-height: 6px;
     padding: 4px 0 3px 20px;
+    font-size: 1.1em;
+    letter-spacing: 0;
   }
 
 
@@ -2547,11 +2584,12 @@ background: #f9f9f9;
     padding: 5px 0px 7px 27px;
   }
   .another .container .anotherContent .left .leftContent ul li p {
-    line-height: 18px;
+    line-height: 20px;
+    font-size: 1.5em;
   }
   .another .container .anotherContent .right {
     height: 260px;
-    margin-top: 0;
+    margin-top: 35px;
   }
 
 
@@ -2576,7 +2614,6 @@ background: #f9f9f9;
   }
   .anotherThree .container .anotherThreeContent {
     padding: 30px 0 0;
-    align-items: center;
   }
   .anotherThree .container .anotherThreeContent .left iframe {
     height: 263px;
@@ -2587,11 +2624,11 @@ background: #f9f9f9;
   }
   .anotherThree .container .anotherThreeContent .right p.title {
     margin-bottom: 5px;
-    line-height: 16px;
   }
   .anotherThree .container .anotherThreeContent .right p.content {
-    line-height: 17px;
+    line-height: 20px;
     padding: 0;
+    font-size: 1.5em;
   }
 
 
@@ -2666,18 +2703,40 @@ background: #f9f9f9;
   .footer {
     padding: 43px 0 34px;
   }
+  .footer .container .footerContent p.content {
+    font-size: 1.5em;
+  }
+  .footer .container .footerContent p.find-us {
+    margin: -5px 0 0;
+  }
   .footer .container .footerContent .addressWorkTime .workTime p.title {
-    margin: 13px 0 -10px;
+    margin: 15px 0 -10px;
+  }
+  .footer .container .footerContent .addressWorkTime .workTime p.content {
+    line-height: 25px;
+  }
+  .footer .container .footerContent .col-lg-3.col-md-6.leftList.list.item {
+    padding-left: 20px;
+  }
+  .footer .container .footerContent .col-lg-3.col-md-6.rightList.list.item {
+    padding-left: 20px;
+  }
+  .footer .container .footerContent .item {
+    padding-left: 0;
   }
   .footer .container .footerContent .item ul li {
     margin: 3px 0 14px;
   }
+  .footer .container .footerContent .item ul li a {
+    font-size: 1.5em;
+  }
   .footer .container .footerContent .social .socialDiv {
-    margin: 20px 0 0 65px;
-    padding-bottom: 20px;
+    margin: 25px 0 0 65px;
+    padding-bottom: 25px;
   }
   .footer .container .footerContent .copy {
     padding: 20px 0;
+    font-size: 1.2em;
   }
 }
 
@@ -2884,7 +2943,6 @@ background: #f9f9f9;
     line-height: 10px;
   }
   .selectBreakage .container .wrap .selectBreakageContent .selectBreakRow:nth-child(3) {
-    margin-top: 0;
     margin-bottom: 10px;
   }
 
