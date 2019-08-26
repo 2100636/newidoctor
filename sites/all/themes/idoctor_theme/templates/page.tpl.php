@@ -174,7 +174,7 @@
         </div>
         <script>
           (function($) {
-            $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
+            $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.8});
           })(jQuery);
         </script>
       </div>
@@ -282,174 +282,183 @@
 
 
   <!-- устройство неисправно   -->
-  <div class="selectBreakage">
-    <div class="container">
-      <div class="heading div-heading">Ваше устройство неисправно?</div>
-      <p class="heading">выберите вашу проблему из списка</p>
+<div class="selectBreakage">
+  <div class="container">
+    <div class="heading div-heading">Ваше устройство неисправно?</div>
+    <p class="heading">выберите вашу проблему из списка</p>
       <div class="wrap">
         <form action="">
           <div class="selectBreakageContent">
-            <div class="row d-flex j-content-between a-items-flex-start selectBreakRow selectBreakRowTop">
-              <div class="col-lg-4 col-md-12 selectBreakRowItem">
-                <p class="title" id="title1">ЭКРАН / ДИСПЛЕЙ</p>
-                <label for="break-1" class="checkbox-label">
-                  <input type="checkbox" id="break-1" value="1"><span></span>
-                  <p class="check">разбилось стекло</p>
-                </label><br>
-                <label for="break-2" class="checkbox-label">
-                  <input type="checkbox" id="break-2"><span></span>
-                  <p class="check">не работает экран</p>
-                </label><br>
-                <label for="break-3" class="checkbox-label">
-                  <input type="checkbox" id="break-3"><span></span>
-                  <p class="check">нет подсветки</p>
-                </label><br>
+            <div class="selectBreakWrapp">
+              <div class="selectBreakWrapp2">
+
+                <div class="col-lg-4 col-md-12 selectBreakRowItem">
+                  <p class="title" id="title1">ЭКРАН / ДИСПЛЕЙ</p>
+                  <label for="break-1" class="checkbox-label">
+                    <input type="checkbox" id="break-1" value="1"><span></span>
+                    <p class="check">разбилось стекло</p>
+                  </label><br>
+                  <label for="break-2" class="checkbox-label">
+                    <input type="checkbox" id="break-2"><span></span>
+                    <p class="check">не работает экран</p>
+                  </label><br>
+                  <label for="break-3" class="checkbox-label">
+                    <input type="checkbox" id="break-3"><span></span>
+                    <p class="check">нет подсветки</p>
+                  </label><br>  
+                </div>
+
+                <div class="col-lg-4 col-md-12 selectBreakRowItem">
+                  <p class="title" id="title2">ЗАРЯДКА</p>
+                  <label for="break-4" class="checkbox-label">
+                    <input type="checkbox" id="break-4"><span></span>
+                    <p class="check">не заряжается</p>
+                  </label><br>
+                  <label for="break-5" class="checkbox-label">
+                    <input type="checkbox" id="break-5"><span></span>
+                    <p class="check">быстро рязряжается</p>
+                  </label><br>
+                  <label for="break-6" class="checkbox-label">
+                    <input type="checkbox" id="break-6"><span></span>
+                    <p class="check">греется батарея</p>  
+                  </label><br>
+                  <label for="break-7" class="checkbox-label">
+                    <input type="checkbox" id="break-7"><span></span>
+                    <p class="check">не работает беспр. зарядка</p>
+                  </label><br>
+                </div>
+
+                <div class="col-lg-4 col-md-12 selectBreakRowItem">
+                  <p class="title"  id="title3">КНОПКИ</p>
+                  <label for="break-8" class="checkbox-label">
+                    <input type="checkbox" id="break-8"><span></span>
+                    <p class="check">не работает вкл / выкл</p>
+                  </label><br>
+                  <label for="break-9" class="checkbox-label">
+                    <input type="checkbox" id="break-9"><span></span>
+                    <p class="check">не работает кнопка HOME</p>
+                  </label><br>
+                  <label for="break-10" class="checkbox-label">
+                    <input type="checkbox" id="break-10"><span></span>
+                    <p class="check">не работают кнопки громкости</p>
+                  </label><br>
+                </div>
+
+                <div class="col-lg-4 col-md-12 selectBreakRowItem">
+                  <p class="title" id="title4">ОБЩЕЕ</p>
+                  <label for="break-11" class="checkbox-label">
+                    <input type="checkbox" id="break-11"><span></span>
+                    <p class="check">не включается</p>
+                  </label><br>
+                  <label for="break-12" class="checkbox-label">
+                    <input type="checkbox" id="break-12"><span></span>
+                    <p class="check">попала влага / утонул</p>
+                  </label><br>
+                  <label for="break-13" class="checkbox-label">
+                    <input type="checkbox" id="break-13"><span></span>
+                    <p class="check">не работает wi-Fi</p>
+                  </label><br>
+                </div>
+
+                <div class="col-lg-4 col-md-12 selectBreakRowItem">
+                  <p class="title" id="title5">ПО</p>
+                  <label for="break-14" class="checkbox-label">
+                    <input type="checkbox" id="break-14"><span></span>
+                    <p class="check">зависает</p><br>
+                  </label><br>
+                  <label for="break-15" class="checkbox-label">
+                    <input type="checkbox" id="break-15"><span></span>
+                    <p class="check">просит itunes</p>
+                  </label><br>
+                  <label for="break-16" class="checkbox-label">
+                    <input type="checkbox" id="break-16"><span></span>
+                    <p class="check">не обновляется</p>
+                  </label><br>
+                </div>
+
+                <div class="col-lg-4 col-md-12 selectBreakRowItem">
+                  <p class="title" id="title6">КАМЕРА</p>
+                  <label for="break-17" class="checkbox-label">
+                    <input type="checkbox" id="break-17"><span></span>
+                    <p class="check">не работает задняя камера</p>
+                  </label><br>
+                  <label for="break-18" class="checkbox-label">
+                    <input type="checkbox" id="break-18"><span></span>
+                    <p class="check">не работает фронтальная</p>
+                  </label><br>
+                  <label for="break-19" class="checkbox-label">
+                    <input type="checkbox" id="break-19"><span></span>
+                    <p class="check">не работает face id</p>
+                 </label><br>
+                </div>
+
+                <div class="col-lg-4 col-md-12 selectBreakRowItem">
+                  <p class="title" id="title7">ДИНАМИКИ / МИКРОФОН</p>
+                  <label for="break-20" class="checkbox-label">
+                    <input type="checkbox" id="break-20"><span></span>
+                    <p class="check">не работает динамик</p>
+                  </label><br>
+                  <label for="break-21" class="checkbox-label">
+                    <input type="checkbox" id="break-21"><span></span>
+                    <p class="check">собеседник не слышит</p>
+                  </label><br>
+                  <label for="break-22" class="checkbox-label">
+                    <input type="checkbox" id="break-22"><span></span>
+                    <p class="check">не работает микрофон</p>
+                  </label><br>
+                  <label for="break-23" class="checkbox-label">
+                    <input type="checkbox" id="break-23"><span></span>
+                    <p class="check">не слышу собеседника</p>
+                  </label><br>
+                </div>
+
+                <div class="col-lg-4 col-md-12 selectBreakRowItem">
+                  <p class="title" id="title8">КОРПУС</p>
+                  <label for="break-24" class="checkbox-label">
+                    <input type="checkbox" id="break-24"><span></span>
+                    <p class="check">разбилось заднее стекло</p>
+                  </label><br>
+                  <label for="break-25" class="checkbox-label">
+                    <input type="checkbox" id="break-25"><span></span>
+                    <p class="check">замят / согнут корпус</p>
+                  </label><br>
+                  <label for="break-26" class="checkbox-label">
+                    <input type="checkbox" id="break-26"><span></span>
+                    <p class="check">разбито стекло камеры</p>
+                  </label><br>
+                </div>
+
+                <div class="col-lg-4 col-md-12 selectBreakRowItem">
+                  <p class="title" id="title9">ДРУГОЕ</p>
+                  <label for="break-27" class="checkbox-label">
+                    <input type="checkbox" id="break-27"><span></span>
+                    <p class="check">не работают наушники</p>
+                  </label><br>
+                  <label for="break-28" class="checkbox-label">
+                    <input type="checkbox" id="break-28"><span></span>
+                    <p class="check">не работает вибрация</p>
+                  </label><br>
+                  <label for="break-29" class="checkbox-label">
+                    <input type="checkbox" id="break-29"><span></span>
+                    <p class="check">не ловит сеть</p>
+                  </label><br>
+                  <label for="break-30" class="checkbox-label">
+                    <input type="checkbox" id="break-30"><span></span>
+                    <p class="check">не видит sim</p>
+                  </label><br>
+                </div>
+
               </div>
-              <div class="col-lg-4 col-md-12 selectBreakRowItem">
-                <p class="title" id="title2">ЗАРЯДКА</p>
-                <label for="break-4" class="checkbox-label">
-                  <input type="checkbox" id="break-4"><span></span>
-                  <p class="check">не заряжается</p>
-                </label><br>
-                <label for="break-5" class="checkbox-label">
-                  <input type="checkbox" id="break-5"><span></span>
-                  <p class="check">быстро рязряжается</p>
-                </label><br>
-                <label for="break-6" class="checkbox-label">
-                  <input type="checkbox" id="break-6"><span></span>
-                  <p class="check">греется батарея</p>
-                </label><br>
-                <label for="break-7" class="checkbox-label">
-                  <input type="checkbox" id="break-7"><span></span>
-                  <p class="check">не работает беспр. зарядка</p>
-                </label><br>
+
+              <div class="buttonForm">
+                <a href="" class="btn btn-primary">рассчитать стоимость ремонта</a>
               </div>
-              <div class="col-lg-4 col-md-12 selectBreakRowItem">
-                <p class="title"  id="title3">КНОПКИ</p>
-                <label for="break-8" class="checkbox-label">
-                  <input type="checkbox" id="break-8"><span></span>
-                  <p class="check">не работает вкл / выкл</p>
-                </label><br>
-                <label for="break-9" class="checkbox-label">
-                  <input type="checkbox" id="break-9"><span></span>
-                  <p class="check">не работает кнопка HOME</p>
-                </label><br>
-                <label for="break-10" class="checkbox-label">
-                  <input type="checkbox" id="break-10"><span></span>
-                  <p class="check">не работают кнопки громкости</p>
-                </label><br>
-              </div>
-            </div>
-            <div class="row d-flex j-content-between a-items-flex-start selectBreakRow selectBreakRowMiddle">
-              <div class="col-lg-4 col-md-12 selectBreakRowItem">
-                <p class="title" id="title4">ОБЩЕЕ</p>
-                <label for="break-11" class="checkbox-label">
-                  <input type="checkbox" id="break-11"><span></span>
-                  <p class="check">не включается</p>
-                </label><br>
-                <label for="break-12" class="checkbox-label">
-                  <input type="checkbox" id="break-12"><span></span>
-                  <p class="check">попала влага / утонул</p>
-                </label><br>
-                <label for="break-13" class="checkbox-label">
-                  <input type="checkbox" id="break-13"><span></span>
-                  <p class="check">не работает wi-Fi</p>
-                </label><br>
-              </div>
-              <div class="col-lg-4 col-md-12 selectBreakRowItem">
-                <p class="title" id="title5">ПО</p>
-                <label for="break-14" class="checkbox-label">
-                  <input type="checkbox" id="break-14"><span></span>
-                  <p class="check">зависает</p><br>
-                </label><br>
-                <label for="break-15" class="checkbox-label">
-                  <input type="checkbox" id="break-15"><span></span>
-                  <p class="check">просит itunes</p>
-                </label><br>
-                <label for="break-16" class="checkbox-label">
-                  <input type="checkbox" id="break-16"><span></span>
-                  <p class="check">не обновляется</p>
-                </label><br>
-              </div>
-              <div class="col-lg-4 col-md-12 selectBreakRowItem">
-                <p class="title" id="title6">КАМЕРА</p>
-                <label for="break-17" class="checkbox-label">
-                  <input type="checkbox" id="break-17"><span></span>
-                  <p class="check">не работает задняя камера</p>
-                </label><br>
-                <label for="break-18" class="checkbox-label">
-                  <input type="checkbox" id="break-18"><span></span>
-                  <p class="check">не работает фронтальная</p>
-                </label><br>
-                <label for="break-19" class="checkbox-label">
-                  <input type="checkbox" id="break-19"><span></span>
-                  <p class="check">не работает face id</p>
-                </label><br>
-              </div>
-            </div>
-            <div class="row d-flex j-content-between a-items-flex-start selectBreakRow selectBreakRowBottom">
-              <div class="col-lg-4 col-md-12 selectBreakRowItem">
-                <p class="title" id="title7">ДИНАМИКИ / МИКРОФОН</p>
-                <label for="break-20" class="checkbox-label">
-                  <input type="checkbox" id="break-20"><span></span>
-                  <p class="check">не работает динамик</p>
-                </label><br>
-                <label for="break-21" class="checkbox-label">
-                  <input type="checkbox" id="break-21"><span></span>
-                  <p class="check">собеседник не слышит</p>
-                </label><br>
-                <label for="break-22" class="checkbox-label">
-                  <input type="checkbox" id="break-22"><span></span>
-                  <p class="check">не работает микрофон</p>
-                </label><br>
-                <label for="break-23" class="checkbox-label">
-                  <input type="checkbox" id="break-23"><span></span>
-                  <p class="check">не слышу собеседника</p>
-                </label><br>
-              </div>
-              <div class="col-lg-4 col-md-12 selectBreakRowItem">
-                <p class="title" id="title8">КОРПУС</p>
-                <label for="break-24" class="checkbox-label">
-                  <input type="checkbox" id="break-24"><span></span>
-                  <p class="check">разбилось заднее стекло</p>
-                </label><br>
-                <label for="break-25" class="checkbox-label">
-                  <input type="checkbox" id="break-25"><span></span>
-                  <p class="check">замят / согнут корпус</p>
-                </label><br>
-                <label for="break-26" class="checkbox-label">
-                  <input type="checkbox" id="break-26"><span></span>
-                  <p class="check">разбито стекло камеры</p>
-                </label><br>
-              </div>
-              <div class="col-lg-4 col-md-12 selectBreakRowItem">
-                <p class="title" id="title9">ДРУГОЕ</p>
-                <label for="break-27" class="checkbox-label">
-                  <input type="checkbox" id="break-27"><span></span>
-                  <p class="check">не работают наушники</p>
-                </label><br>
-                <label for="break-28" class="checkbox-label">
-                  <input type="checkbox" id="break-28"><span></span>
-                  <p class="check">не работает вибрация</p>
-                </label><br>
-                <label for="break-29" class="checkbox-label">
-                  <input type="checkbox" id="break-29"><span></span>
-                  <p class="check">не ловит сеть</p>
-                </label><br>
-                <label for="break-30" class="checkbox-label">
-                  <input type="checkbox" id="break-30"><span></span>
-                  <p class="check">не видит sim</p>
-                </label><br>
-              </div>
-            </div>
-            <div class="buttonForm">
-              <a href="" class="btn btn-primary">рассчитать стоимость ремонта</a>
-            </div>
           </div>
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
   </div>
+</div>
 
 
 
