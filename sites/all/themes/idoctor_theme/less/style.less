@@ -1683,7 +1683,7 @@ background: #f9f9f9;
 }
 
 
-@media (min-width: 400px) and (max-width: 1709px) {
+@media (min-width: 300px) and (max-width: 1709px) {
 
   .container {
     width: 1470px;
@@ -1974,7 +1974,7 @@ background: #f9f9f9;
 
 
 
-@media (min-width: 400px) and (max-width: 1499px) {
+@media (min-width: 300px) and (max-width: 1499px) {
 
   .container {
     width: 1170px;
@@ -2637,7 +2637,7 @@ background: #f9f9f9;
 
 
 
-@media (min-width: 400px) and (max-width: 1199px) {
+@media (min-width: 300px) and (max-width: 1199px) {
   
   .container {
     width: 990px;
@@ -3067,7 +3067,7 @@ background: #f9f9f9;
 
 
 
-@media (min-width: 400px) and (max-width: 991px) {
+@media (min-width: 300px) and (max-width: 991px) {
 
   .container {
     width: 750px;
@@ -3148,7 +3148,7 @@ background: #f9f9f9;
   .header .headerBottomBanner .bannerContent .container .leftBanner p.title {
     padding-bottom: 10px;
     margin: 0 auto;
-    width: 300px;
+    max-width: 300px;
     font-size: 2em;
   }
   .header .headerBottomBanner .bannerContent .container .leftBanner ul {
@@ -3363,7 +3363,7 @@ background: #f9f9f9;
   }
   .another .container .anotherContent .left .heading {
     padding-bottom: 0;
-    width: 400px;
+    max-width: 400px;
     margin-left: 0;
     margin: 0 auto;
     text-align: center;
@@ -3375,6 +3375,7 @@ background: #f9f9f9;
   }
   .another .container .anotherContent .left .leftContent ul li p {
     line-height: 22px;
+    text-align: left;
   }
   .another .container .anotherContent .left .leftContent ul li p:before {
     left: -32px;
@@ -3594,15 +3595,13 @@ background: #f9f9f9;
 }
 
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 767px) {
   .container {
     width: 570px;
   }
 
 
   .div-heading {
-    margin: 0 auto;
-    width: 80%;
     line-height: 36px;
     font-size: 2.6em;
   }
@@ -3621,6 +3620,7 @@ background: #f9f9f9;
     right: 0;
     padding: 23px;
     margin: 0;
+    z-index: 100000;
   }
   .navbar-toggle .icon-bar {
     background: #000;
@@ -3697,6 +3697,7 @@ background: #f9f9f9;
   }
   .header .headerBottomBanner .bannerContent .container .leftBanner .phoneBanner a.btn.btn-warning {
     font-size: 1.1em;
+    margin: 0 15px 0 0;
   }
 
 
@@ -3725,6 +3726,10 @@ background: #f9f9f9;
   }
 
 
+  .completing .container .div-heading, .lowPrices .container3 .div-heading {
+    width: 80%;
+    margin: 0 auto 20px;
+  }
   .completing .container .completingContent .left ul {
     padding-left: 60px;
   }
@@ -3756,12 +3761,12 @@ background: #f9f9f9;
 
   .selectBreakage .container .wrap .selectBreakageContent .selectBreakWrapp2 .selectBreakRowItem {
     width: 100%;
-    padding-left: 180px; 
-    margin-bottom: 30px;
+    padding-left: 28%; 
+    margin-bottom: 25px;
   }
   .selectBreakage .container .wrap .selectBreakageContent .selectBreakWrapp2 .selectBreakRowItem p.title {
     font-size: 1.63em;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     padding-left: 32px;
   }
   .selectBreakage .container .wrap .selectBreakageContent .selectBreakWrapp2 .selectBreakRowItem p.title:before {
@@ -3807,7 +3812,7 @@ background: #f9f9f9;
     left: -5px;
   }
   .selectBreakage .container .wrap .selectBreakageContent .selectBreakWrapp2 .selectBreakRowItem .checkbox-label {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   .selectBreakage .container .wrap .selectBreakageContent .selectBreakWrapp2 .selectBreakRowItem .checkbox-label input[type=checkbox]+span {
     top: -1px;
@@ -3824,7 +3829,7 @@ background: #f9f9f9;
 }
   .selectBreakage .container .wrap .selectBreakageContent .selectBreakWrapp2 .selectBreakRowItem p.check {
     padding: 0 0 0 32px;
-    font-size: 1.2em;
+    font-size: 1.15em;
   }
 
 
@@ -3871,7 +3876,7 @@ background: #f9f9f9;
     display: block;
   }
   .contacts .container .contactsContent .item {
-    width: 230px;
+    max-width: 230px;
     padding: 0;
     text-align: left;
     margin: 0 auto 30px;
@@ -3891,14 +3896,14 @@ background: #f9f9f9;
     width: 25px;
     height: 48px;
     top: 0;
-}
-.contacts .container .contactsContent .phoneContacts:before {
+  }
+  .contacts .container .contactsContent .phoneContacts:before {
     left: -58px;
     background-size: 47px;
     width: 47px;
     height: 47px;
     top: 0;
-}
+  }
   .contacts .container .bannerContacts .banner {
     width: 100%;
     height: 290px;
@@ -3929,9 +3934,12 @@ background: #f9f9f9;
     letter-spacing: 0;
     font-size: 1.1em;
   }
+  .forma .container .formContent form .formInputs input.reason {
+    padding: 9.5px 25px;
+  }
   .forma .container .formContent form .formInputs .btn-primary  {
     display: block;
-    width: 300px;
+    max-width: 300px;
     margin: 0 auto;
   }
 
@@ -3958,10 +3966,240 @@ background: #f9f9f9;
 
 
 
-@media (min-width: 0px) and (max-width: 575px) {
-  .container {
+@media (min-width: 300px) and (max-width: 575px) {
+
+  .container, .header .headerBottomBanner .bannerContent .container .leftBanner .wrapper, .anotherTwo .container .anotherTwoContent .wrap, .forma .container .wrap {
     width: 100%;
   }
+
+
+  .header .headerBottomBanner .bannerContent .container .leftBanner .phoneBanner {
+    display: block;
+  }
+  .header .headerBottomBanner .bannerContent .container .leftBanner .phoneBanner p.phone {
+    margin: 0;
+  }
+  .header .headerBottomBanner .bannerContent .container .leftBanner .phoneBanner a.btn.btn-warning {
+    max-width: 280px;
+    font-size: 1.4em;
+    margin: 10px auto 0;
+  }
+
+
+  .completing .container .div-heading, .lowPrices .container3 .div-heading {
+    width: 100%;
+    margin: 0 auto 10px;
+  }
+  .lowPrices .mobileBlock .mobileBlockContent ul.mobileLeft {
+    padding-left: 55px;
+  }
+
+
+  .completing .container .completingContent .right iframe {
+    height: 237px;
+  }
+
+
+  .anotherTwo .container .anotherTwoContent     a.btn.btn-warning {
+    padding: 10px 70px;
+    font-size: 1.3em;
+    margin-top: 10px;
+  }
+
+
+  .anotherThree .container .anotherThreeContent .left iframe {
+    height: 237px;
+  }
+
+
+  .contacts .container .contactsContent .item {
+    margin-left: 30%;
+  }
+  .contacts .container .bannerContacts .banner {
+    height: 226px;
+  }
+}
+
+
+
+
+
+@media (min-width: 300px) and (max-width: 449px) {
+  
+  .div-heading {
+    line-height: 32px;
+    font-size: 2.3em;
+  }
+
+  .header .headerBottomBanner .bannerContent .container .leftBanner .heading {
+    font-size: 2.3em;
+  }
+  .header .headerBottomBanner .bannerContent .container .leftBanner p.title {
+    font-size: 1.7em;
+  }
+  .header .headerBottomBanner .bannerContent .container .leftBanner ul li {
+    font-size: 1.7em;
+  }
+
+
+  .lowPrices .container3 p.heading {
+    font-size: 1.5em;
+  }
+  .lowPrices .mobileBlock .mobileBlockContent {
+    padding: 40px 0 0;
+  }
+  .lowPrices .mobileBlock .mobileBlockContent ul li {
+    font-size: 1.3em;
+    margin-bottom: 35px;
+  }
+  .lowPrices .mobileBlock .mobileBlockContent ul li:before {
+    top: -5px;
+    left: -42px;
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+  }
+
+
+  .completing .container .completingContent {
+    margin-top: 40px;
+  }
+  .completing .container .completingContent .left ul {
+    padding-left: 0;
+  }
+  .completing .container .completingContent .left ul li {
+    margin-bottom: 30px;
+  }
+  .completing .container .completingContent .left ul li:before {
+    top: 0!important;
+    left: 0!important;
+  }
+  .completing .container .completingContent .left ul li p.title {
+    margin-bottom: 30px;
+    width: 200px;
+    padding-left: 60px;
+  }
+  .completing .container .completingContent .left ul li:nth-child(1) p.title {
+    margin-bottom: 20px;
+  }
+
+
+  .selectBreakage .container p.heading {
+      font-size: 1.5em;
+      margin-top: 10px;
+  }
+  .selectBreakage .container .wrap .selectBreakageContent .selectBreakWrapp2 .selectBreakRowItem {
+    padding-left: 20%; 
+  }
+
+
+  .anotherTwo .container .anotherTwoContent p.title {
+    width: 100%;
+  }
+
+
+  .contacts .container .bannerContacts .banner {
+    height: 200px;
+  }
+}
+
+
+
+
+@media (min-width: 300px) and (max-width: 399px) {
+  
+  .header .headerBottomBanner .bannerContent .container .leftBanner .heading {
+    font-size: 1.9em;
+  }
+  .header .headerBottomBanner .bannerContent .container .leftBanner ul {
+    padding: 0px 0 0 20px;
+  }
+  .header .headerBottomBanner .bannerContent .container .leftBanner p.title, .header .headerBottomBanner .bannerContent .container .leftBanner ul li {
+    font-size: 1.5em;
+  }
+
+  .lowPrices {
+    padding: 20px 0 10px;
+  }
+  .completing .container .div-heading, .lowPrices .container3 .div-heading {
+    line-height: 24px;
+    font-size: 1.9em;
+  }
+  .lowPrices .container3 p.heading {
+    font-size: 1.3em;
+    line-height: 17px;
+  }
+  .lowPrices .mobileBlock .mobileBlockContent ul.mobileLeft {
+    padding-left: 40px;
+  }
+
+
+  .completing .container .completingContent .left ul li:nth-child(1) p.title {
+    margin-bottom: 10px;
+  }
+  .completing .container .completingContent .left ul li p.title {
+    margin-bottom: 20px;
+    width: 200px;
+    padding-left: 60px;
+  }
+
+
+  .completing .container .completingContent .right iframe {
+    height: 164px;
+  }
+
+
+  .selectBreakage .container p.heading {
+    font-size: 1.3em;
+    width: 70%;
+    margin: 10px auto;
+  }
+  .selectBreakage .container .wrap .selectBreakageContent .buttonForm a.btn.btn-primary {
+    font-size: 1.1em;
+  }
+
+
+  .another .container .anotherContent .left .heading {
+    padding-bottom: 5px;
+  }
+
+
+  .anotherTwo .container .anotherTwoContent p.title {
+    line-height: 26px;
+    font-size: 1.9em;
+  }
+  .anotherTwo .container .anotherTwoContent p.content {
+    font-size: 1.3em;
+  }
+
+
+  .anotherThree .container .anotherThreeContent .left iframe {
+    height: 164px;
+  }
+
+  .contacts .container .contactsContent .item {
+    margin-left: 23%;
+  }
+  .contacts .container .bannerContacts .banner {
+    height: 156px;
+  }
+
+
+  .forma .container .heading .formHeading {
+    line-height: 24px;
+  }
+
+
+  .footer .container .footerContent .item {
+    margin-bottom: 30px;
+  }
+
+
+  .contacts .container .bannerContacts .banner {
+    height: 182px;
+  }
+
 }
 
 
