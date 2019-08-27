@@ -575,6 +575,75 @@ header#navbar {
     }
   }
 
+  .lowPrices .mobileBlock {
+    display: none;
+    .mobileBlockContent {
+      display: flex;
+      justify-content: space-around;
+      padding: 50px 0 0;
+      ul {
+        padding: 0;
+        margin: 0;
+        li {
+          list-style: none;
+          text-align: left;
+          text-transform: uppercase;
+          font-size: 1.45em;
+          color: #00bdf1;
+          font-weight: 600;
+          position: relative;
+          margin-bottom: 45px;
+        }
+        li:hover {
+          color: #000;
+        }
+        li:before {
+          content: '';
+          background-image: url(/sites/all/themes/idoctor_theme/image/unselected-model39.png);
+          position: absolute;
+          top: -11px;
+          left: -51px;
+          width: 39px;
+          height: 39px;
+        }
+        li:hover {
+          color: #f5a720;
+          transition: .3s ease;
+        }
+        li:hover:after {
+         content: '';
+          position: absolute;
+          width: 41px;
+          height: 41px;
+          border: 4px solid #f5a720;
+          border-radius: 30px;
+          transition: .3s;
+          top: -10px;
+          left: -52px;
+        }
+      }
+      ul.mobileLeft {
+        padding-left: 70px;
+      }
+    }
+    p.choose {
+      text-transform: uppercase;
+      font-size: 1.63em;
+      padding: 25px 0;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      position: relative;
+      }
+    p.choose:after {
+      content: '';
+      background-image: url(/sites/all/themes/idoctor_theme/image/str-choose.png);
+      position: absolute;
+      top: 32px;
+      right: 150px;
+      width: 16px;
+      height: 10px;
+    }
+  }
 
   .container#dinamicBlock1 {
     .line {
@@ -582,9 +651,7 @@ header#navbar {
       margin-top: 20px;
     }
   }
-  .mobileBlock {
-    display: none;
-  }
+
   .container3 {
     .buttons#dinamicBlock2 {
       padding: 40px 80px;
@@ -3541,11 +3608,95 @@ background: #f9f9f9;
   }
 
 
+  header#navbar {
+    height: 0;
+  }
+  .navbar-nav {
+    width: 100%;
+    margin: 0;
+  }
+  .navbar-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 23px;
+    margin: 0;
+  }
+  .navbar-toggle .icon-bar {
+    background: #000;
+  }
+  header#navbar .container .navbar-collapse {
+    top: 61px;
+    width: 100%;
+    position: absolute;
+    margin: 0px;
+    z-index: 1000;
+    background: rgb(65, 86, 107);
+    left: 0px;
+    padding-bottom: 100px;
+  }
+  header#navbar .container .navbar-collapse nav {
+    padding-top: 20px;
+  }
+  header#navbar .container .navbar-collapse nav ul.menu.nav.navbar-nav li {
+    margin: 0;
+    text-align: center;
+  }
+  header#navbar .container .navbar-collapse nav ul.menu.nav.navbar-nav li a {
+    font-size: 1.5em;
+    display: inline;
+    padding: 0;
+  }
+  header#navbar .container .navbar-collapse nav ul.menu.nav.navbar-nav li:first-child a:after {
+    top: 9px;
+    right: -30px;
+    background-size: 16px;
+    width: 16px;
+    height: 6px;
+  }
+  header#navbar .container .navbar-collapse nav .btn.btn-primary {
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    margin: -100px;
+    width: 200px;
+    height: 36px;
+    line-height: 24px;
+  }
+   header#navbar .container .navbar-collapse nav .btn.btn-primary a {
+    font-size: 1.1em;
+  }
+
+
+
+  .header .container .headerTop {
+    padding: 16px 0 13px;
+  }
+  .header .container .headerTop .headerTopContent {
+    display: inline;
+  }
+  .header .container .headerTop .row .col-md-3 .logotype {
+    margin: 0;
+  }
+  .header .container .headerTop .row .col-md-3 .logotype img {
+    width: 40px;
+  }
+  .header .container .headerTop .row .col-md-3 .logotype p.logo {
+    font-size: 2.5em;
+  }
+
+
   #address, #telephone {
     display: none;
   }
   .header .headerBottomBanner .bannerContent .container .leftBanner {
-    padding: 40px 30px;
+    padding: 40px 0;
+  }
+  .header .headerBottomBanner .bannerContent .container .leftBanner .wrapper {
+    width: 570px;
+  }
+  .header .headerBottomBanner .bannerContent .container .leftBanner .phoneBanner a.btn.btn-warning {
+    font-size: 1.1em;
   }
 
 
@@ -3553,80 +3704,13 @@ background: #f9f9f9;
     display: none;
   }
 
-  .lowPrices .container3 .topModels, .lowPrices .container3 .bottomModels, #dinamicBlock1 {
-    display: none;
-  }
 
   .lowPrices .mobileBlock {
     display: block;
-    .mobileBlockContent {
-      display: flex;
-      justify-content: space-around;
-      padding: 50px 0 0;
-      ul {
-        padding: 0;
-        margin: 0;
-        li {
-          list-style: none;
-          text-align: left;
-          text-transform: uppercase;
-          font-size: 1.45em;
-          color: #00bdf1;
-          font-weight: 600;
-          position: relative;
-          margin-bottom: 45px;
-        }
-        li:hover {
-          color: #000;
-        }
-        li:before {
-          content: '';
-          background-image: url(/sites/all/themes/idoctor_theme/image/unselected-model39.png);
-          position: absolute;
-          top: -11px;
-          left: -51px;
-          width: 39px;
-          height: 39px;
-        }
-        li:hover {
-          color: #f5a720;
-          transition: .3s ease;
-        }
-        li:hover:after {
-         content: '';
-          position: absolute;
-          width: 41px;
-          height: 41px;
-          border: 4px solid #f5a720;
-          border-radius: 30px;
-          transition: .3s;
-          top: -10px;
-          left: -52px;
-        }
-      }
-      ul.mobileLeft {
-        padding-left: 70px;
-      }
-    }
-    p.choose {
-      text-transform: uppercase;
-      font-size: 1.63em;
-      padding: 25px 0;
-      border-top: 1px solid #ccc;
-      border-bottom: 1px solid #ccc;
-      position: relative;
-      }
-    p.choose:after {
-      content: '';
-      background-image: url(/sites/all/themes/idoctor_theme/image/str-choose.png);
-      position: absolute;
-      top: 32px;
-      right: 150px;
-      width: 16px;
-      height: 10px;
-    }
   }
-
+  .lowPrices .container3 .topModels, .lowPrices .container3 .bottomModels, #dinamicBlock1 {
+    display: none;
+  }
   .lowPrices .container3 .buttons#dinamicBlock2 {
     display: block;  
     padding: 15px 0 0;  
