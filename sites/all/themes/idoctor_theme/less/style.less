@@ -582,6 +582,9 @@ header#navbar {
       margin-top: 20px;
     }
   }
+  .mobileBlock {
+    display: none;
+  }
   .container3 {
     .buttons#dinamicBlock2 {
       padding: 40px 80px;
@@ -2306,23 +2309,6 @@ background: #f9f9f9;
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   .masters {
     height: 473px;
   }
@@ -3042,12 +3028,12 @@ background: #f9f9f9;
   .header .container .headerTop .row .col-md-3 .logotype p.logo {
     margin: -5px 0 0 4px;
   }
-  .header .container .headerTop .row .col-md-3 .find-us {
+  .header .container .headerTop .row #find-us {
     display: none; 
   }
   .header .container .headerTop .row .col-md-3 .address {
     width: auto;
-    margin-left: -23px;
+    margin: 0;
   }
   .header .container .headerTop .row .col-md-3 .telephone p.telTop {
     margin: -11px 0 14px;
@@ -3541,9 +3527,347 @@ background: #f9f9f9;
 }
 
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .container {
     width: 570px;
+  }
+
+
+  .div-heading {
+    margin: 0 auto;
+    width: 80%;
+    line-height: 36px;
+    font-size: 2.6em;
+  }
+
+
+  #address, #telephone {
+    display: none;
+  }
+  .header .headerBottomBanner .bannerContent .container .leftBanner {
+    padding: 40px 30px;
+  }
+
+
+  .serviceCenter {
+    display: none;
+  }
+
+  .lowPrices .container3 .topModels, .lowPrices .container3 .bottomModels, #dinamicBlock1 {
+    display: none;
+  }
+
+  .lowPrices .mobileBlock {
+    display: block;
+    .mobileBlockContent {
+      display: flex;
+      justify-content: space-around;
+      padding: 50px 0 0;
+      ul {
+        padding: 0;
+        margin: 0;
+        li {
+          list-style: none;
+          text-align: left;
+          text-transform: uppercase;
+          font-size: 1.45em;
+          color: #00bdf1;
+          font-weight: 600;
+          position: relative;
+          margin-bottom: 45px;
+        }
+        li:hover {
+          color: #000;
+        }
+        li:before {
+          content: '';
+          background-image: url(/sites/all/themes/idoctor_theme/image/unselected-model39.png);
+          position: absolute;
+          top: -11px;
+          left: -51px;
+          width: 39px;
+          height: 39px;
+        }
+        li:hover {
+          color: #f5a720;
+          transition: .3s ease;
+        }
+        li:hover:after {
+         content: '';
+          position: absolute;
+          width: 41px;
+          height: 41px;
+          border: 4px solid #f5a720;
+          border-radius: 30px;
+          transition: .3s;
+          top: -10px;
+          left: -52px;
+        }
+      }
+      ul.mobileLeft {
+        padding-left: 70px;
+      }
+    }
+    p.choose {
+      text-transform: uppercase;
+      font-size: 1.63em;
+      padding: 25px 0;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      position: relative;
+      }
+    p.choose:after {
+      content: '';
+      background-image: url(/sites/all/themes/idoctor_theme/image/str-choose.png);
+      position: absolute;
+      top: 32px;
+      right: 150px;
+      width: 16px;
+      height: 10px;
+    }
+  }
+
+  .lowPrices .container3 .buttons#dinamicBlock2 {
+    display: block;  
+    padding: 15px 0 0;  
+  }
+  .lowPrices .container3 .buttons#dinamicBlock2 a.btn.btn-primary {
+    padding: 10px;
+    font-size: 1.27em;
+    display: block;
+    width: 200px;
+    margin: 0 auto 15px;
+    border-radius: 25px;  
+  }
+
+
+  .completing .container .completingContent .left ul {
+    padding-left: 60px;
+  }
+  .completing .container .completingContent .left ul li:nth-child(1):before {
+    width: 29px;
+    height: 60px;
+    top: 4px;
+    left: -52px;
+    background-size: 29px;
+  }
+  .completing .container .completingContent .left ul li:nth-child(2):before {
+    width: 34px;
+    height: 60px;
+    top: 7px;
+    left: -54px;
+    background-size: 34px;
+  }
+  .completing .container .completingContent .left ul li:nth-child(3):before {
+    width: 35px;
+    height: 58px;
+    top: 4px;
+    left: -55px;
+    background-size: 35px;
+  }
+  .completing .container .completingContent .right iframe {
+    height: 300px;
+  }
+
+
+  .selectBreakage .container .wrap .selectBreakageContent .selectBreakWrapp2 .selectBreakRowItem {
+    width: 100%;
+    padding-left: 180px; 
+    margin-bottom: 40px;
+  }
+  .selectBreakage .container .wrap .selectBreakageContent .selectBreakWrapp2 .selectBreakRowItem p.title {
+    font-size: 1.63em;
+    margin-bottom: 25px;
+    padding-left: 32px;
+  }
+  .selectBreakage .container .wrap .selectBreakageContent .selectBreakWrapp2 .selectBreakRowItem p.title:before {
+    top: 0;
+    background-size: 17px; 
+  }
+  .selectBreakage .container .wrap .selectBreakageContent .selectBreakWrapp2 .selectBreakRowItem:nth-child(1) p.title:before {
+    top: 0;
+    background-size: 17px;
+  }
+  .selectBreakage .container .wrap .selectBreakageContent .selectBreakWrapp2 .selectBreakRowItem #title2:before {
+    background-size: 11px;
+    width: 11px;
+    height: 30px;
+  }
+  .selectBreakage .container .wrap .selectBreakageContent .selectBreakWrapp2 .selectBreakRowItem:nth-child(3) p.title:before {
+    top: 0;
+    background-size: 16px;
+  }
+  .selectBreakage .container .wrap .selectBreakageContent .selectBreakWrapp2 .selectBreakRowItem #title4:before {
+    background-size: 28px;
+    width: 28px;
+    height: 28px;
+    top: -1px;
+    left: -9px;
+  }
+  .selectBreakage .container .wrap .selectBreakageContent .selectBreakWrapp2 .selectBreakRowItem #title5:before {
+    background-size: 18px;
+    width: 18px;
+    height: 21px;
+    top: 3px;
+  }
+  .selectBreakage .container .wrap .selectBreakageContent .selectBreakWrapp2 .selectBreakRowItem #title7:before {
+    background-size: 26px;
+    width: 26px;
+    height: 27px;
+    left: -6px;
+  }
+  .selectBreakage .container .wrap .selectBreakageContent .selectBreakWrapp2 .selectBreakRowItem #title9:before {
+    background-size: 21px;
+    width: 21px;
+    height: 27px;
+    left: -5px;
+  }
+  .selectBreakage .container .wrap .selectBreakageContent .selectBreakWrapp2 .selectBreakRowItem .checkbox-label {
+    margin-bottom: 17px;
+  }
+  .selectBreakage .container .wrap .selectBreakageContent .selectBreakWrapp2 .selectBreakRowItem .checkbox-label input[type=checkbox]+span {
+    top: -1px;
+    width: 16px;
+    height: 16px;
+    border-radius: 1px;
+  }
+  .selectBreakage .container .wrap .selectBreakageContent .selectBreakWrapp2 .selectBreakRowItem .checkbox-label input[type=checkbox]:checked+span {
+    top: -1px;
+    padding: 0px;
+    width: 16px;
+    height: 16px;
+    background-size: 16px;
+}
+  .selectBreakage .container .wrap .selectBreakageContent .selectBreakWrapp2 .selectBreakRowItem p.check {
+    padding: 0 0 0 32px;
+    font-size: 1.27em;
+  }
+
+
+  .another {
+    padding: 30px 0 0;
+  }
+  .another .container .anotherContent .right {
+    display: none;
+  }
+
+
+  .anotherTwo .container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .anotherTwo .container .anotherTwoContent .wrap {
+    width: 570px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .anotherTwo .container .anotherTwoContent p.title {
+    margin: 0 auto 15px;
+    width: 75%;
+    line-height: 34px;
+  }
+  .anotherTwo .container .anotherTwoContent p.content {
+    margin: 0 auto 15px;
+    font-size: 1.45em;
+    width: 70%;
+  }
+
+
+  .anotherThree .container .anotherThreeContent .left iframe {
+    height: 300px;
+  }
+
+
+  .contacts .container .contactsContent { 
+    display: block;
+  }
+  .contacts .container .contactsContent .item {
+    width: 230px;
+    padding: 0;
+    text-align: left;
+    margin: 0 auto 30px;
+  }
+  .contacts .container .contactsContent .addressContacts:before {
+    left: -50px;
+    background-size: 33px;
+    width: 16px;
+    height: 30px;
+    top: 0;
+    width: 33px;
+    height: 61px;
+  }
+  .contacts .container .contactsContent .workTimeContacts:before {
+    background-size: 25px;
+    left: -46px;
+    width: 25px;
+    height: 48px;
+    top: 0;
+}
+.contacts .container .contactsContent .phoneContacts:before {
+    left: -58px;
+    background-size: 47px;
+    width: 47px;
+    height: 47px;
+    top: 0;
+}
+  .contacts .container .bannerContacts .banner {
+    width: 100%;
+    height: 290px;
+  }
+  .contacts .container .bannerContacts .banner:nth-child(1), .contacts .container .bannerContacts .banner:nth-child(3) {
+    display: none;
+  }
+
+
+  .forma .container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .forma .container .wrap {
+    width: 570px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .forma .container .heading .formHeading {
+    line-height: 36px;
+  }
+  .forma .container .formContent form .formInputs input.name, .forma .container .formContent form .formInputs input.phone, .forma .container .formContent form .formInputs input.reason {
+    width: 300px;
+    margin: 0 0 10px 0;
+    letter-spacing: 0;
+    font-size: 1.1em;
+  }
+  .forma .container .formContent form .formInputs .btn-primary  {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+
+  .footer .container .footerContent {
+    display: block;
+  }
+  .footer .container .footerContent .addressWorkTime {
+    display: none;
+  }
+  .footer .container .footerContent .item {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .footer .container .footerContent .social p.title {
+    display: none;
+  }
+  .footer .container .footerContent .social .socialDiv {  
+    border: none;
+    padding: 0; 
   }
 }
 

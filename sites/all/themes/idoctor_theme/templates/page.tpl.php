@@ -122,19 +122,19 @@
               <p class="logo">iDoctor</p>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" id="find-us">
             <div class="find-us">
               <p class="find-us-top">Сервисный центр в Томске</p>
               <p class="find-us-bottom green"><a href="#maps" class="green">Как нас найти?</a></p>
             </div>
           </div>    
-          <div class="col-md-3">
+          <div class="col-md-3" id="address">
             <div class="address">
               <p class="addTop">1905 года переулок, 18</p>
               <p class="addBottom">Пн - Пт <span>с</span> 10 <span>до</span> 19, сб <span>с</span> 11 <span>до</span> 16, вс ВЫХОДНОЙ</p>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" id="telephone">
             <div class="telephone">
               <p class="telTop"><span>Городской номер</span></p>
               <p class="green telBottom"><a href="tel:8382332277" class="green">+7 (382) 33-22-77</a></p>
@@ -228,9 +228,29 @@
         <div class="col-md-3 bottomModelsItem"><p class="model">SAMSUNG</p></div>
       </div>
     </div>
+    
+    <div class="mobileBlock">
+      <div class="mobileBlockContent">
+        <ul class="mobileLeft">
+          <li>iphone</p>
+          <li>IPAD</p>
+          <li>MACBOOK</p>
+          <li>XIAOMI</p>
+        </ul>
+        <ul class="mobileRight">
+          <li>HONOR</p>
+          <li>HUAWEI</p>
+          <li>MEIZU</p>
+          <li>SAMSUNG</p>
+        </ul>
+      </div>
+       <p class="choose">Выберите устройство</p>
+    </div>
+
     <div class="container" id="dinamicBlock1">
       <div class="line"></div>
     </div>
+
     <div class="container3">
       <div class="row d-flex j-content-around buttons" id="dinamicBlock2">
         <a href="" class="btn btn-primary">iphone 8</a>
@@ -492,9 +512,11 @@
   <div class="anotherTwo">
     <div class="container">
       <div class="anotherTwoContent">
-        <p class="title">Разбили дисплей Iphone, но он работает?</p>
-        <p class="content">Сохраним оригинальную матрицу вашего айфона, поменяем только стекло</p>
-        <a href="" class="btn btn-warning">подробнее</a>
+        <div class="wrap">
+          <p class="title">Разбили дисплей Iphone, но он работает?</p>
+          <p class="content">Сохраним оригинальную матрицу вашего айфона, поменяем только стекло</p>
+          <a href="" class="btn btn-warning">подробнее</a>
+        </div>
       </div>
     </div>
   </div>
@@ -570,20 +592,22 @@
   <div class="forma">
     <div class="container">
       <div class="formWrapp">
-        <div class="row heading div-heading">
-          <div class="col-md-4"></div>
-          <div class="col-md-8 formHeading">Нужен ремонт? Оформите заявку!</div>
-        </div>
-        <div class="formContent">
-          <form action="" clas="row d-flex j-content-between">
+        <div class="wrap">
+          <div class="row heading div-heading">
             <div class="col-md-4"></div>
-            <div class="col-md-7 formInputs">
-              <input type="text" name="name" placeholder="ИМЯ" class="name">
-              <input type="text" name="phone" placeholder="Телефон" class="phone">
-              <input type="text" name="reason" placeholder="что же у вас сломалось?" class="reason">
-              <a href="" class="btn btn-primary">Подробнее</a>
-            </div>
-          </form>
+            <div class="col-md-8 formHeading">Нужен ремонт? Оформите заявку!</div>
+          </div>
+          <div class="formContent">
+            <form action="" clas="row d-flex j-content-between">
+              <div class="col-md-4"></div>
+              <div class="col-md-7 formInputs">
+                <input type="text" name="name" placeholder="ИМЯ" class="name">
+                <input type="text" name="phone" placeholder="Телефон" class="phone">
+                <input type="text" name="reason" placeholder="что же у вас сломалось?" class="reason">
+                <a href="" class="btn btn-primary">Подробнее</a>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>

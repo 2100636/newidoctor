@@ -60,29 +60,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
-
-  <?php print $styles; ?>
-  <!-- <link href="/sites/all/themes/idoctor_theme/css/foundation.css" rel="stylesheet" type="text/css" />
-  <link href="/sites/all/themes/idoctor_theme/css/twentytwenty.css" rel="stylesheet" type="text/css" /> -->
-  
+  <?php print $styles; ?>  
   <!-- HTML5 element support for IE6-8 -->
   <!--[if lt IE 9]>
     <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
-
   <?php print $scripts; ?>
-  <!-- <script src="/sites/all/themes/idoctor_theme/js/jquery.event.move.js"></script>
-  <script src="/sites/all/themes/idoctor_theme/js/jquery.twentytwenty.js"></script>
-  <script>
-    $(function(){
-      $(".twentytwenty-container").twentytwenty({
-        default_offset_pct: 0.7,
-        before_label: 'ДО',
-        after_label: 'ПОСЛЕ'
-      });
-    });
-  </script> -->
-
 </head>
 <body<?php print $body_attributes; ?>>
   <div id="skip-link">
