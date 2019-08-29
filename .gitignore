@@ -2,10 +2,11 @@
 sites/*/settings*.php
 
 # Ignore paths that contain user-generated content.
-sites/*/files
+#sites/*/files
 sites/*/private
 
 _backups
-
-
 111111.txt
+
+CreateDatabase.bat
+UpLoadDatabase.bat
