@@ -94,11 +94,11 @@
       <div class="navbar-collapse collapse" id="navbar-collapse">
         <nav role="navigation">
           <?php if (!empty($primary_nav)): ?>
-            <?php print render($primary_nav); ?>
+          <?php print render($primary_nav); ?>
           <?php endif; ?>
-           <div class="btn btn-primary">
-      <a href="">статус заказа</a>
-    </div>
+          <div class="btn btn-primary">
+            <a href="">статус заказа</a>
+          </div>
         </nav>
       </div>
     <?php endif; ?>
@@ -148,7 +148,9 @@
         <div class="container">
           <div class="leftBanner">
             <div class="wrapper">
-              <div class="heading">ремонт СМАРТФОНОВ в томске</div>
+              <div class="heading">
+                ремонт СМАРТФОНОВ в томске
+              </div>
               <p class="title">от 390 руб за 15 минут</p>
               <ul>
                 <li>Работаем в Томске уже 8 лет!</li>
@@ -211,44 +213,57 @@
   <!-- низкие цены на ремонт ...  -->
   <div class="lowPrices">
     <div class="container3">
-      <div class="heading div-heading">Низкие цены на ремонт iphone в томске</div>
+      <div class="heading div-heading">
+        Низкие цены на ремонт iphone в томске
+      </div>
       <p class="heading">выберите модель вашего устройства</p>
       <div class="row d-flex j-content-around topModels">
         <div class="col-md-4 topModelsItem">
           <p class="model">IPHONE</p>
         </div>
-        <div class="col-md-4 topModelsItem"><p class="model">IPAD</p></div>
-        <div class="col-md-4 topModelsItem"><p class="model">MACBOOK</p></div>
+        <div class="col-md-4 topModelsItem"><p class="model">IPAD</p>
+        </div>
+        <div class="col-md-4 topModelsItem"><p class="model">MACBOOK</p>
+        </div>
       </div>
       <div class="row d-flex j-content-between bottomModels">
-        <div class="col-md-3 bottomModelsItem"><p class="model">XIAOMI</p></div>
-        <div class="col-md-3 bottomModelsItem"><p class="model">HONOR</p></div>
-        <div class="col-md-3 bottomModelsItem"><p class="model">HUAWEI</p></div>
-        <div class="col-md-3 bottomModelsItem"><p class="model">MEIZU</p></div>
-        <div class="col-md-3 bottomModelsItem"><p class="model">SAMSUNG</p></div>
+        <div class="col-md-3 bottomModelsItem"><p class="model">XIAOMI</p>
+        </div>
+        <div class="col-md-3 bottomModelsItem"><p class="model">HONOR</p>
+        </div>
+        <div class="col-md-3 bottomModelsItem"><p class="model">HUAWEI</p>
+        </div>
+        <div class="col-md-3 bottomModelsItem"><p class="model">MEIZU</p>
+        </div>
+        <div class="col-md-3 bottomModelsItem"><p class="model">SAMSUNG</p>
+        </div>
       </div>
     </div>
     
     <div class="mobileBlock">
       <div class="mobileBlockContent">
         <ul class="mobileLeft">
-          <li>iphone</p>
-          <li>IPAD</p>
-          <li>MACBOOK</p>
-          <li>XIAOMI</p>
+          <li>iphone</li>
+          <li>IPAD</li>
+          <li>MACBOOK</li>
+          <li>XIAOMI</li>
         </ul>
         <ul class="mobileRight">
-          <li>HONOR</p>
-          <li>HUAWEI</p>
-          <li>MEIZU</p>
-          <li>SAMSUNG</p>
+          <li>HONOR</li>
+          <li>HUAWEI</li>
+          <li>MEIZU</li>
+          <li>SAMSUNG</li>
         </ul>
       </div>
-       <p class="choose">Выберите устройство</p>
+      <div class="chooseBlock">
+        <p class="choose">Выберите устройство</p>
+      </div>
     </div>
 
     <div class="container" id="dinamicBlock1">
-      <div class="line"></div>
+      <div class="line">
+        
+      </div>
     </div>
 
     <div class="container3">
@@ -495,8 +510,8 @@
         <div class="heading div-heading">Какой-то заголовок</div>
         <div class="leftContent">
           <ul>
-            <li><p>Каждый владелец <span>IPHONE 10, XS, XS Max, X2</span> старается максимально использовать его возможности. Но иногда случаются<br> неисправности в работе гаджета, которые в один момент лишают человека доступа к обычной мобильной связи. Что делать? Срочно обрашаться к мастерам сервисного центра IDoctor</p></li>
-            <li><p>Наша компания является одной из первых по ремонту смартфонов в городе Томске. Основная специализация СЦ - обслуживающее техники Apple. Мастера сервис-центра имеют в своем арсенале все необходимое оборудование, инструментарий и Оригинальные комплектующие. Поэтому ремонт <span>IPHONE X, XC MAX, XP</span><br> выполняется на высоком качественном уровне</p></li>
+            <li><p>Каждый владелец <span>IPHONE 10, XS, XS Max, X2</span> старается максимально использовать его возможности. Но иногда случаются неисправности в работе гаджета, которые в один момент лишают человека доступа к обычной мобильной связи. Что делать? Срочно обрашаться к мастерам сервисного центра IDoctor</p></li>
+            <li><p>Наша компания является одной из первых по ремонту смартфонов в городе Томске. Основная специализация СЦ - обслуживающее техники Apple. Мастера сервис-центра имеют в своем арсенале все необходимое оборудование, инструментарий и Оригинальные комплектующие. Поэтому ремонт <span>IPHONE X, XC MAX, XP</span> выполняется на высоком качественном уровне</p></li>
           </ul>
         </div>
       </div>
@@ -594,12 +609,15 @@
       <div class="formWrapp">
         <div class="wrap">
           <div class="row heading div-heading">
-            <div class="col-md-4"></div>
-            <div class="col-md-8 formHeading">Нужен ремонт? Оформите заявку!</div>
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-8 formHeading">Нужен ремонт? Оформите заявку!
+            </div>
           </div>
           <div class="formContent">
             <form action="" clas="row d-flex j-content-between">
-              <div class="col-md-4"></div>
+              <div class="col-md-4">
+              </div>
               <div class="col-md-7 formInputs">
                 <input type="text" name="name" placeholder="ИМЯ" class="name">
                 <input type="text" name="phone" placeholder="Телефон" class="phone">
