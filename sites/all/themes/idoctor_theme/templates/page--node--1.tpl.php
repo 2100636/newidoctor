@@ -358,21 +358,9 @@
 </div>
 
 
-<style>
-.starwrap {
-  margin-top: 10px
-}
-.star {
-  background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ5Ljk0IDQ5Ljk0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OS45NCA0OS45NDsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPgo8cGF0aCBkPSJNNDguODU2LDIyLjczYzAuOTgzLTAuOTU4LDEuMzMtMi4zNjQsMC45MDYtMy42NzFjLTAuNDI1LTEuMzA3LTEuNTMyLTIuMjQtMi44OTItMi40MzhsLTEyLjA5Mi0xLjc1NyAgYy0wLjUxNS0wLjA3NS0wLjk2LTAuMzk4LTEuMTktMC44NjVMMjguMTgyLDMuMDQzYy0wLjYwNy0xLjIzMS0xLjgzOS0xLjk5Ni0zLjIxMi0xLjk5NmMtMS4zNzIsMC0yLjYwNCwwLjc2NS0zLjIxMSwxLjk5NiAgTDE2LjM1MiwxNGMtMC4yMywwLjQ2Ny0wLjY3NiwwLjc5LTEuMTkxLDAuODY1TDMuMDY5LDE2LjYyMmMtMS4zNTksMC4xOTctMi40NjcsMS4xMzEtMi44OTIsMi40MzggIGMtMC40MjQsMS4zMDctMC4wNzcsMi43MTMsMC45MDYsMy42NzFsOC43NDksOC41MjhjMC4zNzMsMC4zNjQsMC41NDQsMC44ODgsMC40NTYsMS40TDguMjI0LDQ0LjcwMSAgYy0wLjE4MywxLjA2LDAuMDk1LDIuMDkxLDAuNzgxLDIuOTA0YzEuMDY2LDEuMjY3LDIuOTI3LDEuNjUzLDQuNDE1LDAuODcxbDEwLjgxNC01LjY4NmMwLjQ1Mi0wLjIzNywxLjAyMS0wLjIzNSwxLjQ3MiwwICBsMTAuODE1LDUuNjg2YzAuNTI2LDAuMjc3LDEuMDg3LDAuNDE3LDEuNjY2LDAuNDE3YzEuMDU3LDAsMi4wNTktMC40NywyLjc0OC0xLjI4OGMwLjY4Ny0wLjgxMywwLjk2NC0xLjg0NiwwLjc4MS0yLjkwNCAgbC0yLjA2NS0xMi4wNDJjLTAuMDg4LTAuNTEzLDAuMDgzLTEuMDM2LDAuNDU2LTEuNEw0OC44NTYsMjIuNzN6IiBmaWxsPSIjRkZEQTQ0Ii8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=);
-  width: 21px;
-  height: 21px;
-  display: inline-block;
-  background-size: 100%
-}
 
-</style>
-<!-- мастера не надо пока -->
-<div class="masters" style="height: auto;">
+<!-- мастера -->
+<div class="masters">
   <div class="container">
     <?php 
       $block = block_load('views', 'masters-block');
@@ -382,6 +370,11 @@
     ?>
   </div>
 </div>
+
+
+
+
+
 
 
 
@@ -526,16 +519,25 @@
 
 <script>
   (function($) {
-    $(document).ready(function() {
 
       $(document).ready(function(){
         $(".masters .owl-carousel").owlCarousel({
-          loop:true
+          loop:true, 
+          items : 4,
+          autoplay : true,
+          dots: true,
+          smartSpeed: 2000,
+          autoplayTimeout: 5000,
+          nav : true,
+          responsive:{
+            0:{items:1},
+            767:{items:2},
+            991:{items:3},
+            1499:{items:4}
+            }
+          });
         });
-      });
-
-    });
-  })(jQuery);
+      })(jQuery);
 
 </script>  
 <?php 

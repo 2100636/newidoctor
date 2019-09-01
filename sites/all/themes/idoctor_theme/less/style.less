@@ -45,29 +45,42 @@ a {
 .a-items-flex-start {
   align-items: flex-start;
 }
-.div-heading {
+
+
+
+.div-heading, .masters .container section h2 {
   font-size: 3em;
   color: #000;
   text-transform: uppercase;
   text-align: center;
+  padding: 0 65px;
   position: relative;
-}
-.div-heading:before, .div-heading:after {
-  content: '';
-  border-bottom: 1px solid #e5e5e5;
-  width: 700px;
-  height: 1px;
-  top: 35px;
-  left: -354px;
-  position: absolute;
+  z-index: 1;
+  display: inline;
 }
 
+
+ 
 .maket img {
   position: absolute;
   opacity: 0.7;
-  left: -9px;
-  top: 0px;
+  left: -13px;
+  top: -43px;
 }
+
+
+.lowPrices, .completing, .selectBreakage, .masters, .anotherThree, .contacts {
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+    z-index: 0;
+  }
+}
+
 
 
 header#navbar {
@@ -358,6 +371,17 @@ header#navbar {
 
 .header {
   font-family: 'Open Sans', sans-serif;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px solid #b7b7b7;
+    bottom: 2px;
+    left: 0;
+    z-index: 99999;
+  }
   .container {
     .headerTop {
       color: #4a4c4e; 
@@ -374,6 +398,9 @@ header#navbar {
           }
           .logotype {
             margin-top: 2px;
+            &:hover {
+              text-decoration: none;
+            }
             img {
               margin: -5px 0 0 0;
             }
@@ -381,6 +408,8 @@ header#navbar {
               font-size: 3.18em;
               margin: -14px 0 0 11px;
               font-weight: 600;
+              height: 61px;
+              color: #4a4c4e;
             }
           }
           .find-us {
@@ -479,18 +508,7 @@ header#navbar {
     }
   } 
   .headerBottomBanner {
-    position: relative;
-    &:before {
-      content: '';
-      position: absolute;
-      height: 1px;
-      width: 100%;
-      border-bottom: 1px solid #b7b7b7;
-      top: -3px;
-      left: 0;
-    }
     .bannerContent {
-     
       .container {
         width: 100%;
         padding: 0;
@@ -509,7 +527,7 @@ header#navbar {
           p.title {
             font-size: 1.5em;
             font-weight: 700;
-            border-bottom: 2px solid #999;
+            border-bottom: 1px solid #999;
             padding-bottom: 23px;
             width: 100%;
             color: #fff;
@@ -603,7 +621,7 @@ header#navbar {
       position: relative;
       &:before {
         content: '';
-        border-bottom: 1px solid #e5e5e5;
+        border-bottom: 1px solid #d8d8d8;
         width: 670px;
         height: 1px;
         top: 80px;
@@ -613,7 +631,7 @@ header#navbar {
       }
       &:after {
         content: '';
-        border-bottom: 1px solid #e5e5e5;
+        border-bottom: 1px solid #d8d8d8;
         width: 670px;
         height: 1px;
         top: 80px;
@@ -686,18 +704,24 @@ header#navbar {
   background: #f9f9f9;
   text-align: center;
   padding: 91px 0 70px;
+  position: relative;
+  &:before {
+    top: 125px;
+  }
   .container3 {
     max-width: 1270px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-
+    .div-heading {
+      background: #f9f9f9;
+    }
     p.heading {
       font-size: 1.88em;
-        padding-top: 14px;
-        text-transform: uppercase;
-        margin-bottom: -3px;
+      padding-top: 14px;
+      text-transform: uppercase;
+      margin-bottom: -3px;
     }
     .topModels {
       .topModelsItem {
@@ -891,7 +915,6 @@ header#navbar {
       padding: 25px 0;
       border-top: 1px solid #ccc;
       border-bottom: 1px solid #ccc;
-
       p.choose {
         text-transform: uppercase;
         font-size: 1.63em;
@@ -940,7 +963,15 @@ header#navbar {
 
 .completing {
   padding: 75px 0;
+  position: relative;
+  text-align: center;
+  &:before {
+    top: 109px;
+  }
   .container {
+    .div-heading {
+      background: #fff;
+    }
     .completingContent {
       padding: 81px 1px 0 60px;
       align-items: flex-start;
@@ -956,6 +987,7 @@ header#navbar {
               font-size: 1.5em;
               font-weight: 700;
               text-transform: uppercase;
+              text-align: left;
             }
             p.content {
               font-size: 1.38em;
@@ -1022,7 +1054,15 @@ header#navbar {
 .selectBreakage {
   background: #f9f9f9;
   padding: 65px 0 59px;
+  position: relative;
+  text-align: center;
+  &:before {
+    top: 100px;
+  }
   .container {
+    .div-heading {
+      background: #f9f9f9;
+    }
     p.heading {
       font-size: 1.88em;
       text-transform: uppercase;
@@ -1031,8 +1071,8 @@ header#navbar {
       margin-bottom: 32px;
     }
     .wrap {
-      margin: 0 auto;
-      margin-left: -4px;
+      margin: 0 auto 0 -4px;
+      text-align: left;
       .selectBreakageContent {
         color: #4a4c4e;
         background: #fff;
@@ -1207,8 +1247,136 @@ header#navbar {
 
 
 .masters {
-  background: #c58181;
-  height: 770px;
+  padding: 60px 0;
+  position: relative;
+  &:before {
+    top: 88px;
+  }
+  text-align: center;
+  .container {
+    section {
+      h2 {
+        font-size: 3em;
+        text-transform: uppercase;
+        width: 66%;
+        margin: 0 auto 25px;
+        line-height: 55px;
+        display: block;
+        background: #fff;
+      }
+      .view-masters {
+        .view-header {
+          p.heading {
+            font-size: 1.88em;
+            text-transform: uppercase;
+            max-width: 810px;
+            margin: 0 auto;
+            line-height: 40px;
+          }
+        }
+        .owl-carousel {
+          margin-top: 100px;
+          .owl-stage-outer {
+            .owl-stage {
+              .owl-item {
+                .views-row {
+                  .views-field-field-photo {
+                    .field-content {
+                      img.img-responsive {
+                        display: block;
+                        width: 50%;
+                        margin: 0 auto;
+                        border-radius: 100%;
+                      }
+                      img.img-responsive + img.img-responsive {
+                        opacity: 0;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 1;
+                        -webkit-transition: all 320ms ease;
+                        -moz-transition: all 320ms ease;
+                        -ms-transition: all 320ms ease;
+                        -o-transition: all 320ms ease;
+                        transition: all 320ms ease;
+                      }
+                    }  
+                  }
+                }
+                .views-field-nid {
+                  span.field-content {
+                    .starwrap {
+                      display: flex;
+                      justify-content: space-between;
+                      width: 182px;
+                      margin: 20px auto 16px;
+                      .star {
+                        background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ5Ljk0IDQ5Ljk0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OS45NCA0OS45NDsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPgo8cGF0aCBkPSJNNDguODU2LDIyLjczYzAuOTgzLTAuOTU4LDEuMzMtMi4zNjQsMC45MDYtMy42NzFjLTAuNDI1LTEuMzA3LTEuNTMyLTIuMjQtMi44OTItMi40MzhsLTEyLjA5Mi0xLjc1NyAgYy0wLjUxNS0wLjA3NS0wLjk2LTAuMzk4LTEuMTktMC44NjVMMjguMTgyLDMuMDQzYy0wLjYwNy0xLjIzMS0xLjgzOS0xLjk5Ni0zLjIxMi0xLjk5NmMtMS4zNzIsMC0yLjYwNCwwLjc2NS0zLjIxMSwxLjk5NiAgTDE2LjM1MiwxNGMtMC4yMywwLjQ2Ny0wLjY3NiwwLjc5LTEuMTkxLDAuODY1TDMuMDY5LDE2LjYyMmMtMS4zNTksMC4xOTctMi40NjcsMS4xMzEtMi44OTIsMi40MzggIGMtMC40MjQsMS4zMDctMC4wNzcsMi43MTMsMC45MDYsMy42NzFsOC43NDksOC41MjhjMC4zNzMsMC4zNjQsMC41NDQsMC44ODgsMC40NTYsMS40TDguMjI0LDQ0LjcwMSAgYy0wLjE4MywxLjA2LDAuMDk1LDIuMDkxLDAuNzgxLDIuOTA0YzEuMDY2LDEuMjY3LDIuOTI3LDEuNjUzLDQuNDE1LDAuODcxbDEwLjgxNC01LjY4NmMwLjQ1Mi0wLjIzNywxLjAyMS0wLjIzNSwxLjQ3MiwwICBsMTAuODE1LDUuNjg2YzAuNTI2LDAuMjc3LDEuMDg3LDAuNDE3LDEuNjY2LDAuNDE3YzEuMDU3LDAsMi4wNTktMC40NywyLjc0OC0xLjI4OGMwLjY4Ny0wLjgxMywwLjk2NC0xLjg0NiwwLjc4MS0yLjkwNCAgbC0yLjA2NS0xMi4wNDJjLTAuMDg4LTAuNTEzLDAuMDgzLTEuMDM2LDAuNDU2LTEuNEw0OC44NTYsMjIuNzN6IiBmaWxsPSIjRkZEQTQ0Ii8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=);
+                        width: 23px;
+                        height: 23px;
+                        display: inline-block;
+                        background-size: 100%;
+                      }
+                    }
+                  }
+                } 
+                .views-field-title {
+                  span.field-content {
+                    font-size: 1.5em;
+                    font-weight: 700;
+                    margin: 10px 0 5px;
+                    text-transform: uppercase;
+                  }
+                }
+                .views-field-field-profile {
+                  .field-content {
+                    font-size: 1.3em;
+                    font-weight: 300;
+                    line-height: 40px;
+                    letter-spacing: -1px;
+                  }
+                }
+              }
+            }
+          }
+          .owl-nav {
+            display: block;
+            button {
+              width: 70px;
+              height: 70px;
+              outline: none;
+              position: absolute;
+              top: 28%;
+              background-repeat: no-repeat;
+              span {
+                display: none;
+              }
+            }
+            button.owl-prev {
+              background-image: url(/sites/all/themes/idoctor_theme/image/arrow_left.png);
+              left: 0;
+            }
+            button.owl-next {
+              background-image: url(/sites/all/themes/idoctor_theme/image/arrow_right.png);
+              right: 0;
+            }
+            .owl-dots {
+              button.owl-dot {
+                span {
+
+                }
+              }
+              button.owl-dot.active {
+                span {
+                  
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  } 
 }
 
 
@@ -1221,8 +1389,9 @@ header#navbar {
         width: 50%;
         margin-right: 55px;
         .heading {
-          padding-bottom: 36px;
+          padding: 0 0 36px 0;
           display: inline-block;
+          border-bottom: 1px solid #d6d6d6;
         }
         .leftContent {
           ul {
@@ -1256,11 +1425,10 @@ header#navbar {
       .right {
         position: relative;
         background-image: url(/sites/all/themes/idoctor_theme/image/breakGlass.jpg);
-        height: 439px;
+        height: 570px;
         width: 50%;
         background-repeat: no-repeat;
-        background-size: 100%;
-        margin-top: 110px;
+        background-size: cover;
       }
     }
   }
@@ -1316,9 +1484,18 @@ header#navbar {
 .anotherThree {
   background: #f9f9f9;
   padding: 42px 0 29px;
+  position: relative;
+  text-align: center;
+  &:before {
+    top: 75px;
+  }
   .container {
+    .div-heading {
+      background: #f9f9f9;
+    }
     .anotherThreeContent {
       padding: 57px 0 51px;
+      text-align: left;
       .left {
         width: 50%;
         iframe {
@@ -1353,11 +1530,19 @@ header#navbar {
 
 .contacts {
   padding: 73px 0;
+  position: relative;
+  text-align: center;
+  &:before {
+    top: 107px;
+  }
   .container {
+    .div-heading {
+      background: #fff;
+    }
     .contactsContent {
       padding: 58px 0;
       p.title {
-        font-size: 1.88em;
+        font-size: 1.8em;
           text-transform: uppercase;
           margin: 0 0 0 -10px;
       }
@@ -1367,6 +1552,7 @@ header#navbar {
       .addressContacts {
         padding-left: 156px;
         position: relative;
+        text-align: left;
         &:before {
           content: '';
           background: url(/sites/all/themes/idoctor_theme/image/markerMap.png) no-repeat;
@@ -1413,9 +1599,9 @@ header#navbar {
         }
       }
       .workTimeContacts p.content{
-        margin: 6px 0 6px -40px;
+        margin: 6px 0 6px -35px;
         & + p.content {
-          margin: -2px 0 16px 55px;
+          margin: -2px 0 16px 60px;
         }
       }
       .phoneContacts {
@@ -1480,74 +1666,77 @@ header#navbar {
       background: url(/sites/all/themes/idoctor_theme/image/formBanner.jpg) no-repeat; 
       margin-top: -70px;
       padding: 69px 0 38px;
-    }
-    .heading {
-      color: #fff;
-      .formHeading {
-        letter-spacing: -1.2px;
-        margin-left: -5px;
-      }
-    }
-    .formContent {
-      padding: 30px 0 182px;
-      form {
-        .formInputs {
-          margin-left: 90px;
-          margin-top: 10px;
-          input {
-            border-radius: 30px;
-            background: #3685a9;
-            color: #feffff;
-            cursor: pointer;
-            margin-bottom: 22px;
-            text-transform: uppercase;
-            font-size: 1.13em;
-            &::-webkit-input-placeholder {
-              color: #fff;
-            }
-            &:hover {
-              background: #82b3ca;
-              transition: 0.6s ease;
-            }
+      .wrap {
+        .heading {
+          color: #fff;
+          padding: 0;
+          .formHeading {
+            letter-spacing: -1.2px;
+            margin-left: -5px;
           }
-          input.name {
-            width: 437px;
-            padding: 13px 0 13px 31px;
-            padding-left: 31px;
-            line-height: 22px;
-            border: none;
-            margin-right: 14px;
-          }
-          input.phone {
-            width: 437px;
-            padding: 12px 0;
-            padding-left: 27px;
-            line-height: 22px;
-            border: none;
-            letter-spacing: -0.8px;
-          }
-          input.reason {
-            padding: 11px 34px;
-            border: none;
-            width: 589px;
-            letter-spacing: -.9px;
-            margin-right: 15px;
-          }
-          .btn-primary {
-            color: #fff;
-            background-color: #00bdf1;
-            border-color: #357ebd;
-            padding: 11px 84px;
-            border-radius: 30px;
-            font-weight: 600;
-            letter-spacing: -.3px;
-            line-height: 24px;
-            text-transform: uppercase;
-            font-size: 1.13em;
-            &:hover {
-              background: #f5a720;
-              color: #000;
-              transition: 0.6s ease;
+        }
+        .formContent {
+          padding: 30px 0 182px;
+          form {
+            .formInputs {
+              margin-left: 90px;
+              margin-top: 10px;
+              input {
+                border-radius: 30px;
+                background: #3685a9;
+                color: #feffff;
+                cursor: pointer;
+                margin-bottom: 22px;
+                text-transform: uppercase;
+                font-size: 1.13em;
+                &::-webkit-input-placeholder {
+                  color: #fff;
+                }
+                &:hover {
+                  background: #82b3ca;
+                  transition: 0.6s ease;
+                }
+              }
+              input.name {
+                width: 437px;
+                padding: 13px 0 13px 31px;
+                padding-left: 31px;
+                line-height: 22px;
+                border: none;
+                margin-right: 14px;
+              }
+              input.phone {
+                width: 437px;
+                padding: 12px 0;
+                padding-left: 27px;
+                line-height: 22px;
+                border: none;
+                letter-spacing: -0.8px;
+              }
+              input.reason {
+                padding: 11px 34px;
+                border: none;
+                width: 589px;
+                letter-spacing: -.9px;
+                margin-right: 15px;
+              }
+              .btn-primary {
+                color: #fff;
+                background-color: #00bdf1;
+                border-color: #357ebd;
+                padding: 11px 84px;
+                border-radius: 30px;
+                font-weight: 600;
+                letter-spacing: -.3px;
+                line-height: 24px;
+                text-transform: uppercase;
+                font-size: 1.13em;
+                &:hover {
+                  background: #f5a720;
+                  color: #000;
+                  transition: 0.6s ease;
+                }
+              }
             }
           }
         }
@@ -1727,6 +1916,12 @@ header#navbar {
 
 
 
+  .div-heading, .masters .container section h2 {
+    padding: 0 55px;
+  }
+
+
+
   body {
     font-size: 14px;
   }
@@ -1799,9 +1994,9 @@ header#navbar {
   // } 
   
 
-.header .headerBottomBanner .bannerContent .rightBanner img {
-    height: 460px;
-}
+  .header .headerBottomBanner .bannerContent .rightBanner img {
+      height: 460px;
+  }
 
   .header {
     .container {
@@ -1809,6 +2004,11 @@ header#navbar {
         padding: 35px 0;
         .row {
           .col-md-3 {
+            .logotype {
+              p.logo {
+                height: 54px;
+              }
+            }
             .telephone {
               p.telBottom:before {
                 left: 130px;
@@ -1826,7 +2026,7 @@ header#navbar {
       .bannerContent {
         .container {
           .leftBanner {
-            padding: 68px 66px 66px 132px;
+            padding: 48px 66px 47px 132px;
             .phoneBanner {
               a.btn.btn-warning {
                 padding: 8px 40px;
@@ -1882,6 +2082,9 @@ header#navbar {
   
   .lowPrices {
     padding: 80px 0 60px;
+    &:before {
+      top: 111px;
+    }
     .container3 {
       .topModels {
         .topModelsItem {
@@ -1908,6 +2111,9 @@ header#navbar {
 
   .completing {
     padding: 65px 0;
+    &:before {
+      top: 96px;
+    }
    .container {
      .completingContent {
         padding: 70px 0px 0 53px;
@@ -1938,39 +2144,48 @@ header#navbar {
 
 // -----"ПРОБЛЕМНЫЙ" БЛОК----- 1709-1500
 
-.selectBreakage {
+  .selectBreakage {
     padding: 57px 0 53px;
-    .selectBreakage {
-      .container {
-        p.heading {
-          margin-top: 10px;
-          margin-bottom: 28px;
-        }
-        .wrap {
-          .selectBreakageContent {
-            padding: 50px 0 42px;
-            .selectBreakWrapp2 p.title {
-              margin-bottom: 10px;
-            }
-            .selectBreakRowItem {
-              padding-left: 130px;
-              p.check {
-                line-height: 10px;    
-              }
-            } 
+    &:before {
+      top: 88px;
+    }     
+   .container {
+      p.heading {
+        margin-top: 10px;
+        margin-bottom: 28px;
+      }
+      .wrap {
+        .selectBreakageContent {
+          padding: 50px 0 42px;
+          .selectBreakWrapp2 p.title {
+            margin-bottom: 10px;
           }
-        } 
+          .selectBreakRowItem {
+            padding-left: 130px;
+            p.check {
+              line-height: 10px;    
+            }
+          } 
+        }
       } 
-    }
+    } 
   }
 
 
 
 // -----МАСТЕРЫ----- 1709-1500
 
-  .masters {
-    height: 674px;
-  }
+  // .masters {
+  //  .container {
+  //     section {
+  //      .view-masters {
+  //         .view-header {
+  //           line-height: 30px;
+  //         }
+  //       }  
+  //     }
+  //   }
+  // }
 
 
 
@@ -1984,7 +2199,8 @@ header#navbar {
         .left {
           margin-right: 20px;
           .heading {
-            padding-bottom: 20px;
+            padding: 0 0 20px 0;
+            margin-bottom: 10px;
           }
           .leftContent {
             ul {
@@ -2001,8 +2217,7 @@ header#navbar {
           } 
         }
         .right {
-          height: 375px;
-          margin-top: 70px;
+          height: 445px;
         }
       }
       .anotherTwoContent {
@@ -2024,6 +2239,16 @@ header#navbar {
  // -----КАКОЙ-ТО БЛОК 3----- 1709-1500
   .anotherThree {
     padding: 36px 0 25px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 75px;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      border-bottom: 1px solid #e0e0e0;
+      z-index: 0;
+    }
     .container {
       .anotherThreeContent {
         padding: 50px 0 0;
@@ -2054,6 +2279,9 @@ header#navbar {
   
   .contacts {
     padding: 64px 0;
+    &:before {
+      top: 95px;
+    }
     .container {
       .contactsContent {
         padding: 50px 0;
@@ -2093,88 +2321,89 @@ header#navbar {
 
 // -----ФОРМА----- 1709-1500
 
-.forma {
-  padding: 74px 0 0;
-  .container {
-    .formWrapp {
-      padding: 60px 0 100px;
-      .wrap {
-        .heading {
-          .formHeading {
-            margin-left: 105px;
-            width: 800px;
+  .forma {
+    padding: 74px 0 0;
+    .container {
+      .formWrapp {
+        padding: 60px 0 100px;
+        .wrap {
+          .heading {
+            padding: 0;
+            .formHeading {
+              margin-left: 105px;
+              width: 800px;
+            }
           }
-        }
-        .formContent {
-          padding: 30px 0 100px;
-          form {
-            .formInputs {
-              input.name {
-                width: 396px;
-                padding: 11px 0 11px 31px;
-                line-height: 22px;
-              }
-              input.phone {
-                width: 396px;
-                padding: 11px 0 11px 27px;
-                line-height: 22px;
-              }
-              input.reason {
-                padding: 11px 34px;
-                width: 540px;
-              }
-              .btn-primary {
-                padding: 11px 77px;
-                line-height: 23px;
-                height: 44px;
-              }
+          .formContent {
+            padding: 30px 0 100px;
+            form {
+              .formInputs {
+                input.name {
+                  width: 396px;
+                  padding: 11px 0 11px 31px;
+                  line-height: 22px;
+                }
+                input.phone {
+                  width: 396px;
+                  padding: 11px 0 11px 27px;
+                  line-height: 22px;
+                }
+                input.reason {
+                  padding: 11px 34px;
+                  width: 540px;
+                }
+                .btn-primary {
+                  padding: 11px 77px;
+                  line-height: 23px;
+                  height: 44px;
+                }
+              } 
             } 
-          } 
-        }
-      }  
-    }
-  } 
-}
+          }
+        }  
+      }
+    } 
+  }
 
 
 
 //-----ФУТЕР----- 1709-1500
 
-.footer {
-  padding: 70px 0;
-  margin-top: 0;
-  .container {
-    .footerContent {
-      .item {
-          padding-left: 60px;
-          &:nth-child(1) {
-            padding-left: 0;
-          }
-          ul {
-            li {
-              margin: 6px 0 23px;
+  .footer {
+    padding: 70px 0;
+    margin-top: 0;
+    .container {
+      .footerContent {
+        .item {
+            padding-left: 60px;
+            &:nth-child(1) {
+              padding-left: 0;
             }
-          } 
-        }
-        .social {
-          margin-right: 0;
-          padding-right: 0;
-          p.title {
+            ul {
+              li {
+                margin: 6px 0 23px;
+              }
+            } 
+          }
+          .social {
             margin-right: 0;
+            padding-right: 0;
+            p.title {
+              margin-right: 0;
+            }
+            .socialDiv {
+              width: 230px;
+              margin: 35px 0 0 70px;
+              padding-bottom: 40px;
+            }
+            .copy {
+              padding: 25px 0;
+            }
           }
-          .socialDiv {
-            width: 230px;
-            margin: 35px 0 0 70px;
-            padding-bottom: 40px;
-          }
-          .copy {
-            padding: 25px 0;
-          }
-        }
+        } 
       } 
-    } 
+    }
   }
-}
 
 
 
@@ -2184,6 +2413,12 @@ header#navbar {
 
   .container {
     width: 1170px;
+  }
+
+
+
+  .div-heading, .masters .container section h2 {
+    padding: 0 45px;
   }
 
 
@@ -2249,6 +2484,7 @@ header#navbar {
               }
               p.logo {
                 margin: -5px 0 0 8px;
+                height: auto;
               }
             } 
             .find-us {
@@ -2343,9 +2579,9 @@ header#navbar {
   
 
 
-.header .headerBottomBanner .bannerContent .rightBanner img {
-    height: 353px;
-}
+  .header .headerBottomBanner .bannerContent .rightBanner img {
+      height: 353px;
+  }
 
 
   .header {
@@ -2459,6 +2695,9 @@ header#navbar {
 
  .lowPrices {
     padding: 56px 0 42px;
+    &:before {
+      top: 80px;
+    }
     .container3 {
       p.heading {
         padding-top: 10px;
@@ -2562,6 +2801,9 @@ header#navbar {
 
   .completing {
     padding: 46px 0;
+    &:before {
+      top: 70px;
+    }
     .container {
       .completingContent {
         padding: 50px 0 0 53px;
@@ -2600,6 +2842,9 @@ header#navbar {
 
   .selectBreakage {
     padding: 40px 0 37px;
+    &:before {
+      top: 65px;
+    }  
     .container {
       p.heading {
         margin-top: 7px;
@@ -2682,8 +2927,8 @@ header#navbar {
           } 
           .buttonForm {
             a.btn.btn-primary {
-              padding: 9px 21px;
-              font-size: 1.3em;
+              padding: 15px 38px;
+              font-size: 1.2em;
             }
           } 
         }
@@ -2694,7 +2939,24 @@ header#navbar {
 
 
   .masters {
-    height: 473px;
+    &:before {
+      top: 80px;
+    }
+    .container {
+      section {
+        h2 {
+          line-height: 40px;
+          width: 80%;
+        }
+        .view-masters {
+          .view-header {
+            p.heading {
+              line-height: 30px;
+            }
+          }
+        } 
+      }
+    }
   }
 
 
@@ -2706,7 +2968,8 @@ header#navbar {
         .left {
           margin-right: 5px;
           .heading {
-            padding-bottom: 14px;
+            padding: 0 0 10px 0;
+            margin-bottom: 0;
           }
           .leftContent {
             ul {
@@ -2724,8 +2987,7 @@ header#navbar {
           } 
         }
         .right {
-          height: 296px;
-          margin-top: 50px;
+          height: 350px;
         }
       } 
     } 
@@ -2757,6 +3019,9 @@ header#navbar {
 
   .anotherThree {
     padding: 25px 0;
+    &:before {
+      top: 48px;
+    }
     .container {
       .anotherThreeContent {
         padding: 35px 0 0;
@@ -2790,6 +3055,9 @@ header#navbar {
 
   .contacts {
     padding: 45px 0;
+    &:before {
+      top: 68px;
+    }
     .container {
       .contactsContent {
         padding: 35px 0;
@@ -2880,6 +3148,7 @@ header#navbar {
         padding: 42px 0;
         .wrap {
           .heading {
+            padding: 0;
             .formHeading {
               margin-left: 150px;
               width: 610px;
@@ -3019,6 +3288,12 @@ header#navbar {
 
 
 
+  .div-heading, .masters .container section h2 {
+    padding: 0 35px;
+  }
+
+
+
   body {
     letter-spacing: 0.5px;
   }
@@ -3132,7 +3407,7 @@ header#navbar {
   
 
 
-    .header {
+  .header {
     .container {
       .headerTop {
         padding: 21px 0;
@@ -3220,7 +3495,7 @@ header#navbar {
 
   .header .headerBottomBanner .bannerContent .rightBanner img {
     height: 316px;
-}
+  }
 
 
 
@@ -3260,6 +3535,9 @@ header#navbar {
 
   .lowPrices {
     padding: 48px 0 36px;
+    &:before {
+      top: 70px;
+    }
     .container3 {
       p.heading {
         padding-top: 0;
@@ -3310,6 +3588,9 @@ header#navbar {
 
   .completing {
     padding: 39px 0;
+    &:before {
+      top: 62px;
+    }
     .container {
       .completingContent {
         padding: 40px 0 0 53px;
@@ -3365,6 +3646,9 @@ header#navbar {
 
   .selectBreakage {
     padding: 35px 0;
+    &:before {
+      top: 58px;
+    }
     .container {
       p.heading {
         margin-top: 5px;
@@ -3384,14 +3668,15 @@ header#navbar {
               .checkbox-label  {
                 input[type=checkbox]+span {
                   border-radius: 2px;
+                  top: 1px;
+                }
+                p.check {
+                  line-height: 16px;
+                  padding: 0 0 0 25px;
+                  font-size: 1.2em;
+                  letter-spacing: 0;
                 }
               } 
-              p.check {
-                line-height: 16px;
-                padding: 0 0 0 20px;
-                font-size: 1.2em;
-                letter-spacing: 0;
-              }
             }
           } 
         }
@@ -3402,7 +3687,17 @@ header#navbar {
 
 
   .masters {
-    height: 402px;
+    &:before {
+      top: 100px;
+    }
+    .container {
+      section {
+        h2 {
+          width: 82%;
+        }
+      }
+    }
+    
   }
 
 
@@ -3416,27 +3711,29 @@ header#navbar {
         .left {
           margin-right: 0;
           .heading {
-            padding-bottom: 0px;
-            margin-left: 27px;
+            padding: 0 0 4px 0;
           }
           .leftContent {
             ul {
               margin: 0;
               padding: 7px 0 0 0;
               li {
-                padding: 5px 0px 7px 27px;
+                padding: 5px 0px 7px 32px;
                 p {
                   line-height: 20px;
                   font-size: 1.5em;
                   letter-spacing: 0;
+                  &:before {
+                    left: -30px;
+                  }
                 }
               }
             }
           } 
         }
         .right {
-          height: 254px;
-          marginL-top: 60px;
+          height: 406px;
+          margin-top: 12px;
         }
       }
     } 
@@ -3468,6 +3765,9 @@ header#navbar {
 
   .anotherThree {
     padding: 21px 0;
+    &:before {
+      top: 45px;
+    }
     .container {
       .anotherThreeContent {
         padding: 30px 0 0;
@@ -3497,6 +3797,9 @@ header#navbar {
 
   .contacts {
     padding: 38px 0;
+    &:before {
+      top: 60px;
+    }
     .container {
       .contactsContent {
         padding: 30px 0;
@@ -3561,6 +3864,7 @@ header#navbar {
         background-position: 100% 0;
         .wrap {
           .heading {
+            padding: 0;
             .formHeading {
               width: 100%;
               margin: 0 auto 10px;
@@ -3661,8 +3965,9 @@ header#navbar {
 
 
 
-  .div-heading {
-    font-size: 2.9em;
+  .div-heading, .masters .container section h2 {
+    font-size: 2.7em;
+    padding: 0 20px;
   }
 
 
@@ -3872,9 +4177,12 @@ header#navbar {
 
 
   .lowPrices {
-      padding: 36px 0 20px;
-      .container3 {
-        .topModels {
+    padding: 36px 0 20px;
+    &:before {
+      top: 55px;
+    }
+    .container3 {
+      .topModels {
         max-width: 720px;
       }
       .bottomModels {
@@ -3904,6 +4212,9 @@ header#navbar {
 
   .completing {
     padding: 30px 0;
+    &:before {
+      top: 50px;
+    }
     .container {
       .completingContent {
         display: block;
@@ -4001,13 +4312,37 @@ header#navbar {
 
 
   .masters {
-    height: 300px;
+    .container {
+      section {
+        h2 {
+          width: 94%;
+        }
+        .view-masters {
+          .view-header {
+            p.heading {
+              line-height: 26px;
+              font-size: 1.7em;
+            }
+          }
+          .owl-carousel {
+            .owl-nav {
+              button {
+                background-size: 50px; 
+                width: 50px;
+                height: 50px;
+              }
+            }
+          }
+        } 
+      }
+    }
   }
 
 
 
   .another {
     padding: 38px 0;
+    text-align: center;
     .container {
       .anotherContent {
         padding-left: 0;
@@ -4018,12 +4353,9 @@ header#navbar {
           margin-bottom: 20px;
           width: 100%;
           .heading {
-            padding-bottom: 0;
             max-width: 400px;
-            margin-left: 0;
             margin: 0 auto;
             text-align: center;
-            display: block;
           }
           .leftContent {
             ul {
@@ -4083,6 +4415,9 @@ header#navbar {
 
  .anotherThree {
     padding: 20px 0;
+    &:before {
+      top: 40px;
+    }
     .container {
       .anotherThreeContent {
         padding: 25px 0 0;
@@ -4112,6 +4447,9 @@ header#navbar {
 
   .contacts {
     padding: 30px 0;
+    &:before {
+      top: 50px;
+    }
     .container {
       .contactsContent {
         padding: 20px 0;
@@ -4190,6 +4528,7 @@ header#navbar {
         background-position: 100% 0;
         .wrap {
           .heading {
+            padding: 0;
             .formHeading {
               width: 100%;
               margin: 0;
@@ -4221,8 +4560,8 @@ header#navbar {
             } 
           }
         }
-      }  
-    } 
+      }
+    }  
   }
 
 
@@ -4294,9 +4633,10 @@ header#navbar {
 
 
 
-  .div-heading {
+  .div-heading, .masters .container section h2 {
     line-height: 36px;
     font-size: 2.6em;
+    padding: 0 10px;
   }
 
 
@@ -4421,10 +4761,14 @@ header#navbar {
 
 
   .lowPrices {
+    &:before {
+      top: 71px;
+    }
     .container3 {
       .div-heading {
-        width: 80%;
+        width: 90%;
         margin: 0 auto 20px;
+        display: block;
       }
     } 
     .mobileBlock {
@@ -4452,10 +4796,14 @@ header#navbar {
 
 
   .completing {
+    &:before {
+      top: 66px;
+    }
     .container {
       .div-heading {
-        width: 65%;
+        width: 80%;
         margin: 0 auto 20px;
+        display: block;
       }
       .completingContent {
         .left {
@@ -4496,7 +4844,14 @@ header#navbar {
 
 
   .selectBreakage {
+    &:before {
+      top: 53px;
+    }
     .container {
+      .div-heading {
+        margin: 0 auto;
+        display: block;
+      }
       .wrap {
         .selectBreakageContent {
           .selectBreakWrapp2 {
@@ -4566,11 +4921,11 @@ header#navbar {
                   height: 16px;
                   background-size: 16px;
                 }
+                p.check {
+                  padding: 0 0 0 32px;
+                  font-size: 1.15em;
+                }
               } 
-              p.check {
-                padding: 0 0 0 32px;
-                font-size: 1.15em;
-              }
             }
           } 
         } 
@@ -4642,6 +4997,9 @@ header#navbar {
 
 
   .contacts {
+    &:before {
+      top: 47px;
+    }
     .container {
       .contactsContent { 
         display: block;
@@ -4702,6 +5060,7 @@ header#navbar {
           margin-left: auto;
           margin-right: auto;
           .heading {
+            padding: 0;
             .formHeading {
               line-height: 36px;
             }
@@ -4766,6 +5125,10 @@ header#navbar {
 
   .container, .header .headerBottomBanner .bannerContent .container .leftBanner .wrapper, .anotherTwo .container .anotherTwoContent .wrap, .forma .container .formWrapp .wrap {
     width: 100%;
+  }
+
+  .div-heading, .masters .container section h2{
+    font-size: 2.3em;
   }
 
 
@@ -4835,9 +5198,12 @@ header#navbar {
 
 
   .completing {
+    &:before {
+      top: 63px;
+    }
     .container {
       .div-heading {
-        width: 80%;
+        width: 90%;
         margin: 0 auto 10px;
       }
       .completingContent {
@@ -4850,6 +5216,33 @@ header#navbar {
     } 
   } 
 
+
+
+.selectBreakage {
+    &:before {
+      top: 70px;
+    }
+    .container {
+      .div-heading {
+        width: 80%;
+      }
+    } 
+  } 
+
+
+
+  .masters {
+    &:before {
+      top: 115px;
+    }
+    .container {
+      section {
+        h2 {
+          width: 75%;
+        }
+      }
+    }
+  }
 
 
   .anotherTwo {
@@ -4906,7 +5299,7 @@ header#navbar {
 
 @media (min-width: 300px) and (max-width: 449px) {
   
-  .div-heading {
+  .div-heading, .masters .container section h2 {
     line-height: 32px;
     font-size: 2.3em;
   }
@@ -5022,6 +5415,21 @@ header#navbar {
 
 
 
+  .masters {
+    &:before {
+      top: 110px;
+    }
+    .container {
+      section {
+        h2 {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+
+
   .anotherTwo {
     .container {
       .anotherTwoContent {
@@ -5047,6 +5455,13 @@ header#navbar {
 
 
 @media (min-width: 300px) and (max-width: 399px) {
+
+  .div-heading {
+    line-height: 24px;
+    font-size: 1.77em;
+  }
+
+
   
   .header {
     .headerBottomBanner {
@@ -5078,11 +5493,10 @@ header#navbar {
 
   .lowPrices {
     padding: 20px 0 10px;
+    &:before {
+      top: 44px;
+    }
     .container3 {
-      .div-heading {
-        line-height: 24px;
-        font-size: 1.9em;
-      }
       p.heading {
         font-size: 1.3em;
         line-height: 17px;
@@ -5100,10 +5514,11 @@ header#navbar {
 
 
   .completing {
+    &:before {
+      top: 54px;
+    }
     .container {
       .div-heading {
-        line-height: 24px;
-        font-size: 1.9em;
         width: 85%;
       }
       .completingContent {
@@ -5119,6 +5534,7 @@ header#navbar {
                 margin-bottom: 20px;
                 width: 200px;
                 padding-left: 60px;
+                font-size: 1.4em;
               }
             } 
           } 
@@ -5133,6 +5549,9 @@ header#navbar {
 
 
   .selectBreakage {
+    &:before {
+      top: 60px;
+    }
     .container {
       p.heading {
         font-size: 1.3em;
@@ -5144,6 +5563,7 @@ header#navbar {
           .buttonForm {
             a.btn.btn-primary {
               font-size: 1.1em;
+              padding: 14px 25px;
             }
           } 
         } 
@@ -5153,17 +5573,43 @@ header#navbar {
 
 
 
-.another {
-  .container {
-    .anotherContent {
-      .left {
-        .heading {
-            padding-bottom: 5px;
+  .masters {
+    &:before {
+      top: 95px;
+    }
+    .container {
+      section {
+        h2 {
+          width: 90%;
+          font-size: 1.9em;
+          line-height: 24px;
+        }
+        .view-masters {
+          .view-header {
+            p.heading {
+              font-size: 1.4em;
+              line-height: 20px;
+            }
           }
+        }
+      }
+    }
+  }
+
+
+
+  .another {
+    .container {
+      .anotherContent {
+        .left {
+          .heading {
+              padding-bottom: 5px;
+              font-size: 1.9em;
+            }
+          } 
         } 
       } 
     } 
-  } 
 
 
 
@@ -5184,7 +5630,13 @@ header#navbar {
 
 
   .anotherThree {
+    &:before {
+      top: 32px;
+    }
     .container {
+      .div-heading {
+        font-size: 1.9em;
+      }
       .anotherThreeContent {
         .right {
           p.title {
@@ -5205,7 +5657,13 @@ header#navbar {
 
 
   .contacts {
+    &:before {
+      top: 40px;
+    }
     .container {
+      .div-heading {
+        font-size: 1.9em;
+      }
       .contactsContent {
         .item {
           margin-left: 23%;
