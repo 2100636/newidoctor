@@ -1286,19 +1286,22 @@ header#navbar {
                         display: block;
                         width: 50%;
                         margin: 0 auto;
-                        border-radius: 100%;
+                        border-radius: 50%;
                       }
                       img.img-responsive + img.img-responsive {
                         opacity: 0;
                         position: absolute;
                         top: 0;
-                        left: 0;
+                        left: 25%;
                         z-index: 1;
                         -webkit-transition: all 320ms ease;
                         -moz-transition: all 320ms ease;
                         -ms-transition: all 320ms ease;
                         -o-transition: all 320ms ease;
                         transition: all 320ms ease;
+                        &:hover {
+                          opacity: 1;
+                        }
                       }
                     }  
                   }
@@ -1348,6 +1351,7 @@ header#navbar {
               position: absolute;
               top: 28%;
               background-repeat: no-repeat;
+              transition: all 0.3s ease;
               span {
                 display: none;
               }
@@ -1355,10 +1359,16 @@ header#navbar {
             button.owl-prev {
               background-image: url(/sites/all/themes/idoctor_theme/image/arrow_left.png);
               left: 0;
+              &:hover {
+                background-image: url(/sites/all/themes/idoctor_theme/image/arrow_left_hover.png);
+              }
             }
             button.owl-next {
               background-image: url(/sites/all/themes/idoctor_theme/image/arrow_right.png);
               right: 0;
+              &:hover {
+                background-image: url(/sites/all/themes/idoctor_theme/image/arrow_right_hover.png);
+              }
             }
             .owl-dots {
               button.owl-dot {

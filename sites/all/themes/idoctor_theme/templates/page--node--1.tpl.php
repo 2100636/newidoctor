@@ -524,7 +524,7 @@
         $(".masters .owl-carousel").owlCarousel({
           loop:true, 
           items : 4,
-          autoplay : true,
+          autoplay : false,
           dots: true,
           smartSpeed: 2000,
           autoplayTimeout: 5000,
