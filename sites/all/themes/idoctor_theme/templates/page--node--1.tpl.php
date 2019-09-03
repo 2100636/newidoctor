@@ -31,10 +31,14 @@
       <script src="/sites/all/themes/idoctor_theme/js/jquery.event.move.js"></script>
       <script src="/sites/all/themes/idoctor_theme/js/jquery.twentytwenty.js"></script>
       <div class="rightBanner">
-        <div class="twentyBlock twentytwenty-container">
-          <img src="/sites/all/themes/idoctor_theme/image/before.jpg" alt="">
-          <img src="/sites/all/themes/idoctor_theme/image/after.jpg" alt="">
+        <div class="twentyBlock twentyBlockLaptop twentytwenty-container">
+          <img src="/sites/all/themes/idoctor_theme/image/before.jpg" alt="" class="twenty-laptop">
+          <img src="/sites/all/themes/idoctor_theme/image/after.jpg" alt="" class="twenty-laptop">
         </div>  
+        <div class="twentyBlock twentyBlockMobile twentytwenty-container">
+          <img src="/sites/all/themes/idoctor_theme/image/after-mobile.jpg" alt="" class="twenty-mobile">
+           <img src="/sites/all/themes/idoctor_theme/image/before-mobile.jpg" alt="" class="twenty-mobile">
+        </div>
       </div>
       <script>
         (function($) {
@@ -66,8 +70,19 @@
   </div>
 </div>
 
-<!-- оборудование не надо пока -->
-<div class="equipment"></div>
+
+
+<!-- оборудование -->
+<div class="equipment">
+  <div class="container">
+    <?php 
+      $block = block_load('views', 'equipments-block');
+      $blocks = _block_render_blocks(array($block));
+      $blocks_build = _block_get_renderable_array($blocks);
+      echo drupal_render($blocks_build);
+   ?>
+  </div>
+</div>
 
 
 
@@ -173,7 +188,16 @@
 
 
 <!-- скидки и акции не надо пока -->
-<div class="discounts"></div>
+<div class="discounts">
+  <div class="container">
+    <?php 
+      $block = block_load('views', 'promotions-block');
+      $blocks = _block_render_blocks(array($block));
+      $blocks_build = _block_get_renderable_array($blocks);
+      echo drupal_render($blocks_build);
+   ?>
+  </div>
+</div>
 
 
 
@@ -458,7 +482,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="bannerContacts d-flex j-content-between">
+      <div class="bannerContacts d-flex j-content-between" id="maps">
         <div class="banner"></div>
         <div class="banner"></div>
         <div class="banner"></div>
@@ -524,7 +548,7 @@
         $(".masters .owl-carousel").owlCarousel({
           loop:true, 
           items : 4,
-          autoplay : false,
+          autoplay : true,
           dots: true,
           smartSpeed: 2000,
           autoplayTimeout: 5000,
@@ -534,6 +558,23 @@
             767:{items:2},
             991:{items:3},
             1499:{items:4}
+            }
+          });
+
+      $(".equipment .owl-carousel").owlCarousel({
+          loop:true, 
+          items : 5,
+          autoplay : true,
+          dots: true,
+          smartSpeed: 2000,
+          autoplayTimeout: 5000,
+          nav : true,
+          responsive:{
+            0:{items:1},
+            767:{items:2},
+            991:{items:3},
+            1199:{item:4},
+            1499:{items:5}
             }
           });
         });

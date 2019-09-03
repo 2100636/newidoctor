@@ -48,7 +48,7 @@ a {
 
 
 
-.div-heading, .masters .container section h2 {
+.div-heading, .equipment .container section h2, .discounts .container section h2, .masters .container section h2 {
   font-size: 3em;
   color: #000;
   text-transform: uppercase;
@@ -64,12 +64,13 @@ a {
 .maket img {
   position: absolute;
   opacity: 0.7;
-  left: -13px;
-  top: -43px;
+  left: -17px;
+  top: -7px;
+  z-index: 9999;
 }
 
 
-.lowPrices, .completing, .selectBreakage, .masters, .anotherThree, .contacts {
+.equipment, .equipment section .view-equipments .view-footer, .lowPrices, .completing, .discounts, .selectBreakage, .masters, .anotherThree, .contacts {
   &:before {
     content: '';
     position: absolute;
@@ -82,6 +83,8 @@ a {
 }
 
 
+
+// -----МЕНЮ----- 1920-1710
 
 header#navbar {
   background: #4a4c4e;
@@ -108,15 +111,15 @@ header#navbar {
                 transition: ease 1s;
               }
             }
-            &:first-child a:after {
-              content: '';
-              position: absolute;
-              width: 13px;
-              height: 5px;
-              right: -10px;
-              top: 28px;
-              background: url(/sites/all/themes/idoctor_theme/image/strDown.png) no-repeat;
-            }
+            // &:first-child a:after {
+            //   content: '';
+            //   position: absolute;
+            //   width: 13px;
+            //   height: 5px;
+            //   right: -10px;
+            //   top: 28px;
+            //   background: url(/sites/all/themes/idoctor_theme/image/strDown.png) no-repeat;
+            // }
           }  
           &:first-child li a {
             padding-left: 0;
@@ -142,7 +145,7 @@ header#navbar {
           }
           &:hover {
             background: #f5a720;
-         }
+          }
         }
       }
     }
@@ -150,6 +153,233 @@ header#navbar {
 }
 
 
+
+// -----ШАПКА----- 1920-1710
+
+.header {
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  &:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px solid #b7b7b7;
+    bottom: 2px;
+    left: 0;
+    z-index: 99999;
+  }
+  .container {
+    .headerTop {
+      color: #4a4c4e; 
+      padding: 40px 0;
+      .row {
+        .col-md-3 {
+          padding: 0;
+          p {
+            margin: 0;
+            span {
+              font-weight: 600;
+              font-size: 1.31em;
+            }
+          }
+          .logotype {
+            margin-top: 2px;
+            &:hover {
+              text-decoration: none;
+            }
+            img {
+              margin: -5px 0 0 0;
+            }
+            p.logo {
+              font-size: 3.18em;
+              margin: -14px 0 0 11px;
+              font-weight: 600;
+              height: 61px;
+              color: #4a4c4e;
+            }
+          }
+          .find-us {
+            margin-left: -7px;
+            font-weight: 400;
+            p.find-us-top {
+              font-size: 1.06em;
+              margin-top: -4px;
+              letter-spacing: 0.4px;
+            }
+            p.find-us-bottom {
+              font-size: 1.5em;
+              text-transform: uppercase;
+              position: relative;
+              padding-left: 36px;
+              cursor: pointer;
+              a:hover {
+                color: #00bdf1;
+              }
+            }
+            p.find-us-bottom:before {
+              position: absolute;
+              content: '';
+              top: 3px;
+              left: 0;
+              background: url(/sites/all/themes/idoctor_theme/image/logo-map.png);
+              width: 28px;
+              height: 25px;
+            }
+          }
+          .address {
+            text-align: center;
+            text-transform: uppercase;
+            p.addTop {
+              font-weight: 600;
+              font-size: 1.31em;
+              margin: -11px 0 0px 28px;
+              letter-spacing: 0.2px;
+            }
+            p.addBottom {
+              margin: 4px -137px 0 0;
+              font-size: 0.94em;
+              letter-spacing: 0.5px;
+              span {
+                text-transform: lowercase;
+                font-size: 0.94em;
+                font-weight: normal;
+              }
+            }
+          }
+          .telephone {
+            text-transform: uppercase;
+            text-align: right;
+            position: relative;
+            p.telTop {
+              font-size: 1.5em;
+              font-weight: 600;
+              margin: -11px -22px 7px 0;
+              span {
+                font-size: 0.83em;
+              }
+            }
+            p.telBottom {
+              position: relative;
+              font-size: 1.5em;
+              margin: -11px -22px 0 0;
+              letter-spacing: 0.3px;
+              cursor: pointer;
+              a:hover {
+                color: #00bdf1;
+              }
+              &:before {
+                content: '';
+                top: -17px;
+                left: 149px;
+                position: absolute;
+                width: 41px;
+                height: 44px;
+                background: url(/sites/all/themes/idoctor_theme/image/logo-whatsapp.png);
+              }
+            } 
+            &:before {
+              content: '';
+              border-left: 1px solid #000;
+              position: absolute;
+              top: 13px;
+              left: 108px;
+              height: 48px;
+            }
+          }
+          &:nth-child(4) {
+            margin-right: 30px;
+          }
+        }
+      }   
+    }
+  } 
+  .headerBottomBanner {
+    .bannerContent {
+      .container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        .leftBanner {
+          background: url(/sites/all/themes/idoctor_theme/image/headerBottomBanner.jpg) no-repeat center;
+          background-size: cover;
+          padding: 52px 80px 47px 132px;
+          margin-right: 6px;
+          .heading {
+            text-transform: uppercase;
+            color: #feffff;
+            font-size: 2.25em;
+            font-weight: 700;
+          }
+          p.title {
+            font-size: 1.5em;
+            font-weight: 700;
+            border-bottom: 1px solid #999;
+            padding-bottom: 23px;
+            width: 100%;
+            color: #fff;
+            margin-top: -8px;
+          }
+          ul {
+            padding: 15px 0 10px 30px;
+            li {
+              font-size: 1.5em;
+              color: #feffff;
+              padding-bottom: 8px;
+              list-style: none;
+              position: relative;
+              &:before {
+                content: '';
+                background: #00bdf1;
+                width: 6px;
+                height: 6px;
+                border-radius: 3px;
+                top: 16px;
+                left: -33px;
+                position: absolute;
+              }
+            }
+          }
+          .phoneBanner {
+            p.phone {
+              color: #fff;
+              font-size: 1.88em;
+            }
+            a.btn.btn-warning {
+              display: block;
+              font-weight: 600;
+              padding: 8px 52px;
+              color: #fff;
+              margin: -11px 0 0 0;
+              border-radius: 20px;
+              text-transform: uppercase;
+              font-size: 1.13em;
+              background: #f9a400;
+              &:hover {
+                color: #000;
+                transition: 0.6s ease;
+              }
+            }
+          }
+        }
+      }
+      .rightBanner {
+        width: 100%;
+        .twentyBlock {
+          img {
+            width: 100%;
+            height: 500px;
+          }
+        } 
+        .twentyBlockMobile {
+          display: none;
+        }
+      }
+    }
+  }
+}
 
 // .header {
 //   font-family: 'Open Sans', sans-serif;
@@ -369,225 +599,7 @@ header#navbar {
 
 
 
-.header {
-  font-family: 'Open Sans', sans-serif;
-  position: relative;
-  &:before {
-    content: '';
-    position: absolute;
-    height: 1px;
-    width: 100%;
-    border-bottom: 1px solid #b7b7b7;
-    bottom: 2px;
-    left: 0;
-    z-index: 99999;
-  }
-  .container {
-    .headerTop {
-      color: #4a4c4e; 
-      padding: 40px 0;
-      .row {
-        .col-md-3 {
-          padding: 0;
-          p {
-            margin: 0;
-            span {
-              font-weight: 600;
-              font-size: 1.31em;
-            }
-          }
-          .logotype {
-            margin-top: 2px;
-            &:hover {
-              text-decoration: none;
-            }
-            img {
-              margin: -5px 0 0 0;
-            }
-            p.logo {
-              font-size: 3.18em;
-              margin: -14px 0 0 11px;
-              font-weight: 600;
-              height: 61px;
-              color: #4a4c4e;
-            }
-          }
-          .find-us {
-            margin-left: -7px;
-            font-weight: 400;
-            p.find-us-top {
-              font-size: 1.06em;
-              margin-top: -4px;
-              letter-spacing: 0.4px;
-            }
-            p.find-us-bottom {
-              font-size: 1.5em;
-              text-transform: uppercase;
-              position: relative;
-              padding-left: 36px;
-              cursor: pointer;
-              a:hover {
-                color: #00bdf1;
-              }
-            }
-            p.find-us-bottom:before {
-              position: absolute;
-              content: '';
-              top: 3px;
-              left: 0;
-              background: url(/sites/all/themes/idoctor_theme/image/logo-map.png);
-              width: 28px;
-              height: 25px;
-            }
-          }
-          .address {
-            text-align: center;
-            text-transform: uppercase;
-            p.addTop {
-              font-weight: 600;
-              font-size: 1.31em;
-              margin: -11px 0 0px 28px;
-              letter-spacing: 0.2px;
-            }
-            p.addBottom {
-              margin: 4px -137px 0 0;
-              font-size: 0.94em;
-              letter-spacing: 0.5px;
-              span {
-                text-transform: lowercase;
-                font-size: 0.94em;
-                font-weight: normal;
-              }
-            }
-          }
-          .telephone {
-            text-transform: uppercase;
-            text-align: right;
-            position: relative;
-            p.telTop {
-              font-size: 1.5em;
-              font-weight: 600;
-              margin: -11px -22px 7px 0;
-              span {
-                font-size: 0.83em;
-              }
-            }
-            p.telBottom {
-              position: relative;
-              font-size: 1.5em;
-              margin: -11px -22px 0 0;
-              letter-spacing: 0.3px;
-              cursor: pointer;
-              a:hover {
-                color: #00bdf1;
-              }
-              &:before {
-                content: '';
-                top: -17px;
-                left: 149px;
-                position: absolute;
-                width: 41px;
-                height: 44px;
-                background: url(/sites/all/themes/idoctor_theme/image/logo-whatsapp.png);
-              }
-            } 
-            &:before {
-              content: '';
-              border-left: 1px solid #000;
-              position: absolute;
-              top: 13px;
-              left: 108px;
-              height: 48px;
-            }
-          }
-          &:nth-child(4) {
-            margin-right: 30px;
-          }
-        }
-      }   
-    }
-  } 
-  .headerBottomBanner {
-    .bannerContent {
-      .container {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        .leftBanner {
-          background: url(/sites/all/themes/idoctor_theme/image/headerBottomBanner.jpg) no-repeat center;
-          background-size: cover;
-          padding: 52px 80px 47px 132px;
-          margin-right: 6px;
-          .heading {
-            text-transform: uppercase;
-            color: #feffff;
-            font-size: 2.25em;
-            font-weight: 700;
-          }
-          p.title {
-            font-size: 1.5em;
-            font-weight: 700;
-            border-bottom: 1px solid #999;
-            padding-bottom: 23px;
-            width: 100%;
-            color: #fff;
-            margin-top: -8px;
-          }
-          ul {
-            padding: 15px 0 10px 30px;
-            li {
-              font-size: 1.5em;
-              color: #feffff;
-              padding-bottom: 8px;
-              list-style: none;
-              position: relative;
-              &:before {
-                content: '';
-                background: #00bdf1;
-                width: 6px;
-                height: 6px;
-                border-radius: 3px;
-                top: 16px;
-                left: -33px;
-                position: absolute;
-              }
-            }
-          }
-          .phoneBanner {
-            p.phone {
-              color: #fff;
-              font-size: 1.88em;
-            }
-            a.btn.btn-warning {
-              display: block;
-              font-weight: 600;
-              padding: 8px 52px;
-              color: #fff;
-              margin: -11px 0 0 0;
-              border-radius: 20px;
-              text-transform: uppercase;
-              font-size: 1.13em;
-              background: #f9a400;
-              a.btn.btn-warning:hover {
-                color: #000;
-                transition: 0.6s ease;
-              }
-            }
-          }
-        }
-      }
-      .rightBanner {
-        width: 100%;
-        img {
-          width: 100%;
-          height: 500px;
-        }
-      }
-    }
-  }
-}
-
-
+// -----СЕРВИСНЫЙ ЦЕНТР----- 1920-1710
 
 .serviceCenter {
   background: #f9f9f9;
@@ -691,14 +703,122 @@ header#navbar {
 
 
 
+// -----ОБОРУДОВАНИЕ----- 1920-1710
+
 .equipment {
-  margin-top: -3px;
-  height: 820px;
-  width: 100%;
-  background: #c58181;
+  text-align: center;
+  position: relative;
+  padding: 80px 0 100px;
+  &:before {
+    top: 107px;
+  }
+  section {
+    h2 {
+      background: #fff;
+    }
+    .view-equipments {
+      margin-top: 65px;
+      .owl-carousel {
+        .owl-stage-outer {
+          .owl-stage {
+            .owl-item {
+              .views-row {
+                cursor: pointer;
+                .views-field-field-photo {
+                  .field-content {
+                    img.img-responsive {
+                      width: 72%;
+                      margin: 0 auto;
+                    }
+                    
+                  }
+                }
+                .views-field-title {
+                  span.field-content {
+                    display: block;
+                    width: 56%;
+                    font-weight: 600;
+                    font-size: 1.125em;
+                    margin: 20px auto;
+                  } 
+                }
+              }
+            }
+          }        
+        }
+        .owl-nav {
+          display: block;
+          button {
+            width: 70px;
+            height: 70px;
+            outline: 0;
+            position: absolute;
+            top: 28%;
+            background-repeat: no-repeat;
+            transition: all .3s ease;
+            span {
+              display: none;
+            }
+          }
+          button.owl-prev {
+            background-image: url(/sites/all/themes/idoctor_theme/image/arrow_left.png);
+            left: 0;
+            &:hover {
+              background-image: url(/sites/all/themes/idoctor_theme/image/arrow_left_hover.png);
+            }
+          }
+          button.owl-next {
+            background-image: url(/sites/all/themes/idoctor_theme/image/arrow_right.png);
+            right: 0;
+            &:hover {
+              background-image: url(/sites/all/themes/idoctor_theme/image/arrow_right_hover.png);
+            } 
+          }
+        }
+      }
+      .view-footer {
+        margin-top: 35px;
+        text-align: center;
+        font-size: 0.88em;
+        text-transform: uppercase;
+        position: relative;
+        &:before {
+          top: 10px;
+        }
+        p.heading {
+          font-weight: 300;
+          display: inline;
+          padding: 0 30px;
+          background: #fff;
+          z-index: 10;
+          position: relative;
+        }
+        .btn.btn-primary {
+          padding: 9px 65px;
+          border-radius: 50px;
+          font-weight: 600;
+          background: #00bdf1;
+          color: #fff;
+          border: none;
+          outline: none;
+          width: 225px;
+          height: 40px;
+          margin: 20px auto 0;
+          display: block;
+          &:hover {
+            background: #ffb869;
+            color: #000;
+            transition: all 0.3s ease;
+          }
+        }
+      }
+    }
+  }
 }
 
 
+
+// -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 1920-1710
 
 .lowPrices {
   background: #f9f9f9;
@@ -961,6 +1081,8 @@ header#navbar {
 
 
 
+// -----КОМЛЕКТАЦИЯ----- 1920-1710
+
 .completing {
   padding: 75px 0;
   position: relative;
@@ -1034,7 +1156,7 @@ header#navbar {
         width: 50%;
         iframe {
           width: 100%;
-          height: 426px;
+          height: 465px;
           border: 1px solid #999;
         }
       }
@@ -1044,12 +1166,156 @@ header#navbar {
 
 
 
+// -----АКЦИИ----- 1920-1710
+
 .discounts {
-  background: #c58181;
-  height: 771px;
+  text-align: center;
+  padding: 40px 0 120px;
+  position: relative;
+  &:before {
+    top: 67px;
+  }
+  .container {
+    section {
+      h2.block-title {
+        font-size: 3em;
+        text-transform: uppercase;
+        background: #fff;
+      }
+      .view-promotions {
+        margin-top: 47px;
+        .view-content {
+          overflow: hidden;
+          text-align: center;
+          color: #fff;
+          .views-row {
+            float: left;
+            cursor: pointer;
+            &:nth-child(1) {
+              width: 65%;
+              height: 510px;
+              margin: 0 5px 0 0;
+              padding: 114px 0 76px 0;
+              .views-field-title {
+                span.field-content {
+                  width: 36%;
+                  margin: 0 auto 50px;
+                  font-size: 2.13em;
+                  display: block;
+                  text-transform: uppercase;
+                  line-height: 45px;
+                }
+              }
+              .views-field-field-content-discount {
+                .field-content {
+                  font-size: 3em;
+                  font-weight: bold;
+                  margin-bottom: 22px;
+                }
+              }
+              .views-field-nid {
+                span.field-content {
+                  .btn.btn-warning {
+                    padding: 8px 125px;
+                    border-radius: 50px;
+                    font-size: 1.3em;
+                    background: #ffa600;
+                    color: #fff;
+                    font-weight: 600;
+                    &:hover {
+                      color: #000;
+                      font-size: 1.4em;
+                      transition: all 0.6s ease;
+                    }
+                  }
+                }
+              }
+            }
+            &:nth-child(2) {
+              width: 34.6%;
+              height: 252px;
+              margin-bottom: 5px;
+              text-align: left;
+              padding: 65px 30px 30px 60px;
+              text-transform: uppercase;
+              position: relative;
+              .views-field-title {
+                span.field-content {
+                  font-size: 2.3em;
+                  font-weight: 700;
+                  line-height: 48px;
+                }
+              }
+              .views-field-field-content-discount {
+                .field-content {
+                  font-size: 1.1em;
+                }
+              }
+              .views-field-nid {
+                .field-content {
+                  bottom: 0;
+                  right: 0;
+                  text-indent: -99999px;
+                  position: absolute;
+                  width: 75px;
+                  height: 75px;
+                  z-index: 0;
+                  background-image: url(/sites/all/themes/idoctor_theme/image/orange-plus.png);
+                  background-repeat: no-repeat;
+                  &:hover {
+                    background-size: 80px;
+                    transition: all 0.3s ease;
+                  }
+                }
+              }
+            }
+            &:nth-child(3) {
+              width: 34.6%;
+              height: 252px;
+                  text-align: left;
+                  padding: 80px 0 0 60px;
+                  text-transform: uppercase;
+                  position: relative;
+              .views-field-title {
+                span.field-content {
+                  font-size: 2.3em;
+                  font-weight: 700;
+                  line-height: 48px;
+                }
+              }
+              .views-field-field-content-discount {
+                .field-content {
+                  font-size: 1.1em;
+                }
+              }
+              .views-field-nid {
+                .field-content {
+                  bottom: 0;
+                  right: 0;
+                  text-indent: -99999px;
+                  position: absolute;
+                  width: 75px;
+                  height: 75px;
+                  z-index: 0;
+                  background-image: url(/sites/all/themes/idoctor_theme/image/orange-plus.png);
+                  background-repeat: no-repeat;
+                   &:hover {
+                    background-size: 80px;
+                    transition: all 0.6s ease;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 
+
+// -----"ПРОБЛЕМНЫЙ" БЛОК----- 1920-1710
 
 .selectBreakage {
   background: #f9f9f9;
@@ -1246,6 +1512,8 @@ header#navbar {
 
 
 
+// -----МАСТЕРЫ----- 1920-1710
+
 .masters {
   padding: 60px 0;
   position: relative;
@@ -1391,6 +1659,8 @@ header#navbar {
 
 
 
+// -----КАКОЙ-ТО БЛОК1----- 1920-1710
+
 .another {
   padding: 144px 0 123px;
   .container {
@@ -1446,6 +1716,17 @@ header#navbar {
 
 
 
+// -----КОММЕНТАРИИ----- 1920-1710
+
+.comments {
+  background: #c58181;
+  height: 962px;
+}
+
+
+
+// -----КАКОЙ-ТО БЛОК2----- 1920-1710
+
 .anotherTwo {
   text-align: center;
   color: #fff;
@@ -1484,12 +1765,7 @@ header#navbar {
 
 
 
-.comments {
-  background: #c58181;
-  height: 962px;
-}
-
-
+// -----КАКОЙ-ТО БЛОК3----- 1920-1710
 
 .anotherThree {
   background: #f9f9f9;
@@ -1537,6 +1813,8 @@ header#navbar {
 }
 
 
+
+// -----КОНТАКТЫ----- 1920-1710
 
 .contacts {
   padding: 73px 0;
@@ -1618,6 +1896,7 @@ header#navbar {
         padding-left: 227px;
         position: relative;
         margin: -18px 0 0 0;
+        text-align: left;
         &:before {
           content: '';
           background: url(/sites/all/themes/idoctor_theme/image/phoneContats.png) no-repeat;
@@ -1657,6 +1936,8 @@ header#navbar {
 
 
 
+// -----КАРТА----- 1920-1710
+
 .maps {
   .container {
     iframe {
@@ -1668,6 +1949,8 @@ header#navbar {
 }
 
 
+
+// -----ФОРМА----- 1920-1710
 
 .forma {
   padding: 74px 0 0;
@@ -1756,6 +2039,8 @@ header#navbar {
 }
 
 
+
+// -----ПОДВАЛ----- 1920-1710
 
 .footer {
   background: #f9f9f9;
@@ -1924,13 +2209,9 @@ header#navbar {
     width: 1470px;
   }
 
-
-
   .div-heading, .masters .container section h2 {
     padding: 0 55px;
   }
-
-
 
   body {
     font-size: 14px;
@@ -2001,12 +2282,9 @@ header#navbar {
   //       }
   //     }
   //   }
-  // } 
+  // }
   
 
-  .header .headerBottomBanner .bannerContent .rightBanner img {
-      height: 460px;
-  }
 
   .header {
     .container {
@@ -2042,6 +2320,13 @@ header#navbar {
                 padding: 8px 40px;
               }
             } 
+          }
+        }
+        .rightBanner {
+          .twentyBlock {
+            img {
+              height: 460px;
+            }
           }
         }
       }
@@ -2088,7 +2373,7 @@ header#navbar {
 
 
 
-  // -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 1709-1500
+// -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 1709-1500
   
   .lowPrices {
     padding: 80px 0 60px;
@@ -2246,7 +2531,7 @@ header#navbar {
 
 
 
- // -----КАКОЙ-ТО БЛОК 3----- 1709-1500
+// -----КАКОЙ-ТО БЛОК 3----- 1709-1500
   .anotherThree {
     padding: 36px 0 25px;
     &:before {
@@ -2377,7 +2662,7 @@ header#navbar {
 
 
 
-//-----ФУТЕР----- 1709-1500
+//-----ПОДВАЛ----- 1709-1500
 
   .footer {
     padding: 70px 0;
@@ -2454,11 +2739,11 @@ header#navbar {
                 padding: 0 14px;
                 line-height: 40px;
               }
-              &:first-child a:after {
-                top: 18px;
-                right: -9px;
-                background-size: 9px;
-              }
+              // &:first-child a:after {
+              //   top: 18px;
+              //   right: -9px;
+              //   background-size: 9px;
+              // }
             }
           }
           .btn.btn-primary {
@@ -2474,6 +2759,8 @@ header#navbar {
   }
 
 
+
+// -----ШАПКА----- 1499-1200
 
   .header {
     .container {
@@ -2547,6 +2834,43 @@ header#navbar {
         } 
       }
     } 
+    .headerBottomBanner {
+      .bannerContent {
+        .container {
+          .leftBanner {
+              padding: 35px 52px 35px 105px;
+            .heading {
+              margin-bottom: 5px;
+            }
+            p.title {
+              padding-bottom: 11px;
+              margin-top: -8px;
+            }
+            ul {
+              padding: 10px 0 7px 34px;
+              li {
+                padding-bottom: 6px;
+                &:before {
+                  top: 10px;
+                }
+              }
+            }
+            .phoneBanner {
+              a.btn.btn-warning {
+                padding: 6px 28px;
+              }
+            } 
+          }
+        }
+        .rightBanner {
+          .twentyBlock {
+            img {
+              height: 353px;
+            }
+          }
+        }
+      } 
+    }
   } 
  
 
@@ -2585,50 +2909,12 @@ header#navbar {
   //       }
   //     } 
   //   } 
-  // } 
+  // }
   
 
 
-  .header .headerBottomBanner .bannerContent .rightBanner img {
-      height: 353px;
-  }
-
-
-  .header {
-    .headerBottomBanner {
-      .bannerContent {
-        .container {
-          .leftBanner {
-              padding: 35px 52px 35px 105px;
-            .heading {
-              margin-bottom: 5px;
-            }
-            p.title {
-              padding-bottom: 11px;
-              margin-top: -8px;
-            }
-            ul {
-              padding: 10px 0 7px 34px;
-              li {
-                padding-bottom: 6px;
-                &:before {
-                  top: 10px;
-                }
-              }
-            }
-            .phoneBanner {
-              a.btn.btn-warning {
-                padding: 6px 28px;
-              }
-            } 
-          }
-        }
-      } 
-    } 
-  } 
-
-
-
+ // -----СЕРВИСНЫЙ ЦЕНТР----- 1499-1200 
+ 
   .serviceCenter {
     padding: 40px 0 0;
     .container2 {
@@ -2697,11 +2983,15 @@ header#navbar {
 
 
 
+// -----ОБОРУДОВАНИЕ----- 1499-1200
+
   .equipment {
     height: 503px;
   }
 
 
+
+// -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 1499-1200
 
  .lowPrices {
     padding: 56px 0 42px;
@@ -2809,6 +3099,8 @@ header#navbar {
 
 
 
+// -----КОМПЛЕКТАЦИЯ----- 1499-1200
+
   .completing {
     padding: 46px 0;
     &:before {
@@ -2844,11 +3136,15 @@ header#navbar {
 
 
 
+// -----АКЦИИ----- 1499-1200
+
   .discounts {
     height: 473px;
   }
 
 
+
+// -----"ПРОБЛЕМНЫЙ" БЛОК----- 1499-1200
 
   .selectBreakage {
     padding: 40px 0 37px;
@@ -2948,6 +3244,8 @@ header#navbar {
 
 
 
+// -----МАСТЕРЫ----- 1499-1200
+
   .masters {
     &:before {
       top: 80px;
@@ -2970,6 +3268,8 @@ header#navbar {
   }
 
 
+
+// -----КАКОЙ-ТО БЛОК 1----- 1499-1200
 
   .another {
     padding: 70px 0 35px;
@@ -3005,6 +3305,16 @@ header#navbar {
 
 
 
+// -----КОММЕНТАРИИ----- 1499-1200
+
+  .comments {
+    height: 589px;
+  }
+
+
+
+// -----КАКОЙ-ТО БЛОК 2----- 1499-1200
+
   .anotherTwo {
     .container {
       .anotherTwoContent {
@@ -3021,11 +3331,7 @@ header#navbar {
 
 
 
-  .comments {
-    height: 589px;
-  }
-
-
+// -----КАКОЙ-ТО БЛОК 3----- 1499-1200
 
   .anotherThree {
     padding: 25px 0;
@@ -3062,6 +3368,8 @@ header#navbar {
   }
 
 
+
+// -----КОНТАКТЫ----- 1499-1200
 
   .contacts {
     padding: 45px 0;
@@ -3136,20 +3444,30 @@ header#navbar {
           }
         }
       }
-      .bannerContacts .banner {
-        height: 197px;
-        width: 32.8%;
-      }
+      .bannerContacts {
+        .banner {
+          height: 197px;
+          width: 32.8%;
+        }
+      } 
     } 
   }
 
 
 
-  .maps .container iframe {
-    margin: 0;
-  }
+// -----КАРТА----- 1499-1200
+
+  .maps {
+    .container {
+      iframe {
+        margin: 0;
+      }
+    } 
+  } 
 
 
+
+// -----ФОРМА----- 1499-1200
 
   .forma {
     padding: 74px 0 0;
@@ -3201,6 +3519,8 @@ header#navbar {
   }
 
 
+
+// -----ПОДВАЛ----- 1499-1200
 
   .footer {
     padding: 50px 0 40px;
@@ -3310,6 +3630,8 @@ header#navbar {
 
 
 
+// -----МЕНЮ----- 1199-992
+
   header#navbar {
     .container {
       .navbar-collapse {
@@ -3332,6 +3654,97 @@ header#navbar {
   } 
 
 
+
+// -----ШАПКА----- 1199-992
+
+  .header {
+    .container {
+      .headerTop {
+        padding: 21px 0;
+        .headerTopContent {
+          .col-md-3 {
+            &:nth-child(1) {
+              margin-right: 0px;
+            }
+            .find-us {
+              margin-left: -10px;
+              p.find-us-bottom {
+                padding-left: 23px;
+                &:before {
+                  background-size: 18px;
+                }
+              }
+            }
+            .address {
+              width: 270px;
+              margin-left: -30px;
+              p.addBottom {
+                letter-spacing: -0.3px;
+                font-size: 1.1em;
+              }
+            }
+            .telephone {
+              &:before {
+                top: 8px;
+                left: 28px;
+                height: 37px;
+              }
+              p.telTop {
+                margin: -8px 0 7px;
+              }
+              p.telBottom {
+                &:before {
+                  top: -12px;
+                  left: 45px;
+                  width: 24px;
+                  height: 24px;
+                  background-size: 24px;
+                }
+              }
+            } 
+          } 
+        } 
+      }
+    } 
+    .headerBottomBanner {
+      .bannerContent {
+        .container {
+          .leftBanner {
+            padding: 46px 20px 47px 25px;
+            .heading {
+              margin-bottom: 5px;
+              line-height: 26px;
+            }
+            p.title {
+              padding-bottom: 8px;
+              margin-top: 0;
+              width: 210px;
+            }
+            ul {
+              padding: 0px 0 0 34px;
+              max-width: 460px;
+              li {
+                padding-bottom: 0px;
+                line-height: 20px;
+              }
+            }
+            .phoneBanner a.btn.btn-warning {
+              padding: 5px 19px;
+              font-size: 1em;
+              margin-right: 7px;
+            }
+          }
+        }
+        .rightBanner{
+          .twentyBlock {
+            img {
+              height: 316px;
+            }
+          }
+        }
+      }
+    } 
+  } 
 
   // .header {
   //   .container {
@@ -3414,100 +3827,10 @@ header#navbar {
   //     } 
   //   }
   // } 
-  
-
-
-  .header {
-    .container {
-      .headerTop {
-        padding: 21px 0;
-        .headerTopContent {
-          .col-md-3 {
-            &:nth-child(1) {
-              margin-right: 0px;
-            }
-            .find-us {
-              margin-left: -10px;
-              p.find-us-bottom {
-                padding-left: 23px;
-                &:before {
-                  background-size: 18px;
-                }
-              }
-            }
-            .address {
-              width: 270px;
-              margin-left: -30px;
-              p.addBottom {
-                letter-spacing: -0.3px;
-                font-size: 1.1em;
-              }
-            }
-            .telephone {
-              &:before {
-                top: 8px;
-                left: 28px;
-                height: 37px;
-              }
-              p.telTop {
-                margin: -8px 0 7px;
-              }
-              p.telBottom {
-                &:before {
-                  top: -12px;
-                  left: 45px;
-                  width: 24px;
-                  height: 24px;
-                  background-size: 24px;
-                }
-              }
-            } 
-          } 
-        } 
-      }
-    } 
-    .headerBottomBanner {
-      .bannerContent {
-        .container {
-          .leftBanner {
-           padding: 46px 20px 47px 25px;
-            .heading {
-              margin-bottom: 5px;
-              line-height: 26px;
-            }
-            p.title {
-              padding-bottom: 8px;
-              margin-top: 0;
-              width: 210px;
-            }
-            ul {
-              padding: 0px 0 0 34px;
-              max-width: 460px;
-              li {
-                padding-bottom: 0px;
-                line-height: 20px;
-              }
-            }
-            .phoneBanner a.btn.btn-warning {
-              padding: 5px 19px;
-              font-size: 1em;
-              margin-right: 7px;
-            }
-          }
-        }
-      } 
-    }
-  } 
 
 
 
-
-
-  .header .headerBottomBanner .bannerContent .rightBanner img {
-    height: 316px;
-  }
-
-
+// -----СЕРВИСНЫЙ ЦЕНТР----- 1199-992
 
   .serviceCenter {
     padding: 34px 0 0;
@@ -3537,11 +3860,15 @@ header#navbar {
 
 
 
+// -----ОБОРУДОВАНИЕ----- 1199-992
+
   .equipment {
     height: 428px;
   }
 
 
+
+// -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 1199-992
 
   .lowPrices {
     padding: 48px 0 36px;
@@ -3596,6 +3923,8 @@ header#navbar {
 
 
 
+// -----КОМПЛЕКТАЦИЯ----- 1199-992
+
   .completing {
     padding: 39px 0;
     &:before {
@@ -3648,11 +3977,15 @@ header#navbar {
 
 
 
+// -----АКЦИИ----- 1199-992
+
   .discounts {
     height: 402px;
   }
 
 
+
+// -----"ПРОБЛЕМНЫЙ" БЛОК----- 1199-992
 
   .selectBreakage {
     padding: 35px 0;
@@ -3696,6 +4029,8 @@ header#navbar {
 
 
 
+// -----МАСТЕРЫ----- 1199-992
+
   .masters {
     &:before {
       top: 100px;
@@ -3711,6 +4046,8 @@ header#navbar {
   }
 
 
+
+// -----КАКОЙ-ТО БЛОК 1----- 1199-992
 
   .another {
     padding: 50px 0 30px;
@@ -3751,6 +4088,8 @@ header#navbar {
 
 
 
+// -----КАКОЙ-ТО БЛОК 2----- 1199-992
+
   .anotherTwo {
     .container {
       .anotherTwoContent {
@@ -3767,11 +4106,15 @@ header#navbar {
 
 
 
+// -----КОММЕНТАРИИ----- 1199-992
+
   .comments {
     height: 500px;
   }
 
 
+
+// -----КАКОЙ-ТО БЛОК 3----- 1199-992
 
   .anotherThree {
     padding: 21px 0;
@@ -3804,6 +4147,8 @@ header#navbar {
   }
 
 
+
+// -----КОНТАКТЫ----- 1199-992
 
   .contacts {
     padding: 38px 0;
@@ -3861,11 +4206,19 @@ header#navbar {
 
 
 
-  .maps .container iframe {
-    height: 267px;
-  }
+// -----КАРТА----- 1199-992
+
+  .maps {
+    .container {
+      iframe {
+        height: 267px;
+      }
+    } 
+  } 
 
 
+
+// -----ФОРМА----- 1199-992
 
   .forma {
     .container {
@@ -3912,6 +4265,8 @@ header#navbar {
   } 
 
 
+
+// -----ПОДВАЛ----- 1199-992
 
   .footer {
     padding: 43px 0 34px;
@@ -3982,6 +4337,8 @@ header#navbar {
 
 
 
+// -----МЕНЮ----- 991-768
+
   header#navbar {
     .container {
       .navbar-collapse {
@@ -4004,9 +4361,8 @@ header#navbar {
   }
 
 
-.header .headerBottomBanner .bannerContent .rightBanner img {
-    height: auto;
-}
+
+// -----ШАПКА----- 991-768
 
   .header {
     .container {
@@ -4110,12 +4466,19 @@ header#navbar {
        .rightBanner {
           width: 100%;
           position: static;
+          .twentyBlock {
+            img {
+              height: auto;
+            }
+          }
         }
       } 
     }
   } 
 
 
+
+// -----СЕРВИСНЫЙ ЦЕНТР----- 991-768
 
   .serviceCenter {
     padding: 26px 0 0;
@@ -4180,11 +4543,15 @@ header#navbar {
 
 
 
+// -----ОБОРУДОВАНИЕ----- 991-768
+
   .equipment {
     height: 321px;
   }
 
 
+
+// -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 991-768
 
   .lowPrices {
     padding: 36px 0 20px;
@@ -4219,6 +4586,8 @@ header#navbar {
   }
 
 
+
+// -----КОМПЛЕКТАЦИЯ----- 991-768
 
   .completing {
     padding: 30px 0;
@@ -4284,11 +4653,15 @@ header#navbar {
 
 
 
+// -----АКЦИИ----- 991-768
+
   .discounts {
     height: 300px;
   }
 
 
+
+// -----"ПРОБЛЕМНЫЙ" БЛОК----- 991-768
 
   .selectBreakage {
     .container {
@@ -4321,7 +4694,13 @@ header#navbar {
 
 
 
+// -----МАСТЕРЫ----- 991-768
+
   .masters {
+    padding: 40px 0;
+    &:before {
+      top: 80px;
+    }
     .container {
       section {
         h2 {
@@ -4335,6 +4714,7 @@ header#navbar {
             }
           }
           .owl-carousel {
+            margin-top: 80px;
             .owl-nav {
               button {
                 background-size: 50px; 
@@ -4349,6 +4729,8 @@ header#navbar {
   }
 
 
+
+// -----КАКОЙ-ТО БЛОК 1----- 991-768
 
   .another {
     padding: 38px 0;
@@ -4395,6 +4777,8 @@ header#navbar {
 
 
 
+// -----КАКОЙ-ТО БЛОК 2----- 991-768
+
   .anotherTwo {
     .container {
       .anotherTwoContent {
@@ -4417,11 +4801,15 @@ header#navbar {
 
 
 
+// -----КОММЕНТАРИИ----- 991-768
+
   .comments {
     height: 376px;
   }
 
 
+
+// -----КАКОЙ-ТО БЛОК 3----- 991-768
 
  .anotherThree {
     padding: 20px 0;
@@ -4454,6 +4842,8 @@ header#navbar {
   }
 
 
+
+// -----КОНТАКТЫ----- 991-768
 
   .contacts {
     padding: 30px 0;
@@ -4524,11 +4914,19 @@ header#navbar {
 
 
 
-  .maps .container iframe {
-    height: 200px;
-  }
+// -----КАРТА----- 991-768
+
+  .maps {
+    .container {
+      iframe {
+        height: 200px;
+      }
+    } 
+  } 
 
 
+
+// -----ФОРМА----- 991-768
 
   .forma {
     padding: 70px 0 0;
@@ -4575,6 +4973,8 @@ header#navbar {
   }
 
 
+
+// -----ПОДВАЛ----- 991-768
 
   .footer {
     padding: 30px 0 20px;
@@ -4651,6 +5051,8 @@ header#navbar {
 
 
 
+// -----МЕНЮ----- 767-576
+
   header#navbar {
     height: 0;
     .container {
@@ -4719,6 +5121,8 @@ header#navbar {
 
 
 
+// -----ШАПКА----- 767-576
+
   .header {
     .container {
       .headerTop {
@@ -4764,11 +5168,19 @@ header#navbar {
   
 
 
+// -----СЕРВИСНЫЙ ЦЕНТР----- 767-576
+
   .serviceCenter {
     display: none;
   }
 
 
+
+// -----ОБОРУДОВАНИЕ----- 767-576
+
+
+
+// -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 767-576
 
   .lowPrices {
     &:before {
@@ -4804,6 +5216,8 @@ header#navbar {
   } 
 
 
+
+// -----КОМПЛЕКТАЦИЯ----- 767-576
 
   .completing {
     &:before {
@@ -4853,6 +5267,12 @@ header#navbar {
 
 
 
+// -----АКЦИИ----- 767-576
+
+
+
+// -----"ПРОБЛЕМНЫЙ" БЛОК----- 767-576
+
   .selectBreakage {
     &:before {
       top: 53px;
@@ -4869,6 +5289,7 @@ header#navbar {
               width: 100%;
               padding-left: 28%; 
               margin-bottom: 25px;
+              order: 0!important;
               p.title {
                 font-size: 1.63em;
                 margin-bottom: 15px;
@@ -4945,6 +5366,8 @@ header#navbar {
 
 
 
+// -----КАКОЙ-ТО БЛОК 1----- 767-576
+
   .another {
     padding: 30px 0 0;
     .container {
@@ -4962,6 +5385,8 @@ header#navbar {
   }
 
 
+
+// -----КАКОЙ-ТО БЛОК 2----- 767-576
 
   .anotherTwo {
     .container {
@@ -4992,6 +5417,12 @@ header#navbar {
 
 
 
+// -----КОММЕНТАРИИ----- 767-576
+
+
+
+// -----КАКОЙ-ТО БЛОК 3----- 767-576
+
   .anotherThree {
     .container {
       .anotherThreeContent {
@@ -5005,6 +5436,8 @@ header#navbar {
   } 
 
 
+
+// -----КОНТАКТЫ----- 767-576
 
   .contacts {
     &:before {
@@ -5057,6 +5490,8 @@ header#navbar {
 
 
 
+// -----ФОРМА----- 767-576
+
   .forma {
     .container {
       width: 100%;
@@ -5102,6 +5537,8 @@ header#navbar {
 
 
 
+// -----ПОДВАЛ----- 767-576
+
   .footer {
     .container {
       .footerContent {
@@ -5143,6 +5580,8 @@ header#navbar {
 
 
 
+// -----МЕНЮ----- 575-450
+
   header#navbar {
     .container {
       .navbar-collapse {
@@ -5162,6 +5601,8 @@ header#navbar {
   }
 
 
+
+// -----ШАПКА----- 575-450
 
   .header {
     .headerBottomBanner {
@@ -5189,6 +5630,8 @@ header#navbar {
 
 
 
+// -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 575-450
+
   .lowPrices {
     .container3 {
       .div-heading {
@@ -5206,6 +5649,8 @@ header#navbar {
   } 
 
 
+
+// -----КОМПЛЕКТАЦИЯ----- 575-450
 
   .completing {
     &:before {
@@ -5228,6 +5673,8 @@ header#navbar {
 
 
 
+// -----"ПРОБЛЕМНЫЙ" БЛОК----- 575-450
+
 .selectBreakage {
     &:before {
       top: 70px;
@@ -5241,9 +5688,11 @@ header#navbar {
 
 
 
+// -----МАСТЕРЫ----- 575-450
+
   .masters {
     &:before {
-      top: 115px;
+      top: 95px;
     }
     .container {
       section {
@@ -5254,6 +5703,9 @@ header#navbar {
     }
   }
 
+
+
+// -----КАКОЙ-ТО БЛОК 2----- 575-450
 
   .anotherTwo {
     .container {
@@ -5275,6 +5727,8 @@ header#navbar {
 
 
 
+// -----КАКОЙ-ТО БЛОК 3----- 575-450
+
   .anotherThree {
      .container {
       .anotherThreeContent {
@@ -5288,6 +5742,8 @@ header#navbar {
   }
 
 
+
+// -----КОНТАКТЫ----- 575-450
 
   .contacts {
     .container {
@@ -5316,6 +5772,8 @@ header#navbar {
 
 
 
+// -----ШАПКА----- 449-400
+
   .header {
     .headerBottomBanner {
       .bannerContent {
@@ -5339,6 +5797,8 @@ header#navbar {
   } 
 
 
+
+// -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 449-400
 
   .lowPrices {
     .container3 {
@@ -5375,6 +5835,8 @@ header#navbar {
   
 
 
+// -----КОМПЛЕКТАЦИЯ----- 449-400
+
   .completing {
     .container {
       .completingContent {
@@ -5405,6 +5867,8 @@ header#navbar {
 
 
 
+// -----"ПРОБЛЕМНЫЙ" БЛОК----- 449-400
+
   .selectBreakage {
     .container {
       p.heading {
@@ -5425,9 +5889,11 @@ header#navbar {
 
 
 
+// -----МАСТЕРЫ----- 449-400
+
   .masters {
     &:before {
-      top: 110px;
+      top: 90px;
     }
     .container {
       section {
@@ -5439,6 +5905,8 @@ header#navbar {
   }
 
 
+
+// -----КАКОЙ-ТО БЛОК 2----- 449-400
 
   .anotherTwo {
     .container {
@@ -5454,6 +5922,8 @@ header#navbar {
   } 
 
 
+
+// -----КОНТАКТЫ----- 449-400
 
   .contacts .container .bannerContacts .banner {
     height: 200px;
@@ -5472,7 +5942,9 @@ header#navbar {
   }
 
 
-  
+ 
+ // -----ШАПКА----- 399-350
+ 
   .header {
     .headerBottomBanner {
       .bannerContent {
@@ -5501,6 +5973,8 @@ header#navbar {
 
 
 
+// -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 399-350
+
   .lowPrices {
     padding: 20px 0 10px;
     &:before {
@@ -5522,6 +5996,8 @@ header#navbar {
   }
 
 
+
+// -----КОМПЛЕКТАЦИЯ----- 399-350
 
   .completing {
     &:before {
@@ -5558,6 +6034,8 @@ header#navbar {
 
 
 
+// -----"ПРОБЛЕМНЫЙ" БЛОК----- 399-350
+
   .selectBreakage {
     &:before {
       top: 60px;
@@ -5583,9 +6061,11 @@ header#navbar {
 
 
 
+// -----МАСТЕРЫ----- 399-350
+
   .masters {
     &:before {
-      top: 95px;
+      top: 77px;
     }
     .container {
       section {
@@ -5608,6 +6088,8 @@ header#navbar {
 
 
 
+// -----КАКОЙ-ТО БЛОК 1----- 399-350
+
   .another {
     .container {
       .anotherContent {
@@ -5622,6 +6104,8 @@ header#navbar {
     } 
 
 
+
+// -----КАКОЙ-ТО БЛОК 2----- 399-350
 
   .anotherTwo {
     .container {
@@ -5638,6 +6122,8 @@ header#navbar {
   } 
 
 
+
+// -----КАКОЙ-ТО БЛОК 3----- 399-350
 
   .anotherThree {
     &:before {
@@ -5666,6 +6152,8 @@ header#navbar {
 
 
 
+// -----КОНТАКТЫ----- 399-350
+
   .contacts {
     &:before {
       top: 40px;
@@ -5679,13 +6167,17 @@ header#navbar {
           margin-left: 23%;
         }
       } 
-      .bannerContacts .banner {
-        height: 156px;
-      }
+      .bannerContacts {
+        .banner {
+          height: 182px;
+        }
+      } 
     } 
   } 
 
 
+
+// -----ФОРМА----- 399-350
 
   .forma {
     .container {
@@ -5699,23 +6191,13 @@ header#navbar {
 
 
 
+// -----ПОДВАЛ----- 399-350
+
 .footer {
   .container {
     .footerContent {
       .item {
           margin-bottom: 30px;
-        }
-      } 
-    } 
-  } 
-
-
-
-  .contacts {
-    .container {
-      .bannerContacts {
-        .banner {
-          height: 182px;
         }
       } 
     } 
@@ -5727,7 +6209,11 @@ header#navbar {
 
 
 @media (min-width: 300px) and (max-width: 349px) {
-  
+
+
+
+ // -----"ПРОБЛЕМНЫЙ" БЛОК----- 349-300
+ 
   .selectBreakage {
     .container {
       .wrap {
