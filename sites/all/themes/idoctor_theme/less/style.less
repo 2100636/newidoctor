@@ -9,11 +9,11 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
 }
 
 a {
   text-decoration: none;
+  transition: all 0.6s ease;
 }
 
 .green {
@@ -80,6 +80,11 @@ a {
     border-bottom: 1px solid #e0e0e0;
     z-index: 0;
   }
+}
+
+
+header#navbar, .header, .serviceCenter, .lowPrices, .completing, .discounts, .selectBreakage, .masters, .another, .comments, .anotherTwo, .anotherThree, .contacts, .forma, .footer {
+  font-size: 16px;
 }
 
 
@@ -727,7 +732,7 @@ header#navbar {
                 .views-field-field-photo {
                   .field-content {
                     img.img-responsive {
-                      width: 72%;
+                      width: 60%;
                       margin: 0 auto;
                     }
                     
@@ -1177,7 +1182,7 @@ header#navbar {
   }
   .container {
     section {
-      h2.block-title {
+      h2 {
         font-size: 3em;
         text-transform: uppercase;
         background: #fff;
@@ -1191,19 +1196,23 @@ header#navbar {
           .views-row {
             float: left;
             cursor: pointer;
+            background-size: cover;
             &:nth-child(1) {
               width: 65%;
               height: 510px;
               margin: 0 5px 0 0;
-              padding: 114px 0 76px 0;
-              .views-field-title {
-                span.field-content {
-                  width: 36%;
-                  margin: 0 auto 50px;
-                  font-size: 2.13em;
-                  display: block;
-                  text-transform: uppercase;
-                  line-height: 45px;
+              padding: 70px 0;
+              .views-field-field-title-discount {
+                .field-content {
+                  p {
+                    width: 55%;
+                    margin: 0 auto 50px;
+                    font-size: 3em;
+                    display: block;
+                    text-transform: uppercase;
+                    line-height: 60px;
+                    font-weight: 700;
+                  }
                 }
               }
               .views-field-field-content-discount {
@@ -1230,6 +1239,11 @@ header#navbar {
                   }
                 }
               }
+              .views-field-title {
+                span.field-content {
+                 display: none;
+                }
+              }
             }
             &:nth-child(2) {
               width: 34.6%;
@@ -1239,11 +1253,13 @@ header#navbar {
               padding: 65px 30px 30px 60px;
               text-transform: uppercase;
               position: relative;
-              .views-field-title {
-                span.field-content {
-                  font-size: 2.3em;
-                  font-weight: 700;
-                  line-height: 48px;
+              .views-field-field-title-discount {
+                .field-content {
+                  p {
+                    font-size: 2.3em;
+                    font-weight: 700;
+                    line-height: 48px;
+                  }
                 }
               }
               .views-field-field-content-discount {
@@ -1268,6 +1284,11 @@ header#navbar {
                   }
                 }
               }
+              .views-field-title {
+                span.field-content {
+                 display: none;
+                }
+              }
             }
             &:nth-child(3) {
               width: 34.6%;
@@ -1276,11 +1297,13 @@ header#navbar {
                   padding: 80px 0 0 60px;
                   text-transform: uppercase;
                   position: relative;
-              .views-field-title {
-                span.field-content {
-                  font-size: 2.3em;
-                  font-weight: 700;
-                  line-height: 48px;
+             .views-field-field-title-discount {
+                .field-content {
+                  p {
+                    font-size: 2.3em;
+                    font-weight: 700;
+                    line-height: 48px;
+                  }
                 }
               }
               .views-field-field-content-discount {
@@ -1303,6 +1326,11 @@ header#navbar {
                     background-size: 80px;
                     transition: all 0.6s ease;
                   }
+                }
+              }
+              .views-field-title {
+                span.field-content {
+                 display: none;
                 }
               }
             }
@@ -1547,6 +1575,7 @@ header#navbar {
           .owl-stage-outer {
             .owl-stage {
               .owl-item {
+                cursor: pointer;
                 .views-row {
                   .views-field-field-photo {
                     .field-content {
@@ -2209,11 +2238,11 @@ header#navbar {
     width: 1470px;
   }
 
-  .div-heading, .masters .container section h2 {
+.div-heading, .equipment .container section h2, .discounts .container section h2, .masters .container section h2 {
     padding: 0 55px;
   }
 
-  body {
+  header#navbar, .header, .serviceCenter, .lowPrices, .completing, .discounts, .selectBreakage, .masters, .another, .comments, .anotherTwo, .anotherThree, .contacts, .forma, .footer {
     font-size: 14px;
   }
 
@@ -2368,7 +2397,10 @@ header#navbar {
 // -----ОБОРУДОВАНИЕ----- 1709-1500
 
   .equipment {
-    height: 718px;
+    &:before {
+      top: 94px;
+    }
+    padding: 70px 0 90px;
   }
 
 
@@ -2431,10 +2463,6 @@ header#navbar {
 
 // -----АКЦИИ----- 1709-1500
 
-  .discounts {
-    height: 675px;
-  }
-
 
 
 // -----"ПРОБЛЕМНЫЙ" БЛОК----- 1709-1500
@@ -2469,18 +2497,6 @@ header#navbar {
 
 
 // -----МАСТЕРЫ----- 1709-1500
-
-  // .masters {
-  //  .container {
-  //     section {
-  //      .view-masters {
-  //         .view-header {
-  //           line-height: 30px;
-  //         }
-  //       }  
-  //     }
-  //   }
-  // }
 
 
 
@@ -2710,15 +2726,11 @@ header#navbar {
     width: 1170px;
   }
 
-
-
-  .div-heading, .masters .container section h2 {
+  .div-heading, .equipment .container section h2, .discounts .container section h2, .masters .container section h2 {
     padding: 0 45px;
   }
 
-
-
-  body {
+  header#navbar, .header, .serviceCenter, .lowPrices, .completing, .discounts, .selectBreakage, .masters, .another, .comments, .anotherTwo, .anotherThree, .contacts, .forma, .footer {
     font-size: 11px;
   }
 
@@ -2986,7 +2998,10 @@ header#navbar {
 // -----ОБОРУДОВАНИЕ----- 1499-1200
 
   .equipment {
-    height: 503px;
+    &:before {
+      top: 85px;
+    }
+    padding: 60px 0 80px;
   }
 
 
@@ -3134,12 +3149,93 @@ header#navbar {
     } 
   }
 
-
+     
 
 // -----АКЦИИ----- 1499-1200
 
   .discounts {
-    height: 473px;
+    padding: 40px 0 80px;
+    &:before {
+      top: 57px;
+    }
+    .container {
+      section {
+        .view-promotions {
+          .view-content {
+            .views-row {
+              &:nth-child(1) {
+                height: 445px;
+                padding: 70px 0;
+                .views-field-field-title-discount {
+                  .field-content {
+                    p {
+                      line-height: 50px;
+                      margin-bottom: 40px;
+                    }
+                  }
+                }
+              }
+              &:nth-child(2) {
+                padding: 60px 0px 45px 35px;
+                width: 34.5%;
+                height: 220px;
+                .views-field-field-title-discount {
+                  .field-content {
+                    p {
+                      line-height: 36px;
+                    }
+                  }
+                }
+                .views-field-field-content-discount {
+                  .field-content {
+                    margin-top: 10px;
+                    font-size: 1.2em;
+                  }
+                }
+                .views-field-nid {
+                  .field-content {
+                    width: 55px;
+                    height: 55px;
+                    background-size: 55px;
+                    &:hover {
+                      background-size: 60px;
+                    }
+                  }
+                }
+              }
+              &:nth-child(3) {
+                width: 34.5%;
+                height: 220px;
+                padding: 72px 0 0 35px;
+                .views-field-field-title-discount {
+                  .field-content {
+                    p {
+                      line-height: 36px;
+                    }
+                  }
+                }
+                .views-field-field-content-discount {
+                  .field-content {
+                    margin-top: 10px;
+                    font-size: 1.2em;
+                  }
+                }
+                .views-field-nid {
+                  .field-content {
+                    width: 55px;
+                    height: 55px;
+                    background-size: 55px;
+                    &:hover {
+                      background-size: 60px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
 
@@ -3616,15 +3712,11 @@ header#navbar {
     width: 990px;
   }
 
-
-
-  .div-heading, .masters .container section h2 {
+   .div-heading, .equipment .container section h2, .discounts .container section h2, .masters .container section h2 {
     padding: 0 35px;
   }
 
-
-
-  body {
+  header#navbar, .header, .serviceCenter, .lowPrices, .completing, .discounts, .selectBreakage, .masters, .another, .comments, .anotherTwo, .anotherThree, .contacts, .forma, .footer {
     letter-spacing: 0.5px;
   }
 
@@ -3863,7 +3955,10 @@ header#navbar {
 // -----ОБОРУДОВАНИЕ----- 1199-992
 
   .equipment {
-    height: 428px;
+    &:before {
+      top: 75px;
+    }
+    padding: 50px 0 70px;
   }
 
 
@@ -3980,7 +4075,63 @@ header#navbar {
 // -----АКЦИИ----- 1199-992
 
   .discounts {
-    height: 402px;
+    padding: 30px 0 60px;
+    .container {
+      section {
+        .view-promotions {
+          margin-top: 30px;
+          .view-content {
+            .views-row {
+              &:nth-child(1) {
+                height: 400px;
+                padding: 65px 15px;
+                .views-field-field-title-discount {
+                  .field-content {
+                    p {
+                      width: 60%;
+                      margin-bottom: 30px;
+                      font-size: 2.7em;
+                      line-height: 40px;
+                    }
+                  }
+                }
+                .views-field-field-content-discount {
+                  .field-content {
+                    margin-bottom: 30px;
+                  }
+                }
+              }
+              &:nth-child(2) {
+                padding: 50px 0px 45px 20px;
+                width: 34.4%;
+                height: 197px;
+                .views-field-field-title-discount {
+                  .field-content {
+                    p {
+                      line-height: 30px;
+                      font-size: 2em;
+                    }
+                  }
+                }
+              }
+              &:nth-child(3) {
+                width: 34.4%;
+                height: 198px;
+                padding: 63px 0 0 20px;
+                .views-field-field-title-discount {
+                  .field-content {
+                    p {
+                      line-height: 30x;
+                      font-size: 2em;                      
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
 
@@ -4328,9 +4479,7 @@ header#navbar {
     width: 750px;
   }
 
-
-
-  .div-heading, .masters .container section h2 {
+  .div-heading, .equipment .container section h2, .discounts .container section h2, .masters .container section h2 {
     font-size: 2.7em;
     padding: 0 20px;
   }
@@ -4546,7 +4695,23 @@ header#navbar {
 // -----ОБОРУДОВАНИЕ----- 991-768
 
   .equipment {
-    height: 321px;
+    &:before {
+      top: 65px;
+    }
+    padding: 40px 0 60px;
+    section {
+      .view-equipments {
+        .owl-carousel {
+          .owl-nav {
+            button {
+              width: 50px;
+              height: 50px;
+              background-size: 50px;
+            }
+          }
+        }
+      }
+    }
   }
 
 
@@ -4656,7 +4821,44 @@ header#navbar {
 // -----АКЦИИ----- 991-768
 
   .discounts {
-    height: 300px;
+    &:before {
+      top: 47px;
+    }
+    .container {
+      section {
+        .view-promotions {
+          .view-content {
+            .views-row {
+              &:nth-child(1) {
+                width: 100%;
+                height: 395px;
+                margin-bottom: 5px;
+                .views-field-field-title-discount {
+                  .field-content {
+                    p {
+                      width: 50%;
+                    }
+                  }
+                }
+              }
+              &:nth-child(2) {
+                padding: 80px 0 80px 30px;
+                width: 49.6%;
+                height: 248px;
+                margin: 0;
+              }
+               &:nth-child(3) {
+                width: 49.7%;
+                height: 198px;
+                padding: 90px 0 0 30px;
+                height: 248px;
+                margin-left: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
 
@@ -5037,13 +5239,12 @@ header#navbar {
 
 
 @media (min-width: 300px) and (max-width: 767px) {
+
   .container {
     width: 570px;
   }
 
-
-
-  .div-heading, .masters .container section h2 {
+  .div-heading, .equipment .container section h2, .discounts .container section h2, .masters .container section h2 {
     line-height: 36px;
     font-size: 2.6em;
     padding: 0 10px;
@@ -5178,6 +5379,41 @@ header#navbar {
 
 // -----ОБОРУДОВАНИЕ----- 767-576
 
+  .equipment {
+    &:before {
+      top: 60px;
+    }
+    .container {
+      section {
+        .view-equipments {
+          margin-top: 35px;
+          .owl-carousel {
+            .owl-stage-outer {
+              .owl-stage {
+                .owl-item {
+                  .views-row {
+                    .views-field-field-photo {
+                      .field-content {
+                        img.img-responsive {
+                          width: 50%;
+                        }
+                      } 
+                    } 
+                    .views-field-title {
+                      span.field-content {
+                        margin: 0 auto;
+                      }
+                    }     
+                  } 
+                } 
+              }
+            }
+          } 
+        }
+      }
+    }
+  }
+
 
 
 // -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 767-576
@@ -5268,7 +5504,55 @@ header#navbar {
 
 
 // -----АКЦИИ----- 767-576
-
+  
+  .discounts {
+    padding: 30px 0 50px;
+    .container {
+      section {
+        .view-promotions {
+          .view-content {
+            .views-row {
+              &:nth-child(1) {
+                height: auto;
+                margin: 0;
+                margin-bottom: 5px;
+                .views-field-field-title-discount {
+                  .field-content {
+                    p {
+                      width: auto; 
+                    }
+                  }
+                }
+              }
+              &:nth-child(2) {
+                padding: 60px 15px;
+                width: 100%;
+                height: auto;
+                margin: 0 0 5px 0;
+                text-align: center;
+                .views-field-field-title-discount {
+                  .field-content {
+                    p {
+                      width: 85%;
+                      margin: 0 auto 20px;
+                    }
+                    
+                  }
+                }
+              }
+              &:nth-child(3) {
+                text-align: center;
+                width: 100%;
+                padding: 77px 15px;
+                height: auto;
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 
 
 // -----"ПРОБЛЕМНЫЙ" БЛОК----- 767-576
@@ -5574,7 +5858,7 @@ header#navbar {
     width: 100%;
   }
 
-  .div-heading, .masters .container section h2{
+  .div-heading, .equipment .container section h2, .discounts .container section h2, .masters .container section h2 {
     font-size: 2.3em;
   }
 
@@ -5765,7 +6049,7 @@ header#navbar {
 
 @media (min-width: 300px) and (max-width: 449px) {
   
-  .div-heading, .masters .container section h2 {
+  .div-heading, .equipment .container section h2, .discounts .container section h2, .masters .container section h2 {
     line-height: 32px;
     font-size: 2.3em;
   }
@@ -5795,6 +6079,23 @@ header#navbar {
       } 
     } 
   } 
+  
+  
+  
+// -----ОБОРУДОВАНИЕ----- 449-400
+
+  .equipment {
+    &:before {
+      top: 56px;
+    }
+    .container {
+      section {
+        h2 {
+          letter-spacing: -1.1px;
+        }
+      }
+    }
+  }
 
 
 
@@ -5889,6 +6190,43 @@ header#navbar {
 
 
 
+// -----АКЦИИ----- 449-400
+
+  .discounts {
+    padding: 30px 0;
+    .container {
+      section {
+       .view-promotions {
+          .view-content {
+            .views-row {
+              &:nth-child(1) {
+                .views-field-nid {
+                  span.field-content {
+                   .btn.btn-warning {
+                     width: 100%;
+                     padding: 8px 0;
+                    }
+                  }
+                }
+              }
+              &:nth-child(2) {
+                .views-field-field-title-discount {
+                  .field-content {
+                    p {
+                      width: auto;
+                    }
+                  }
+                }
+              }
+            }  
+          }
+        }
+      }
+    }
+  }
+
+
+
 // -----МАСТЕРЫ----- 449-400
 
   .masters {
@@ -5936,7 +6274,7 @@ header#navbar {
 
 @media (min-width: 300px) and (max-width: 399px) {
 
-  .div-heading {
+  .div-heading, .equipment .container section h2 {
     line-height: 24px;
     font-size: 1.77em;
   }
@@ -5971,6 +6309,15 @@ header#navbar {
     } 
   } 
 
+
+
+// -----Оборудование----- 399-350
+
+  .equipment {
+    &:before {
+      top: 52px;
+    }
+  }
 
 
 // -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 399-350

@@ -573,8 +573,8 @@
             0:{items:1},
             767:{items:2},
             991:{items:3},
-            1199:{item:4},
-            1499:{items:5}
+            1499:{items:4},
+            1709:{items:5}
             }
           });
         });
@@ -584,3 +584,5 @@
 <?php 
   require_once 'footer.tpl.php';
 ?>
+
+
