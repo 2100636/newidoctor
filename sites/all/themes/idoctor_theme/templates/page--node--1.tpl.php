@@ -4,6 +4,7 @@
 ?>
 
 
+<!-- Шпапка -->
 <div class="header">
   <div class="headerBottomBanner">
     <div class="bannerContent d-flex j-content-between a-items-flex-start">
@@ -65,6 +66,264 @@
       </div>
       <div class="col-md-3 serviceItem">
         <p><b>170 единиц</b> современного оборудования, не имеющего аналогов в Томске</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <div class="maket2"><img src="/sites/all/themes/idoctor_theme/image/maket2.jpg" alt=""></div> -->
+
+
+<!-- Доступные цены -->
+<div class="affordable-price">
+  <div class="container">
+    <div class="heading div-heading">
+      ДОСТУПНЫЕ ЦЕНЫ
+    </div>
+    <p class="heading">выберите модель вашего устройства</p>
+  </div>
+  <div class="buttonsBlock">
+    <div class="container">
+      <div class="buttonsBlockContent">
+        <div class="btn btn-light">IPHONE 8</div>
+        <div class="btn btn-light">IPHONE 8 plus</div>
+        <div class="btn btn-light another">другое устройство</div>  
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="affordable-price-content">    
+      <div class="priceRow">
+        <div class="priceRowItem">
+          <div class="service-name">
+            <p>Замена стекла (переклейка) <span>+ Защита БЕСПЛАТНО</span></p>
+          </div>
+          <div class="time">
+            1-2 дня
+          </div>
+          <div class="price">
+            <s>3500 р</s> 3000 р
+          </div>
+        </div>
+         <div class="btn btn-light">заказать</div>
+      </div>
+      <div class="priceRow">
+        <div class="priceRowItem">
+          <div class="service-name">
+            <p>Замена стекла (переклейка) <span>+ Защита БЕСПЛАТНО</span></p>
+          </div>
+          <div class="time">
+            1-2 дня
+          </div>
+          <div class="price">
+            <s>3500 р</s> 3000 р
+          </div>
+        </div>
+         <div class="btn btn-light">заказать</div>
+      </div>
+      <div class="priceRow">
+        <div class="priceRowItem">
+          <div class="service-name">
+            <p>Замена задней крышки</span></p>
+          </div>
+          <div class="time">
+            3 часа
+          </div>
+          <div class="price">
+            2700 р
+          </div>
+        </div>
+         <div class="btn btn-light">заказать</div>
+      </div>
+      <div class="priceRow">
+        <div class="priceRowItem">
+          <div class="service-name">
+            <p>
+              Замена разъема зарядки
+            </p>
+          </div>
+          <div class="time">
+            40 мин
+          </div>
+          <div class="price">
+           1400 р
+          </div>
+        </div>
+         <div class="btn btn-light">заказать</div>
+      </div>
+      <div class="priceRow">
+        <div class="priceRowItem">
+          <div class="service-name">
+            <p>
+              Замена датчика приближения
+            </p>
+          </div>
+          <div class="time">
+            20 мин
+          </div>
+          <div class="price">
+            1400 р
+          </div>
+        </div>
+         <div class="btn btn-light">заказать</div>
+      </div>
+      <div class="priceRow">
+        <div class="priceRowItem">
+          <div class="service-name">
+            <p>Замена стекла (переклейка) <span>+ Защита БЕСПЛАТНО</span></p>
+          </div>
+          <div class="time">
+            1-2 дня
+          </div>
+          <div class="price">
+            <s>3500 р</s> 3000 р
+          </div>
+        </div>
+         <div class="btn btn-light">заказать</div>
+      </div>
+      <div class="priceRow">
+        <div class="priceRowItem">
+          <div class="service-name">
+            <p>Замена стекла (переклейка) <span>+ Защита БЕСПЛАТНО</span></p>
+          </div>
+          <div class="time">
+            1-2 дня
+          </div>
+          <div class="price">
+            <s>3500 р</s> 3000 р
+          </div>
+        </div>
+         <div class="btn btn-light">заказать</div>
+      </div>
+      <div class="priceRow">
+        <div class="priceRowItem">
+          <div class="service-name">
+            <p>Замена стекла (переклейка) <span>+ Защита БЕСПЛАТНО</span></p>
+          </div>
+          <div class="time">
+            1-2 дня
+          </div>
+          <div class="price">
+            <s>3500 р</s> 3000 р
+          </div>
+        </div>
+         <div class="btn btn-light">заказать</div>
+      </div>
+      <div class="priceRow">
+        <div class="priceRowItem">
+          <div class="service-name">
+            <p>Замена стекла (переклейка) <span>+ Защита БЕСПЛАТНО</span></p>
+          </div>
+          <div class="time">
+            1-2 дня
+          </div>
+          <div class="price">
+            <s>3500 р</s> 3000 р
+          </div>
+        </div>
+         <div class="btn btn-light">заказать</div>
+      </div>
+      <div class="priceRow">
+        <div class="priceRowItem">
+          <div class="service-name">
+            <p>Замена стекла (переклейка) <span>+ Защита БЕСПЛАТНО</span></p>
+          </div>
+          <div class="time">
+            1-2 дня
+          </div>
+          <div class="price">
+            <s>3500 р</s> 3000 р
+          </div>
+        </div>
+         <div class="btn btn-light">заказать</div>
+      </div>
+      <div class="priceRow">
+        <div class="priceRowItem">
+          <div class="service-name">
+            <p>Замена стекла (переклейка) <span>+ Защита БЕСПЛАТНО</span></p>
+          </div>
+          <div class="time">
+            1-2 дня
+          </div>
+          <div class="price">
+            <s>3500 р</s> 3000 р
+          </div>
+        </div>
+         <div class="btn btn-light">заказать</div>
+      </div>
+      <div class="priceRow">
+        <div class="priceRowItem">
+          <div class="service-name">
+            <p>Замена стекла (переклейка) <span>+ Защита БЕСПЛАТНО</span></p>
+          </div>
+          <div class="time">
+            1-2 дня
+          </div>
+          <div class="price">
+            <s>3500 р</s> 3000 р
+          </div>
+        </div>
+         <div class="btn btn-light">заказать</div>
+      </div>
+      <div class="priceRow">
+        <div class="priceRowItem">
+          <div class="service-name">
+            <p>Замена стекла (переклейка) <span>+ Защита БЕСПЛАТНО</span></p>
+          </div>
+          <div class="time">
+            1-2 дня
+          </div>
+          <div class="price">
+            <s>3500 р</s> 3000 р
+          </div>
+        </div>
+         <div class="btn btn-light">заказать</div>
+      </div>
+      <div class="priceRow">
+        <div class="priceRowItem">
+          <div class="service-name">
+            <p>Замена стекла (переклейка) <span>+ Защита БЕСПЛАТНО</span></p>
+          </div>
+          <div class="time">
+            1-2 дня
+          </div>
+          <div class="price">
+            <s>3500 р</s> 3000 р
+          </div>
+        </div>
+         <div class="btn btn-light">заказать</div>
+      </div>
+      <div class="priceRow">
+        <div class="priceRowItem">
+          <div class="service-name">
+            <p>Замена стекла (переклейка) <span>+ Защита БЕСПЛАТНО</span></p>
+          </div>
+          <div class="time">
+            1-2 дня
+          </div>
+          <div class="price">
+            <s>3500 р</s> 3000 р
+          </div>
+        </div>
+         <div class="btn btn-light">заказать</div>
+      </div>
+      <div class="priceRow">
+        <div class="priceRowItem">
+          <div class="service-name">
+            <p>Замена стекла (переклейка) <span>+ Защита БЕСПЛАТНО</span></p>
+          </div>
+          <div class="time">
+            1-2 дня
+          </div>
+          <div class="price">
+            <s>3500 р</s> 3000 р
+          </div>
+        </div>
+         <div class="btn btn-light">заказать</div>
+      </div>
+      <div class="allItems">
+        <p>Открыть все</p>
       </div>
     </div>
   </div>

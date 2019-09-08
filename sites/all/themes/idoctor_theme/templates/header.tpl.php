@@ -29,38 +29,36 @@
 </header>
 
 
-    <div class="modal fade" id="exampleModal" role="dialog" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="modal-header-top"></div>
-            <div class="modal-header-bottom">
-              <p>При замене дисплея на IPhone мы наклеим обычное защитное стекло бесплатно. На 3D стекло акция не распространяется.</p>
-            </div>
-          </div>
-          <div class="modal-body text-justify">
-            <p>Заполните форму ниже и мы свяжемся с Вами!</p>
-            <form action="">  
-              <input type="text" name="email" class="email" placeholder="email" >
-              <input type="text" name="phone" class="phone" placeholder="телефон" >
-              <div class="btn btn-primary">Подробнее  </div>
-            </form>
-          </div>
-         <!--  <div class="modal-footer">
-            <button class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div> -->
+
+<!-- Модалка -->
+<div class="modal fade" id="exampleModal" role="dialog" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-header-top"></div>
+        <div class="modal-header-bottom">
+          <p>При замене дисплея на IPhone мы наклеим обычное защитное стекло бесплатно. На 3D стекло акция не распространяется.</p>
         </div>
-      </div>      
+      </div>
+      <div class="modal-body text-justify">
+        <p>Заполните форму ниже и мы свяжемся с Вами!</p>
+        <form action="">  
+          <input type="text" name="email" class="email" placeholder="email" >
+          <input type="text" name="phone" class="phone" placeholder="телефон" >
+          <div class="btn btn-primary">Подробнее  </div>
+        </form>
+      </div>
+     <!--  <div class="modal-footer">
+        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div> -->
     </div>
-
-
-
-<div class="maket">
-  <!-- <img src="/sites/all/themes/idoctor_theme/image/maket.png" alt=""> -->
+  </div>      
 </div>
+
+
 
 <!-- шапка с логотипом  -->
 <div class="header">

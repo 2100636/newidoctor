@@ -47,8 +47,6 @@ a {
   align-items: flex-start;
 }
 
-
-
 .div-heading, .equipment .container section h2, .discounts .container section h2, .masters .container section h2 {
   font-size: 3em;
   color: #000;
@@ -59,17 +57,6 @@ a {
   z-index: 1;
   display: inline;
 }
-
-
- 
-.maket img {
-  position: absolute;
-  opacity: 0.7;
-  left: -17px;
-  top: -7px;
-  z-index: 9999;
-}
-
 
 .equipment, .equipment section .view-equipments .view-footer, .lowPrices, .completing, .discounts, .selectBreakage, .masters, .anotherThree, .contacts {
   &:before {
@@ -83,9 +70,20 @@ a {
   }
 }
 
-
 header#navbar, .header, .serviceCenter, .lowPrices, .completing, .discounts, .selectBreakage, .masters, .another, .comments, .anotherTwo, .anotherThree, .contacts, .forma, .footer {
   font-size: 16px;
+}
+
+
+
+.maket2 {
+  img {
+    position: absolute;
+    width: 100%;
+    opacity: 0.6;
+    top: 1034px;
+    left: 13px;
+  }
 }
 
 
@@ -816,6 +814,171 @@ header#navbar {
           width: 31px;
           height: 58px;
           background: url(/sites/all/themes/idoctor_theme/image/service-icon3.png);
+        }
+      }
+    }
+  }
+}
+
+
+
+// -----Доступные цены-----
+
+.affordable-price {
+  padding: 80px 0 30px;
+  position: relative;
+  text-align: center;
+  .container {
+    p.heading {
+      font-size: 1.88em;
+      text-transform: uppercase;
+      margin-top: 18px;
+    }
+  }
+  .buttonsBlock {
+    padding: 42px 0 35px;
+    border-bottom: 1px solid #ccc;
+    .container {
+      .buttonsBlockContent {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        .btn.btn-light {
+          padding: 11px 55px;
+          font-weight: 600;
+          border-radius: 50px;
+          margin-right: 32px;
+          color: #00bdf1;
+          border: 2px solid #00bdf1;
+          background: #fff;
+          transition: all 0.5s ease;
+          text-transform: uppercase;
+          font-size: 1.13em;
+          &:hover {
+            background: #f5a720;
+            color: #fff;
+            border: 2px solid #f5a720;
+          }
+        } 
+        .btn.btn-light.another {
+          padding: 11px 230px 11px 35px;
+          position: relative;
+          &:after {
+            content: '';
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            background-image: url(/sites/all/themes/idoctor_theme/image/arrow_down_blue.png);
+            width: 20px;
+            height: 10px;
+            z-index: 2;
+          }
+        }
+      }
+    }
+  }
+  .container {
+    .affordable-price-content {
+      text-align: left;
+      padding: 35px 0 54px;
+      .priceRow {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        margin-bottom: 5px;
+        .priceRowItem {
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: -o-flex;
+          display: flex;
+          margin-right: 22px;
+          .service-name {
+            background: #f9f9f9;
+            width: 1095px;
+            p {
+              font-size: 1.3em;
+              color: #4a4c4e;
+              padding: 14.25px 14px 14.25px 20px;
+              span {
+                color: #ed6263;
+              }
+            }
+          }
+          .time {
+            background: #e1e1e1;
+            color: #4a4c4e;
+            font-weight: 600;
+            width: 111px;
+            font-size: 1.13em;
+            padding: 16px 0;
+            text-align: center;
+          }
+          .price {
+            background: #00bdf1;
+            color: #fff;
+            font-weight: 600;
+            width: 147px;
+            font-size: 1.13em;
+            padding: 16px 0;
+            text-align: center;
+          }
+        }
+        .btn.btn-light {
+          padding: 13px 95px;
+          font-weight: 600;
+          border-radius: 50px;
+          color: #00bdf1;
+          border: 2px solid #00bdf1;
+          background: #fff;
+          transition: all 0.5s ease;
+          text-transform: uppercase;
+          font-size: 1.13em;
+          &:hover {
+            background: #f5a720;
+            color: #fff;
+            border: 2px solid #f5a720;
+          }
+        }   
+      }
+      .allItems {
+        text-align: center;
+        padding: 40px 0 0;
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 11px;
+          height: 1px;
+          width: 100%;
+          border-bottom: 1px solid #e0e0e0;
+          z-index: 0;
+        }
+        p {
+          text-transform: uppercase;
+          color: #00bdf1;
+          font-size: 1.3em;
+          display: inline;
+          padding: 0 55px 0 40px;
+          background: #fff;
+          position: relative;
+          cursor: pointer;
+          z-index: 2;
+          &:after {
+            content: '';
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            background-image: url(/sites/all/themes/idoctor_theme/image/arrow_down_blue.png);
+            width: 20px;
+            height: 10px;
+            z-index: 2;
+          }
         }
       }
     }
