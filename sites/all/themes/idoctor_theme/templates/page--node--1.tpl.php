@@ -332,7 +332,7 @@
 
 
 <!-- оборудование -->
-<div class="equipment">
+<!-- <div class="equipment">
   <div class="container">
     <?php 
       $block = block_load('views', 'equipments-block');
@@ -341,7 +341,7 @@
       echo drupal_render($blocks_build);
    ?>
   </div>
-</div>
+</div> -->
 
 
 
