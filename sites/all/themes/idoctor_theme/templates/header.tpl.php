@@ -30,7 +30,7 @@
 
 
 
-<!-- Модалка -->
+<!-- Модалка1 -->
 <div class="modal fade" id="exampleModal" role="dialog" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -48,12 +48,9 @@
         <form action="">  
           <input type="text" name="email" class="email" placeholder="email" >
           <input type="text" name="phone" class="phone" placeholder="телефон" >
-          <div class="btn btn-primary">Подробнее  </div>
+          <a href="" class="btn btn-primary">Подробнее</a>
         </form>
       </div>
-     <!--  <div class="modal-footer">
-        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div> -->
     </div>
   </div>      
 </div>
