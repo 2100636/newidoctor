@@ -1,13 +1,17 @@
 // Bootstrap library.
 @import 'bootstrap';
 
-// Base-theme overrides.
+// Baseм-theme overrides.
 @import 'overrides';
 
 @import "Open_Sans";
 
 body {
   font-family: 'Open Sans', sans-serif;
+  outline: none;
+}
+
+* {
   outline: none;
 }
 
@@ -78,13 +82,359 @@ a {
 
 
 
-.maket2 {
-  img {
-    position: absolute;
-    width: 100%;
-    opacity: 0.6;
-    top: 1034px;
-    left: 13px;
+// -----МОДАЛКА В МЕНЮ----- 1920-1710
+
+.modal#menuModal {
+  .modal-dialog {
+    width: 520px;
+    position: relative;
+    margin: 96px auto;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+    &:before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 493px;
+      border-bottom: 1px solid #fff;
+      top: 0;
+      left: 0;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      height: 701px;
+      width: 1px;
+      border-left: 1px solid #fff;
+      bottom: 0;
+      right: 0;
+    }
+    .modal-content {
+      border-radius: 1px;
+      text-align: center;
+      border: 7px solid rgba(0,0,0,0);
+    }
+    .modal-header {
+      padding: 0;
+      button.close {
+        position: relative;
+        opacity: 1;
+        span {
+          position: absolute;
+          width: 54px;
+          height: 54px;
+          border-right: 1px solid #fff;
+          border-top: 1px solid #fff;
+          font-size: 46px;
+          color: #fff;
+          top: -41px;
+          right: -34px;
+          z-index: 60;
+          &:before {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 28px;
+            border-bottom: 1px solid #fff;
+            top: 52px;
+            left: 26px;
+          }
+          &:after {
+            content: '';
+            position: absolute;
+            height: 37px;
+            width: 1px;
+            border-left: 1px solid #fff;
+            top: -1px;
+            left: 0;
+          }
+          &:hover {
+            color: #ccc;
+          }
+        }
+      }
+      .modal-header-top {
+        background-image: url(/sites/all/themes/idoctor_theme/image/modal1.jpg);
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+        position: relative;
+        &:after {
+          content: '';
+          background-image: url(/sites/all/themes/idoctor_theme/image/logo-mini.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-color: #fff;
+          position: absolute;
+          bottom: -45px;
+          left: 50%;
+          margin-left: -26px;
+          width: 52px;
+          height: 26px;
+          z-index: 2;
+        }
+      }
+      .modal-header-bottom {
+        position: relative;
+        &:before {
+          content: '';
+          border-bottom: 1px solid #d8d8d8;
+          width: 100%;
+          height: 1px;
+          top: -27px;
+          right: 0;
+          position: absolute;
+        }
+        p {
+          width: 85%;
+          margin: 60px auto 40px;
+          font-size: 1.2em;
+          line-height: 22px;
+        }
+      }
+    }
+    .modal-body {
+      background: #36414a;
+      color: #adb2b8;
+      text-align: center;
+      padding: 30px 30px 45px;
+      p {
+        color: #fff;
+        font-size: 1.2em;
+      }
+      form {
+        input {
+          background: #5d666e;
+          border: none;
+          margin-top: 25px;
+          width: 100%;
+          border-radius: 50px;
+          padding: 14px 14px 14px 32px;
+          cursor: pointer;
+          color: #fff;
+          &::placeholder {
+            color: #fff;
+            text-transform: uppercase;
+          }
+          &:hover {
+            background: #77838e;
+            transition: all 0.5s ease;
+          }
+        }
+        .btn.btn-primary {
+          width: 100%;
+          padding: 14px;
+          border-radius: 50px;
+          margin-top: 25px;
+          font-weight: 800;
+          text-transform: uppercase;
+          transition: all 0.5s ease;
+          background: #05b1e1;
+          &:hover {
+            color: #000;
+            background: #f5a720;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+// -----МОДАЛКА В "ПРОБЛЕМАХ"----- 1920-1710
+
+.modal#problemsModal {
+  .modal-dialog {
+    width: 1015px;
+    position: relative;
+    margin: 150px auto;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+    &:before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 988px;
+      border-bottom: 1px solid #fff;
+      top: 0;
+      left: 0;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      height: 349px;
+      width: 1px;
+      border-left: 1px solid #fff;
+      bottom: 0;
+      right: 0;
+    }
+    .modal-content {
+      border-radius: 1px;
+      text-align: center;
+      border: 7px solid rgba(0,0,0,0);
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      .modal-header {
+        padding: 0;
+        width: 500px;
+        padding: 30px 30px 40px;
+        button.close {
+          position: relative;
+          opacity: 1;
+          span {
+            position: absolute;
+            width: 54px;
+            height: 54px;
+            border-right: 1px solid #fff;
+            border-top: 1px solid #fff;
+            font-size: 46px;
+            color: #fff;
+            top: -71px;
+            left: 510px;
+            padding: 2px 0 0 2px;
+            &:before {
+              content: '';
+              position: absolute;
+              height: 1px;
+              width: 28px;
+              border-bottom: 1px solid #fff;
+              top: 52px;
+              left: 26px;
+            }
+            &:after {
+              content: '';
+              position: absolute;
+              height: 37px;
+              width: 1px;
+              border-left: 1px solid #fff;
+              top: -1px;
+              left: 0;
+            }
+            &:hover {
+              color: #ccc;
+            }
+          }
+        }
+        .heading {
+          font-size: 1.5em;
+          color: #19adc9;
+          text-transform: uppercase;
+          font-weight: 700;
+        }
+        form {
+          margin-top: 20px;
+          .formProblems {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            .name {
+              font-weight: 700;
+              font-size: 1em;
+              text-transform: uppercase;
+              line-height: 40px;
+            }
+            select {
+              width: 300px;
+              border-radius: 50px;
+              padding: 7px 0 7px 20px;
+              border: 2px solid #777;
+            }
+            .problemsBlock {  
+              text-align: left;
+              width: 300px;
+              margin-top: 9px;
+              border: 2px solid #777;
+              border-radius: 5px;
+              min-height: 86px;
+              padding: 5px;
+              p.problem {
+                margin-bottom: 5px;
+                text-transform: uppercase;
+                font-size: 1em;
+              }
+            }
+          }
+        }
+      }
+      .modal-body {
+        background: #36414a;
+        color: #adb2b8;
+        text-align: center;
+        padding: 30px 30px 40px;
+        width: 500px;
+        p {
+          color: #fff;
+          font-size: 1.2em;
+          margin-bottom: 30px;
+          position: relative;
+          &:before {
+            content: '';
+            border-bottom: 1px solid #777;
+            width: 100%;
+            height: 1px;
+            top: 53px;
+            right: 0;
+            position: absolute;
+          }
+          &:after {
+            content: '';
+            background-image: url(/sites/all/themes/idoctor_theme/image/logo-mini.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #36414a;
+            position: absolute;
+            bottom: -39px;
+            left: 50%;
+            margin-left: -26px;
+            width: 52px;
+            height: 26px;
+            z-index: 2;
+          }
+        }
+        form {
+          input {
+            background: #5d666e;
+            border: none;
+            margin-top: 25px;
+            width: 100%;
+            border-radius: 50px;
+            padding: 14px 14px 14px 32px;
+            cursor: pointer;
+            color: #fff;
+            &::placeholder {
+              color: #fff;
+              text-transform: uppercase;
+            }
+            &:hover {
+              background: #77838e;
+              transition: all 0.5s ease;
+            }
+          }
+          .btn.btn-primary {
+            width: 100%;
+            padding: 14px;
+            border-radius: 50px;
+            margin-top: 25px;
+            font-weight: 800;
+            text-transform: uppercase;
+            transition: all 0.5s ease;
+            background: #05b1e1;
+            &:hover {
+              color: #000;
+              background: #f5a720;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -145,299 +495,6 @@ header#navbar {
           }
           &:hover {
             background: #f5a720;
-          }
-        }
-      }
-    }
-  }
-}
-
-
-
-// -----МОДАЛКА1----- 1920-1710
-
-.modal {
-  .modal-dialog {
-    width: 520px;
-    position: relative;
-    margin: 96px auto;
-    border-bottom: 1px solid #fff;
-    border-left: 1px solid #fff;
-    &:before {
-      content: '';
-      position: absolute;
-      height: 1px;
-      width: 493px;
-      border-bottom: 1px solid #fff;
-      top: 0;
-      left: 0;
-    }
-     &:after {
-      content: '';
-      position: absolute;
-      height: 701px;
-      width: 1px;
-      border-left: 1px solid #fff;
-      bottom: 0;
-      right: 0;
-    }
-    .modal-content {
-      border-radius: 1px;
-      text-align: center;
-      border: 7px solid rgba(0,0,0,0);
-      }
-      .modal-header {
-        padding: 0;
-        button.close {
-          position: relative;
-          opacity: 1;
-          outline: none;
-          span {
-            position: absolute;
-            width: 54px;
-            height: 54px;
-            border-right: 1px solid #fff;
-            border-top: 1px solid #fff;
-            font-size: 46px;
-            color: #fff;
-            top: -41px;
-            right: -34px;
-            outline: none;
-            &:before {
-              content: '';
-              position: absolute;
-              height: 1px;
-              width: 28px;
-              border-bottom: 1px solid #fff;
-              top: 52px;
-              left: 26px;
-            }
-             &:after {
-              content: '';
-              position: absolute;
-              height: 37px;
-              width: 1px;
-              border-left: 1px solid #fff;
-              top: -1px;
-              left: 0;
-            }
-            &:hover {
-              color: #ccc;
-            }
-          }
-        }
-        .modal-header-top {
-          background-image: url(/sites/all/themes/idoctor_theme/image/modal1.jpg);
-          background-size: cover;
-          height: 200px;
-          width: 100%;
-          position: relative;
-          &:after {
-            content: '';
-            background-image: url(/sites/all/themes/idoctor_theme/image/logo-mini.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-color: #fff;
-            position: absolute;
-            bottom: -45px;
-            left: 50%;
-            margin-left: -26px;
-            width: 52px;
-            height: 26px;
-            z-index: 2;
-          }
-        }
-        .modal-header-bottom {
-          position: relative;
-          &:before {
-            content: '';
-            border-bottom: 1px solid #d8d8d8;
-            width: 100%;
-            height: 1px;
-            top: -27px;
-            right: 0;
-            position: absolute;
-          }
-          p {
-            width: 85%;
-            margin: 60px auto 40px;
-            font-size: 1.2em;
-            line-height: 22px;
-          }
-        }
-      }
-      .modal-body {
-        background: #36414a;
-        color: #adb2b8;
-        text-align: center;
-        padding: 30px 30px 45px;
-        p {
-          color: #fff;
-          font-size: 1.2em;
-        }
-        form {
-          input {
-            background: #5d666e;
-            border: none;
-            margin-top: 25px;
-            width: 100%;
-            border-radius: 50px;
-            padding: 14px 14px 14px 32px;
-            outline: none;
-            cursor: pointer;
-            color: #fff;
-            &::placeholder {
-              color: #fff;
-              text-transform: uppercase;
-            }
-            &:hover {
-              background: #77838e;
-              transition: all 0.5s ease;
-            }
-          }
-          .btn.btn-primary {
-            width: 100%;
-            padding: 14px;
-            border-radius: 50px;
-            margin-top: 25px;
-            font-weight: 800;
-            text-transform: uppercase;
-            transition: all 0.5s ease;
-            background: #05b1e1;
-            &:hover {
-              color: #000;
-              background: #f5a720;
-            }
-          }
-        }
-      }
-    }
-  }
-
-
-
-  // -----МОДАЛКА2----- 1920-1710
-
-.modal#exampleModal2 {
-  .modal-dialog {
-    width: 1015px;
-    position: relative;
-    margin: 150px auto;
-    border-bottom: 1px solid #fff;
-    border-left: 1px solid #fff;
-    &:before {
-      content: '';
-      position: absolute;
-      height: 1px;
-      width: 988px;
-      border-bottom: 1px solid #fff;
-      top: 0;
-      left: 0;
-    }
-     &:after {
-      content: '';
-      position: absolute;
-      height: 349px;
-      width: 1px;
-      border-left: 1px solid #fff;
-      bottom: 0;
-      right: 0;
-    }
-    .modal-content {
-      border-radius: 1px;
-      text-align: center;
-      border: 7px solid rgba(0,0,0,0);
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
-      display: flex;
-      .modal-header {
-        padding: 0;
-        width: 500px;
-        button.close {
-          position: relative;
-          opacity: 1;
-          outline: none;
-          span {
-            position: absolute;
-            width: 54px;
-            height: 54px;
-            border-right: 1px solid #fff;
-            border-top: 1px solid #fff;
-            font-size: 46px;
-            color: #fff;
-            top: -41px;
-            left: 480px;
-            outline: none;
-            &:before {
-              content: '';
-              position: absolute;
-              height: 1px;
-              width: 28px;
-              border-bottom: 1px solid #fff;
-              top: 52px;
-              left: 26px;
-            }
-             &:after {
-              content: '';
-              position: absolute;
-              height: 37px;
-              width: 1px;
-              border-left: 1px solid #fff;
-              top: -1px;
-              left: 0;
-            }
-            &:hover {
-              color: #ccc;
-            }
-          }
-        }
-      }
-      .modal-body {
-        background: #36414a;
-        color: #adb2b8;
-        text-align: center;
-        padding: 30px 30px 40px;
-        width: 500px;
-        p {
-          color: #fff;
-          font-size: 1.2em;
-          margin-bottom: 30px;
-        }
-        form {
-          input {
-            background: #5d666e;
-            border: none;
-            margin-top: 25px;
-            width: 100%;
-            border-radius: 50px;
-            padding: 14px 14px 14px 32px;
-            outline: none;
-            cursor: pointer;
-            color: #fff;
-            &::placeholder {
-              color: #fff;
-              text-transform: uppercase;
-            }
-            &:hover {
-              background: #77838e;
-              transition: all 0.5s ease;
-            }
-          }
-          .btn.btn-primary {
-            width: 100%;
-            padding: 14px;
-            border-radius: 50px;
-            margin-top: 25px;
-            font-weight: 800;
-            text-transform: uppercase;
-            transition: all 0.5s ease;
-            background: #05b1e1;
-            &:hover {
-              color: #000;
-              background: #f5a720;
-            }
           }
         }
       }
@@ -1055,7 +1112,6 @@ header#navbar {
           text-transform: uppercase;
           font-size: 1.13em;
           cursor: pointer;
-          outline: none;
           &:hover {
             background: #f5a720;
             color: #fff;
@@ -1235,7 +1291,7 @@ header#navbar {
             top: 28%;
             background-repeat: no-repeat;
             transition: all 0.5s ease;
-             background-image: url(/sites/all/themes/idoctor_theme/image/arrow_left.png);
+            background-image: url(/sites/all/themes/idoctor_theme/image/arrow_left.png);
             &:hover {
               background-image: url(/sites/all/themes/idoctor_theme/image/arrow_left_hover.png);
             }
@@ -1273,19 +1329,18 @@ header#navbar {
           position: relative;
         }
         .btn.btn-primary {
-          padding: 9px 65px;
+          padding: 10px 65px;
           border-radius: 50px;
           font-weight: 600;
           background: #00bdf1;
           color: #fff;
           border: none;
-          outline: none;
-          width: 225px;
+          width: 235px;
           height: 40px;
           margin: 20px auto 0;
           display: block;
           &:hover {
-            background: #ffb869;
+            background: #f5a720;
             color: #000;
             transition: all 0.5s ease;
           }
@@ -1332,11 +1387,11 @@ header#navbar {
         height: 520px;
         p.model {
           position: absolute;
-            color: #00bdf1;
-            font-size: 1.13em;
-            font-weight: 600;
-            bottom: 0;
-            left: 41%;
+          color: #00bdf1;
+          font-size: 1.13em;
+          font-weight: 600;
+          bottom: 0;
+          left: 41%;
         }
         &:before {
           content: '';
@@ -1350,6 +1405,9 @@ header#navbar {
         &:nth-child(1) {
           background-image: url(/sites/all/themes/idoctor_theme/image/iphone-pic.png);
           background-size: 171px;
+          &:before {
+             background: url(/sites/all/themes/idoctor_theme/image/selected-model.png) no-repeat;
+          }
         }
         &:nth-child(2) {
           background-image: url(/sites/all/themes/idoctor_theme/image/ipad-pic.png);
@@ -1495,67 +1553,69 @@ header#navbar {
           }
           &:hover:after {
            content: '';
-            position: absolute;
-            width: 41px;
-            height: 41px;
-            border: 4px solid #f5a720;
-            border-radius: 30px;
-            transition: .5s;
-            top: -10px;
-            left: -52px;
-          }
-        }
-      }
-      ul.mobileLeft {
-        padding-left: 70px;
-      }
-    }
-    .chooseBlock {
-      padding: 25px 0;
-      border-top: 1px solid #ccc;
-      border-bottom: 1px solid #ccc;
-      p.choose {
-        text-transform: uppercase;
-        font-size: 1.63em;
-        position: relative;
-        display: inline;
-        }
-      p.choose:after {
-        content: '';
-        background-image: url(/sites/all/themes/idoctor_theme/image/str-choose.png);
-        position: absolute;
-        top: 7px;
-        right: 0-25px;
-        width: 16px;
-        height: 10px;
-      }
+           position: absolute;
+           width: 41px;
+           height: 41px;
+           border: 4px solid #f5a720;
+           border-radius: 30px;
+           transition: .5s;
+           top: -10px;
+           left: -52px;
+         }
+       }
+     }
+     ul.mobileLeft {
+      padding-left: 70px;
     }
   }
-  .container#dinamicBlock1 {
-    .line {
-      border-top: 1px solid #e0e0e0;
-      margin-top: 20px;
+  .chooseBlock {
+    padding: 25px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    p.choose {
+      text-transform: uppercase;
+      font-size: 1.63em;
+      position: relative;
+      display: inline;
+      &:after {
+      content: '';
+      background-image: url(/sites/all/themes/idoctor_theme/image/str-choose.png);
+      position: absolute;
+      transform: rotate(180deg);
+      top: 7px;
+      right: -25px;
+      width: 16px;
+      height: 10px;
+    }
     }
   }
-  .container3 {
-    .buttons#dinamicBlock2 {
-      padding: 40px 80px;
-      a.btn.btn-primary {
-        padding: 8px 46px;
-        color: #fff;
-        font-weight: 600;
-        text-transform: uppercase;
-        border-radius: 15px;
-        background: #00bdf1;
-        border: none;
-      }
-      a.btn.btn-primary:hover {
-        color: #000;
-        background: #f5a720;
-        transition: 0.5s ease;
-      }
+}
+.container#dinamicBlock1 {
+  .line {
+    border-top: 1px solid #e0e0e0;
+    margin-top: 20px;
+  }
+}
+.container3 {
+  .buttons#dinamicBlock2 {
+    padding: 40px 80px;
+    a.btn.btn-primary {
+      padding: 8px 46px;
+      color: #fff;
+      font-weight: 600;
+      text-transform: uppercase;
+      border-radius: 50px;
+      background: #00bdf1;
+      border: none;
+    }
+    a.btn.btn-primary:hover {
+      color: #000;
+      background: #f5a720;
+      transition: 0.5s ease;
     }
   }
+}
 }
 
 
@@ -1715,11 +1775,11 @@ header#navbar {
               }
               .views-field-title {
                 span.field-content {
-                 display: none;
+                  display: none;
                 }
               }
             }
-            &:nth-child(2) {
+             &:nth-child(2) {
               width: 34.6%;
               height: 252px;
               margin-bottom: 5px;
@@ -1760,18 +1820,18 @@ header#navbar {
               }
               .views-field-title {
                 span.field-content {
-                 display: none;
+                  display: none;
                 }
-              }
+              }  
             }
             &:nth-child(3) {
               width: 34.6%;
               height: 252px;
-                  text-align: left;
-                  padding: 80px 0 0 60px;
-                  text-transform: uppercase;
-                  position: relative;
-             .views-field-field-title-discount {
+              text-align: left;
+              padding: 80px 0 0 60px;
+              text-transform: uppercase;
+              position: relative;
+              .views-field-field-title-discount {
                 .field-content {
                   p {
                     font-size: 2.3em;
@@ -1796,7 +1856,7 @@ header#navbar {
                   z-index: 0;
                   background-image: url(/sites/all/themes/idoctor_theme/image/orange-plus.png);
                   background-repeat: no-repeat;
-                   &:hover {
+                  &:hover {
                     background-size: 80px;
                     transition: all 0.5s ease;
                   }
@@ -1805,12 +1865,12 @@ header#navbar {
               .views-field-title {
                 span.field-content {
                  display: none;
-                }
-              }
-            }
-          }
-        }
-      }
+               }
+             }
+           }
+         }
+       }
+     }
     }
   }
 }
@@ -1860,10 +1920,10 @@ header#navbar {
               position: relative;
             }
             .checkbox-label {
-            font-weight: normal;
-            position: relative;
-            cursor: pointer;
-            input[type="checkbox"] {
+              font-weight: normal;
+              position: relative;
+              cursor: pointer;
+              input[type="checkbox"] {
                 display: none;
                 & + span {
                   cursor: inherit;
@@ -1886,15 +1946,15 @@ header#navbar {
                   border: none;
                 }
               }
-            }
-            p.check {
-              display: inline-block;
-              font-size: 1em;
-              text-transform: uppercase;
-              padding: 5px 0 4px 31px;
-              line-height: 18px;
-              margin: -2px 0 0 0;
-              letter-spacing: -0.3px;
+              p.check {
+                display: inline-block;
+                font-size: 1em;
+                text-transform: uppercase;
+                padding: 5px 0 4px 31px;
+                line-height: 18px;
+                margin: -2px 0 0 0;
+                letter-spacing: -0.3px;
+              }
             }
             &:nth-child(1) p.title:before {
               content: '';
@@ -1906,6 +1966,15 @@ header#navbar {
               left: -2px;
               position: absolute; 
             }
+            &:nth-child(1) p.title:after, &:nth-child(2) p.title:after, &:nth-child(5) p.title:after, &:nth-child(6) p.title:after, &:nth-child(8) p.title:after, &:nth-child(9) p.title:after {
+              content: '';
+              width: 1px;
+              height: 135px;
+              border-right: 1px solid #ccc;
+              position: absolute;
+              top: 0;
+              right: 0;
+            }
             &:nth-child(2) p.title:before {
               content: '';
               background-image: url(/sites/all/themes/idoctor_theme/image/breakage2.png);
@@ -1916,7 +1985,7 @@ header#navbar {
               left: 2px;
               position: absolute; 
             }
-            &:nth-child(3) p.title:before {
+            &:nth-child(4) p.title:before {
               content: '';
               background-image: url(/sites/all/themes/idoctor_theme/image/breakage3.png);
               background-repeat: no-repeat;
@@ -1926,7 +1995,7 @@ header#navbar {
               left: -2px;
               position: absolute; 
             }
-            &:nth-child(4) p.title:before {
+            &:nth-child(5) p.title:before {
               content: '';
               background-image: url(/sites/all/themes/idoctor_theme/image/breakage4.png);
               background-repeat: no-repeat;
@@ -1936,7 +2005,7 @@ header#navbar {
               left: -8px;
               position: absolute; 
             }
-            &:nth-child(5) p.title:before {
+            &:nth-child(6) p.title:before {
               content: '';
               background-image: url(/sites/all/themes/idoctor_theme/image/breakage5.png);
               background-repeat: no-repeat;
@@ -1946,7 +2015,7 @@ header#navbar {
               left: -4px;
               position: absolute; 
             }
-            &:nth-child(6) p.title:before {
+            &:nth-child(7) p.title:before {
               content: '';
               background-image: url(/sites/all/themes/idoctor_theme/image/breakage6.png);
               background-repeat: no-repeat;
@@ -1956,7 +2025,7 @@ header#navbar {
               left: -2px;
               position: absolute; 
             }
-            &:nth-child(7) p.title:before {
+            &:nth-child(8) p.title:before {
               content: '';
               background-image: url(/sites/all/themes/idoctor_theme/image/breakage7.png);
               background-repeat: no-repeat;
@@ -1966,7 +2035,7 @@ header#navbar {
               left: -5px;
               position: absolute; 
             }
-            &:nth-child(8) p.title:before {
+            &:nth-child(9) p.title:before {
               content: '';
               background-image: url(/sites/all/themes/idoctor_theme/image/breakage8.png);
               background-repeat: no-repeat;
@@ -1976,7 +2045,7 @@ header#navbar {
               left: -1px;
               position: absolute; 
             }
-            &:nth-child(9) p.title:before {
+            &:nth-child(10) p.title:before {
               content: '';
               background-image: url(/sites/all/themes/idoctor_theme/image/breakage9.png);
               background-repeat: no-repeat;
@@ -1986,12 +2055,21 @@ header#navbar {
               left: -3px;
               position: absolute; 
             }
-          }      
+          } 
+          .mobileOpenButton, .mobileCloseButton {
+            display: none;
+            margin-bottom: 36px;
+            font-size: 1.3em;
+            text-transform: uppercase;
+            background: #ccc;
+            font-weight: 600;
+          } 
         }
         .buttonForm {
           text-align: center;
           margin: -8px auto;
-          a.btn.btn-primary {
+          .btn.btn-primary {
+            outline: none;
             border-radius: 24px;
             text-transform: uppercase;
             padding: 13px 30px;
@@ -2118,13 +2196,12 @@ header#navbar {
             button {
               width: 70px;
               height: 70px;
-              outline: none;
               position: absolute;
               top: 28%;
               background-repeat: no-repeat;
               transition: all 0.5s ease;
-               background-image: url(/sites/all/themes/idoctor_theme/image/arrow_left.png);
-               &:hover {
+              background-image: url(/sites/all/themes/idoctor_theme/image/arrow_left.png);
+              &:hover {
                 background-image: url(/sites/all/themes/idoctor_theme/image/arrow_left_hover.png);
               }
               span {
@@ -2210,8 +2287,7 @@ header#navbar {
 // -----КОММЕНТАРИИ----- 1920-1710
 
 .comments {
-  background: #c58181;
-  height: 962px;
+  
 }
 
 
@@ -2226,32 +2302,32 @@ header#navbar {
       background: url(/sites/all/themes/idoctor_theme/image/breakBanner.jpg) no-repeat;
       padding: 77px 0 64px;
       p.title {
-         font-size: 3em;
-        text-transform: uppercase;
-      } 
-      p.content {
-        font-size: 1.88em;
-          text-transform: uppercase;
-          margin: 15px 20px 31px 0;
-            letter-spacing: -0.5px;
-      }
-      a.btn.btn-warning {
-        color: #fff;
-        background-color: #f0ad4e;
-        border-color: #eea236;
-        padding: 18px 91px;
-        border-radius: 30px;
-        text-transform: uppercase;
-        font-size: 1.13em;
-        background: #ffa600;
-        font-weight: 700;
-        &.btn.btn-warning:hover {
-          color: #000;
-          transition: 0.5s ease;
-        }
+       font-size: 3em;
+       text-transform: uppercase;
+     } 
+     p.content {
+      font-size: 1.88em;
+      text-transform: uppercase;
+      margin: 15px 20px 31px 0;
+      letter-spacing: -0.5px;
+    }
+    a.btn.btn-warning {
+      color: #fff;
+      background-color: #f0ad4e;
+      border-color: #eea236;
+      padding: 18px 91px;
+      border-radius: 30px;
+      text-transform: uppercase;
+      font-size: 1.13em;
+      background: #ffa600;
+      font-weight: 700;
+      &.btn.btn-warning:hover {
+        color: #000;
+        transition: 0.5s ease;
       }
     }
   }
+}
 }
 
 
@@ -2291,12 +2367,12 @@ header#navbar {
           font-weight: 700;
           text-transform: uppercase;
           letter-spacing: -0.4px;
-            line-height: 31px;
+          line-height: 31px;
         }
         p.content {
           font-size: 1.38em;
-            line-height: 26px;
-            padding: 8px 0 27px;
+          line-height: 26px;
+          padding: 8px 0 27px;
         }
       }
     }
@@ -2322,8 +2398,8 @@ header#navbar {
       padding: 58px 0;
       p.title {
         font-size: 1.8em;
-          text-transform: uppercase;
-          margin: 0 0 0 -10px;
+        text-transform: uppercase;
+        margin: 0 0 0 -10px;
       }
       p.content {
         font-size: 1.38em;
@@ -2700,7 +2776,7 @@ header#navbar {
     width: 1470px;
   }
 
-.div-heading, .equipment .container section h2, .discounts .container section h2, .masters .container section h2 {
+  .div-heading, .equipment .container section h2, .discounts .container section h2, .masters .container section h2 {
     padding: 0 55px;
   }
 
@@ -2710,7 +2786,40 @@ header#navbar {
 
 
 
-// -----МЕНЮ----- 1709-1500
+  // -----МОДАЛКА В МЕНЮ----- 1709-1500
+
+  .modal#menuModal {
+    .modal-dialog {
+      &:after {
+        height: 693px;
+      }
+      .modal-content {
+        .modal-header {
+          .modal-header-bottom {            
+            p {
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+  // -----МОДАЛКА В "ПРОБЛЕМАХ"----- 1709-1500
+  
+  .modal#problemsModal {
+    .modal-dialog {
+      &:after {
+        height: 341px;
+      }  
+    }
+  }
+
+
+
+  // -----МЕНЮ----- 1709-1500
 
   header#navbar {
     height: 52px;
@@ -2738,28 +2847,9 @@ header#navbar {
 
 
 
-// -----МОДАЛКА11----- 1709-1500
-
-  .modal {
-    .modal-dialog {
-       &:after {
-        height: 693px;
-      }
-      .modal-content {
-        .modal-header {
-          .modal-header-bottom {            
-            p {
-              width: 80%;
-            }
-          }
-        }
-      }
-    }
-  }
+  
 
 
-
-  // -----ШАПКА----- 1709-1500
   
   // .header {
   //   .container {
@@ -2797,6 +2887,8 @@ header#navbar {
   // }
   
 
+
+// -----ШАПКА----- 1709-1500
 
   .header {
     .container {
@@ -2877,38 +2969,38 @@ header#navbar {
 
 
 
-// -----ДОСТУПНЫЕ ЦЕНЫ----- 1709-1500
+  // -----ДОСТУПНЫЕ ЦЕНЫ----- 1709-1500
 
-.affordable-price {
-  &:before {
-    top: 100px;
-  }
-  padding: 70px 0 30px;
-  .buttonsBlock {
+  .affordable-price {
+    &:before {
+      top: 100px;
+    }
+    padding: 70px 0 30px;
+    .buttonsBlock {
+      .container {
+        .buttonsBlockContent {
+          .btn.btn-light {
+            padding: 12px 55px;
+          } 
+        }
+      }
+    }
     .container {
-      .buttonsBlockContent {
-        .btn.btn-light {
-          padding: 12px 55px;
-        } 
+      .affordable-price-content {
+        .priceRow {
+          .priceRowItem {
+            .service-name {
+              width: 885px;
+            }
+          }  
+        }
       }
     }
   }
-  .container {
-    .affordable-price-content {
-      .priceRow {
-        .priceRowItem {
-          .service-name {
-            width: 885px;
-          }
-        }  
-      }
-    }
-  }
-}
 
 
 
-// -----ОБОРУДОВАНИЕ----- 1709-1500
+  // -----ОБОРУДОВАНИЕ----- 1709-1500
 
   .equipment {
     &:before {
@@ -2919,8 +3011,8 @@ header#navbar {
 
 
 
-// -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 1709-1500
-  
+  // -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 1709-1500
+
   .lowPrices {
     padding: 80px 0 60px;
     &:before {
@@ -2948,45 +3040,45 @@ header#navbar {
 
 
 
-// -----КОМПЛЕКТАЦИЯ----- 1709-1500
+  // -----КОМПЛЕКТАЦИЯ----- 1709-1500
 
   .completing {
     padding: 65px 0;
     &:before {
       top: 96px;
     }
-   .container {
+    .container {
      .completingContent {
-        padding: 70px 0px 0 53px;
-        .left {
-          ul {
-            li {
-              margin-bottom: 32px;
-              p.content {
-                line-height: 22px;
-                padding-top: 2px;
-              }
+      padding: 70px 0px 0 53px;
+      .left {
+        ul {
+          li {
+            margin-bottom: 32px;
+            p.content {
+              line-height: 22px;
+              padding-top: 2px;
             }
-          }   
-        }
+          }
+        }   
       }
     }
+  }
   }
 
 
 
-// -----АКЦИИ----- 1709-1500
+  // -----АКЦИИ----- 1709-1500
 
 
 
-// -----"ПРОБЛЕМНЫЙ" БЛОК----- 1709-1500
+  // -----"ПРОБЛЕМНЫЙ" БЛОК----- 1709-1500
 
   .selectBreakage {
     padding: 57px 0 53px;
     &:before {
       top: 88px;
     }     
-   .container {
+    .container {
       p.heading {
         margin-top: 10px;
         margin-bottom: 28px;
@@ -2994,15 +3086,22 @@ header#navbar {
       .wrap {
         .selectBreakageContent {
           padding: 50px 0 42px;
-          .selectBreakWrapp2 p.title {
-            margin-bottom: 10px;
+          .selectBreakWrapp2 { 
+            .selectBreakRowItem {
+              padding-left: 130px;
+              p.title {
+                margin-bottom: 10px;
+              }
+              .checkbox-label {
+                p.check {
+                  line-height: 10px;    
+                }
+              }
+              &:nth-child(1) p.title:after, &:nth-child(2) p.title:after, &:nth-child(5) p.title:after, &:nth-child(6) p.title:after, &:nth-child(8) p.title:after, &:nth-child(9) p.title:after {
+                right: -30px;
+              }
+            } 
           }
-          .selectBreakRowItem {
-            padding-left: 130px;
-            p.check {
-              line-height: 10px;    
-            }
-          } 
         }
       } 
     } 
@@ -3010,17 +3109,16 @@ header#navbar {
 
 
 
-// -----МАСТЕРЫ----- 1709-1500
+  // -----МАСТЕРЫ----- 1709-1500
 
 
 
-// -----КАКОЙ-ТО БЛОК 1----- 1709-1500
+  // -----КАКОЙ-ТО БЛОК 1----- 1709-1500
 
   .another {
     padding: 100px 0 50px;
     .container {
       .anotherContent {
-        padding-left: 30px;
         .left {
           margin-right: 20px;
           .heading {
@@ -3053,15 +3151,15 @@ header#navbar {
 
 
 
-// -----КОММЕНТАРИИ----- 1709-1500
+  // -----КОММЕНТАРИИ----- 1709-1500
 
   .comments {
-    height: 842px;
+    
   }
 
 
 
-// -----КАКОЙ-ТО БЛОК 3----- 1709-1500
+  // -----КАКОЙ-ТО БЛОК 3----- 1709-1500
   .anotherThree {
     padding: 36px 0 25px;
     &:before {
@@ -3100,8 +3198,8 @@ header#navbar {
 
 
 
-// -----КОНТАКТЫ----- 1709-1500
-  
+  // -----КОНТАКТЫ----- 1709-1500
+
   .contacts {
     padding: 64px 0;
     &:before {
@@ -3144,7 +3242,7 @@ header#navbar {
 
 
 
-// -----ФОРМА----- 1709-1500
+  // -----ФОРМА----- 1709-1500
 
   .forma {
     padding: 74px 0 0;
@@ -3192,7 +3290,7 @@ header#navbar {
 
 
 
-//-----ПОДВАЛ----- 1709-1500
+  //-----ПОДВАЛ----- 1709-1500
 
   .footer {
     padding: 70px 0;
@@ -3200,35 +3298,35 @@ header#navbar {
     .container {
       .footerContent {
         .item {
-            padding-left: 60px;
-            &:nth-child(1) {
-              padding-left: 0;
-            }
-            ul {
-              li {
-                margin: 6px 0 23px;
-              }
-            } 
+          padding-left: 60px;
+          &:nth-child(1) {
+            padding-left: 0;
           }
-          .social {
+          ul {
+            li {
+              margin: 6px 0 23px;
+            }
+          } 
+        }
+        .social {
+          margin-right: 0;
+          padding-right: 0;
+          p.title {
             margin-right: 0;
-            padding-right: 0;
-            p.title {
-              margin-right: 0;
-            }
-            .socialDiv {
-              width: 230px;
-              margin: 35px 0 0 70px;
-              padding-bottom: 40px;
-            }
-            .copy {
-              padding: 25px 0;
-            }
           }
-        } 
+          .socialDiv {
+            width: 230px;
+            margin: 35px 0 0 70px;
+            padding-bottom: 40px;
+          }
+          .copy {
+            padding: 25px 0;
+          }
+        }
       } 
-    }
+    } 
   }
+}
 
 
 
@@ -3250,45 +3348,9 @@ header#navbar {
 
 
 
-  // -----МЕНЮ----- 1499-1200
-  
-  header#navbar {
-    height: 40px;
-    .container {
-      .navbar-collapse {
-        nav {
-          ul.menu.nav.navbar-nav {
-            li {
-              margin-right: 55px;
-              a {
-                font-size: 1.2em;
-                padding: 0 14px;
-                line-height: 40px;
-              }
-              // &:first-child a:after {
-              //   top: 18px;
-              //   right: -9px;
-              //   background-size: 9px;
-              // }
-            }
-          }
-          .btn.btn-primary {
-            line-height: 13px;
-            width: 155px;
-            margin: 8px 0;
-            height: 24px;
-            font-size: 1.1em;
-          }
-        }
-      }
-    } 
-  }
+// -----МОДАЛКА В МЕНЮ----- 1499-1200
 
-
-
-// -----МОДАЛКА1----- 1499-1200
-
-  .modal {
+  .modal#menuModal {
     .modal-dialog {
       width: 415px;
       margin: 60px auto 20px;
@@ -3358,7 +3420,120 @@ header#navbar {
 
 
 
-// -----ШАПКА----- 1499-1200
+  // -----МОДАЛКА В "ПРОБЛЕМАХ"----- 1499-1200
+
+  .modal#problemsModal {
+    .modal-dialog {
+      width: 915px;
+      margin: 100px auto;
+      &:before {
+        width: 892px;
+      }
+      &:after {
+        height: 311px;
+      }
+      .modal-content {
+        .modal-header {
+          width: 450px;
+          padding: 25px 25px 35px;
+          button.close {
+            span {
+              width: 44px;
+              height: 44px;
+              font-size: 37px;
+              top: -62px;
+              left: 459px;
+              &:before {
+                width: 22px;
+                top: 43px;
+                left: 22px;
+              }
+              &:after {
+                height: 33px;
+              }
+            }
+          }
+          form {
+            .formProblems {
+              .name {
+                font-size: 1.3em;
+              }
+              select {
+                width: 270px;
+                padding: 0 0 0 20px;
+                height: 36px;
+                margin-top: 2px;
+              }
+              .problemsBlock {  
+                width: 270px;
+                p.problem {
+                  font-size: 1.3em;
+                }
+              }
+            }
+          }
+        }
+        .modal-body {
+          padding: 25px 25px 35px;
+          width: 450px;
+          p {
+            font-size: 1.5em;
+            &:before {
+              top: 50px;
+            }
+          }
+          form {
+            input {
+              margin-top: 20px;
+            }
+            .btn.btn-primary {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+  // -----МЕНЮ----- 1499-1200
+  
+  header#navbar {
+    height: 40px;
+    .container {
+      .navbar-collapse {
+        nav {
+          ul.menu.nav.navbar-nav {
+            li {
+              margin-right: 55px;
+              a {
+                font-size: 1.2em;
+                padding: 0 14px;
+                line-height: 40px;
+              }
+              // &:first-child a:after {
+              //   top: 18px;
+              //   right: -9px;
+              //   background-size: 9px;
+              // }
+            }
+          }
+          .btn.btn-primary {
+            line-height: 13px;
+            width: 155px;
+            margin: 8px 0;
+            height: 24px;
+            font-size: 1.1em;
+          }
+        }
+      }
+    } 
+  }
+
+
+
+  // -----ШАПКА----- 1499-1200
 
   .header {
     .container {
@@ -3436,7 +3611,7 @@ header#navbar {
       .bannerContent {
         .container {
           .leftBanner {
-              padding: 35px 52px 35px 105px;
+            padding: 35px 52px 35px 105px;
             .heading {
               margin-bottom: 5px;
             }
@@ -3470,7 +3645,7 @@ header#navbar {
       } 
     }
   } 
- 
+
 
 
   // .header {
@@ -3513,8 +3688,8 @@ header#navbar {
 
  // -----СЕРВИСНЫЙ ЦЕНТР----- 1499-1200 
  
-  .serviceCenter {
-    padding: 40px 0 0;
+ .serviceCenter {
+  padding: 40px 0 0;
     .container2 {
       &:after {
         background-size: 20px;
@@ -3639,7 +3814,7 @@ header#navbar {
 
 
 
-// -----ОБОРУДОВАНИЕ----- 1499-1200
+  // -----ОБОРУДОВАНИЕ----- 1499-1200
 
   .equipment {
     &:before {
@@ -3663,9 +3838,9 @@ header#navbar {
 
 
 
-// -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 1499-1200
+  // -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 1499-1200
 
- .lowPrices {
+  .lowPrices {
     padding: 56px 0 42px;
     &:before {
       top: 80px;
@@ -3771,7 +3946,7 @@ header#navbar {
 
 
 
-// -----КОМПЛЕКТАЦИЯ----- 1499-1200
+  // -----КОМПЛЕКТАЦИЯ----- 1499-1200
 
   .completing {
     padding: 46px 0;
@@ -3806,9 +3981,9 @@ header#navbar {
     } 
   }
 
-     
 
-// -----АКЦИИ----- 1499-1200
+
+  // -----АКЦИИ----- 1499-1200
 
   .discounts {
     padding: 40px 0 80px;
@@ -3897,7 +4072,7 @@ header#navbar {
 
 
 
-// -----"ПРОБЛЕМНЫЙ" БЛОК----- 1499-1200
+  // -----"ПРОБЛЕМНЫЙ" БЛОК----- 1499-1200
 
   .selectBreakage {
     padding: 40px 0 37px;
@@ -3981,11 +4156,15 @@ header#navbar {
                   font-size: 1.1em;
                 }
               }
+              &:nth-child(1) p.title:after, &:nth-child(2) p.title:after, &:nth-child(5) p.title:after, &:nth-child(6) p.title:after, &:nth-child(8) p.title:after, &:nth-child(9) p.title:after {
+                right: 0;
+                height: 100px;
+              }
             }
           } 
           .buttonForm {
             a.btn.btn-primary {
-              padding: 15px 38px;
+              padding: 12px 34px;
               font-size: 1.2em;
             }
           } 
@@ -3996,7 +4175,7 @@ header#navbar {
 
 
 
-// -----МАСТЕРЫ----- 1499-1200
+  // -----МАСТЕРЫ----- 1499-1200
 
   .masters {
     &:before {
@@ -4031,7 +4210,7 @@ header#navbar {
 
 
 
-// -----КАКОЙ-ТО БЛОК 1----- 1499-1200
+  // -----КАКОЙ-ТО БЛОК 1----- 1499-1200
 
   .another {
     padding: 70px 0 35px;
@@ -4067,15 +4246,15 @@ header#navbar {
 
 
 
-// -----КОММЕНТАРИИ----- 1499-1200
+  // -----КОММЕНТАРИИ----- 1499-1200
 
   .comments {
-    height: 589px;
+   
   }
 
 
 
-// -----КАКОЙ-ТО БЛОК 2----- 1499-1200
+  // -----КАКОЙ-ТО БЛОК 2----- 1499-1200
 
   .anotherTwo {
     .container {
@@ -4093,7 +4272,7 @@ header#navbar {
 
 
 
-// -----КАКОЙ-ТО БЛОК 3----- 1499-1200
+  // -----КАКОЙ-ТО БЛОК 3----- 1499-1200
 
   .anotherThree {
     padding: 25px 0;
@@ -4131,7 +4310,7 @@ header#navbar {
 
 
 
-// -----КОНТАКТЫ----- 1499-1200
+  // -----КОНТАКТЫ----- 1499-1200
 
   .contacts {
     padding: 45px 0;
@@ -4217,7 +4396,7 @@ header#navbar {
 
 
 
-// -----КАРТА----- 1499-1200
+  // -----КАРТА----- 1499-1200
 
   .maps {
     .container {
@@ -4229,7 +4408,7 @@ header#navbar {
 
 
 
-// -----ФОРМА----- 1499-1200
+  // -----ФОРМА----- 1499-1200
 
   .forma {
     padding: 74px 0 0;
@@ -4282,7 +4461,7 @@ header#navbar {
 
 
 
-// -----ПОДВАЛ----- 1499-1200
+  // -----ПОДВАЛ----- 1499-1200
 
   .footer {
     padding: 50px 0 40px;
@@ -4373,12 +4552,12 @@ header#navbar {
 
 
 @media (min-width: 300px) and (max-width: 1199px) {
-  
+
   .container {
     width: 990px;
   }
 
-   .div-heading, .equipment .container section h2, .discounts .container section h2, .masters .container section h2 {
+  .div-heading, .equipment .container section h2, .discounts .container section h2, .masters .container section h2 {
     padding: 0 35px;
   }
 
@@ -4388,7 +4567,7 @@ header#navbar {
 
 
 
-// -----МЕНЮ----- 1199-992
+  // -----МЕНЮ----- 1199-992
 
   header#navbar {
     .container {
@@ -4413,7 +4592,7 @@ header#navbar {
 
 
 
-// -----ШАПКА----- 1199-992
+  // -----ШАПКА----- 1199-992
 
   .header {
     .container {
@@ -4504,91 +4683,91 @@ header#navbar {
     } 
   } 
 
-  // .header {
-  //   .container {
-  //     .headerTop {
-  //       padding: 21px 0;
-  //       .headerTopContent {
-  //         .col-md-3 {
-  //           &:nth-child(1) {
-  //             margin-right: 0px;
-  //           }
-  //           .find-us {
-  //             margin-left: -10px;
-  //             p.find-us-bottom {
-  //               padding-left: 23px;
-  //               &:before {
-  //                 background-size: 18px;
-  //               }
-  //             }
-  //           }
-  //           .address {
-  //             width: 270px;
-  //             margin-left: -30px;
-  //             p.addBottom {
-  //               letter-spacing: -0.3px;
-  //               font-size: 1.1em;
-  //             }
-  //           }
-  //           .telephone {
-  //             &:before {
-  //               top: 8px;
-  //               left: 28px;
-  //               height: 37px;
-  //             }
-  //             p.telTop {
-  //               margin: -8px 0 7px;
-  //             }
-  //             p.telBottom {
-  //               &:before {
-  //                 top: -12px;
-  //                 left: 45px;
-  //                 width: 24px;
-  //                 height: 24px;
-  //                 background-size: 24px;
-  //               }
-  //             }
-  //           } 
-  //         } 
-  //       } 
-  //     }
-  //   } 
-  //   .headerBottomBanner {
-  //     .bannerContent {
-  //       .container {
-  //         height: 296px;
-  //         .leftBanner {
-  //           width: 601px;
-  //           padding: 34px 44px 20px 180px;
-  //           left: -165px;
-  //           .heading {
-  //             margin-bottom: 5px;
-  //             line-height: 26px;
-  //           }
-  //           p.title {
-  //             padding-bottom: 8px;
-  //             margin-top: -7px;
-  //           }
-  //           ul {
-  //             padding: 0px 0 0px 34px;
-  //             li {
-  //               padding-bottom: 0px;
-  //               line-height: 20px;
-  //             }
-  //           }
-  //           .phoneBanner a.btn.btn-warning {
-  //             padding: 5px 19px;
-  //             font-size: 1em;
-  //           }
-  //         }
-  //       }
-  //     } 
-  //   }
-  // } 
+    // .header {
+    //   .container {
+    //     .headerTop {
+    //       padding: 21px 0;
+    //       .headerTopContent {
+    //         .col-md-3 {
+    //           &:nth-child(1) {
+    //             margin-right: 0px;
+    //           }
+    //           .find-us {
+    //             margin-left: -10px;
+    //             p.find-us-bottom {
+    //               padding-left: 23px;
+    //               &:before {
+    //                 background-size: 18px;
+    //               }
+    //             }
+    //           }
+    //           .address {
+    //             width: 270px;
+    //             margin-left: -30px;
+    //             p.addBottom {
+    //               letter-spacing: -0.3px;
+    //               font-size: 1.1em;
+    //             }
+    //           }
+    //           .telephone {
+    //             &:before {
+    //               top: 8px;
+    //               left: 28px;
+    //               height: 37px;
+    //             }
+    //             p.telTop {
+    //               margin: -8px 0 7px;
+    //             }
+    //             p.telBottom {
+    //               &:before {
+    //                 top: -12px;
+    //                 left: 45px;
+    //                 width: 24px;
+    //                 height: 24px;
+    //                 background-size: 24px;
+    //               }
+    //             }
+    //           } 
+    //         } 
+    //       } 
+    //     }
+    //   } 
+    //   .headerBottomBanner {
+    //     .bannerContent {
+    //       .container {
+    //         height: 296px;
+    //         .leftBanner {
+    //           width: 601px;
+    //           padding: 34px 44px 20px 180px;
+    //           left: -165px;
+    //           .heading {
+    //             margin-bottom: 5px;
+    //             line-height: 26px;
+    //           }
+    //           p.title {
+    //             padding-bottom: 8px;
+    //             margin-top: -7px;
+    //           }
+    //           ul {
+    //             padding: 0px 0 0px 34px;
+    //             li {
+    //               padding-bottom: 0px;
+    //               line-height: 20px;
+    //             }
+    //           }
+    //           .phoneBanner a.btn.btn-warning {
+    //             padding: 5px 19px;
+    //             font-size: 1em;
+    //           }
+    //         }
+    //       }
+    //     } 
+    //   }
+    // } 
 
 
 
-// -----СЕРВИСНЫЙ ЦЕНТР----- 1199-992
+  // -----СЕРВИСНЫЙ ЦЕНТР----- 1199-992
 
   .serviceCenter {
     padding: 34px 0 0;
@@ -4618,7 +4797,7 @@ header#navbar {
 
 
 
-// -----ОБОРУДОВАНИЕ----- 1199-992
+  // -----ОБОРУДОВАНИЕ----- 1199-992
 
   .equipment {
     &:before {
@@ -4629,7 +4808,7 @@ header#navbar {
 
 
 
-// -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 1199-992
+  // -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 1199-992
 
   .lowPrices {
     padding: 48px 0 36px;
@@ -4684,7 +4863,7 @@ header#navbar {
 
 
 
-// -----КОМПЛЕКТАЦИЯ----- 1199-992
+  // -----КОМПЛЕКТАЦИЯ----- 1199-992
 
   .completing {
     padding: 39px 0;
@@ -4738,7 +4917,7 @@ header#navbar {
 
 
 
-// -----АКЦИИ----- 1199-992
+  // -----АКЦИИ----- 1199-992
 
   .discounts {
     padding: 30px 0 60px;
@@ -4802,7 +4981,7 @@ header#navbar {
 
 
 
-// -----"ПРОБЛЕМНЫЙ" БЛОК----- 1199-992
+  // -----"ПРОБЛЕМНЫЙ" БЛОК----- 1199-992
 
   .selectBreakage {
     padding: 35px 0;
@@ -4836,6 +5015,9 @@ header#navbar {
                   letter-spacing: 0;
                 }
               } 
+              &:nth-child(1) p.title:after, &:nth-child(2) p.title:after, &:nth-child(5) p.title:after, &:nth-child(6) p.title:after, &:nth-child(8) p.title:after, &:nth-child(9) p.title:after {
+                right: -20px;
+              }
             }
           } 
         }
@@ -4845,7 +5027,7 @@ header#navbar {
 
 
 
-// -----МАСТЕРЫ----- 1199-992
+  // -----МАСТЕРЫ----- 1199-992
 
   .masters {
     &:before {
@@ -4858,18 +5040,17 @@ header#navbar {
         }
       }
     }
-    
+
   }
 
 
 
-// -----КАКОЙ-ТО БЛОК 1----- 1199-992
+  // -----КАКОЙ-ТО БЛОК 1----- 1199-992
 
   .another {
     padding: 50px 0 30px;
     .container {
       .anotherContent {
-        padding-left: 20px;
         align-items: flex-start;
         .left {
           margin-right: 0;
@@ -4904,7 +5085,7 @@ header#navbar {
 
 
 
-// -----КАКОЙ-ТО БЛОК 2----- 1199-992
+  // -----КАКОЙ-ТО БЛОК 2----- 1199-992
 
   .anotherTwo {
     .container {
@@ -4922,15 +5103,15 @@ header#navbar {
 
 
 
-// -----КОММЕНТАРИИ----- 1199-992
+  // -----КОММЕНТАРИИ----- 1199-992
 
   .comments {
-    height: 500px;
+
   }
 
 
 
-// -----КАКОЙ-ТО БЛОК 3----- 1199-992
+  // -----КАКОЙ-ТО БЛОК 3----- 1199-992
 
   .anotherThree {
     padding: 21px 0;
@@ -4964,7 +5145,7 @@ header#navbar {
 
 
 
-// -----КОНТАКТЫ----- 1199-992
+  // -----КОНТАКТЫ----- 1199-992
 
   .contacts {
     padding: 38px 0;
@@ -5022,7 +5203,7 @@ header#navbar {
 
 
 
-// -----КАРТА----- 1199-992
+  // -----КАРТА----- 1199-992
 
   .maps {
     .container {
@@ -5034,7 +5215,7 @@ header#navbar {
 
 
 
-// -----ФОРМА----- 1199-992
+  // -----ФОРМА----- 1199-992
 
   .forma {
     .container {
@@ -5082,7 +5263,7 @@ header#navbar {
 
 
 
-// -----ПОДВАЛ----- 1199-992
+  // -----ПОДВАЛ----- 1199-992
 
   .footer {
     padding: 43px 0 34px;
@@ -5151,7 +5332,74 @@ header#navbar {
 
 
 
-// -----МЕНЮ----- 991-768
+  // -----МОДАЛКА В "ПРОБЛЕМАХ"----- 991-768
+
+  .modal#problemsModal {
+    .modal-dialog {
+      width: 711px;
+      &:before {
+        width: 688px;
+      }
+      &:after {
+        height: 301px;
+      }
+      .modal-content {
+        border: 5px solid rgba(0,0,0,0);
+        .modal-header {
+          padding: 20px 20px 25px;
+          width: 350px;
+          button.close {
+            span {
+              top: -55px;
+              left: 352px;
+            }
+          }
+          form {
+            .formProblems {
+              .name {
+                font-size: 1.3em;
+                line-height: 36px;
+              }
+              select {
+                width: 200px;
+                height: 32px;
+              }
+              .problemsBlock {  
+                width: 200px;
+              }
+            }
+          }
+        }
+        .modal-body {
+          padding: 20px 20px 25px;
+          width: 350px;
+          p {
+            &:before {
+              top: 68px;
+            }
+            &:after {
+              bottom: -34px;
+            }
+          }
+          form {
+            input {
+              margin-top: 20px;
+              padding: 12px 12px 12px 24px ;
+            }
+            .btn.btn-primary {
+              margin-top: 20px;
+              padding: 12px;
+              font-size: 1.2em;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+  // -----МЕНЮ----- 991-768
 
   header#navbar {
     .container {
@@ -5176,7 +5424,7 @@ header#navbar {
 
 
 
-// -----ШАПКА----- 991-768
+  // -----ШАПКА----- 991-768
 
   .header {
     .container {
@@ -5277,7 +5525,7 @@ header#navbar {
             }
           }
         }
-       .rightBanner {
+        .rightBanner {
           width: 100%;
           position: static;
           .twentyBlock {
@@ -5292,7 +5540,7 @@ header#navbar {
 
 
 
-// -----СЕРВИСНЫЙ ЦЕНТР----- 991-768
+  // -----СЕРВИСНЫЙ ЦЕНТР----- 991-768
 
   .serviceCenter {
     padding: 26px 0 0;
@@ -5357,7 +5605,7 @@ header#navbar {
 
 
 
-// -----ОБОРУДОВАНИЕ----- 991-768
+  // -----ОБОРУДОВАНИЕ----- 991-768
 
   .equipment {
     &:before {
@@ -5368,7 +5616,7 @@ header#navbar {
 
 
 
-// -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 991-768
+  // -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 991-768
 
   .lowPrices {
     padding: 36px 0 20px;
@@ -5404,7 +5652,7 @@ header#navbar {
 
 
 
-// -----КОМПЛЕКТАЦИЯ----- 991-768
+  // -----КОМПЛЕКТАЦИЯ----- 991-768
 
   .completing {
     padding: 30px 0;
@@ -5470,7 +5718,7 @@ header#navbar {
 
 
 
-// -----АКЦИИ----- 991-768
+  // -----АКЦИИ----- 991-768
 
   .discounts {
     &:before {
@@ -5499,7 +5747,7 @@ header#navbar {
                 height: 248px;
                 margin: 0;
               }
-               &:nth-child(3) {
+              &:nth-child(3) {
                 width: 49.7%;
                 height: 198px;
                 padding: 90px 0 0 30px;
@@ -5515,7 +5763,7 @@ header#navbar {
 
 
 
-// -----"ПРОБЛЕМНЫЙ" БЛОК----- 991-768
+  // -----"ПРОБЛЕМНЫЙ" БЛОК----- 991-768
 
   .selectBreakage {
     .container {
@@ -5539,6 +5787,18 @@ header#navbar {
               p.title {
                 letter-spacing: 0;
               }
+              &:nth-child(1) p.title:after, &:nth-child(5) p.title:after, &:nth-child(7) p.title:after, &:nth-child(8) p.title:after {
+                content: '';
+                width: 1px;
+                height: 100px;
+                border-right: 1px solid #ccc;
+                position: absolute;
+                top: 0;
+                right: -30px;
+              }
+              &:nth-child(2) p.title:after, &:nth-child(6) p.title:after, &:nth-child(9) p.title:after  {
+                display: none;
+              }
             }
           }
         }
@@ -5548,7 +5808,7 @@ header#navbar {
 
 
 
-// -----МАСТЕРЫ----- 991-768
+  // -----МАСТЕРЫ----- 991-768
 
   .masters {
     padding: 40px 0;
@@ -5577,14 +5837,13 @@ header#navbar {
 
 
 
-// -----КАКОЙ-ТО БЛОК 1----- 991-768
+  // -----КАКОЙ-ТО БЛОК 1----- 991-768
 
   .another {
     padding: 38px 0;
     text-align: center;
     .container {
       .anotherContent {
-        padding-left: 0;
         display: block;
         .left {
           margin-right: 0;
@@ -5624,7 +5883,7 @@ header#navbar {
 
 
 
-// -----КАКОЙ-ТО БЛОК 2----- 991-768
+  // -----КАКОЙ-ТО БЛОК 2----- 991-768
 
   .anotherTwo {
     .container {
@@ -5648,17 +5907,17 @@ header#navbar {
 
 
 
-// -----КОММЕНТАРИИ----- 991-768
+  // -----КОММЕНТАРИИ----- 991-768
 
   .comments {
-    height: 376px;
+   
   }
 
 
 
-// -----КАКОЙ-ТО БЛОК 3----- 991-768
+  // -----КАКОЙ-ТО БЛОК 3----- 991-768
 
- .anotherThree {
+  .anotherThree {
     padding: 20px 0;
     &:before {
       top: 40px;
@@ -5690,7 +5949,7 @@ header#navbar {
 
 
 
-// -----КОНТАКТЫ----- 991-768
+  // -----КОНТАКТЫ----- 991-768
 
   .contacts {
     padding: 30px 0;
@@ -5761,7 +6020,7 @@ header#navbar {
 
 
 
-// -----КАРТА----- 991-768
+  // -----КАРТА----- 991-768
 
   .maps {
     .container {
@@ -5773,7 +6032,7 @@ header#navbar {
 
 
 
-// -----ФОРМА----- 991-768
+  // -----ФОРМА----- 991-768
 
   .forma {
     padding: 70px 0 0;
@@ -5821,11 +6080,11 @@ header#navbar {
 
 
 
-// -----ПОДВАЛ----- 991-768
+  // -----ПОДВАЛ----- 991-768
 
   .footer {
     padding: 30px 0 20px;
-     .container {
+    .container {
       .footerContent {
         flex-wrap: wrap;
         text-align: center;
@@ -5897,7 +6156,59 @@ header#navbar {
 
 
 
-// -----МЕНЮ----- 767-576
+  // -----МОДАЛКА В "ПРОБЛЕМАХ"----- 767-576
+
+  .modal#problemsModal {
+    .modal-dialog {
+      width: 440px;
+      &:before {
+        width: 415px;
+      }
+      &:after {
+        height: 554px;
+      }
+      .modal-content {
+        display: block;
+        .modal-header {
+          padding: 20px;
+          width: 100%;
+          button.close {
+            span {
+              top: -55px;
+              left: 0;
+              &:before {
+                width: 20px;
+                left: 24px;
+              }
+            }
+          }
+          form {
+            .formProblems {
+              select {
+                width: 270px;
+              }
+              .problemsBlock {  
+                width: 270px;
+              }
+            }
+          }
+        }
+        .modal-body {
+          padding: 20px;
+          width: 100%;
+          p {
+            &:before {
+              top: 44px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+  // -----МЕНЮ----- 767-576
 
   header#navbar {
     height: 0;
@@ -5956,7 +6267,7 @@ header#navbar {
           right: 0;
           padding: 23px;
           margin: 0;
-          z-index: 100000;
+          z-index: 50;
           .icon-bar {
             background: #000;
           }
@@ -5967,7 +6278,7 @@ header#navbar {
 
 
 
-// -----ШАПКА----- 767-576
+  // -----ШАПКА----- 767-576
 
   .header {
     .container {
@@ -6011,10 +6322,10 @@ header#navbar {
       } 
     } 
   }  
-  
 
 
-// -----СЕРВИСНЫЙ ЦЕНТР----- 767-576
+
+  // -----СЕРВИСНЫЙ ЦЕНТР----- 767-576
 
   .serviceCenter {
     display: none;
@@ -6022,7 +6333,7 @@ header#navbar {
 
 
 
-// -----ОБОРУДОВАНИЕ----- 767-576
+  // -----ОБОРУДОВАНИЕ----- 767-576
 
   .equipment {
     &:before {
@@ -6061,9 +6372,10 @@ header#navbar {
 
 
 
-// -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 767-576
+  // -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 767-576
 
   .lowPrices {
+    padding: 36px 0;
     &:before {
       top: 71px;
     }
@@ -6082,8 +6394,8 @@ header#navbar {
     }
     .container3 {
       .buttons#dinamicBlock2 {
-        display: block;  
-        padding: 15px 0 0; 
+        display: none;  
+        padding: 30px 0 0; 
         a.btn.btn-primary {
           padding: 10px;
           font-size: 1.27em;
@@ -6098,7 +6410,7 @@ header#navbar {
 
 
 
-// -----КОМПЛЕКТАЦИЯ----- 767-576
+  // -----КОМПЛЕКТАЦИЯ----- 767-576
 
   .completing {
     &:before {
@@ -6148,8 +6460,8 @@ header#navbar {
 
 
 
-// -----АКЦИИ----- 767-576
-  
+  // -----АКЦИИ----- 767-576
+
   .discounts {
     padding: 30px 0 50px;
     .container {
@@ -6181,7 +6493,7 @@ header#navbar {
                       width: 85%;
                       margin: 0 auto 20px;
                     }
-                    
+
                   }
                 }
               }
@@ -6200,7 +6512,7 @@ header#navbar {
   }
 
 
-// -----"ПРОБЛЕМНЫЙ" БЛОК----- 767-576
+  // -----"ПРОБЛЕМНЫЙ" БЛОК----- 767-576
 
   .selectBreakage {
     &:before {
@@ -6213,6 +6525,8 @@ header#navbar {
       }
       .wrap {
         .selectBreakageContent {
+          overflow: hidden;
+          height: 404px;
           .selectBreakWrapp2 {
             .selectBreakRowItem {
               width: 100%;
@@ -6285,6 +6599,17 @@ header#navbar {
                   font-size: 1.15em;
                 }
               } 
+               &:nth-child(1) p.title:after, &:nth-child(5) p.title:after, &:nth-child(7) p.title:after, &:nth-child(8) p.title:after {
+                display: none;
+              }
+            }
+            .mobileOpenButton, .mobileCloseButton {
+              display: block;
+            }
+          } 
+          .buttonForm {
+            a.btn.btn-primary {
+              padding: 10px 30px;
             }
           } 
         } 
@@ -6294,7 +6619,7 @@ header#navbar {
 
 
 
-// -----КАКОЙ-ТО БЛОК 1----- 767-576
+  // -----КАКОЙ-ТО БЛОК 1----- 767-576
 
   .another {
     padding: 30px 0 0;
@@ -6314,7 +6639,7 @@ header#navbar {
 
 
 
-// -----КАКОЙ-ТО БЛОК 2----- 767-576
+  // -----КАКОЙ-ТО БЛОК 2----- 767-576
 
   .anotherTwo {
     .container {
@@ -6345,11 +6670,11 @@ header#navbar {
 
 
 
-// -----КОММЕНТАРИИ----- 767-576
+  // -----КОММЕНТАРИИ----- 767-576
 
 
 
-// -----КАКОЙ-ТО БЛОК 3----- 767-576
+  // -----КАКОЙ-ТО БЛОК 3----- 767-576
 
   .anotherThree {
     .container {
@@ -6365,7 +6690,7 @@ header#navbar {
 
 
 
-// -----КОНТАКТЫ----- 767-576
+  // -----КОНТАКТЫ----- 767-576
 
   .contacts {
     &:before {
@@ -6418,7 +6743,7 @@ header#navbar {
 
 
 
-// -----ФОРМА----- 767-576
+  // -----ФОРМА----- 767-576
 
   .forma {
     .container {
@@ -6465,7 +6790,7 @@ header#navbar {
 
 
 
-// -----ПОДВАЛ----- 767-576
+  // -----ПОДВАЛ----- 767-576
 
   .footer {
     .container {
@@ -6508,7 +6833,141 @@ header#navbar {
 
 
 
-// -----МЕНЮ----- 575-450
+  // -----МОДАЛКА В МЕНЮ----- 575-450
+
+  .modal#menuModal {
+    .modal-dialog {
+      width: 250px;
+      &:before {
+        width: 230px;
+      }
+      &:after {
+        height: 470px;
+      }
+      .modal-content {
+        .modal-header {
+          button.close {
+            span {
+              width: 37px;
+              height: 37px;
+              font-size: 30px;
+              top: -28px;
+              left: -14px;
+              padding: 2px 0 0 2px;
+              &:before {
+                top: 36px;
+                left: 18px;
+                width: 19px;
+              }
+              &:after {
+                height: 26px;
+              }
+            }
+          }
+          .modal-header-top {
+            height: 100px;
+          }
+          .modal-header-bottom {
+            p {
+              width: 100%;
+              padding: 0 10px;
+            }
+          }
+        }
+        .modal-body {
+          padding: 20px 20px 30px;
+          p {
+            width: 80%;
+            margin: 0 auto;
+          }
+          form {
+            input {
+              padding: 8px 12px 8px 32px;
+              margin-top: 15px;
+            }
+            .btn.btn-primary {
+              padding: 8px;
+              font-size: 1em;
+              margin-top: 15px;
+            }
+          }
+        }
+      }
+    }
+  } 
+
+
+
+  // -----МОДАЛКА В "ПРОБЛЕМАХ"----- 575-450
+
+  .modal#problemsModal {
+    .modal-dialog {
+      width: 250px;
+      &:before {
+        width: 229px;
+      }
+      &:after {
+        height: 616px;
+      }
+      .modal-content {
+        .modal-header {
+          button.close {
+            span {
+              width: 37px;
+              height: 37px;
+              font-size: 30px;
+              top: -48px;
+              left: 4px;
+              &:before {
+                width: 17px;
+                left: 20px;
+                top: 35px;
+              }
+              &:after {
+                height: 25px;
+              }
+            }
+          }
+          form {
+            .formProblems {
+              display: block;
+              .name {
+                line-height: 24px;
+              }
+              select {
+                width: 100%;
+              }
+              .problemsBlock {  
+                width: 100%;
+              }
+            }
+          }
+        }
+        .modal-body {
+          p {
+            &:before {
+              top: 66px;
+            }
+          }
+          form {
+            input {
+              margin-top: 15px;
+              padding: 10px 10px 10px 20px;
+            }
+            .btn.btn-primary {
+              margin-top: 15px;
+              padding: 10px;
+              font-size: 1em;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+  // -----МЕНЮ----- 575-450
 
   header#navbar {
     .container {
@@ -6530,7 +6989,7 @@ header#navbar {
 
 
 
-// -----ШАПКА----- 575-450
+  // -----ШАПКА----- 575-450
 
   .header {
     .headerBottomBanner {
@@ -6558,7 +7017,7 @@ header#navbar {
 
 
 
-// -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 575-450
+  // -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 575-450
 
   .lowPrices {
     .container3 {
@@ -6578,7 +7037,7 @@ header#navbar {
 
 
 
-// -----КОМПЛЕКТАЦИЯ----- 575-450
+  // -----КОМПЛЕКТАЦИЯ----- 575-450
 
   .completing {
     &:before {
@@ -6601,9 +7060,9 @@ header#navbar {
 
 
 
-// -----"ПРОБЛЕМНЫЙ" БЛОК----- 575-450
+  // -----"ПРОБЛЕМНЫЙ" БЛОК----- 575-450
 
-.selectBreakage {
+  .selectBreakage {
     &:before {
       top: 70px;
     }
@@ -6616,7 +7075,7 @@ header#navbar {
 
 
 
-// -----МАСТЕРЫ----- 575-450
+  // -----МАСТЕРЫ----- 575-450
 
   .masters {
     &:before {
@@ -6633,7 +7092,7 @@ header#navbar {
 
 
 
-// -----КАКОЙ-ТО БЛОК 2----- 575-450
+  // -----КАКОЙ-ТО БЛОК 2----- 575-450
 
   .anotherTwo {
     .container {
@@ -6655,23 +7114,23 @@ header#navbar {
 
 
 
-// -----КАКОЙ-ТО БЛОК 3----- 575-450
+  // -----КАКОЙ-ТО БЛОК 3----- 575-450
 
   .anotherThree {
-     .container {
+    .container {
       .anotherThreeContent {
         .left {
           iframe {
             height: 237px;
           }
-        } 
+        }  
       } 
     } 
   }
 
 
 
-// -----КОНТАКТЫ----- 575-450
+  // -----КОНТАКТЫ----- 575-450
 
   .contacts {
     .container {
@@ -6692,7 +7151,7 @@ header#navbar {
 
 
 @media (min-width: 300px) and (max-width: 449px) {
-  
+
   .div-heading, .equipment .container section h2, .discounts .container section h2, .masters .container section h2 {
     line-height: 32px;
     font-size: 2.3em;
@@ -6700,7 +7159,7 @@ header#navbar {
 
 
 
-// -----ШАПКА----- 449-400
+  // -----ШАПКА----- 449-400
 
   .header {
     .headerBottomBanner {
@@ -6723,10 +7182,10 @@ header#navbar {
       } 
     } 
   } 
-  
-  
-  
-// -----ОБОРУДОВАНИЕ----- 449-400
+
+
+
+  // -----ОБОРУДОВАНИЕ----- 449-400
 
   .equipment {
     &:before {
@@ -6743,7 +7202,7 @@ header#navbar {
 
 
 
-// -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 449-400
+  // -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 449-400
 
   .lowPrices {
     .container3 {
@@ -6777,10 +7236,10 @@ header#navbar {
       } 
     }
   }  
-  
 
 
-// -----КОМПЛЕКТАЦИЯ----- 449-400
+
+  // -----КОМПЛЕКТАЦИЯ----- 449-400
 
   .completing {
     .container {
@@ -6812,7 +7271,7 @@ header#navbar {
 
 
 
-// -----"ПРОБЛЕМНЫЙ" БЛОК----- 449-400
+  // -----"ПРОБЛЕМНЫЙ" БЛОК----- 449-400
 
   .selectBreakage {
     .container {
@@ -6834,21 +7293,21 @@ header#navbar {
 
 
 
-// -----АКЦИИ----- 449-400
+  // -----АКЦИИ----- 449-400
 
   .discounts {
     padding: 30px 0;
     .container {
       section {
-       .view-promotions {
+        .view-promotions {
           .view-content {
             .views-row {
               &:nth-child(1) {
                 .views-field-nid {
                   span.field-content {
-                   .btn.btn-warning {
-                     width: 100%;
-                     padding: 8px 0;
+                    .btn.btn-warning {
+                      width: 100%;
+                      padding: 8px 0;
                     }
                   }
                 }
@@ -6862,7 +7321,7 @@ header#navbar {
                   }
                 }
               }
-            }  
+            }    
           }
         }
       }
@@ -6871,7 +7330,7 @@ header#navbar {
 
 
 
-// -----МАСТЕРЫ----- 449-400
+  // -----МАСТЕРЫ----- 449-400
 
   .masters {
     &:before {
@@ -6888,7 +7347,7 @@ header#navbar {
 
 
 
-// -----КАКОЙ-ТО БЛОК 2----- 449-400
+  // -----КАКОЙ-ТО БЛОК 2----- 449-400
 
   .anotherTwo {
     .container {
@@ -6905,7 +7364,7 @@ header#navbar {
 
 
 
-// -----КОНТАКТЫ----- 449-400
+  // -----КОНТАКТЫ----- 449-400
 
   .contacts .container .bannerContacts .banner {
     height: 200px;
@@ -6916,18 +7375,18 @@ header#navbar {
 
 
 
-@media (min-width: 300px) and (max-width: 399px) {
+  @media (min-width: 300px) and (max-width: 399px) {
 
-  .div-heading, .equipment .container section h2 {
-    line-height: 24px;
-    font-size: 1.77em;
-  }
+    .div-heading, .equipment .container section h2 {
+      line-height: 24px;
+      font-size: 1.77em;
+    }
 
 
- 
- // -----ШАПКА----- 399-350
- 
-  .header {
+
+   // -----ШАПКА----- 399-350
+   
+   .header {
     .headerBottomBanner {
       .bannerContent {
         .container {
@@ -6941,7 +7400,7 @@ header#navbar {
                 width: 230px;
               }
               ul {
-              padding: 0px 0 0 20px;
+                padding: 0px 0 0 20px;
                 li {
                   font-size: 1.5em;
                 }
@@ -6955,7 +7414,7 @@ header#navbar {
 
 
 
-// -----Оборудование----- 399-350
+  // -----Оборудование----- 399-350
 
   .equipment {
     &:before {
@@ -6964,7 +7423,7 @@ header#navbar {
   }
 
 
-// -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 399-350
+  // -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 399-350
 
   .lowPrices {
     padding: 20px 0 10px;
@@ -6988,7 +7447,7 @@ header#navbar {
 
 
 
-// -----КОМПЛЕКТАЦИЯ----- 399-350
+  // -----КОМПЛЕКТАЦИЯ----- 399-350
 
   .completing {
     &:before {
@@ -7025,7 +7484,7 @@ header#navbar {
 
 
 
-// -----"ПРОБЛЕМНЫЙ" БЛОК----- 399-350
+  // -----"ПРОБЛЕМНЫЙ" БЛОК----- 399-350
 
   .selectBreakage {
     &:before {
@@ -7042,7 +7501,6 @@ header#navbar {
           .buttonForm {
             a.btn.btn-primary {
               font-size: 1.1em;
-              padding: 14px 25px;
             }
           } 
         } 
@@ -7052,7 +7510,7 @@ header#navbar {
 
 
 
-// -----МАСТЕРЫ----- 399-350
+  // -----МАСТЕРЫ----- 399-350
 
   .masters {
     &:before {
@@ -7079,24 +7537,24 @@ header#navbar {
 
 
 
-// -----КАКОЙ-ТО БЛОК 1----- 399-350
+  // -----КАКОЙ-ТО БЛОК 1----- 399-350
 
   .another {
     .container {
       .anotherContent {
         .left {
           .heading {
-              padding-bottom: 5px;
-              font-size: 1.9em;
-            }
-          } 
+            padding-bottom: 5px;
+            font-size: 1.9em;
+          }
         } 
       } 
     } 
+  } 
 
 
 
-// -----КАКОЙ-ТО БЛОК 2----- 399-350
+  // -----КАКОЙ-ТО БЛОК 2----- 399-350
 
   .anotherTwo {
     .container {
@@ -7114,7 +7572,7 @@ header#navbar {
 
 
 
-// -----КАКОЙ-ТО БЛОК 3----- 399-350
+  // -----КАКОЙ-ТО БЛОК 3----- 399-350
 
   .anotherThree {
     &:before {
@@ -7143,7 +7601,7 @@ header#navbar {
 
 
 
-// -----КОНТАКТЫ----- 399-350
+  // -----КОНТАКТЫ----- 399-350
 
   .contacts {
     &:before {
@@ -7168,7 +7626,7 @@ header#navbar {
 
 
 
-// -----ФОРМА----- 399-350
+  // -----ФОРМА----- 399-350
 
   .forma {
     .container {
@@ -7182,12 +7640,12 @@ header#navbar {
 
 
 
-// -----ПОДВАЛ----- 399-350
+  // -----ПОДВАЛ----- 399-350
 
-.footer {
-  .container {
-    .footerContent {
-      .item {
+  .footer {
+    .container {
+      .footerContent {
+        .item {
           margin-bottom: 30px;
         }
       } 
@@ -7199,13 +7657,13 @@ header#navbar {
 
 
 
-@media (min-width: 300px) and (max-width: 349px) {
+  @media (min-width: 300px) and (max-width: 349px) {
 
 
 
- // -----"ПРОБЛЕМНЫЙ" БЛОК----- 349-300
- 
-  .selectBreakage {
+   // -----"ПРОБЛЕМНЫЙ" БЛОК----- 349-300
+   
+   .selectBreakage {
     .container {
       .wrap {
         .selectBreakageContent {

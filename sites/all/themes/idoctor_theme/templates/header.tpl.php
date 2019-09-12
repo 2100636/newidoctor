@@ -20,7 +20,7 @@
           <?php print render($primary_nav); ?>
           <?php endif; ?>
           <div class="btn btn-primary">
-            <a href="" role="button" data-toggle="modal" data-target="#exampleModal">статус заказа</a>
+            <a href="" role="button" data-toggle="modal" data-target="#menuModal">статус заказа</a>
           </div>
         </nav>
       </div>
@@ -30,8 +30,8 @@
 
 
 
-<!-- Модалка1 -->
-<div class="modal fade" id="exampleModal" role="dialog" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
+<!-- Модалка в меню -->
+<div class="modal fade" id="menuModal" role="dialog" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">

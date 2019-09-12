@@ -74,7 +74,7 @@
 
 
 <!-- Доступные цены -->
-<div class="affordable-price">
+<!-- <div class="affordable-price">
   <div class="container">
     <div class="heading div-heading">
       ДОСТУПНЫЕ ЦЕНЫ
@@ -110,7 +110,7 @@
             <s>3500 р</s> 3000 р
           </div>
         </div>
-          <a href="" class="btn btn-light">заказать</a>
+          <div class="btn btn-light">заказать</div>
       </div>
       <div class="priceRow">
         <div class="priceRowItem">
@@ -124,7 +124,7 @@
             <s>3500 р</s> 3000 р
           </div>
         </div>
-         <a href="" class="btn btn-light">заказать</a>
+         <div class="btn btn-light">заказать</div>
       </div>
       <div class="priceRow">
         <div class="priceRowItem">
@@ -138,7 +138,7 @@
             2700 р
           </div>
         </div>
-         <a href="" class="btn btn-light">заказать</a>
+         <div class="btn btn-light">заказать</div>
       </div>
       <div class="priceRow">
         <div class="priceRowItem">
@@ -154,7 +154,7 @@
            1400 р
           </div>
         </div>
-         <a href="" class="btn btn-light">заказать</a>
+         <div class="btn btn-light">заказать</div>
       </div>
       <div class="priceRow">
         <div class="priceRowItem">
@@ -170,7 +170,7 @@
             1400 р
           </div>
         </div>
-         <a href="" class="btn btn-light">заказать</a>
+         <div class="btn btn-light">заказать</div>
       </div>
       <div class="priceRow">
         <div class="priceRowItem">
@@ -184,7 +184,7 @@
             <s>3500 р</s> 3000 р
           </div>
         </div>
-         <a href="" class="btn btn-light">заказать</a>
+         <div class="btn btn-light">заказать</div>
       </div>
       <div class="priceRow">
         <div class="priceRowItem">
@@ -198,7 +198,7 @@
             <s>3500 р</s> 3000 р
           </div>
         </div>
-         <a href="" class="btn btn-light">заказать</a>
+         <div class="btn btn-light">заказать</div>
       </div>
       <div class="priceRow">
         <div class="priceRowItem">
@@ -212,7 +212,7 @@
             <s>3500 р</s> 3000 р
           </div>
         </div>
-         <a href="" class="btn btn-light">заказать</a>
+         <div class="btn btn-light">заказать</div>
       </div>
       <div class="priceRow">
         <div class="priceRowItem">
@@ -226,7 +226,7 @@
             <s>3500 р</s> 3000 р
           </div>
         </div>
-         <a href="" class="btn btn-light">заказать</a>
+         <div class="btn btn-light">заказать</div>
       </div>
       <div class="priceRow">
         <div class="priceRowItem">
@@ -240,7 +240,7 @@
             <s>3500 р</s> 3000 р
           </div>
         </div>
-         <a href="" class="btn btn-light">заказать</a>
+         <div class="btn btn-light">заказать</div>
       </div>
       <div class="priceRow">
         <div class="priceRowItem">
@@ -254,7 +254,7 @@
             <s>3500 р</s> 3000 р
           </div>
         </div>
-         <a href="" class="btn btn-light">заказать</a>
+         <div class="btn btn-light">заказать</div>
       </div>
       <div class="priceRow">
         <div class="priceRowItem">
@@ -268,7 +268,7 @@
             <s>3500 р</s> 3000 р
           </div>
         </div>
-         <a href="" class="btn btn-light">заказать</a>
+         <div class="btn btn-light">заказать</div>
       </div>
       <div class="priceRow">
         <div class="priceRowItem">
@@ -282,7 +282,7 @@
             <s>3500 р</s> 3000 р
           </div>
         </div>
-         <a href="" class="btn btn-light">заказать</a>
+         <div class="btn btn-light">заказать</div>
       </div>
       <div class="priceRow">
         <div class="priceRowItem">
@@ -296,7 +296,7 @@
             <s>3500 р</s> 3000 р
           </div>
         </div>
-         <a href="" class="btn btn-light">заказать</a>
+         <div class="btn btn-light">заказать</div>
       </div>
       <div class="priceRow">
         <div class="priceRowItem">
@@ -310,7 +310,7 @@
             <s>3500 р</s> 3000 р
           </div>
         </div>
-         <a href="" class="btn btn-light">заказать</a>
+         <div class="btn btn-light">заказать</div>
       </div>
       <div class="priceRow">
         <div class="priceRowItem">
@@ -324,19 +324,19 @@
             <s>3500 р</s> 3000 р
           </div>
         </div>
-         <a href="" class="btn btn-light">заказать</a>
+         <div class="btn btn-light">заказать</div>
       </div>
       <div class="allItems">
         <p>Открыть все</p>
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 
 
 <!-- оборудование -->
-<!-- <div class="equipment">
+ <div class="equipment">
   <div class="container">
     <?php 
       $block = block_load('views', 'equipments-block');
@@ -345,7 +345,7 @@
       echo drupal_render($blocks_build);
    ?>
   </div>
-</div> -->
+</div>
 
 
 
@@ -410,13 +410,37 @@
     <div class="row d-flex j-content-around buttons" id="dinamicBlock2">
       <a href="" class="btn btn-primary">iphone 8</a>
       <a href="" class="btn btn-primary">iphone 8 plus</a>
-      <a href="" class="btn btn-primary">iphone 8</a>
-      <a href="" class="btn btn-primary">iphone 8 plus</a>
+      <a href="" class="btn btn-primary">iphone 7</a>
+      <a href="" class="btn btn-primary">iphone 7 plus</a>
       <a href="" class="btn btn-primary">Все модели</a>
     </div>
   </div>
 </div>
 
+
+<script>
+  (function($) {
+
+    // $('.topModelsItem').on('click', function() {
+    //   $(this:before).css('background', 'url(/sites/all/themes/idoctor_theme/image/selected-model.png) no-repeat;');
+    // });
+    // $('.bottomModelsItem').on('click', function() {
+    //   $(this:before).css('background', 'url(/sites/all/themes/idoctor_theme/image/selected-model.png) no-repeat;');
+    // });
+
+
+    $('.chooseBlock').on('click', function() {
+      if($('#dinamicBlock2').css('display') == 'none') {
+       $('p.choose').text('Скрыть список');
+      }
+      else {
+       $('p.choose').text('Выберите устройство');
+      }
+      $('#dinamicBlock2').slideToggle(500);
+    });
+
+  })(jQuery);
+</script>
 
 
 <!-- БЛОК комплектующие высокого качества -->
@@ -471,7 +495,7 @@
     <div class="heading div-heading">Ваше устройство неисправно?</div>
     <p class="heading">выберите вашу проблему из списка</p>
     <div class="wrap">
-      <form action="">
+      <form method="POST">
         <div class="selectBreakageContent">
           <div class="selectBreakWrapp">
             <div class="selectBreakWrapp2">
@@ -479,15 +503,15 @@
               <div class="col-lg-4 col-md-12 selectBreakRowItem">
                 <p class="title" id="title1">ЭКРАН / ДИСПЛЕЙ</p>
                 <label for="break-1" class="checkbox-label">
-                  <input type="checkbox" id="break-1" value="1"><span></span>
+                  <input type="checkbox" id="break-1" name="pid[]" value="разбилось стекло"><span></span>
                   <p class="check">разбилось стекло</p>
                 </label><br>
                 <label for="break-2" class="checkbox-label">
-                  <input type="checkbox" id="break-2" value="2"><span></span>
+                  <input type="checkbox" id="break-2" name="pid[]" value="не работает экран"><span></span>
                   <p class="check">не работает экран</p>
                 </label><br>
                 <label for="break-3" class="checkbox-label">
-                  <input type="checkbox" id="break-3" value="3"><span></span>
+                  <input type="checkbox" id="break-3" name="pid[]" value="нет подсветки"><span></span>
                   <p class="check">нет подсветки</p>
                 </label><br>  
               </div>
@@ -495,35 +519,37 @@
               <div class="col-lg-4 col-md-12 selectBreakRowItem">
                 <p class="title" id="title2">ЗАРЯДКА</p>
                 <label for="break-4" class="checkbox-label">
-                  <input type="checkbox" id="break-4" value="4"><span></span>
+                  <input type="checkbox" id="break-4" value="не заряжается"><span></span>
                   <p class="check">не заряжается</p>
                 </label><br>
                 <label for="break-5" class="checkbox-label">
-                  <input type="checkbox" id="break-5" value="5"><span></span>
+                  <input type="checkbox" id="break-5" value="быстро рязряжается"><span></span>
                   <p class="check">быстро рязряжается</p>
                 </label><br>
                 <label for="break-6" class="checkbox-label">
-                  <input type="checkbox" id="break-6" value="6"><span></span>
+                  <input type="checkbox" id="break-6" value="греется батарея"><span></span>
                   <p class="check">греется батарея</p>  
                 </label><br>
                 <label for="break-7" class="checkbox-label">
-                  <input type="checkbox" id="break-7" value="7"><span></span>
+                  <input type="checkbox" id="break-7" value="не работает беспр. зарядка"><span></span>
                   <p class="check">не работает беспр. зарядка</p>
                 </label><br>
               </div>
 
+              <div class="btn btn-rimary mobileOpenButton">Показать весь список</div>
+
               <div class="col-lg-4 col-md-12 selectBreakRowItem">
                 <p class="title"  id="title3">КНОПКИ</p>
                 <label for="break-8" class="checkbox-label">
-                  <input type="checkbox" id="break-8" value="8"><span></span>
+                  <input type="checkbox" id="break-8" value="не работает вкл / выкл"><span></span>
                   <p class="check">не работает вкл / выкл</p>
                 </label><br>
                 <label for="break-9" class="checkbox-label">
-                  <input type="checkbox" id="break-9" value="9"><span></span>
+                  <input type="checkbox" id="break-9" value="не работает кнопка HOME"><span></span>
                   <p class="check">не работает кнопка HOME</p>
                 </label><br>
                 <label for="break-10" class="checkbox-label">
-                  <input type="checkbox" id="break-10" value="10"><span></span>
+                  <input type="checkbox" id="break-10" value="не работают кнопки громкости"><span></span>
                   <p class="check">не работают кнопки громкости</p>
                 </label><br>
               </div>
@@ -531,15 +557,15 @@
               <div class="col-lg-4 col-md-12 selectBreakRowItem">
                 <p class="title" id="title4">ОБЩЕЕ</p>
                 <label for="break-11" class="checkbox-label">
-                  <input type="checkbox" id="break-11" value="11"><span></span>
+                  <input type="checkbox" id="break-11" value="не включается"><span></span>
                   <p class="check">не включается</p>
                 </label><br>
                 <label for="break-12" class="checkbox-label">
-                  <input type="checkbox" id="break-12" value="12"><span></span>
+                  <input type="checkbox" id="break-12" value="попала влага / утонул"><span></span>
                   <p class="check">попала влага / утонул</p>
                 </label><br>
                 <label for="break-13" class="checkbox-label">
-                  <input type="checkbox" id="break-13" value="13"><span></span>
+                  <input type="checkbox" id="break-13" value="не работает wi-Fi"><span></span>
                   <p class="check">не работает wi-Fi</p>
                 </label><br>
               </div>
@@ -547,15 +573,15 @@
               <div class="col-lg-4 col-md-12 selectBreakRowItem">
                 <p class="title" id="title5">ПО</p>
                 <label for="break-14" class="checkbox-label">
-                  <input type="checkbox" id="break-14" value="14"><span></span>
+                  <input type="checkbox" id="break-14" value="зависает"><span></span>
                   <p class="check">зависает</p><br>
                 </label><br>
                 <label for="break-15" class="checkbox-label">
-                  <input type="checkbox" id="break-15" value="15"><span></span>
+                  <input type="checkbox" id="break-15" value="просит itunes"><span></span>
                   <p class="check">просит itunes</p>
                 </label><br>
                 <label for="break-16" class="checkbox-label">
-                  <input type="checkbox" id="break-16" value="16"><span></span>
+                  <input type="checkbox" id="break-16" value="не обновляется"><span></span>
                   <p class="check">не обновляется</p>
                 </label><br>
               </div>
@@ -563,15 +589,15 @@
               <div class="col-lg-4 col-md-12 selectBreakRowItem">
                 <p class="title" id="title6">КАМЕРА</p>
                 <label for="break-17" class="checkbox-label">
-                  <input type="checkbox" id="break-17" value="17"><span></span>
+                  <input type="checkbox" id="break-17" value="не работает задняя камера"><span></span>
                   <p class="check">не работает задняя камера</p>
                 </label><br>
                 <label for="break-18" class="checkbox-label">
-                  <input type="checkbox" id="break-18" value="18"><span></span>
+                  <input type="checkbox" id="break-18" value="не работает фронтальная"><span></span>
                   <p class="check">не работает фронтальная</p>
                 </label><br>
                 <label for="break-19" class="checkbox-label">
-                  <input type="checkbox" id="break-19" value="19"><span></span>
+                  <input type="checkbox" id="break-19" value="не работает face id"><span></span>
                   <p class="check">не работает face id</p>
                </label><br>
               </div>
@@ -579,19 +605,19 @@
               <div class="col-lg-4 col-md-12 selectBreakRowItem">
                 <p class="title" id="title7">ДИНАМИКИ / МИКРОФОН</p>
                 <label for="break-20" class="checkbox-label">
-                  <input type="checkbox" id="break-20" value="20"><span></span>
+                  <input type="checkbox" id="break-20" value="не работает динамик"><span></span>
                   <p class="check">не работает динамик</p>
                 </label><br>
                 <label for="break-21" class="checkbox-label">
-                  <input type="checkbox" id="break-21" value="21"><span></span>
+                  <input type="checkbox" id="break-21" value="собеседник не слышит"><span></span>
                   <p class="check">собеседник не слышит</p>
                 </label><br>
                 <label for="break-22" class="checkbox-label">
-                  <input type="checkbox" id="break-22" value="22"><span></span>
+                  <input type="checkbox" id="break-22" value="не работает микрофон"><span></span>
                   <p class="check">не работает микрофон</p>
                 </label><br>
                 <label for="break-23" class="checkbox-label">
-                  <input type="checkbox" id="break-23" value="23"><span></span>
+                  <input type="checkbox" id="break-23" value="не слышу собеседника"><span></span>
                   <p class="check">не слышу собеседника</p>
                 </label><br>
               </div>
@@ -599,15 +625,15 @@
               <div class="col-lg-4 col-md-12 selectBreakRowItem">
                 <p class="title" id="title8">КОРПУС</p>
                 <label for="break-24" class="checkbox-label">
-                  <input type="checkbox" id="break-24" value="24"><span></span>
+                  <input type="checkbox" id="break-24" value="разбилось заднее стекло"><span></span>
                   <p class="check">разбилось заднее стекло</p>
                 </label><br>
                 <label for="break-25" class="checkbox-label">
-                  <input type="checkbox" id="break-25" value="25"><span></span>
+                  <input type="checkbox" id="break-25" value="замят / согнут корпус"><span></span>
                   <p class="check">замят / согнут корпус</p>
                 </label><br>
                 <label for="break-26" class="checkbox-label">
-                  <input type="checkbox" id="break-26" value="26"><span></span>
+                  <input type="checkbox" id="break-26" value="разбито стекло камеры"><span></span>
                   <p class="check">разбито стекло камеры</p>
                 </label><br>
               </div>
@@ -615,56 +641,115 @@
               <div class="col-lg-4 col-md-12 selectBreakRowItem">
                 <p class="title" id="title9">ДРУГОЕ</p>
                 <label for="break-27" class="checkbox-label">
-                  <input type="checkbox" id="break-27" value="27"><span></span>
+                  <input type="checkbox" id="break-27" value="не работают наушники"><span></span>
                   <p class="check">не работают наушники</p>
                 </label><br>
                 <label for="break-28" class="checkbox-label">
-                  <input type="checkbox" id="break-28" value="28"><span></span>
+                  <input type="checkbox" id="break-28" value="не работает вибрация"><span></span>
                   <p class="check">не работает вибрация</p>
                 </label><br>
                 <label for="break-29" class="checkbox-label">
-                  <input type="checkbox" id="break-29" value="29"><span></span>
+                  <input type="checkbox" id="break-29" value="не ловит сеть"><span></span>
                   <p class="check">не ловит сеть</p>
                 </label><br>
                 <label for="break-30" class="checkbox-label">
-                  <input type="checkbox" id="break-30" value="30"><span></span>
-                  <p class="check">не видит sim</p>
+                  <input type="checkbox" id="break-30" value="не видит sim-карту"><span></span>
+                  <p class="check">не видит sim-карту</p>
                 </label><br>
               </div>
+
+              <div class="btn btn-rimary mobileCloseButton">Скрыть список</div>
             </div>
             <div class="buttonForm">
-              <a href="" class="btn btn-primary" role="button" data-toggle="modal" data-target="#exampleModal2">рассчитать стоимость ремонта</a>
+              <input type="submit" class="btn btn-primary problemsButton" value="рассчитать стоимость ремонта">
+              <a href="" role="button" data-toggle="modal" data-target="#problemsModal">МОДАЛКА</a>
             </div>
           </div>
         </div>
       </form>
     </div>
   </div>
-</div>
-
+</div> 
 
 <script>
   (function($) {
-
     
+    $('.mobileOpenButton').on('click', function() {
+      $('.selectBreakageContent').show(500).css('height', 'auto');
+      $(this).css('display', 'none');
+      $('.mobileCloseButton').css('display', 'block');
+    });
+
+    $('.mobileCloseButton').on('click', function() {
+      $('.selectBreakageContent').css('height', '404');
+      $(this).css('display', 'none');
+      $('.mobileOpenButton').css('display', 'block');
+    });
 
   })(jQuery);
 </script>
 
 
 
-  
-
-
-
 <!-- Модалка2 -->
-<div class="modal fade" id="exampleModal2" role="dialog" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
+<div class="modal fade" id="problemsModal" role="dialog" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button class="close" type="button" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
+        <div class="heading">Что чиним:</div>
+        <form method="POST">
+          <div class="formProblems">
+            <div class="name">
+              Устройство:
+            </div>
+            <select name="" id="">
+              <option value="IPHONE">IPHONE</option>
+              <option value="IPAD">IPAD</option>
+              <option value="MACBOOK">MACBOOK</option>
+              <option value="XIAOMI">XIAOMI</option>
+              <option value="HONOR">HONOR</option>
+              <option value="HUAWEI">HUAWEI</option>
+              <option value="MEIZU">MEIZU</option>
+              <option value="SAMSUNG">SAMSUNG</option>
+            </select>
+          </div>
+          <div class="formProblems">
+            <div class="name">
+              Модель:
+            </div>
+            <select name="model" id="model">
+              <option value="IPHONE8">IPHONE8</option>
+              <option value="IPHONE7">IPHONE7</option>
+              <option value="IPHONE6">IPHONE6</option>
+              <option value="IPHONE5">IPHONE5</option>
+            </select>
+          </div>
+          <div class="formProblems">
+            <div class="name">
+              Проблема:
+            </div>
+            <div class="problemsBlock">
+              <script>
+                (function($) {
+                  var a = $('input:checked');
+                  var problems = [];
+                  for (var i = 0; i < a.length; i++) {
+                    problems.push('<p class="problem">' + a[i].value + '</p>'); 
+                  }
+                  document.write(problems);
+
+                  $('.problemsButton').on('click', function() {
+                    $('#problemsModal').modal();
+                  });
+
+              })(jQuery);
+            </script>
+            </div>
+          </div>
+        </form>
       </div>
       <div class="modal-body text-justify">
         <p>Заполните форму ниже и мы свяжемся с Вами!</p>
