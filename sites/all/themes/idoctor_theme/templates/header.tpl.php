@@ -20,7 +20,7 @@
           <?php print render($primary_nav); ?>
           <?php endif; ?>
           <div class="btn btn-primary">
-            <a href="" role="button" data-toggle="modal" data-target="#menuModal">статус заказа</a>
+            <a role="button" data-toggle="modal" data-target="#">статус заказа</a>
           </div>
         </nav>
       </div>
@@ -30,30 +30,7 @@
 
 
 
-<!-- Модалка в меню -->
-<div class="modal fade" id="menuModal" role="dialog" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <div class="modal-header-top"></div>
-        <div class="modal-header-bottom">
-          <p>При замене дисплея на IPhone мы наклеим обычное защитное стекло бесплатно. На 3D стекло акция не распространяется.</p>
-        </div>
-      </div>
-      <div class="modal-body text-justify">
-        <p>Заполните форму ниже и мы свяжемся с Вами!</p>
-        <form action="">  
-          <input type="text" name="email" class="email" placeholder="email" >
-          <input type="text" name="phone" class="phone" placeholder="телефон" >
-          <a href="" class="btn btn-primary">Подробнее</a>
-        </form>
-      </div>
-    </div>
-  </div>      
-</div>
+
 
 
 

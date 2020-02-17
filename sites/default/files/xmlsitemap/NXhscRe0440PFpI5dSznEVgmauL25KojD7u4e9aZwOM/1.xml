@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>http://idoctor.mc/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-<url><loc>http://idoctor.mc/home</loc><lastmod>2019-08-29T17:37Z</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
-<url><loc>http://idoctor.mc/content/%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B</loc><lastmod>2019-04-24T13:10Z</lastmod><changefreq>yearly</changefreq></url>
-<url><loc>http://idoctor.mc/content/403</loc><lastmod>2019-04-24T13:14Z</lastmod><changefreq>yearly</changefreq></url>
-<url><loc>http://idoctor.mc/content/404</loc><lastmod>2019-04-24T13:14Z</lastmod><changefreq>yearly</changefreq></url>
-<url><loc>http://idoctor.mc/content/%D0%BE-%D0%BD%D0%B0%D1%81</loc><lastmod>2019-04-24T13:15Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://idoctor/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>http://idoctor/home</loc><lastmod>2019-09-15T15:14Z</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+<url><loc>http://idoctor/content/%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B</loc><lastmod>2019-09-16T21:50Z</lastmod><changefreq>daily</changefreq></url>
+<url><loc>http://idoctor/content/%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82-ipad</loc><lastmod>2019-09-16T21:51Z</lastmod><changefreq>daily</changefreq></url>
+<url><loc>http://idoctor/content/%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82-notebook</loc><lastmod>2019-09-16T21:45Z</lastmod><changefreq>daily</changefreq></url>
+<url><loc>http://idoctor/403</loc><lastmod>2019-09-16T21:52Z</lastmod><changefreq>daily</changefreq></url>
+<url><loc>http://idoctor/content/%D0%BF%D1%80%D0%B0%D0%B9%D1%81</loc><lastmod>2019-09-16T21:46Z</lastmod><changefreq>daily</changefreq></url>
+<url><loc>http://idoctor/content/%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82-iphone</loc><lastmod>2019-09-16T21:46Z</lastmod><changefreq>daily</changefreq></url>
+<url><loc>http://idoctor/404</loc><lastmod>2019-09-16T21:52Z</lastmod><changefreq>daily</changefreq></url>
+<url><loc>http://idoctor/content/%D0%BE-%D0%BD%D0%B0%D1%81</loc><lastmod>2019-09-16T21:49Z</lastmod><changefreq>daily</changefreq></url>
 </urlset>

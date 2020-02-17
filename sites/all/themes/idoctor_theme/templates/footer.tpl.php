@@ -63,3 +63,5 @@
     </div>
   </div>
 </div>
+
+<script src="\sites\all\themes\idoctor_theme\js\iDoctor.js"></script>
