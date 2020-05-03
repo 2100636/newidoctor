@@ -1,7 +1,5 @@
 
-<?php 
-require_once 'header.tpl.php';
-?>
+<?php require_once 'header.tpl.php'; ?>
 
 
 <!-- Шпапка -->
@@ -33,8 +31,8 @@ require_once 'header.tpl.php';
       <script src="/sites/all/themes/idoctor_theme/js/jquery.twentytwenty.js"></script>
       <div class="rightBanner">
         <div class="twentyBlock twentyBlockLaptop twentytwenty-container">
-          <img src="/sites/all/themes/idoctor_theme/image/before.jpg" alt="" class="twenty-laptop">
-          <img src="/sites/all/themes/idoctor_theme/image/after.jpg" alt="" class="twenty-laptop">
+          <img src="/sites/all/themes/idoctor_theme/image/before2.jpg" alt="" class="twenty-laptop">
+          <img src="/sites/all/themes/idoctor_theme/image/after2.jpg" alt="" class="twenty-laptop">
         </div>  
         <div class="twentyBlock twentyBlockMobile twentytwenty-container">
           <img src="/sites/all/themes/idoctor_theme/image/after-mobile.jpg" alt="" class="twenty-mobile">
@@ -71,270 +69,6 @@ require_once 'header.tpl.php';
 
 
 
-<!-- Доступные цены -->
-<!-- <div class="affordable-price">
-  <div class="container">
-    <div class="heading div-heading">
-      ДОСТУПНЫЕ ЦЕНЫ
-    </div>
-    <p class="heading">выберите модель вашего устройства</p>
-  </div>
-  <div class="buttonsBlock">
-    <div class="container">
-      <div class="buttonsBlockContent">
-        <a href="" class="btn btn-light">IPHONE 8</a>
-        <a href="" class="btn btn-light">IPHONE 8 plus</a>
-       <select name="" id="">
-         <option value="">другое устройство</option>
-         <option value="IPhone">IPhone</option>
-         <option value="Xiaomi">Xiaomi</option>
-         <option value="Samsung">Samsung</option>
-         <option value="Meizu">Meizu</option>
-       </select>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="affordable-price-content">    
-      <div class="priceRow">
-        <div class="priceRowItem">
-          <div class="service-name">
-            <p>Замена стекла (переклейка) <span>+ Защита БЕСПЛАТНО</span></p>
-          </div>
-          <div class="time">
-            1-2 дня
-          </div>
-          <div class="price">
-            <s>3500 р</s> 3000 р
-          </div>
-        </div>
-          <div class="btn btn-light">заказать</div>
-      </div>
-      <div class="priceRow">
-        <div class="priceRowItem">
-          <div class="service-name">
-            <p>Замена стекла (переклейка) <span>+ Защита БЕСПЛАТНО</span></p>
-          </div>
-          <div class="time">
-            1-2 дня
-          </div>
-          <div class="price">
-            <s>3500 р</s> 3000 р
-          </div>
-        </div>
-         <div class="btn btn-light">заказать</div>
-      </div>
-      <div class="priceRow">
-        <div class="priceRowItem">
-          <div class="service-name">
-            <p>Замена задней крышки</span></p>
-          </div>
-          <div class="time">
-            3 часа
-          </div>
-          <div class="price">
-            2700 р
-          </div>
-        </div>
-         <div class="btn btn-light">заказать</div>
-      </div>
-      <div class="priceRow">
-        <div class="priceRowItem">
-          <div class="service-name">
-            <p>
-              Замена разъема зарядки
-            </p>
-          </div>
-          <div class="time">
-            40 мин
-          </div>
-          <div class="price">
-           1400 р
-          </div>
-        </div>
-         <div class="btn btn-light">заказать</div>
-      </div>
-      <div class="priceRow">
-        <div class="priceRowItem">
-          <div class="service-name">
-            <p>
-              Замена датчика приближения
-            </p>
-          </div>
-          <div class="time">
-            20 мин
-          </div>
-          <div class="price">
-            1400 р
-          </div>
-        </div>
-         <div class="btn btn-light">заказать</div>
-      </div>
-      <div class="priceRow">
-        <div class="priceRowItem">
-          <div class="service-name">
-            <p>Замена стекла (переклейка) <span>+ Защита БЕСПЛАТНО</span></p>
-          </div>
-          <div class="time">
-            1-2 дня
-          </div>
-          <div class="price">
-            <s>3500 р</s> 3000 р
-          </div>
-        </div>
-         <div class="btn btn-light">заказать</div>
-      </div>
-      <div class="priceRow">
-        <div class="priceRowItem">
-          <div class="service-name">
-            <p>Замена стекла (переклейка) <span>+ Защита БЕСПЛАТНО</span></p>
-          </div>
-          <div class="time">
-            1-2 дня
-          </div>
-          <div class="price">
-            <s>3500 р</s> 3000 р
-          </div>
-        </div>
-         <div class="btn btn-light">заказать</div>
-      </div>
-      <div class="priceRow">
-        <div class="priceRowItem">
-          <div class="service-name">
-            <p>Замена стекла (переклейка) <span>+ Защита БЕСПЛАТНО</span></p>
-          </div>
-          <div class="time">
-            1-2 дня
-          </div>
-          <div class="price">
-            <s>3500 р</s> 3000 р
-          </div>
-        </div>
-         <div class="btn btn-light">заказать</div>
-      </div>
-      <div class="priceRow">
-        <div class="priceRowItem">
-          <div class="service-name">
-            <p>Замена стекла (переклейка) <span>+ Защита БЕСПЛАТНО</span></p>
-          </div>
-          <div class="time">
-            1-2 дня
-          </div>
-          <div class="price">
-            <s>3500 р</s> 3000 р
-          </div>
-        </div>
-         <div class="btn btn-light">заказать</div>
-      </div>
-      <div class="priceRow">
-        <div class="priceRowItem">
-          <div class="service-name">
-            <p>Замена стекла (переклейка) <span>+ Защита БЕСПЛАТНО</span></p>
-          </div>
-          <div class="time">
-            1-2 дня
-          </div>
-          <div class="price">
-            <s>3500 р</s> 3000 р
-          </div>
-        </div>
-         <div class="btn btn-light">заказать</div>
-      </div>
-      <div class="priceRow">
-        <div class="priceRowItem">
-          <div class="service-name">
-            <p>Замена стекла (переклейка) <span>+ Защита БЕСПЛАТНО</span></p>
-          </div>
-          <div class="time">
-            1-2 дня
-          </div>
-          <div class="price">
-            <s>3500 р</s> 3000 р
-          </div>
-        </div>
-         <div class="btn btn-light">заказать</div>
-      </div>
-      <div class="priceRow">
-        <div class="priceRowItem">
-          <div class="service-name">
-            <p>Замена стекла (переклейка) <span>+ Защита БЕСПЛАТНО</span></p>
-          </div>
-          <div class="time">
-            1-2 дня
-          </div>
-          <div class="price">
-            <s>3500 р</s> 3000 р
-          </div>
-        </div>
-         <div class="btn btn-light">заказать</div>
-      </div>
-      <div class="priceRow">
-        <div class="priceRowItem">
-          <div class="service-name">
-            <p>Замена стекла (переклейка) <span>+ Защита БЕСПЛАТНО</span></p>
-          </div>
-          <div class="time">
-            1-2 дня
-          </div>
-          <div class="price">
-            <s>3500 р</s> 3000 р
-          </div>
-        </div>
-         <div class="btn btn-light">заказать</div>
-      </div>
-      <div class="priceRow">
-        <div class="priceRowItem">
-          <div class="service-name">
-            <p>Замена стекла (переклейка) <span>+ Защита БЕСПЛАТНО</span></p>
-          </div>
-          <div class="time">
-            1-2 дня
-          </div>
-          <div class="price">
-            <s>3500 р</s> 3000 р
-          </div>
-        </div>
-         <div class="btn btn-light">заказать</div>
-      </div>
-      <div class="priceRow">
-        <div class="priceRowItem">
-          <div class="service-name">
-            <p>Замена стекла (переклейка) <span>+ Защита БЕСПЛАТНО</span></p>
-          </div>
-          <div class="time">
-            1-2 дня
-          </div>
-          <div class="price">
-            <s>3500 р</s> 3000 р
-          </div>
-        </div>
-         <div class="btn btn-light">заказать</div>
-      </div>
-      <div class="priceRow">
-        <div class="priceRowItem">
-          <div class="service-name">
-            <p>Замена стекла (переклейка) <span>+ Защита БЕСПЛАТНО</span></p>
-          </div>
-          <div class="time">
-            1-2 дня
-          </div>
-          <div class="price">
-            <s>3500 р</s> 3000 р
-          </div>
-        </div>
-         <div class="btn btn-light">заказать</div>
-      </div>
-      <div class="allItems">
-        <p>Открыть все</p>
-      </div>
-    </div>
-  </div>
-</div> -->
-
-
-
-
-
 <!-- оборудование -->
 <div class="equipment">
   <div class="container">
@@ -351,6 +85,7 @@ require_once 'header.tpl.php';
 
 
 
+
 <!-- низкие цены на ремонт ...  -->
 <div class="lowPrices">
   <div class="container3">
@@ -358,27 +93,47 @@ require_once 'header.tpl.php';
       Низкие цены на ремонт iphone в томске
     </div>
     <p class="heading">выберите модель вашего устройства</p>
+
     <div class="row d-flex j-content-around topModels">
-      <div class="col-md-4 topModelsItem">
+
+      <div class="col-md-4 topModelsItem devices" id="device_iphone">
         <p class="model">IPHONE</p>
       </div>
-      <div class="col-md-4 topModelsItem"><p class="model">IPAD</p>
+
+      <div class="col-md-4 topModelsItem devices" id="device_ipad">
+        <p class="model">IPAD</p>
       </div>
-      <div class="col-md-4 topModelsItem"><p class="model">MACBOOK</p>
+
+      <div class="col-md-4 topModelsItem devices" id="device_macbook">
+        <p class="model">MACBOOK</p>
       </div>
+
     </div>
+
     <div class="row d-flex j-content-between bottomModels">
-      <div class="col-md-3 bottomModelsItem"><p class="model">XIAOMI</p>
+
+      <div class="col-md-3 bottomModelsItem devices" id="device_xiaomi">
+        <p class="model">XIAOMI</p>
       </div>
-      <div class="col-md-3 bottomModelsItem"><p class="model">HONOR</p>
+
+      <div class="col-md-3 bottomModelsItem devices" id="device_honor">
+        <p class="model">HONOR</p>
       </div>
-      <div class="col-md-3 bottomModelsItem"><p class="model">HUAWEI</p>
+
+      <div class="col-md-3 bottomModelsItem devices" id="device_huawei">
+        <p class="model">HUAWEI</p>
       </div>
-      <div class="col-md-3 bottomModelsItem"><p class="model">MEIZU</p>
+
+      <div class="col-md-3 bottomModelsItem devices" id="device_meizu">
+        <p class="model">MEIZU</p>
       </div>
-      <div class="col-md-3 bottomModelsItem"><p class="model">SAMSUNG</p>
+
+      <div class="col-md-3 bottomModelsItem devices" id="device_samsung">
+        <p class="model">SAMSUNG</p>
       </div>
+
     </div>
+    <div class="selectedDevice"></div>
   </div>
   
   <div class="mobileBlock">
@@ -408,32 +163,84 @@ require_once 'header.tpl.php';
   </div>
 
   <div class="container3">
-    <div class="row d-flex j-content-around buttons" id="dinamicBlock2">
-      <a class="btn btn-primary">iphone 8</a>
-      <a class="btn btn-primary">iphone 8 plus</a>
-      <a class="btn btn-primary">iphone 7</a>
-      <a class="btn btn-primary">iphone 7 plus</a>
-      <a class="btn btn-primary">Все модели</a>
+    <div class="row d-flex j-content-center buttons" id="dinamicBlock2">
+      <div class="models_iphone models">
+        <a href="/node/71" class="btn btn-primary">iphone 4</a>
+        <a href="/node/71" class="btn btn-primary">iphone 4s</a>
+        <a href="/node/72" class="btn btn-primary">iphone 5</a>
+        <a href="/node/72" class="btn btn-primary">iphone 5c</a>
+        <a href="/node/72" class="btn btn-primary">iphone 5s</a>
+        <a class="btn btn-primary">iphone 6</a>
+        <a class="btn btn-primary">iphone 6 Plus</a>
+        <a class="btn btn-primary">iphone 6s</a>
+        <a class="btn btn-primary">iphone 6s Plus</a>
+        <a class="btn btn-primary">iphone SE</a>
+        <a href="/node/60" class="btn btn-primary">iphone 7</a>
+        <a href="/node/60" class="btn btn-primary">iphone 7 Plus</a>
+        <a href="/node/59" class="btn btn-primary">iphone 8</a>
+        <a href="/node/59" class="btn btn-primary">iphone 8 Plus</a>
+        <a class="btn btn-primary">iphone X</a>
+        <a class="btn btn-primary">iphone XS</a>
+        <a class="btn btn-primary">iphone XS Max</a>
+        <a class="btn btn-primary">iphone XR</a>
+        <a class="btn btn-primary">iphone 11</a>
+        <a class="btn btn-primary">iphone 11 PRO</a>
+        <a class="btn btn-primary">iphone 11 PRO Max</a>
+      </div>
+
+      <div class="models_ipad models">
+        <a href="/node/71" class="btn btn-primary">ipad 2</a>
+        <a href="/node/71" class="btn btn-primary">ipad 3</a>
+        <a href="/node/71" class="btn btn-primary">ipad 4</a>
+        <a href="/node/71" class="btn btn-primary">ipad mini</a>
+        <a href="/node/71" class="btn btn-primary">ipad mini 2</a>
+        <a href="/node/71" class="btn btn-primary">ipad mini 3</a>
+        <a href="/node/71" class="btn btn-primary">ipad mini 4</a>
+        <a href="/node/71" class="btn btn-primary">ipad air</a>
+        <a href="/node/71" class="btn btn-primary">ipad air 2</a>
+        <a href="/node/71" class="btn btn-primary">ipad air pro</a>
+      </div>
+
+      <div class="models_macbook models">
+        <a href="/node/71" class="btn btn-primary">MacBook Air 11"</a>
+        <a href="/node/71" class="btn btn-primary">MacBook Air 13"</a>
+        <a href="/node/71" class="btn btn-primary">MacBook Air 15"</a>
+      </div>
+
+      <div class="models_apple_watch models">
+        <a href="/node/71" class="btn btn-primary">Apple Watch Series 1</a>
+        <a href="/node/71" class="btn btn-primary">Apple Watch Series 2</a>
+        <a href="/node/71" class="btn btn-primary">Apple Watch Series 3</a>
+        <a href="/node/71" class="btn btn-primary">Apple Watch Series 4</a>
+        <a href="/node/71" class="btn btn-primary">Apple Watch Series 5</a>
+      </div>
+
+      <div class="models_xiaomi models">
+        <a href="/node/71" class="btn btn-primary">/</a>
+      </div>
+
+      <div class="models_honor models">
+        <a href="/node/71" class="btn btn-primary">/</a>
+      </div>
+
+      <div class="models_huawei models">
+        <a href="/node/71" class="btn btn-primary">/</a>
+      </div>
+
+      <div class="models_meizu models">
+        <a href="/node/71" class="btn btn-primary">/</a>
+      </div>
+
+      <div class="models_samsung models">
+        <a href="/node/71" class="btn btn-primary">/</a>
+      </div>
+
     </div>
   </div>
 </div>
 
-
-
-
-
 <script>
-  (function($) {
-
-    // $('.topModelsItem').on('click', function() {
-    //   $(this:before).css('background', 'url(/sites/all/themes/idoctor_theme/image/selected-model.png) no-repeat;');
-    // });
-    // $('.bottomModelsItem').on('click', function() {
-    //   $(this:before).css('background', 'url(/sites/all/themes/idoctor_theme/image/selected-model.png) no-repeat;');
-    // });
-
-
-  })(jQuery);
+  
 </script>
 
 
@@ -507,7 +314,8 @@ require_once 'header.tpl.php';
             <span>&times;</span>
           </button>
           <div class="header_top"></div>
-          <div class="header_bottom"></div>
+          <div class="header_bottom">
+          </div>
         </div>
         <div class="modal-body text-justify">
           <p>Заполните форму ниже и мы свяжемся с Вами!</p>
@@ -521,7 +329,7 @@ require_once 'header.tpl.php';
     </div>      
   </div>
 
-  <!-- bacground: #608b97 -->
+
 
 
   <!-- "ПРОБЛЕМНЫЙ" БЛОК  -->
@@ -717,7 +525,7 @@ require_once 'header.tpl.php';
       $blocks = _block_render_blocks(array($block));
       $blocks_build = _block_get_renderable_array($blocks);
       echo drupal_render($blocks_build);
-      ?>
+      ?>Ремонт iPhone 5, 5с, 5s
     </div>
   </div>
 
@@ -767,7 +575,7 @@ require_once 'header.tpl.php';
   <!-- Oтзывы -->
   <div class="comments">
     <div class="container">
-      <section>
+      <div class="comments_content">
         <h2>Отзывы клиентов</h2>
         <p class="heading">за время работы мы отремонтировали тысячи устройств. вот некоторые отзывы наших клиентов</p>
         <ul class="nav nav-tabs">
@@ -801,7 +609,11 @@ require_once 'header.tpl.php';
             ?>
           </div>
         </div>
-      </section>
+        <div class="buttons_block">
+          <a href="/node/70" class="btn btn-primary">Все отзывы</a>
+          <a href="/node/70" class="btn btn-primary">Добавить отзыв</a>
+        </div>
+      </div>
     </div>
   </div>
 

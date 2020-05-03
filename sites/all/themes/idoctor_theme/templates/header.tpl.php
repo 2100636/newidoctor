@@ -1,32 +1,6 @@
 
 <!-- <header id="navbar" class="<?php print $navbar_classes; ?>"> -->
-<header id="navbar">
-  <div class="<?php print $container_class; ?>">
-    <div class="navbar-header">
-      <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-          <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      <?php endif; ?>
-    </div>
 
-    <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-      <div class="navbar-collapse collapse" id="navbar-collapse">
-        <nav role="navigation">
-          <?php if (!empty($primary_nav)): ?>
-          <?php print render($primary_nav); ?>
-          <?php endif; ?>
-          <div class="btn btn-primary">
-            <a role="button" data-toggle="modal" data-target="#">статус заказа</a>
-          </div>
-        </nav>
-      </div>
-    <?php endif; ?>
-  </div>
-</header>
 
 
 
@@ -68,3 +42,31 @@
   </div>
 </div>
 
+
+<header id="navbar">
+  <div class="<?php print $container_class; ?>">
+    <div class="navbar-header">
+      <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      <?php endif; ?>
+    </div>
+
+    <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
+      <div class="navbar-collapse collapse" id="navbar-collapse">
+        <nav role="navigation">
+          <?php if (!empty($primary_nav)): ?>
+          <?php print render($primary_nav); ?>
+          <?php endif; ?>
+          <div class="btn btn-primary">
+            <a role="button" data-toggle="modal" data-target="#">статус заказа</a>
+          </div>
+        </nav>
+      </div>
+    <?php endif; ?>
+  </div>
+</header>

@@ -54,9 +54,9 @@
       <div class="col-lg-3 col-md-6 social item">
         <p class="title">Наши соцсети:</p>
         <div class="socialDiv d-flex j-content-between">
-          <div class="socialItem vkIcon"><a rel="nofollow" href="https://vk.com/" target="_blank"></a></div>
-          <div class="socialItem fbIcon"><a rel="nofollow" href="https://facebook.com/" target="_blank"></a></div>
-          <div class="socialItem instaIcon"><a rel="nofollow" href="https://instagram.com/" target="_blank"></a></div>
+          <div class="socialItem vkIcon"><a rel="nofollow" href="https://vk.com/" target="_blank" rel="nofollow"></a></div>
+          <div class="socialItem fbIcon"><a rel="nofollow" href="https://facebook.com/" target="_blank" rel="nofollow"></a></div>
+          <div class="socialItem instaIcon"><a rel="nofollow" href="https://instagram.com/" target="_blank" rel="nofollow"></a></div>
         </div>
         <div class="copy">Copyright © iDoctor 2019</div>
       </div>        
