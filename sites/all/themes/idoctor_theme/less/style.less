@@ -1417,6 +1417,16 @@
           }
         } 
       }
+      .wrapper_price_block {
+        display: none;
+        flex-wrap: wrap;
+        transition: 0.5s;
+        .priceRow {
+          &:nth-child(1), &:nth-child(2) {
+            border-top: none;
+          }
+        }
+      }
     }
     .allItems {
       text-align: center;
@@ -1431,7 +1441,7 @@
         border-bottom: 1px solid #e0e0e0;
         z-index: 0;
       }
-      p {
+      p.open_block, p.close_block {
         text-transform: uppercase;
         color: #00bdf1;
         font-size: 1.3em;
@@ -1441,16 +1451,16 @@
         position: relative;
         cursor: pointer;
         z-index: 2;
-        &:after {
-          content: '';
-          position: absolute;
-          top: 8px;
-          right: 16px;
-          background-image: url(/sites/all/themes/idoctor_theme/image/arrow_blue.png);
-          width: 20px;
-          height: 10px;
-          z-index: 2;
-        }
+        background-repeat: no-repeat;
+      }
+      p.open_block {
+        background-image: url(/sites/all/themes/idoctor_theme/image/arrow_blue_down.png);
+        background-position: 199px 8px;
+      }
+      p.close_block {
+        background-image: url(/sites/all/themes/idoctor_theme/image/arrow_blue_up.png);
+        background-position: 160px 8px;
+        display: none;
       }
     }
   }
@@ -1868,6 +1878,7 @@
       }
       .models {
         display: none;
+        width: 100%;
       }
       .models_iphone {
         display: block;
