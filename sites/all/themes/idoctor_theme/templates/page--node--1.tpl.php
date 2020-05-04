@@ -31,8 +31,8 @@
       <script src="/sites/all/themes/idoctor_theme/js/jquery.twentytwenty.js"></script>
       <div class="rightBanner">
         <div class="twentyBlock twentyBlockLaptop twentytwenty-container">
-          <img src="/sites/all/themes/idoctor_theme/image/before2.jpg" alt="" class="twenty-laptop">
-          <img src="/sites/all/themes/idoctor_theme/image/after2.jpg" alt="" class="twenty-laptop">
+          <img src="/sites/all/themes/idoctor_theme/image/before3.jpg" alt="" class="twenty-laptop">
+          <img src="/sites/all/themes/idoctor_theme/image/after3.jpg" alt="" class="twenty-laptop">
         </div>  
         <div class="twentyBlock twentyBlockMobile twentytwenty-container">
           <img src="/sites/all/themes/idoctor_theme/image/after-mobile.jpg" alt="" class="twenty-mobile">

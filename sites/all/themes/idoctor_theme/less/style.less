@@ -32,6 +32,17 @@
   a {
     text-decoration: none;
     transition: all 0.5s ease;
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  .main-container.container {
+    width: 100%;
+    padding: 0;
+  }
+  .main-container.container > .row > section.col-sm-12 {
+    padding: 0;
   }
 
   .green {
@@ -900,7 +911,25 @@
                 &:hover {
                   background: none;
                   text-decoration: underline;
-                  transition: ease 1s;
+                }
+              }
+              ul.dropdown-menu {
+                top: 59px;
+                padding: 0;
+                li {
+                  margin: 0;
+                  a {
+                    padding: 0 15px;
+                    background: #fff;
+                    transition: all 0s;
+                    line-height: 40px;
+                    &:hover {
+                      color: #fff;
+                      background: #00bdf1;
+                      text-decoration: none;
+                      
+                    } 
+                  }
                 }
               }
             }  
@@ -1093,6 +1122,7 @@
             background-size: cover;
             padding: 52px 80px 47px 132px;
             margin-right: 6px;
+            height: 499px;
             .heading {
               text-transform: uppercase;
               color: #feffff;
@@ -1324,7 +1354,7 @@
           select {  
             padding: 8px 20px;
             font-weight: 600;
-            border-radius: 50px;
+            border-radius: 25px 25px 0 0;
             background: #00bdf1;
             border: 2px solid #00bdf1;
             color: #fff;
@@ -8412,7 +8442,7 @@
   }
 
   .advantage {
-    border-top: 15px solid #e8e9ff;
+    border-top: 60px solid #f9f9f9;
     padding: 50px 0 100px;
     h2 {
       text-transform: uppercase;
@@ -8552,8 +8582,6 @@
         }
       }
 
-
-
       .callbackform_wrap {
         max-width: 815px;
         margin: 0 auto;
@@ -8652,7 +8680,6 @@
 
 
 // Страница Переклейка дисплея
-
 
 #page_wrap {
   .display_plywood_block_1 {
