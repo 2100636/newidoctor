@@ -195,9 +195,12 @@
           <div class="name">
             Проблема:
           </div>
-          <div class="problemsBlock">
+<!--           <div class="problemsBlock">
             <p class="problem"></p>
-          </div>
+          </div> -->
+          <textarea name="problems" class="problemsBlock">
+            
+          </textarea>
         </div>
       </form>
     </div>

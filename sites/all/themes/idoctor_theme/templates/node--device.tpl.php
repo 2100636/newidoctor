@@ -117,10 +117,38 @@ require_once 'header.tpl.php';
         <?php 
         
 
-        for($i = 0; $i < 100; $i++) {
-          if(!empty($prices = $node -> field_price['und'][$i]['value'])) {
-            list($name, $time, $cost, $protection, $help) = explode('||', $prices);
+        // for($i = 0; $i < 1000; $i++) {
+        //   if(!empty($prices = $node -> field_price['und'][$i]['value'])) {
+        //     list($name, $time, $cost, $protection, $help) = explode('||', $prices);
 
+        //     echo '<div class="priceRow">
+        //             <div class="priceRowItem">
+        //               <div class="service-name">
+        //                 <p>'. 
+        //                   $name . 
+        //                   '<span>' . 
+        //                     $protection . 
+        //                   '</span>
+        //                 </p>
+        //               </div>
+        //               <div class="time">' . 
+        //                 $time . 
+        //               '</div>
+        //               <div class="price">' . 
+        //                 $cost . ' &#8381;
+        //               </div>
+        //             </div>
+        //           </div>'; 
+        //   }
+        //   else {
+        //     break;
+        //   }
+        // }
+
+
+        if (!empty($node->field_price['und'])):
+          foreach($node->field_price['und'] as $key => $value) {
+            list($name, $time, $cost, $protection, $help) = explode('||', $value['value']);
             echo '<div class="priceRow">
                     <div class="priceRowItem">
                       <div class="service-name">
@@ -140,12 +168,7 @@ require_once 'header.tpl.php';
                     </div>
                   </div>'; 
           }
-          else {
-            break;
-          }
-        }
-
-
+        endif;
 
         ?>
 
