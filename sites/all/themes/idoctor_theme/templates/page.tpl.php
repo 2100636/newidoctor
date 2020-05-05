@@ -83,6 +83,13 @@
 
 
 
+
+<?php if (isset($node) and ($node->type == 'device' or $node->type == 'page_empty')) : ?>
+  <?php if (!empty($tabs)): ?>
+    <?php print render($tabs); ?>
+  <?php endif; ?>
+  <?php print render($page['content']); ?>
+<?php else: ?>
 <div class="main-container <?php print $container_class; ?>">
 
   <header role="banner" id="page-header">
@@ -109,9 +116,9 @@
       endif;?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
-      <?php if (!empty($title)): ?>
+      <!-- <?php if (!empty($title)): ?>
         <h1 class="page-header"><?php print $title; ?></h1>
-      <?php endif; ?>
+      <?php endif; ?> -->
       <?php print render($title_suffix); ?>
       <?php print $messages; ?>
       <?php if (!empty($tabs)): ?>
@@ -136,12 +143,12 @@
 </div>
 
 
+<?php endif; ?>
 
 
 
-<?php 
-  require_once 'footer.tpl.php';
-?>
+
+<?php require_once 'footer.tpl.php'; ?>
 
 
 
