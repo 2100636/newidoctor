@@ -68,8 +68,9 @@ $('.problemsButton').on('click', function() {
   var a = $('input:checked');
   var problems = [];
   for (var i = 0; i < a.length; i++) {
-    problems.push((i + 1) + '.' + a[i].value);
-    $('.problemsBlock').text(problems.join('; '));
+    problems.push((i + 1) + '. ' + a[i].value);
+    // $('.problemsBlock').text(problems.join("; <br>"));
+    $('.problemsBlock').val(problems.join("; \n"));
   }
   $('#problemsModal').modal();
 });
