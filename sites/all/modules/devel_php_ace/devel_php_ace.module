@@ -1,0 +1,87 @@
+<?php
+/**
+ * @file
+ * Add Ace Editor to Devel Execute PHP forms.
+ */
+
+/**
+ * Implements hook_libraries_info().
+ */
+function devel_php_ace_libraries_info() {
+  $src = variable_get('devel_php_ace_src', 'src-min-noconflict');
+
+  $libraries['ace'] = array(
+    'title' => 'Ace Editor',
+    'vendor url' => 'http://ace.c9.io/',
+    'download url' => 'https://github.com/ajaxorg/ace-builds/archive/master.zip',
+    'version arguments' => array(
+      'file' => 'package.json',
+      'pattern' => '/"version": "(\d+\.+\d+.+\d+)"/',
+      'lines' => 3,
+    ),
+    'files' => array(
+      'js' => array(
+        $src . '/ace.js',
+      ),
+    ),
+  );
+
+  return $libraries;
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function devel_php_ace_form_alter(&$form, &$form_state, $form_id) {
+  switch ($form_id) {
+    case 'devel_execute_block_form':
+    case 'devel_execute_form':
+      $settings = array(
+        'data' => array(
+          'develPHPAce' => array('theme' => variable_get('devel_php_ace_theme', 'chrome')),
+        ),
+        'type' => 'setting',
+      );
+      $form['execute']['code']['#attached']['libraries_load'][] = array('ace');
+      $form['execute']['code']['#attached']['js'][] = $settings;
+      $form['execute']['code']['#attached']['js'][] = drupal_get_path('module', 'devel_php_ace') . '/js/devel_php_ace.js';
+      $form['execute']['code']['#attached']['css'][] = drupal_get_path('module', 'devel_php_ace') . '/css/devel_php_ace.css';
+      $form['execute']['code']['#attributes']['class'][] = 'ace-enabled';
+      $form['execute']['code']['#resizable'] = FALSE;
+      break;
+  }
+}
+
+/**
+ * Implements hook_menu().
+ */
+function devel_php_ace_menu() {
+  $items['admin/config/development/devel_php_ace'] = array(
+    'title' => 'Devel PHP Ace Editor settings',
+    'description' => 'Ace Editor settings.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('devel_php_ace_admin_settings'),
+    'file' => 'devel_php_ace.admin.inc',
+    'access arguments' => array('execute php code'),
+  );
+
+  return $items;
+}
+
+/**
+ * Helper function to get available themes from ACE.
+ */
+function devel_php_ace_get_themes() {
+  $library_path = libraries_get_path('ace') . '/src';
+  $files = array_keys(file_scan_directory($library_path, '/^theme-.*\.js$/i', array('key' => 'name')));
+  $themes = array();
+
+  foreach ($files as $filename) {
+    $theme = explode('theme-', $filename);
+    $themes[] = $theme[1];
+  };
+
+  asort($themes);
+
+  return array_combine($themes, $themes);
+}
