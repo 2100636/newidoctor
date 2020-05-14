@@ -106,6 +106,16 @@ require_once 'header.tpl.php';
             <option value="iPad">iPad</option>
             <option value="MacBook">MacBook</option>
             <option value="Apple Watch">Apple Watch</option>
+            <option value="Samsung">Samsung</option>
+            <option value="Xiaomi">Xiaomi</option>
+            <option value="Honor">Honor</option>
+            <option value="Huawei">Huawei</option>
+            <option value="Meizu">Meizu</option>
+            <option value="Asus">Asus</option>
+            <option value="ZTE">ZTE</option>
+            <option value="Lenovo">Lenovo</option>
+            <option value="Sony">Sony</option>
+            <option value="Планшеты">Планшеты</option>
           </select>
 
         </div>
@@ -172,19 +182,6 @@ require_once 'header.tpl.php';
 
         ?>
 
-
-
-
-
-
-        <div class="wrapper_price_block">
-
-        </div>
-
-      </div>
-      <div class="allItems">
-        <p class="open_block">Открыть все</p>
-        <p class="close_block">Свернуть</p>
       </div>
     </div>
   </div>

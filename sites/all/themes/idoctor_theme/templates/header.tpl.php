@@ -1,13 +1,4 @@
 
-<!-- <header id="navbar" class="<?php print $navbar_classes; ?>"> -->
-
-
-
-
-
-
-
-
   <!-- шапка с логотипом  -->
   <div class="header">
     <div class="container">

@@ -112,8 +112,8 @@
 
     <div class="row d-flex j-content-between bottomModels">
 
-      <div class="col-md-3 bottomModelsItem devices" id="device_xiaomi">
-        <p class="model">XIAOMI</p>
+      <div class="col-md-3 bottomModelsItem devices" id="device_samsung">
+        <p class="model">SAMSUNG</p>
       </div>
 
       <div class="col-md-3 bottomModelsItem devices" id="device_honor">
@@ -128,27 +128,27 @@
         <p class="model">MEIZU</p>
       </div>
 
-      <div class="col-md-3 bottomModelsItem devices" id="device_samsung">
-        <p class="model">SAMSUNG</p>
+      <div class="col-md-3 bottomModelsItem devices" id="device_xiaomi">
+        <p class="model">XIAOMI</p>
       </div>
 
     </div>
-    <div class="selectedDevice"></div>
   </div>
   
   <div class="mobileBlock">
     <div class="mobileBlockContent">
       <ul class="mobileLeft">
-        <li>iphone</li>
-        <li>IPAD</li>
-        <li>MACBOOK</li>
-        <li>XIAOMI</li>
+        <li id="device_iphone">iphone</li>
+        <li id="device_ipad">IPAD</li>
+        <li id="device_macbook">MACBOOK</li>
+        <li id="device_xiaomi">XIAOMI</li>
+        <li id="device_honor">HONOR</li>       
       </ul>
       <ul class="mobileRight">
-        <li>HONOR</li>
-        <li>HUAWEI</li>
-        <li>MEIZU</li>
-        <li>SAMSUNG</li>
+        <li id="device_huawei">HUAWEI</li>
+        <li id="device_meizu">MEIZU</li>
+        <li id="device_samsung">SAMSUNG</li>
+        <li id="device_oppo">Oppo</li>
       </ul>
     </div>
     <div class="chooseBlock">
@@ -157,14 +157,12 @@
   </div>
 
   <div class="container" id="dinamicBlock1">
-    <div class="line">
-
-    </div>
+    <div class="line"></div>
   </div>
 
   <div class="container3">
-    <div class="row d-flex j-content-center buttons" id="dinamicBlock2">
-      <div class="models_iphone models">
+    <div class="row buttons" id="dinamicBlock2">
+      <div class="models_iphone models hidden_block_models">
         <a href="/node/71" class="btn btn-primary">iphone 4</a>
         <a href="/node/71" class="btn btn-primary">iphone 4s</a>
         <a href="/node/72" class="btn btn-primary">iphone 5</a>
@@ -188,7 +186,7 @@
         <a class="btn btn-primary">iphone 11 PRO Max</a>
       </div>
 
-      <div class="models_ipad models">
+      <div class="models_ipad models hidden_block_models">
         <a class="btn btn-primary">ipad 2</a>
         <a class="btn btn-primary">ipad 3</a>
         <a class="btn btn-primary">ipad 4</a>
@@ -201,13 +199,13 @@
         <a class="btn btn-primary">ipad air pro</a>
       </div>
 
-      <div class="models_macbook models">
+      <div class="models_macbook models hidden_block_models">
         <a class="btn btn-primary">MacBook Air 11"</a>
         <a class="btn btn-primary">MacBook Air 13"</a>
         <a class="btn btn-primary">MacBook Air 15"</a>
       </div>
 
-      <div class="models_apple_watch models">
+      <div class="models_apple_watch models hidden_block_models">
         <a class="btn btn-primary">Apple Watch Series 1</a>
         <a class="btn btn-primary">Apple Watch Series 2</a>
         <a class="btn btn-primary">Apple Watch Series 3</a>
@@ -215,120 +213,74 @@
         <a class="btn btn-primary">Apple Watch Series 5</a>
       </div>
 
-      <div class="models_xiaomi models">
+      <div class="models_xiaomi models hidden_block_models">
         <a href="/node/71" class="btn btn-primary">Xiaomi Mi A1</a>
         <a href="/node/71" class="btn btn-primary">Xiaomi Mi A2 Lite</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Mi 5</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Mi 5S</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Mi 5S Plus</a>
+        <a href="/node/71" class="btn btn-primary">Xiaomi Mi 5, 5S, 5S Plus</a>
         <a href="/node/71" class="btn btn-primary">Xiaomi Mi Mix 2</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Mi Note</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Mi Note 2</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Mi 4</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Mi 4i</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Mi 4C</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Mi 6</a>
-        <a href="/node/71" class="btn btn-primary">Xaiomi Redmi 3</a>
-        <a href="/node/71" class="btn btn-primary">Xaiomi Redmi 3S</a>
-        <a href="/node/71" class="btn btn-primary">Xaiomi Redmi 4</a>
-        <a href="/node/71" class="btn btn-primary">Xaiomi Redmi 4A</a>
-        <a href="/node/71" class="btn btn-primary">Xaiomi Redmi 4X</a>
+        <a href="/node/71" class="btn btn-primary">Xiaomi Mi Note, Note 2</a>
+        <a href="/node/71" class="btn btn-primary">Xiaomi Mi 4, 4i, 4C, 6</a>
         <a href="/node/71" class="btn btn-primary">Xiaomi Redmi Note 2 Prime</a>
-        <a href="/node/71" class="btn btn-primary">Xaiomi Redmi 5A</a>
+        <a href="/node/71" class="btn btn-primary">Xaiomi Redmi 3, 3S</a>
+        <a href="/node/71" class="btn btn-primary">Xaiomi Redmi 4, 4A, 4X</a>
+        <a href="/node/71" class="btn btn-primary">Xaiomi Redmi 5A, 5 Plus</a>
+        <a href="/node/71" class="btn btn-primary">Xiaomi Redmi Note 4, 4x</a>
         <a href="/node/71" class="btn btn-primary">Xaiomi Redmi Note 5A</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Redmi Note 4</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Redmi Note 4x</a>
-        <a href="/node/71" class="btn btn-primary">Xaiomi Redmi 6</a>
-        <a href="/node/71" class="btn btn-primary">Xaiomi Redmi 6A</a>
-        <a href="/node/71" class="btn btn-primary">Xaiomi Redmi 7</a>
-        <a href="/node/71" class="btn btn-primary">Xaiomi Redmi 7A</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Redmi Note 5</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Redmi Note 5 Pro</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Redmi Note 5 Lite</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Redmi Note 3</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Redmi Note 3 Pro</a>
+        <a href="/node/71" class="btn btn-primary">Xaiomi Redmi 6, 6A</a>
+        <a href="/node/71" class="btn btn-primary">Xaiomi Redmi 7, 7A</a>
+        <a href="/node/71" class="btn btn-primary">Xiaomi Redmi Note 3, 3 PRO</a>
+        <a href="/node/71" class="btn btn-primary">Xiaomi Redmi Note 5, 5 Lite</a>
+        <a href="/node/71" class="btn btn-primary">Xiaomi Redmi Note 5 PRO, 6 Pro</a>
         <a href="/node/71" class="btn btn-primary">Xiaomi Redmi S2</a>
-        <a href="/node/71" class="btn btn-primary">Xaiomi Redmi 5 Plus</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Mi 8</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Mi 8 Lite</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Mi 8 Pro</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Mi 9 Lite</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Mi 9</a>
+        <a href="/node/71" class="btn btn-primary">Xiaomi Mi 8, 8 Lite, 8 Pro</a>
+        <a href="/node/71" class="btn btn-primary">Xiaomi Mi 9, 9 Lite, 9T Pro</a>
         <a href="/node/71" class="btn btn-primary">Xiaomi Mi 8se</a>
         <a href="/node/71" class="btn btn-primary">Xiaomi Redmi Note 7</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Redmi Note 6 Pro</a>
         <a href="/node/71" class="btn btn-primary">Xiaomi Black Shark</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi MI 9T Pro</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Mi Max</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Mi Max 2</a>
+        <a href="/node/71" class="btn btn-primary">Xiaomi Mi Max, Max 2</a>
       </div>
 
-      <div class="models_honor models">
-        <a href="/node/71" class="btn btn-primary">Honor 9</a>
-        <a href="/node/71" class="btn btn-primary">Honor 9 Lite</a>
-        <a href="/node/71" class="btn btn-primary">Honor 8</a>
-        <a href="/node/71" class="btn btn-primary">Honor 8 Lite</a>
-        <a href="/node/71" class="btn btn-primary">Honor 8 Pro</a>
-        <a href="/node/71" class="btn btn-primary">Honor 6A</a>
-        <a href="/node/71" class="btn btn-primary">Honor 3X</a>
-        <a href="/node/71" class="btn btn-primary">Honor 4X</a>
-        <a href="/node/71" class="btn btn-primary">Honor 5X</a>
-        <a href="/node/71" class="btn btn-primary">Honor 6X</a>
-        <a href="/node/71" class="btn btn-primary">Honor 7C</a>
-        <a href="/node/71" class="btn btn-primary">Honor 7C Lite</a>
-        <a href="/node/71" class="btn btn-primary">Honor 7C Pro</a>
-        <a href="/node/71" class="btn btn-primary">Honor 7A</a>
-        <a href="/node/71" class="btn btn-primary">Honor 7A Pro</a>
+      <div class="models_honor models hidden_block_models">
+        <a href="/node/71" class="btn btn-primary">Honor 9, 9 Lite</a>
+        <a href="/node/71" class="btn btn-primary">Honor 8, 8 Lite, 8 Pro</a>
+        <a href="/node/71" class="btn btn-primary">Honor 5a, 6A</a>
+        <a href="/node/71" class="btn btn-primary">Honor 3X, 4x, 5x, 6x, 7x</a>
+        <a href="/node/71" class="btn btn-primary">Honor 7C, 7c Lite, 7c Pro</a>
+        <a href="/node/71" class="btn btn-primary">Honor 7A, 7a Pro</a>
         <a href="/node/71" class="btn btn-primary">Honor 3C Lite</a>
         <a href="/node/71" class="btn btn-primary">Honor 4C Pro</a>
         <a href="/node/71" class="btn btn-primary">Honor 8C</a>
-        <a href="/node/71" class="btn btn-primary">Honor 5A</a>
         <a href="/node/71" class="btn btn-primary">Honor 5C</a>
-        <a href="/node/71" class="btn btn-primary">Honor 7X</a>
         <a href="/node/71" class="btn btn-primary">Honor View 10</a>
         <a href="/node/71" class="btn btn-primary">Honor Play</a>
         <a href="/node/71" class="btn btn-primary">Honor Note 8</a>
         <a href="/node/71" class="btn btn-primary">Honor Magic 2</a>
-        <a href="/node/71" class="btn btn-primary">Honor 8X</a>
-        <a href="/node/71" class="btn btn-primary">Honor 8X Max</a>
-        <a href="/node/71" class="btn btn-primary">Honor 6</a>
-        <a href="/node/71" class="btn btn-primary">Honor 6 Plus</a>
-        <a href="/node/71" class="btn btn-primary">Honor 10</a>
-        <a href="/node/71" class="btn btn-primary">Honor 10 Lite</a>
-        <a href="/node/71" class="btn btn-primary">Honor 7</a>
-        <a href="/node/71" class="btn btn-primary">Honor 7 Lite</a>
-        <a href="/node/71" class="btn btn-primary">Honor 7 Pro</a>
-        <a href="/node/71" class="btn btn-primary">Honor 6C</a>
-        <a href="/node/71" class="btn btn-primary">Honor 6C Lite</a>
-        <a href="/node/71" class="btn btn-primary">Honor 6C Pro</a>
+        <a href="/node/71" class="btn btn-primary">Honor 8X, 8x Max</a>
+        <a href="/node/71" class="btn btn-primary">Honor 6, 6 Plus</a>
+        <a href="/node/71" class="btn btn-primary">Honor 10, 10 Lite</a>
+        <a href="/node/71" class="btn btn-primary">Honor 7, 7 Lite, 7 Pro</a>
+        <a href="/node/71" class="btn btn-primary">Honor 6C, 6C Lite, 6c Pro</a>
         <a href="/node/71" class="btn btn-primary">Honor 10i</a>
         <a href="/node/71" class="btn btn-primary">Honor View 20</a>
-        <a href="/node/71" class="btn btn-primary">Honor 20</a>
-        <a href="/node/71" class="btn btn-primary">Honor 20 Pro</a>
-        <a href="/node/71" class="btn btn-primary">Honor 8A</a>
-        <a href="/node/71" class="btn btn-primary">Honor 8A Pro</a>
-        <a href="/node/71" class="btn btn-primary">Honor 8A Lite</a>
+        <a href="/node/71" class="btn btn-primary">Honor 20, 20 Pro</a>
+        <a href="/node/71" class="btn btn-primary">Honor 8A, 8a Pro,8a Lite</a>
       </div>
 
-      <div class="models_huawei models">
+      <div class="models_huawei models hidden_block_models">
         <a href="/node/71" class="btn btn-primary">Huawei Y5 II</a>
       </div>
 
-      <div class="models_meizu models">
+      <div class="models_meizu models hidden_block_models">
         <a href="/node/71" class="btn btn-primary">Meizu MX2</a>
       </div>
 
-      <div class="models_samsung models">
+      <div class="models_samsung models hidden_block_models">
         <a href="/node/71" class="btn btn-primary">Samsung Galaxy A9</a>
       </div>
 
     </div>
   </div>
 </div>
-
-<script>
-  
-</script>
 
 
 
@@ -434,15 +386,15 @@
                   <p class="title" id="title1">ЭКРАН / ДИСПЛЕЙ</p>
                   <label class="checkbox-label">
                     <input type="checkbox" name="pid[]" value="Разбилось стекло" class="qwerty"><span></span>
-                    <p class="check">разбилось стекло</p>
+                    <p class="check">Разбилось стекло</p>
                   </label><br>
                   <label class="checkbox-label">
                     <input type="checkbox" name="pid[]" value="Не работает экран" class="qwerty"><span></span>
-                    <p class="check">не работает экран</p>
+                    <p class="check">Не работает экран</p>
                   </label><br>
                   <label class="checkbox-label">
                     <input type="checkbox" name="pid[]" value="Нет подсветки" class="qwerty"><span></span>
-                    <p class="check">нет подсветки</p>
+                    <p class="check">Нет подсветки</p>
                   </label><br>  
                 </div>
 
@@ -450,19 +402,19 @@
                   <p class="title" id="title2">ЗАРЯДКА</p>
                   <label class="checkbox-label">
                     <input type="checkbox" value="Не заряжается"><span></span>
-                    <p class="check">не заряжается</p>
+                    <p class="check">Не заряжается</p>
                   </label><br>
                   <label class="checkbox-label">
                     <input type="checkbox" value="Быстро рязряжается"><span></span>
-                    <p class="check">быстро рязряжается</p>
+                    <p class="check">Быстро рязряжается</p>
                   </label><br>
                   <label class="checkbox-label">
                     <input type="checkbox" value="Греется батарея"><span></span>
-                    <p class="check">греется батарея</p>  
+                    <p class="check">Греется батарея</p>  
                   </label><br>
                   <label class="checkbox-label">
                     <input type="checkbox" value="Не работает беспр. зарядка"><span></span>
-                    <p class="check">не работает беспр. зарядка</p>
+                    <p class="check">Не работает беспр. зарядка</p>
                   </label><br>
                 </div>
 
@@ -472,15 +424,15 @@
                   <p class="title" id="title3">КНОПКИ</p>
                   <label class="checkbox-label">
                     <input type="checkbox" value="Не работает вкл / выкл"><span></span>
-                    <p class="check">не работает вкл / выкл</p>
+                    <p class="check">Не работает вкл / выкл</p>
                   </label><br>
                   <label class="checkbox-label">
                     <input type="checkbox" value="Не работает кнопка HOME"><span></span>
-                    <p class="check">не работает кнопка HOME</p>
+                    <p class="check">Не работает кнопка HOME</p>
                   </label><br>
                   <label class="checkbox-label">
                     <input type="checkbox" value="Не работают кнопки громкости"><span></span>
-                    <p class="check">не работают кнопки громкости</p>
+                    <p class="check">Не работают кнопки громкости</p>
                   </label><br>
                 </div>
 
@@ -488,15 +440,15 @@
                   <p class="title" id="title4">ОБЩЕЕ</p>
                   <label class="checkbox-label">
                     <input type="checkbox" value="Не включается"><span></span>
-                    <p class="check">не включается</p>
+                    <p class="check">Не включается</p>
                   </label><br>
                   <label class="checkbox-label">
                     <input type="checkbox" value="Попала влага / утонул"><span></span>
-                    <p class="check">попала влага / утонул</p>
+                    <p class="check">Попала влага / утонул</p>
                   </label><br>
                   <label class="checkbox-label">
                     <input type="checkbox" value="Не работает wi-Fi"><span></span>
-                    <p class="check">не работает wi-Fi</p>
+                    <p class="check">Не работает wi-Fi</p>
                   </label><br>
                 </div>
 
@@ -504,15 +456,15 @@
                   <p class="title" id="title5">ПО</p>
                   <label class="checkbox-label">
                     <input type="checkbox" value="Зависает"><span></span>
-                    <p class="check">зависает</p><br>
+                    <p class="check">Зависает</p><br>
                   </label><br>
                   <label class="checkbox-label">
                     <input type="checkbox" value="Просит itunes"><span></span>
-                    <p class="check">просит itunes</p>
+                    <p class="check">Просит itunes</p>
                   </label><br>
                   <label class="checkbox-label">
                     <input type="checkbox" value="Не обновляется"><span></span>
-                    <p class="check">не обновляется</p>
+                    <p class="check">Не обновляется</p>
                   </label><br>
                 </div>
 
@@ -520,15 +472,15 @@
                   <p class="title" id="title6">КАМЕРА</p>
                   <label class="checkbox-label">
                     <input type="checkbox" value="Не работает задняя камера"><span></span>
-                    <p class="check">не работает задняя камера</p>
+                    <p class="check">Не работает задняя камера</p>
                   </label><br>
                   <label class="checkbox-label">
                     <input type="checkbox" value="Не работает фронтальная"><span></span>
-                    <p class="check">не работает фронтальная</p>
+                    <p class="check">Не работает фронтальная</p>
                   </label><br>
                   <label class="checkbox-label">
                     <input type="checkbox" value="Не работает face id"><span></span>
-                    <p class="check">не работает face id</p>
+                    <p class="check">Не работает face id</p>
                   </label><br>
                 </div>
 
@@ -536,19 +488,19 @@
                   <p class="title" id="title7">ДИНАМИКИ / МИКРОФОН</p>
                   <label class="checkbox-label">
                     <input type="checkbox" value="Не работает динамик"><span></span>
-                    <p class="check">не работает динамик</p>
+                    <p class="check">Не работает динамик</p>
                   </label><br>
                   <label class="checkbox-label">
                     <input type="checkbox" value="Собеседник не слышит"><span></span>
-                    <p class="check">собеседник не слышит</p>
+                    <p class="check">Собеседник не слышит</p>
                   </label><br>
                   <label class="checkbox-label">
                     <input type="checkbox" value="Не работает микрофон"><span></span>
-                    <p class="check">не работает микрофон</p>
+                    <p class="check">Не работает микрофон</p>
                   </label><br>
                   <label class="checkbox-label">
                     <input type="checkbox" value="Не слышу собеседника"><span></span>
-                    <p class="check">не слышу собеседника</p>
+                    <p class="check">Не слышу собеседника</p>
                   </label><br>
                 </div>
 
@@ -556,15 +508,15 @@
                   <p class="title" id="title8">КОРПУС</p>
                   <label class="checkbox-label">
                     <input type="checkbox" value="Разбилось заднее стекло"><span></span>
-                    <p class="check">разбилось заднее стекло</p>
+                    <p class="check">Разбилось заднее стекло</p>
                   </label><br>
                   <label class="checkbox-label">
                     <input type="checkbox" value="Замят / согнут корпус"><span></span>
-                    <p class="check">замят / согнут корпус</p>
+                    <p class="check">Замят / согнут корпус</p>
                   </label><br>
                   <label class="checkbox-label">
                     <input type="checkbox" value="Разбито стекло камеры"><span></span>
-                    <p class="check">разбито стекло камеры</p>
+                    <p class="check">Разбито стекло камеры</p>
                   </label><br>
                 </div>
 
@@ -572,19 +524,19 @@
                   <p class="title" id="title9">ДРУГОЕ</p>
                   <label class="checkbox-label">
                     <input type="checkbox" value="Не работают наушники"><span></span>
-                    <p class="check">не работают наушники</p>
+                    <p class="check">Не работают наушники</p>
                   </label><br>
                   <label class="checkbox-label">
                     <input type="checkbox" value="Не работает вибрация"><span></span>
-                    <p class="check">не работает вибрация</p>
+                    <p class="check">Не работает вибрация</p>
                   </label><br>
                   <label class="checkbox-label">
                     <input type="checkbox" value="Не ловит сеть"><span></span>
-                    <p class="check">не ловит сеть</p>
+                    <p class="check">Не ловит сеть</p>
                   </label><br>
                   <label class="checkbox-label">
                     <input type="checkbox" value="Не видит sim-карту"><span></span>
-                    <p class="check">не видит sim-карту</p>
+                    <p class="check">Не видит sim-карту</p>
                   </label><br>
                 </div>
 
@@ -612,7 +564,7 @@
       $blocks = _block_render_blocks(array($block));
       $blocks_build = _block_get_renderable_array($blocks);
       echo drupal_render($blocks_build);
-      ?>Ремонт iPhone 5, 5с, 5s
+      ?>
     </div>
   </div>
 

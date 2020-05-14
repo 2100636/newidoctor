@@ -17,10 +17,20 @@
 				</ul>
 				<div class="tab-content">
 					<div id="google" class="tab-pane fade in active">
-
+						<?php 
+						$block = block_load('views', 'review_google-block');
+						$blocks = _block_render_blocks(array($block));
+						$blocks_build = _block_get_renderable_array($blocks);
+						echo drupal_render($blocks_build);
+						?>
 					</div>
 					<div id="yandex" class="tab-pane fade">
-
+						<?php 
+						$block = block_load('views', 'review_yandex-block');
+						$blocks = _block_render_blocks(array($block));
+						$blocks_build = _block_get_renderable_array($blocks);
+						echo drupal_render($blocks_build);
+						?>
 					</div>
 					<div id="audio" class="tab-pane fade">
 						<?php 
@@ -47,7 +57,12 @@
 						?>
 					</div>
 					<div id="id_70" class="tab-pane fade">
-
+						<?php 
+						$block = block_load('views', 'review_id70-block');
+						$blocks = _block_render_blocks(array($block));
+						$blocks_build = _block_get_renderable_array($blocks);
+						echo drupal_render($blocks_build);
+						?>
 					</div>
 					<div class="new_comment" id="new_comment">
 						<h3>Оставьте свой отзыв</h3>

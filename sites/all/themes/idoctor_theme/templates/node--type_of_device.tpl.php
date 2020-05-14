@@ -106,6 +106,16 @@ require_once 'header.tpl.php';
             <option value="iPad">iPad</option>
             <option value="MacBook">MacBook</option>
             <option value="Apple Watch">Apple Watch</option>
+            <option value="Samsung">Samsung</option>
+            <option value="Xiaomi">Xiaomi</option>
+            <option value="Honor">Honor</option>
+            <option value="Huawei">Huawei</option>
+            <option value="Meizu">Meizu</option>
+            <option value="Asus">Asus</option>
+            <option value="ZTE">ZTE</option>
+            <option value="Lenovo">Lenovo</option>
+            <option value="Sony">Sony</option>
+            <option value="Sony">Планшеты</option>
           </select>
 
         </div>

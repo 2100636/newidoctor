@@ -10,13 +10,14 @@
     display: none;
   }
 
-  .selectedDevice {
+  .topModelsItem:after {
     width: 40px;
     height: 40px;
     background: url(/sites/all/themes/idoctor_theme/image/selected-model.png) no-repeat;
     position: absolute;
     top: 171px;
     left: 184px;
+    z-index: 20;
   }
 
 
@@ -78,8 +79,8 @@
     opacity: 0.8;
   }
 
-  .div-heading, .equipment .container section h2, .discounts .container section h2, .masters .container section h2 {
-    font-size: 3em;
+  .div-heading, .equipment .container section h2, .discounts .container section h2, .masters .container section h2, .comments .container .comments_content h2 {
+    font-size: 2.8em;
     color: #000;
     text-transform: uppercase;
     text-align: center;
@@ -425,7 +426,7 @@
   }
 
 
- 
+
   // -----МОДАЛКА В "ПРОБЛЕМАХ"----- 1920-1710
 
   .modal#problemsModal {
@@ -447,8 +448,7 @@
       &:after {
         content: '';
         position: absolute;
-        height: ~'!calc(100% - 13px)';
-        /*height: calc(95.4%);*/
+        height: calc(95.4%);
         width: 1px;
         border-left: 1px solid #fff;
         bottom: 0;
@@ -649,7 +649,7 @@
       &:after {
         content: '';
         position: absolute;
-        height: 1545px;
+        height: 1532px;
         width: 1px;
         border-left: 1px solid #fff;
         bottom: 15px;
@@ -898,7 +898,7 @@
           justify-content: space-between;
           ul.menu.nav.navbar-nav {
             li {
-              margin-right: 50px;
+              margin-right: 85px;
               a {
                 // color: #fff;
                 color: #000;
@@ -1304,198 +1304,7 @@
 
 
 
-  // -----ДОСТУПНЫЕ ЦЕНЫ----- 1920-1710
-
-  .affordable-price {
-    padding: 80px 0 30px;
-    position: relative;
-    text-align: center;
-    &:before {
-      top: 110px;
-    }
-    .container {
-      .heading {
-        background: #fff;
-      }
-      p.heading {
-        font-size: 1.88em;
-        text-transform: uppercase;
-        margin-top: 18px;
-      }
-    }
-    .buttonsBlock {
-      padding: 42px 0 35px;
-      border-bottom: 1px solid #ccc;
-      .container {
-        .buttonsBlockContent {
-          display: -webkit-flex;
-          display: -moz-flex;
-          display: -ms-flex;
-          display: -o-flex;
-          display: flex;
-          flex-wrap: wrap;
-          a.btn.btn-primary {
-            padding: 10px 46px;
-            color: #fff;
-            font-weight: 600;
-            text-transform: uppercase;
-            border-radius: 50px;
-            background: #00bdf1;
-            border: none;
-            margin-right: 20px;
-            margin-bottom: 20px;
-            &:hover {
-              color: #000;
-              background: #f5a720;
-              transition: 0.5s ease;
-            }
-          }
-          select {  
-            padding: 8px 20px;
-            font-weight: 600;
-            border-radius: 25px 25px 0 0;
-            background: #00bdf1;
-            border: 2px solid #00bdf1;
-            color: #fff;
-            transition: all 0.5s ease;
-            text-transform: uppercase;
-            font-size: 14px;
-            cursor: pointer;
-            margin-right: 20px;
-            margin-bottom: 20px;
-            width: 350px;
-            &:hover {
-              color: #000;
-              background: #f5a720;
-              border: 2px solid #f5a720;
-            }
-            option {
-              background: #fff;
-              color: #c32;
-              font-size: 1em;
-            }
-          }
-          .new_select {
-            margin-right: 0;
-          }
-        }
-      }
-    }
-    .container {
-      .affordable-price-content {
-        text-align: left;
-        padding: 35px 0 54px;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        flex-wrap: wrap;
-        .priceRow {
-          display: -webkit-flex;
-          display: -moz-flex;
-          display: -ms-flex;
-          display: -o-flex;
-          display: flex;
-          width: 50%;
-          border-bottom: 1px solid #e6e6e6;
-          border-right: 1px solid #e6e6e6;
-          &:nth-child(1) {
-            border-top: 1px solid #e6e6e6;
-          }
-          &:nth-child(2) {
-            border-top: 1px solid #e6e6e6;
-          }
-          &:nth-child(even) {
-            border-right: none;
-          }
-          .priceRowItem {
-            display: -webkit-flex;
-            display: -moz-flex;
-            display: -ms-flex;
-            display: -o-flex;
-            display: flex;
-            .service-name {
-             width: 624px;
-             p {
-              font-size: 1em;
-              color: #4a4c4e;
-              padding: 14.25px 14px 14.25px 20px;
-              span {
-                color: #ed6263;
-              }
-            }
-          }
-          .time {
-            background: #fff3e6;
-            color: #333;
-            font-weight: 600;
-            width: 111px;
-            font-size: 1em;
-            padding: 16px 10px;
-            text-align: center;
-            width: 100px;
-          }
-          .price {
-            color: #333;
-            font-weight: 600;
-            width: 100px;
-            font-size: 1em;
-            padding: 16px 10px;
-            text-align: right;
-          }
-        } 
-      }
-      .wrapper_price_block {
-        display: none;
-        flex-wrap: wrap;
-        transition: 0.5s;
-        .priceRow {
-          &:nth-child(1), &:nth-child(2) {
-            border-top: none;
-          }
-        }
-      }
-    }
-    .allItems {
-      text-align: center;
-      position: relative;
-      &:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 11px;
-        height: 1px;
-        width: 100%;
-        border-bottom: 1px solid #e0e0e0;
-        z-index: 0;
-      }
-      p.open_block, p.close_block {
-        text-transform: uppercase;
-        color: #00bdf1;
-        font-size: 1.3em;
-        display: inline;
-        padding: 0 55px 0 40px;
-        background: #fff;
-        position: relative;
-        cursor: pointer;
-        z-index: 2;
-        background-repeat: no-repeat;
-      }
-      p.open_block {
-        background-image: url(/sites/all/themes/idoctor_theme/image/arrow_blue_down.png);
-        background-position: 199px 8px;
-      }
-      p.close_block {
-        background-image: url(/sites/all/themes/idoctor_theme/image/arrow_blue_up.png);
-        background-position: 160px 8px;
-        display: none;
-      }
-    }
-  }
-}
-
-
+  
 
   // -----ОБОРУДОВАНИЕ----- 1920-1710
 
@@ -1690,6 +1499,16 @@
             height: 39px;
             top: 9.5%;
             left: 45.5%;
+            background-position: center;
+          }
+          &:hover:before {
+            content: '';
+            position: absolute;
+            width: 41px;
+            height: 41px;
+            border: 4px solid #f5a720;
+            border-radius: 30px;
+            z-index: 10;
           }
           &:nth-child(1) {
             background-image: url(/sites/all/themes/idoctor_theme/image/iphone-pic.png);
@@ -1715,20 +1534,6 @@
             color: #f5a720;
             text-decoration: underline;
             transition: 0.5s ease;
-          }
-          &:hover:after {
-            content: '';
-            position: absolute;
-            width: 41px;
-            height: 41px;
-            border: 4px solid #f5a720;
-            border-radius: 30px;
-            transition: 0.5s ease;
-            z-index: 10;
-          }
-          &:after {
-            top: 9.5%;
-            left: 45.5%;
           }
         }   
       }
@@ -1760,6 +1565,16 @@
             background: url(/sites/all/themes/idoctor_theme/image/unselected-model.png) no-repeat;
             top: 13%;
             left: 50%;
+            background-position: center;
+          }
+          &:hover:before {
+            content: '';
+            position: absolute;
+            width: 41px;
+            height: 41px;
+            border: 4px solid #f5a720;
+            border-radius: 30px;
+            z-index: 10;
           }
           &:hover p.model {
             color: #f5a720;
@@ -1767,7 +1582,10 @@
             transition: 0.5s ease;
           }
           &:nth-child(1) {
-            background-image: url(/sites/all/themes/idoctor_theme/image/xiomi-pic.png);
+            background-image: url(/sites/all/themes/idoctor_theme/image/samsung-pic.png);
+             p.model {
+              left: 38%;
+            }
           }
           &:nth-child(2) {
             background-image: url(/sites/all/themes/idoctor_theme/image/honor-pic.png);
@@ -1783,28 +1601,13 @@
             }
           }
           &:nth-child(5) {
-            background-image: url(/sites/all/themes/idoctor_theme/image/samsung-pic.png);
-            p.model {
-              left: 38%;
-            }
-          }
-          &:hover:after {
-            content: '';
-            position: absolute;
-            width: 41px;
-            height: 41px;
-            border: 4px solid #f5a720;
-            border-radius: 30px;
-            transition: 0.5s ease;
-            z-index: 10;
-          }
-          &:after {
-            top: 13%;
-            left: 50%;
+            background-image: url(/sites/all/themes/idoctor_theme/image/xiomi-pic.png);
           }
         } 
       }  
     }
+
+
     .mobileBlock {
       display: none;
       .mobileBlockContent {
@@ -1879,6 +1682,8 @@
       }
     }
   }
+
+
   .container#dinamicBlock1 {
     .line {
       border-top: 1px solid #e0e0e0;
@@ -1888,29 +1693,36 @@
   .container3 {
     .buttons#dinamicBlock2 {
       padding: 40px;
-      flex-wrap: wrap;
-      margin: -1%;
-      a.btn.btn-primary {
-        padding: 8px 46px;
-        margin: 1%;
-        color: #fff;
-        font-weight: 600;
-        text-transform: uppercase;
-        border-radius: 50px;
-        background: #00bdf1;
-        border: none;
-      }
-      a.btn.btn-primary:hover {
-        color: #000;
-        background: #f5a720;
-        transition: 0.5s ease;
-      }
       .models {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-wrap: wrap;
+        a.btn.btn-primary {
+          padding: 5px;
+          margin: 0 5px 10px;
+          color: #000;
+          font-weight: 600;
+          text-transform: uppercase;
+          border-radius: 6px;
+          background: #f9f9f9;
+          border: 2px solid #00bdf1;
+          width: 280px;
+          &:hover {
+            color: #000;
+            background: #f5a720;
+            transition: 0.5s ease;
+          }
+        }
+      }
+      .hidden_block_models {
         display: none;
         width: 100%;
       }
       .models_iphone {
-        display: block;
+        display: flex;
       }
     }
   }
@@ -2042,7 +1854,7 @@
                 height: 510px;
                 margin: 0 5px 0 0;
                 padding: 70px 0;
-                background-position: 0 -40px;
+                background-position: center center;
                 background-size: cover;
                 &:before {
                   content: '';
@@ -2121,102 +1933,103 @@
                   height: 100%;
                 }
                 .views-field-field-title-discount {
-                 position: relative;
-                 z-index: 500;
-                 .field-content {
-                  p {
-                    font-size: 2.3em;
-                    font-weight: 700;
-                    line-height: 48px;
+                position: relative;
+                z-index: 500;
+                  .field-content {
+                    p {
+                      font-size: 2.3em;
+                      font-weight: 700;
+                      line-height: 48px;
+                    }
+                  }
+                }
+                .views-field-field-content-discount {
+                  position: relative;
+                  z-index: 500;
+                  .field-content {
+                    font-size: 1.1em;
+                  }
+                }
+                .views-field-nid {
+                  .field-content {
+                    bottom: 0;
+                    right: 0;
+                    text-indent: -99999px;
+                    position: absolute;
+                    width: 75px;
+                    height: 75px;
+                    z-index: 500;
+                    background-image: url(/sites/all/themes/idoctor_theme/image/orange-plus.png);
+                    background-repeat: no-repeat;
+                    &:hover {
+                      background-size: 80px;
+                      transition: all 0.5s ease;
+                    }
+                  }
+                } 
+              }
+              &:nth-child(3) {
+                width: 34.6%;
+                height: 252px;
+                text-align: left;
+                padding: 80px 0 0 60px;
+                text-transform: uppercase;
+                position: relative;
+                background-size: cover;
+                &:before {
+                  content: '';
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  background-color: #2f5a67;
+                  opacity: 0.8;
+                  z-index: 100;
+                  width: 100%;
+                  height: 100%;
+                }
+                .views-field-field-title-discount {
+                  position: relative;
+                  z-index: 500;
+                  .field-content {
+                    p {
+                      font-size: 2.3em;
+                      font-weight: 700;
+                      line-height: 48px;
+                    }
+                  }
+                }
+                .views-field-field-content-discount {
+                  position: relative;
+                  z-index: 500;
+                  .field-content {
+                    font-size: 1.1em;
+                  }
+                }
+                .views-field-nid {
+                  .field-content {
+                    bottom: 0;
+                    right: 0;
+                    text-indent: -99999px;
+                    position: absolute;
+                    width: 75px;
+                    height: 75px;
+                    z-index: 500;
+                    background-image: url(/sites/all/themes/idoctor_theme/image/orange-plus.png);
+                    background-repeat: no-repeat;
+                    &:hover {
+                      background-size: 80px;
+                      transition: all 0.5s ease;
+                    }
                   }
                 }
               }
-              .views-field-field-content-discount {
-               position: relative;
-               z-index: 500;
-               .field-content {
-                font-size: 1.1em;
-              }
-            }
-            .views-field-nid {
-              .field-content {
-                bottom: 0;
-                right: 0;
-                text-indent: -99999px;
-                position: absolute;
-                width: 75px;
-                height: 75px;
-                z-index: 500;
-                background-image: url(/sites/all/themes/idoctor_theme/image/orange-plus.png);
-                background-repeat: no-repeat;
-                &:hover {
-                  background-size: 80px;
-                  transition: all 0.5s ease;
-                }
-              }
-            } 
-          }
-          &:nth-child(3) {
-            width: 34.6%;
-            height: 252px;
-            text-align: left;
-            padding: 80px 0 0 60px;
-            text-transform: uppercase;
-            position: relative;
-            background-size: cover;
-            &:before {
-              content: '';
-              position: absolute;
-              top: 0;
-              left: 0;
-              background-color: #2f5a67;
-              opacity: 0.8;
-              z-index: 100;
-              width: 100%;
-              height: 100%;
-            }
-            .views-field-field-title-discount {
-             position: relative;
-             z-index: 500;
-             .field-content {
-              p {
-                font-size: 2.3em;
-                font-weight: 700;
-                line-height: 48px;
-              }
-            }
-          }
-          .views-field-field-content-discount {
-           position: relative;
-           z-index: 500;
-           .field-content {
-            font-size: 1.1em;
-          }
-        }
-        .views-field-nid {
-          .field-content {
-            bottom: 0;
-            right: 0;
-            text-indent: -99999px;
-            position: absolute;
-            width: 75px;
-            height: 75px;
-            z-index: 500;
-            background-image: url(/sites/all/themes/idoctor_theme/image/orange-plus.png);
-            background-repeat: no-repeat;
-            &:hover {
-              background-size: 80px;
-              transition: all 0.5s ease;
             }
           }
         }
       }
     }
   }
-}
-}
-}
-}
+
 
 
 
@@ -2634,8 +2447,9 @@
     padding: 80px 0 150px;
     text-align: center;
     display: block;
+    position: relative;
     &:before {
-      height: 29px;
+      top: 29px;
     }
     .container {
       .comments_content {
@@ -3442,7 +3256,7 @@
 
 
 
-  // Страница "Устройства"
+  // -----СТРАНИЦА "УСТРОЙСТВА"----- 1920-1710
   
   img.device_image {
     width: 797px;
@@ -3453,4957 +3267,762 @@
     height: 470px;
   }
 
-
-
-
-  @media (min-width: 1710px) { 
-
+  .affordable-price {
+    padding: 80px 0 30px;
+    position: relative;
+    text-align: center;
+    &:before {
+      top: 110px;
+    }
     .container {
-      width: 1680px;
-    }
-  }
-
-
-
-
-
-  @media (min-width: 300px) and (max-width: 1709px) {
-
-    .container {
-      width: 1470px;
-    }
-
-    .div-heading, .equipment .container section h2, .discounts .container section h2, .masters .container section h2 {
-      padding: 0 55px;
-    }
-
-    .modal, header#navbar, .header, .serviceCenter, .affordable-price, .lowPrices, .completing, .discounts, .selectBreakage, .masters, .another, .comments, .anotherTwo, .anotherThree, .contacts, .forma, .footer {
-      font-size: 14px;
-    }
-
-
-
-    // -----МОДАЛКА В МЕНЮ----- 1709-1500
-
-    .modal#menuModal {
-      .modal-dialog {
-        &:after {
-          height: 693px;
-        }
-        .modal-content {
-          .modal-header {
-            .modal-header-bottom {            
-              p {
-                width: 80%;
-              }
-            }
-          }
-        }
+      .heading {
+        background: #fff;
+      }
+      p.heading {
+        font-size: 1.88em;
+        text-transform: uppercase;
+        margin-top: 18px;
       }
     }
-
-
-
-    // -----МОДАЛКА В "ПРОБЛЕМАХ"----- 1709-1500
-    
-    .modal#problemsModal {
-      .modal-dialog {
-        &:after {
-          height: 341px;
-        }  
-      }
-    }
-
-
-
-    // -----МЕНЮ----- 1709-1500
-
-    header#navbar {
-      height: 52px;
+    .buttonsBlock {
+      padding: 42px 0 35px;
+      border-bottom: 1px solid #ccc;
       .container {
-        .navbar-collapse {
-          nav {
-            ul.menu.nav.navbar-nav {
-              li {
-                margin-right: 79px; 
-                a {
-                  padding: 0 14px;
-                  line-height: 52px;
-                }
-              }
-            }
-          }
-          .btn.btn-primary {
-            margin: 11px 0;
-            line-height: 20px;
-            width: 175px;
-          }
-        } 
-      }
-    }
-
-
-
-    
-
-
-    
-    // .header {
-    //   .container {
-    //     .headerTop {
-    //       padding: 35px 0;
-    //       .row {
-    //         .col-md-3 {
-    //           .telephone {
-    //             p.telBottom:before {
-    //               left: 130px;
-    //             }
-    //             &:before {
-    //               top: 9px;
-    //               left: 97px;
-    //             }
-    //           }  
-    //         }
-    //       }
-    //     }
-    //   }
-    //   .headerBottomBanner {
-    //     .bannerContent {
-    //       .container {
-    //         height: 510px;
-    //         .leftBanner {
-    //           width: 755px;
-    //           padding: 74px 75px 70px 132px;
-    //           .phoneBanner a.btn.btn-warning {
-    //             padding: 8px 40px;
-    //           }
-    //         }
-    //       }
-    //     }
-    //   }
-    // }
-    
-
-
-  // -----ШАПКА----- 1709-1500
-
-  .header {
-    .container {
-      .headerTop {
-        padding: 35px 0;
-        .row {
-          .col-md-3 {
-            .logotype {
-              p.logo {
-                height: 54px;
-              }
-            }
-            .telephone {
-              p.telBottom:before {
-                left: 130px;
-              }
-              &:before {
-                top: 9px;
-                left: 97px;
-              }
-            }  
-          }
-        }
-      }
-    }
-    .headerBottomBanner {
-      .bannerContent {
-        .container {
-          .leftBanner {
-            padding: 48px 66px 47px 132px;
-            .phoneBanner {
-              a.btn.btn-warning {
-                padding: 8px 40px;
-              }
-            } 
-          }
-        }
-        .rightBanner {
-          .twentyBlock {
-            img {
-              height: 460px;
-            }
-          }
-        }
-      }
-    }
-  } 
-
-
-
-    // -----СЕРВИСНЫЙ ЦЕНТР----- 1709-1500
-
-    .serviceCenter {
-      padding: 58px 0 11px;
-      .container2 {
-        &:after {
-          top: 58px;
-        }
-        .heading {
-          margin-bottom: 53px;
-          font-size: 2.34em;
-          &:before {
-            width: 645px;
-            top: 70px;
-          }
-          &:after {
-            top: 70px;
-            width: 645px;
-          }
-        }
-        .serviceContent {
-          .serviceItem {
-            width: 450px;
-          }
-        }
-      }
-    }
-
-
-
-    // -----ДОСТУПНЫЕ ЦЕНЫ----- 1709-1500
-
-    .affordable-price {
-      &:before {
-        top: 100px;
-      }
-      padding: 70px 0 30px;
-      .buttonsBlock {
-        .container {
-          .buttonsBlockContent {
-            .btn.btn-light {
-              padding: 12px 55px;
-            } 
-          }
-        }
-      }
-      .container {
-        .affordable-price-content {
-          .priceRow {
-            .priceRowItem {
-              .service-name {
-                width: 885px;
-              }
-            }  
-          }
-        }
-      }
-    }
-
-
-
-    // -----ОБОРУДОВАНИЕ----- 1709-1500
-
-    .equipment {
-      &:before {
-        top: 94px;
-      }
-      padding: 70px 0 90px;
-    }
-
-
-
-    // -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 1709-1500
-
-    .lowPrices {
-      padding: 80px 0 60px;
-      &:before {
-        top: 111px;
-      }
-      .container3 {
-        .topModels {
-          .topModelsItem {
-            height: 438px;
-            &:nth-child(1) {
-              background-size: 150px;
-            }
-            &:nth-child(2) {
-              background-size: 212px;
-              margin: 0 53px;
-            }
-            &:nth-child(3) {
-              background-position: 90% 67.3%;
-              background-size: 319px;
-            }
-          }
-        }
-      }
-    }
-
-
-
-    // -----КОМПЛЕКТАЦИЯ----- 1709-1500
-
-    .completing {
-      padding: 65px 0;
-      &:before {
-        top: 96px;
-      }
-      .container {
-       .completingContent {
-        padding: 70px 0px 0 53px;
-        .left {
-          ul {
-            li {
-              margin-bottom: 32px;
-              p.content {
-                line-height: 22px;
-                padding-top: 2px;
-              }
-            }
-          }   
-        }
-      }
-    }
-  }
-
-
-
-    // -----АКЦИИ----- 1709-1500
-
-
-
-    // -----"ПРОБЛЕМНЫЙ" БЛОК----- 1709-1500
-
-    .selectBreakage {
-      padding: 57px 0 53px;
-      &:before {
-        top: 88px;
-      }     
-      .container {
-        p.heading {
-          margin-top: 10px;
-          margin-bottom: 28px;
-        }
-        .wrap {
-          .selectBreakageContent {
-            padding: 50px 0 42px;
-            .selectBreakWrapp2 { 
-              .selectBreakRowItem {
-                padding-left: 130px;
-                p.title {
-                  margin-bottom: 10px;
-                }
-                .checkbox-label {
-                  p.check {
-                    line-height: 10px;    
-                  }
-                }
-                &:nth-child(1) p.title:after, &:nth-child(2) p.title:after, &:nth-child(5) p.title:after, &:nth-child(6) p.title:after, &:nth-child(8) p.title:after, &:nth-child(9) p.title:after {
-                  right: -30px;
-                }
-              } 
-            }
-          }
-        } 
-      } 
-    }
-
-
-
-    // -----МАСТЕРЫ----- 1709-1500
-
-
-
-    // -----КАКОЙ-ТО БЛОК 1----- 1709-1500
-
-    .another {
-      padding: 100px 0 50px;
-      .container {
-        .anotherContent {
-          .left {
+        .buttonsBlockContent {
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: -o-flex;
+          display: flex;
+          flex-wrap: wrap;
+          a.btn.btn-primary {
+            padding: 5px 30px;
+            color: #333;
+            font-weight: 600;
+            text-transform: uppercase;
+            border-radius: 6px;
+            background: #fff;
+            border: 2px solid #00bdf1;
             margin-right: 20px;
-            .heading {
-              padding: 0 0 20px 0;
-              margin-bottom: 10px;
+            margin-bottom: 20px;
+            &:hover {
+              color: #333;
+              background: #f5a720;
+              transition: 0.5s ease;
             }
-            .leftContent {
-              ul {
-                li {
-                  padding: 25px 0 0px 38px;
-                  p {
-                    line-height: 25px;
-                    br {
-                      display: none;
-                    }
-                  }
-                }
-              } 
-            } 
           }
-          .right {
-            height: 445px;
+          select {  
+            padding: 5px 20px;
+            font-weight: 600;
+            border-radius: 6px;
+            background: #fff;
+            border: 2px solid #00bdf1;
+            color: #333;
+            transition: all 0.5s ease;
+            text-transform: uppercase;
+            font-size: 14px;
+            cursor: pointer;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            width: 350px;
+            &:hover {
+              color: #333;
+              background: #f5a720;
+            }
+            option {
+              background: #fff;
+              color: #c32;
+              font-size: 1em;
+            }
+          }
+          .new_select {
+            margin-right: 0;
           }
         }
-        .anotherTwoContent {
-          padding: 67px 0 56px;
+      }
+    }
+    .container {
+      .affordable-price-content {
+        text-align: left;
+        padding: 35px 0 54px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-wrap: wrap;
+        .priceRow {
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: -o-flex;
+          display: flex;
+          width: 50%;
+          border-bottom: 1px solid #e6e6e6;
+          border-right: 1px solid #e6e6e6;
+          &:nth-child(1) {
+            border-top: 1px solid #e6e6e6;
+          }
+          &:nth-child(2) {
+            border-top: 1px solid #e6e6e6;
+          }
+          &:nth-child(even) {
+            border-right: none;
+          }
+          .priceRowItem {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            .service-name {
+             width: 624px;
+             p {
+              font-size: 1em;
+              color: #4a4c4e;
+              padding: 14.25px 14px 14.25px 20px;
+              span {
+                color: #ed6263;
+              }
+            }
+          }
+          .time {
+            background: #fff3e6;
+            color: #333;
+            font-weight: 600;
+            width: 111px;
+            font-size: 1em;
+            padding: 16px 10px;
+            text-align: center;
+            width: 100px;
+          }
+          .price {
+            color: #333;
+            font-weight: 600;
+            width: 100px;
+            font-size: 1em;
+            padding: 16px 10px;
+            text-align: right;
+          }
+        } 
+      }
+      .wrapper_price_block {
+        display: none;
+        flex-wrap: wrap;
+        transition: 0.5s;
+        .priceRow {
+          &:nth-child(1), &:nth-child(2) {
+            border-top: none;
+          }
         }
-      } 
+      }
     }
-
-
-
-    // -----КОММЕНТАРИИ----- 1709-1500
-
-    .comments {
-
-    }
-
-
-
-    // -----КАКОЙ-ТО БЛОК 3----- 1709-1500
-    .anotherThree {
-      padding: 36px 0 25px;
+    .allItems {
+      text-align: center;
+      position: relative;
       &:before {
         content: '';
         position: absolute;
-        top: 75px;
         left: 0;
+        bottom: 11px;
         height: 1px;
         width: 100%;
         border-bottom: 1px solid #e0e0e0;
         z-index: 0;
       }
-      .container {
-        .anotherThreeContent {
-          padding: 50px 0 0;
-          .left {
-            iframe {
-              height: 400px;
-              margin: -10px 0 0;
-            }
-          }
-          .right {
-            margin-left: 35px;
-            padding-right: 0;
-            p.title {
-              line-height: 26px;
-            }
-            p.content {
-              line-height: 23px;
-              padding: 0 0 20px;
-            }
-          }
-        }
-      } 
-    }
-
-
-
-    // -----КОНТАКТЫ----- 1709-1500
-
-    .contacts {
-      padding: 64px 0;
-      &:before {
-        top: 95px;
-      }
-      .container {
-        .contactsContent {
-          padding: 50px 0;
-          .addressContacts {
-            margin-right: 60px;
-          }
-          .workTimeContacts {
-            padding-right: 50px;
-            &:before {
-              top: 9px;
-              left: 45px;
-            }
-            p.content+p.content {
-              margin: -2px 0 16px 45px;
-            }
-          }
-          .phoneContacts {
-            padding-left: 190px;
-            margin: -18px 0 0;
-            &:before {
-              top: 9px;
-              left: 95px;
-            }
-          }
-        }
-        .bannerContacts {
-          margin: 0;
-          .banner {
-            height: 250px;
-            width: 32.5%;
-          }
-        }
-      } 
-    }
-
-
-
-    // -----ФОРМА----- 1709-1500
-
-    .forma {
-      padding: 74px 0 0;
-      .container {
-        .formWrapp {
-          padding: 60px 0 100px;
-          .wrap {
-            .heading {
-              padding: 0;
-              .formHeading {
-                margin-left: 105px;
-                width: 800px;
-              }
-            }
-            .formContent {
-              padding: 30px 0 100px;
-              form {
-                .formInputs {
-                  input.name {
-                    width: 396px;
-                    padding: 11px 0 11px 31px;
-                    line-height: 22px;
-                  }
-                  input.phone {
-                    width: 396px;
-                    padding: 11px 0 11px 27px;
-                    line-height: 22px;
-                  }
-                  input.reason {
-                    padding: 11px 34px;
-                    width: 540px;
-                  }
-                  .btn-primary {
-                    padding: 11px 77px;
-                    line-height: 23px;
-                    height: 44px;
-                  }
-                } 
-              } 
-            }
-          }  
-        }
-      } 
-    }
-
-
-
-    //-----ПОДВАЛ----- 1709-1500
-
-    .footer {
-      padding: 70px 0;
-      margin-top: 0;
-      .container {
-        .footerContent {
-          .item {
-            padding-left: 60px;
-            &:nth-child(1) {
-              padding-left: 0;
-            }
-            ul {
-              li {
-                margin: 6px 0 23px;
-              }
-            } 
-          }
-          .social {
-            margin-right: 0;
-            padding-right: 0;
-            p.title {
-              margin-right: 0;
-            }
-            .socialDiv {
-              width: 230px;
-              margin: 35px 0 0 70px;
-              padding-bottom: 40px;
-            }
-            .copy {
-              padding: 25px 0;
-            }
-          }
-        } 
-      } 
-    }
-  }
-
-
-
-
-
-  @media (min-width: 300px) and (max-width: 1499px) {
-
-    .container {
-      width: 1170px;
-    }
-
-    .div-heading, .equipment .container section h2, .discounts .container section h2, .masters .container section h2 {
-      padding: 0 45px;
-    }
-
-    .modal, header#navbar, .header, .serviceCenter, .affordable-price, .lowPrices, .completing, .discounts, .selectBreakage, .masters, .another, .comments, .anotherTwo, .anotherThree, .contacts, .forma, .footer {
-      font-size: 11px;
-    }
-
-
-
-  // -----МОДАЛКА В МЕНЮ----- 1499-1200
-
-  .modal#menuModal {
-    .modal-dialog {
-      width: 415px;
-      margin: 60px auto 20px;
-      &:before {
-        width: 393px;
-      }
-      &:after {
-        height: 541px;
-      }
-      .modal-content {
-        border: 5px solid rgba(0,0,0,0);
-        .modal-header {
-          button.close {
-            span {
-              width: 46px;
-              height: 46px;
-              font-size: 38px;
-              top: -33px;
-              right: -29px;
-              &:before {
-                top: 44px;
-                left: 22px;
-                width: 24px;
-              }
-              &:after {
-                height: 31px;
-              }
-            }
-          }
-          .modal-header-top {
-            height: 160px;
-            &:after {
-              bottom: -36px;
-            }
-          }
-          .modal-header-bottom {
-            &:before {
-              top: -23px;
-            }
-            p {
-              width: 80%;
-              margin: 45px auto 20px;
-              line-height: 20px;
-            }
-          }
-        }
-        .modal-body {
-          padding: 25px 25px 35px;
-          p {
-            margin: 0;
-          }
-          form {
-            input {
-              margin-top: 20px;
-              padding: 12px 12px 12px 32px;
-            }
-            .btn.btn-primary {
-              padding: 12px;
-              margin-top: 20px;
-              font-size: 1.2em;
-            }
-          }
-        }
-      }
-    }
-  }
-
-
-
-    // -----МОДАЛКА В "ПРОБЛЕМАХ"----- 1499-1200
-
-    .modal#problemsModal {
-      .modal-dialog {
-        width: 915px;
-        margin: 100px auto;
-        &:before {
-          width: 892px;
-        }
-        &:after {
-          height: 311px;
-        }
-        .modal-content {
-          .modal-header {
-            width: 450px;
-            padding: 25px 25px 35px;
-            button.close {
-              span {
-                width: 44px;
-                height: 44px;
-                font-size: 37px;
-                top: -62px;
-                left: 459px;
-                &:before {
-                  width: 22px;
-                  top: 43px;
-                  left: 22px;
-                }
-                &:after {
-                  height: 33px;
-                }
-              }
-            }
-            form {
-              .formProblems {
-                .name {
-                  font-size: 1.3em;
-                }
-                select {
-                  width: 270px;
-                  padding: 0 0 0 20px;
-                  height: 36px;
-                  margin-top: 2px;
-                }
-                .problemsBlock {  
-                  width: 270px;
-                  p.problem {
-                    font-size: 1.3em;
-                  }
-                }
-              }
-            }
-          }
-          .modal-body {
-            padding: 25px 25px 35px;
-            width: 450px;
-            p {
-              font-size: 1.5em;
-              &:before {
-                top: 50px;
-              }
-            }
-            form {
-              input {
-                margin-top: 20px;
-              }
-              .btn.btn-primary {
-                margin-top: 20px;
-              }
-            }
-          }
-        }
-      }
-    }
-
-
-
-    // -----МЕНЮ----- 1499-1200
-    
-    header#navbar {
-      height: 40px;
-      .container {
-        .navbar-collapse {
-          nav {
-            ul.menu.nav.navbar-nav {
-              li {
-                margin-right: 55px;
-                a {
-                  font-size: 1.2em;
-                  padding: 0 14px;
-                  line-height: 40px;
-                }
-                // &:first-child a:after {
-                //   top: 18px;
-                //   right: -9px;
-                //   background-size: 9px;
-                // }
-              }
-            }
-            .btn.btn-primary {
-              line-height: 13px;
-              width: 155px;
-              margin: 8px 0;
-              height: 24px;
-              font-size: 1.1em;
-            }
-          }
-        }
-      } 
-    }
-
-
-
-    // -----ШАПКА----- 1499-1200
-
-    .header {
-      .container {
-        .headerTop {
-          padding: 25px 0;
-          .row {
-            .col-md-3 {
-              .logotype {
-                margin-top: 0px;
-                &:nth-child(1) {
-                  margin-right: 20px;
-                }
-                &:nth-child(4) {
-                  margin-right: 0;
-                }
-                img {
-                  width: 50px;
-                }
-                p.logo {
-                  margin: -5px 0 0 8px;
-                  height: auto;
-                }
-              } 
-              .find-us {
-                margin-left: 0;
-                p.find-us-bottom {
-                  padding-left: 25px;
-                  &:before {
-                    top: 2px;
-                    left: 0;
-                    width: 20px;
-                    height: 20px;
-                    background-size: 20px;
-                    background-repeat: no-repeat;
-                  }
-                }
-              }
-              .address {
-                text-align: left;
-                p.addTop {
-                  margin: -11px 0 0;
-                }
-                p.addBottom {
-                  margin: 4px 0 0;
-                  font-size: 1em;
-                  letter-spacing: 0;
-                }
-              }
-              .telephone {
-                &:before {
-                  top: 7px;
-                  left: 60px;
-                  height: 37px;
-                }
-                p.telTop {
-                  margin: -11px 0 7px 0;
-                }
-                p.telBottom {
-                  margin: -8px 0 0;
-                  &:before {
-                    top: -13px;
-                    left: 90px;
-                    width: 28px;
-                    height: 28px;
-                    background-size: 28px;
-                    background-repeat: no-repeat;
-                  }
-                }
-              } 
-            } 
-          } 
-        }
-      } 
-      .headerBottomBanner {
-        .bannerContent {
-          .container {
-            .leftBanner {
-              padding: 35px 52px 35px 105px;
-              .heading {
-                margin-bottom: 5px;
-              }
-              p.title {
-                padding-bottom: 11px;
-                margin-top: -8px;
-              }
-              ul {
-                padding: 10px 0 7px 34px;
-                li {
-                  padding-bottom: 6px;
-                  &:before {
-                    top: 10px;
-                  }
-                }
-              }
-              .phoneBanner {
-                a.btn.btn-warning {
-                  padding: 6px 28px;
-                }
-              } 
-            }
-          }
-          .rightBanner {
-            .twentyBlock {
-              img {
-                height: 352px;
-              }
-            }
-          }
-        } 
-      }
-    } 
-
-
-
-    // .header {
-    //   .headerBottomBanner {
-    //     .bannerContent {
-    //       .container {
-    //         height: 358px;
-    //         .leftBanner {
-    //           width: 678px;
-    //           padding: 45px 52px 30px 180px;
-    //           left: -165px;
-    //           .heading {
-    //             margin-bottom: 5px;
-    //           }
-    //           p.title {
-    //             padding-bottom: 11px;
-    //             margin-top: -8px;
-    //           }
-    //           ul {
-    //             padding: 10px 0 7px 34px;
-    //             li {
-    //               padding-bottom: 6px;
-    //               &:before {
-    //                 top: 10px;
-    //               }
-    //             }
-    //           }
-    //           .phoneBanner {
-    //             a.btn.btn-warning {
-    //               padding: 6px 28px;
-    //             }
-    //           } 
-    //         }
-    //       }
-    //     } 
-    //   } 
-    // }
-    
-
-
-   // -----СЕРВИСНЫЙ ЦЕНТР----- 1499-1200 
-   
-   .serviceCenter {
-    padding: 40px 0 0;
-    .container2 {
-      &:after {
-        background-size: 20px;
-        width: 20px;
-        height: 20px;
-        margin-left: -10px;
-        top: 38px;
-      }
-      .heading {
-        margin-bottom: 37px;
-        &:before {
-          width: 493px;
-          top: 50px;
-          margin-left: -526px;
-        }
-        &:after {
-          width: 493px;
-          top: 50px;
-          margin-right: -526px;
-        }
-      }
-      .serviceContent {
+      p.open_block, p.close_block {
+        text-transform: uppercase;
+        color: #00bdf1;
         font-size: 1.3em;
-        .serviceItem {
-          line-height: 19px;
-          width: 260px;
-          &:nth-child(1) {
-            padding: 0 10px 40px 53px;
-            &:before {
-              top: 0;
-              left: 0;
-              width: 40px;
-              height: 40px;
-              background-size: 40px;
-              background-repeat: no-repeat;
-            }
-          }
-          &:nth-child(2) {
-            padding: 0px 5px 40px 50px;
-            &:before {
-              top: 0;
-              left: -5px;
-              width: 40px;
-              height: 40px;
-              background-size: 40px;
-              background-repeat: no-repeat;
-            }
-          }
-          &:nth-child(3) {
-            padding: 0 5px 40px 50px;
-            &:before {
-              top: 0;
-              left: 10px;
-              width: 24px;
-              height: 45px;
-              background-size: 24px;
-              background-repeat: no-repeat;
-            }
-          }
-        }
+        display: inline;
+        padding: 0 55px 0 40px;
+        background: #fff;
+        position: relative;
+        cursor: pointer;
+        z-index: 2;
+        background-repeat: no-repeat;
       }
-    } 
+      p.open_block {
+        background-image: url(/sites/all/themes/idoctor_theme/image/arrow_blue_down.png);
+        background-position: 199px 8px;
+      }
+      p.close_block {
+        background-image: url(/sites/all/themes/idoctor_theme/image/arrow_blue_up.png);
+        background-position: 160px 8px;
+        display: none;
+      }
+    }
   }
+}
 
 
 
-    // -----ДОСТУПНЫЕ ЦЕНЫ----- 1499-1200
 
-    .affordable-price {
-      &:before {
-        top: 83px;
-      }
-      padding: 60px 0 20px;
-      .container {
-        p.heading {
-          margin-top: 15px;
-        }
-      }
-      .buttonsBlock {
-        padding: 30px 0;
-        .container {
-          .buttonsBlockContent {
-            .btn.btn-light {
-              margin-right: 20px;
-              padding: 12px 50px;
-            }
-            .btn.btn-light.another {
-              padding: 10px 170px 10px 20px;
-              &:after {
-                top: 15px;
-              }
-            }
-          }
-        }
-      }
-      .container {
-        .affordable-price-content {
-          padding: 30px 0 40px;
-          .priceRow {
-            .priceRowItem {
-              margin-right: 15px;
-              .service-name {
-                width: 670px;
-                p {
-                  padding: 12px 14px 10px 20px;
-                }
-              }
-              .time {
-                padding: 12px 0;
-              }
-              .price {
-                padding: 13px 0;
-              }
-            }  
-            .btn.btn-light {
-              padding: 11px 65px;
-            }
-          }
-        }
-      }
+  // Страница Отзывы
+
+  .comments_page {
+    padding: 80px 0 150px;
+    text-align: center;
+    display: block;
+    &:before {
+      height: 29px;
     }
-
-
-
-    // -----ОБОРУДОВАНИЕ----- 1499-1200
-
-    .equipment {
-      &:before {
-        top: 85px;
+    .container {
+      position: relative;
+      h2 {
+        font-size: 3em;
+        text-transform: uppercase;
+        width: 33%;
+        margin: 0 auto 25px;
+        line-height: 55px;
+        display: block;
+        background: #fff;
+        position: relative;
       }
-      padding: 60px 0 80px;
-      section {
-        .view-equipments {
-          .owl-carousel {
-            .owl-nav {
-              button {
-                width: 50px;
-                height: 50px;
-                background-size: 50px;
-              }
-            }
-          }
-        }
+      p.heading {
+        font-size: 1.88em;
+        text-transform: uppercase;
+        max-width: 1000px;
+        margin: 0 auto;
+        line-height: 40px;
       }
-    }
-
-
-
-    // -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 1499-1200
-
-    .lowPrices {
-      padding: 56px 0 42px;
-      &:before {
-        top: 80px;
-      }
-      .container3 {
-        p.heading {
-          padding-top: 10px;
-          margin-bottom: 0;
-        }
-        .topModels {
-          max-width: 784px;
-          margin: 0 auto;
-          .topModelsItem {
-            height: 335px;
-            &:before {
-              width: 27px;
-              height: 27px;
-              left: 50%;
-              margin-left: -14px;
-              background-size: 28px;
-            }
-            &:hover:after {
-              width: 30px;
-              height: 30px;
-              border: 3px solid #f5a720;
-              left: 44%;
-            }
-            &:nth-child(1) {
-              background-size: 105px;
-              background-position: center 95px;
-            }
-            &:nth-child(2) {
-              background-size: 160px;
-              margin: 0;
-              background-position: center 83px;
-              p.model {
-                left: 43%;
-              }
-            }
-            &:nth-child(3) {
-              background-position: center 135px;
-              background-size: 223px;
-              &:hover:after {
-                left: 42%;
-              }  
-            }
-            p.model {
-              left: 39%;
-              font-size: 1.3em;
-            }
-          }
-        }
-        .bottomModels {
-          max-width: 681px;
-          margin: 0 auto;
-          padding-right: 0;
-          .bottomModelsItem {
-            height: 300px;
-            background-position: center 90px;
-            background-size: 84px 170px;
-            &:before {
-              width: 28px;
-              height: 28px;
-              top: 13%;
-              left: 50%;
-              margin-left: -14px;
-              background-size: 28px;
-            }
-            &:hover:after {
-              width: 30px;
-              height: 30px;
-              border: 3px solid #f5a720;
-              left: 39%;
-            }
-            p.model {
-              left: 30%;
-              font-size: 1.3em;
-            }
-            &:nth-child(4) {
-              p.model {
-                left: 35%;
-              }
-            } 
-            &:nth-child(5) {
-              p.model {
-                left: 25%;
-              }
-            } 
-          }
-        }
-        div#dinamicBlock1 {
-          max-width: 850px;
-        }
-        .container3 .buttons#dinamicBlock2 {
-          padding: 28px 210px;
-          a.btn.btn-primary {
-            padding: 6px 32px;
-            font-size: 1.2em;
-          }
-        }
-      }
-    }
-
-
-
-    // -----КОМПЛЕКТАЦИЯ----- 1499-1200
-
-    .completing {
-      padding: 46px 0;
-      &:before {
-        top: 70px;
-      }
-      .container {
-        .completingContent {
-          padding: 50px 0 0 53px;
-          .left {
-            ul {
-              margin: 0;
-              li {
-                margin-bottom: 15px;
-                &:last-child {
-                  margin-bottom: 0;
-                }
-                p.title {
-                  margin-bottom: 5px;
-                }
-                p.content {
-                  line-height: 20px;
-                  padding-top: 1px;
-                }
-              }
-            }
-          } 
-          .right iframe {
-            height: 317px;
-          }
-        }
-      } 
-    }
-
-
-
-    // -----АКЦИИ----- 1499-1200
-
-    .discounts {
-      padding: 40px 0 80px;
-      &:before {
-        top: 57px;
-      }
-      .container {
-        section {
-          .view-promotions {
-            .view-content {
-              .views-row {
-                &:nth-child(1) {
-                  height: 445px;
-                  padding: 70px 0;
-                  .views-field-field-title-discount {
-                    .field-content {
-                      p {
-                        line-height: 50px;
-                        margin-bottom: 40px;
-                      }
-                    }
-                  }
-                }
-                &:nth-child(2) {
-                  padding: 60px 0px 45px 35px;
-                  width: 34.5%;
-                  height: 220px;
-                  .views-field-field-title-discount {
-                    .field-content {
-                      p {
-                        line-height: 36px;
-                      }
-                    }
-                  }
-                  .views-field-field-content-discount {
-                    .field-content {
-                      margin-top: 10px;
-                      font-size: 1.2em;
-                    }
-                  }
-                  .views-field-nid {
-                    .field-content {
-                      width: 55px;
-                      height: 55px;
-                      background-size: 55px;
-                      &:hover {
-                        background-size: 60px;
-                      }
-                    }
-                  }
-                }
-                &:nth-child(3) {
-                  width: 34.5%;
-                  height: 220px;
-                  padding: 72px 0 0 35px;
-                  .views-field-field-title-discount {
-                    .field-content {
-                      p {
-                        line-height: 36px;
-                      }
-                    }
-                  }
-                  .views-field-field-content-discount {
-                    .field-content {
-                      margin-top: 10px;
-                      font-size: 1.2em;
-                    }
-                  }
-                  .views-field-nid {
-                    .field-content {
-                      width: 55px;
-                      height: 55px;
-                      background-size: 55px;
-                      &:hover {
-                        background-size: 60px;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-
-
-    // -----"ПРОБЛЕМНЫЙ" БЛОК----- 1499-1200
-
-    .selectBreakage {
-      padding: 40px 0 37px;
-      &:before {
-        top: 65px;
-      }  
-      .container {
-        p.heading {
-          margin-top: 7px;
-          margin-bottom: 20px;
-        }
-        .wrap {
-          .selectBreakageContent {
-            padding: 35px 0;
-            .selectBreakWrapp2 {
-              .selectBreakRowItem {
-                padding-left: 90px;
-                p.title {
-                  margin-bottom: 10px;
-                  padding-left: 20px;
-                  font-size: 1.3em;
-                  &:before {
-                    background-size: 12px;
-                  }
-                }
-                #title1:before {
-                  top: 0;
-                }
-                #title2:before {
-                  background-size: 8px;
-                  width: 9px;
-                  height: 25px;
-                  top: 0;
-                  left: 0;
-                }
-                #title4:before {
-                  background-size: 18px;
-                  width: 18px;
-                  height: 18px;
-                  top: -1px;
-                  left: -5px;
-                }
-                #title5:before {
-                  background-size: 14px;
-                  width: 14px;
-                  height: 16px;
-                  top: 3px;
-                  left: -3px;
-                }
-                #title7:before {
-                  background-size: 16px;
-                  width: 16px;
-                  height: 18px;
-                  top: -2px;
-                  left: -3px;
-                }
-                #title9:before {
-                  background-size: 14px;
-                  width: 14px;
-                  height: 18px;
-                  top: 0px;
-                  left: -3px;
-                }
-                .checkbox-label {
-                  margin-bottom: 8px;
-                  input[type=checkbox]+span {
-                    top: 2px;
-                    width: 12px;
-                    height: 12px;
-                  }
-                  input[type=checkbox]:checked+span {
-                    top: 2px;
-                    padding: 6px;
-                    width: 13px;
-                    height: 13px;
-                    background-size: 12px;
-                  }
-                  p.check {
-                    line-height: 10px;
-                    padding: 5px 0 4px 20px;
-                    font-size: 1.1em;
-                  }
-                }
-                &:nth-child(1) p.title:after, &:nth-child(2) p.title:after, &:nth-child(5) p.title:after, &:nth-child(6) p.title:after, &:nth-child(8) p.title:after, &:nth-child(9) p.title:after {
-                  right: 0;
-                  height: 100px;
-                }
-              }
-            } 
-            .buttonForm {
-              a.btn.btn-primary {
-                padding: 12px 34px;
-                font-size: 1.2em;
-              }
-            } 
-          }
-        } 
-      }
-    }
-
-
-
-    // -----МАСТЕРЫ----- 1499-1200
-
-    .masters {
-      &:before {
-        top: 80px;
-      }
-      .container {
-        section {
-          h2 {
-            line-height: 40px;
-            width: 80%;
-          }
-          .view-masters {
-            .view-header {
-              p.heading {
-                line-height: 30px;
-              }
-            }
-            .owl-carousel {
-              margin-top: 80px;
-              .owl-nav {
-                button {
-                  background-size: 50px; 
-                  width: 50px;
-                  height: 50px;
-                }
-              }
-            }
-          } 
-        }
-      }
-    }
-
-
-
-    // -----КАКОЙ-ТО БЛОК 1----- 1499-1200
-
-    .another {
-      padding: 70px 0 35px;
-      .container {
-        .anotherContent {
-          .left {
-            margin-right: 5px;
-            .heading {
-              padding: 0 0 10px 0;
-              margin-bottom: 0;
-            }
-            .leftContent {
-              ul {
+      .comments_content {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        padding: 60px 0;
+        align-items: flex-start;
+        .wrapper {
+          width: 70%;
+          ul.nav-tabs {
+            font-size: 1.125em;
+            text-transform: uppercase;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            justify-content: center;
+            border: 2px solid #00bdf1;
+            margin: 0 -1px 60px;
+            border-radius: 36px;
+            li {
+              width: 100%;
+              a {
+                font-weight: 600;
+                color: #00bdf1;
+                padding: 15px;
                 margin: 0;
-                li {
-                  padding: 17px 0 0 35px;
-                  p {
-                    line-height: 21px;
-                    &:before {
-                      left: -34px;
+                border: none;
+                border-radius: 0;
+                &:hover {
+                  color: #fff;
+                  background: #f9a400;
+                }
+              }
+              &:first-child a {
+                border-radius: 36px 0 0 36px;
+              }
+              &:last-child a {
+                border-radius: 0 36px 36px 0;
+                margin-right: -1px;
+              }
+              &.active { 
+                border: none;
+                a {
+                  color: #fff;
+                  background: #00bdf1;
+                  margin: 0;
+                  border: none;
+                }
+              }
+              &.active:first-child a {
+                border-radius: 36px 0 0 36px;
+              }
+              &.active:last-child a {
+                border-radius: 0 36px 36px 0;
+              }
+            } 
+          }
+          .tab-content {
+            #google {
+              section#block-views-review-google-block {
+                .view-review-google {
+                  .view-content {
+                    display: -webkit-flex;
+                    display: -moz-flex;
+                    display: -ms-flex;
+                    display: -o-flex;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    .views-row {
+                      position: relative;
+                      padding: 10px;
+                      text-align: center;
+                      width: 48%;
+                      margin: 10px;
+                      border-top: 1px solid #eee;
+                      .views-field-field-review-flamp-photo {
+                        .field-content {
+                          img {
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 50%;
+                            margin: 0 auto 60px;
+                          }
+                        }
+                      }
+                      .views-field-field-review-flamp-name {
+                        .field-content {
+                          color: #42648b;
+                          font-weight: 800;
+                        }
+                      }
+                      .views-field-field-review-flamp-date {
+                        .field-content {
+                          color: #a7a7a7;
+                        }
+                      }
+                      .views-field-field-review-flamp-body {
+                        .field-content {
+                          p {
+                            font-size: 1em;
+                            line-height: 22px;
+                          }
+                        }
+                      }
+                      .views-field-nid {
+                        position: absolute;
+                        left: 50%;
+                        margin-left: -91px;
+                        top: 110px;
+                        span.field-content {
+                          .gold_star {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 182px;
+                            margin: 20px auto 16px;
+                            .star {
+                              background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ5Ljk0IDQ5Ljk0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OS45NCA0OS45NDsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPgo8cGF0aCBkPSJNNDguODU2LDIyLjczYzAuOTgzLTAuOTU4LDEuMzMtMi4zNjQsMC45MDYtMy42NzFjLTAuNDI1LTEuMzA3LTEuNTMyLTIuMjQtMi44OTItMi40MzhsLTEyLjA5Mi0xLjc1NyAgYy0wLjUxNS0wLjA3NS0wLjk2LTAuMzk4LTEuMTktMC44NjVMMjguMTgyLDMuMDQzYy0wLjYwNy0xLjIzMS0xLjgzOS0xLjk5Ni0zLjIxMi0xLjk5NmMtMS4zNzIsMC0yLjYwNCwwLjc2NS0zLjIxMSwxLjk5NiAgTDE2LjM1MiwxNGMtMC4yMywwLjQ2Ny0wLjY3NiwwLjc5LTEuMTkxLDAuODY1TDMuMDY5LDE2LjYyMmMtMS4zNTksMC4xOTctMi40NjcsMS4xMzEtMi44OTIsMi40MzggIGMtMC40MjQsMS4zMDctMC4wNzcsMi43MTMsMC45MDYsMy42NzFsOC43NDksOC41MjhjMC4zNzMsMC4zNjQsMC41NDQsMC44ODgsMC40NTYsMS40TDguMjI0LDQ0LjcwMSAgYy0wLjE4MywxLjA2LDAuMDk1LDIuMDkxLDAuNzgxLDIuOTA0YzEuMDY2LDEuMjY3LDIuOTI3LDEuNjUzLDQuNDE1LDAuODcxbDEwLjgxNC01LjY4NmMwLjQ1Mi0wLjIzNywxLjAyMS0wLjIzNSwxLjQ3MiwwICBsMTAuODE1LDUuNjg2YzAuNTI2LDAuMjc3LDEuMDg3LDAuNDE3LDEuNjY2LDAuNDE3YzEuMDU3LDAsMi4wNTktMC40NywyLjc0OC0xLjI4OGMwLjY4Ny0wLjgxMywwLjk2NC0xLjg0NiwwLjc4MS0yLjkwNCAgbC0yLjA2NS0xMi4wNDJjLTAuMDg4LTAuNTEzLDAuMDgzLTEuMDM2LDAuNDU2LTEuNEw0OC44NTYsMjIuNzN6IiBmaWxsPSIjRkZEQTQ0Ii8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=);
+                              width: 23px;
+                              height: 23px;
+                              display: inline-block;
+                              background-size: 100%;
+                            }
+                          }
+                        }
+                      }
                     }
                   }
                 }
               }
-            } 
-          }
-          .right {
-            height: 350px;
-          }
-        } 
-      } 
-    }
-
-
-
-    // -----КОММЕНТАРИИ----- 1499-1200
-
-    .comments {
-      padding: 60px 0;
-      .container {
-        section {
-          .tab-content {
-            font-size: 1.3em;
-            ul.nav-tabs {
-              width: 500px;
-              li {
-                a {
-                  padding: 20px 50px;
-                }
-              } 
             }
-            #home {
+            #yandex {
+              section#block-views-review-yandex-block {
+                .view-review-yandex {
+                  .view-content {
+                    display: -webkit-flex;
+                    display: -moz-flex;
+                    display: -ms-flex;
+                    display: -o-flex;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    .views-row {
+                      position: relative;
+                      padding: 10px;
+                      text-align: center;
+                      width: 48%;
+                      margin: 10px;
+                      border-left: 1px solid #eee;
+                      .views-field-field-review-flamp-photo {
+                        .field-content {
+                          img {
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 50%;
+                            margin: 0 auto 60px;
+                          }
+                        }
+                      }
+                      .views-field-field-review-flamp-name {
+                        .field-content {
+                          color: #42648b;
+                          font-weight: 800;
+                        }
+                      }
+                      .views-field-field-review-flamp-date {
+                        .field-content {
+                          color: #a7a7a7;
+                        }
+                      }
+                      .views-field-field-review-flamp -body {
+                        .field-content {
+                          p {
+                            font-size: 1em;
+                            line-height: 22px;
+                          }
+                        }
+                      }
+                      .views-field-nid {
+                        position: absolute;
+                        left: 50%;
+                        margin-left: -91px;
+                        top: 110px;
+                        span.field-content {
+                          .gold_star {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 182px;
+                            margin: 20px auto 16px;
+                            .star {
+                              background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ5Ljk0IDQ5Ljk0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OS45NCA0OS45NDsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPgo8cGF0aCBkPSJNNDguODU2LDIyLjczYzAuOTgzLTAuOTU4LDEuMzMtMi4zNjQsMC45MDYtMy42NzFjLTAuNDI1LTEuMzA3LTEuNTMyLTIuMjQtMi44OTItMi40MzhsLTEyLjA5Mi0xLjc1NyAgYy0wLjUxNS0wLjA3NS0wLjk2LTAuMzk4LTEuMTktMC44NjVMMjguMTgyLDMuMDQzYy0wLjYwNy0xLjIzMS0xLjgzOS0xLjk5Ni0zLjIxMi0xLjk5NmMtMS4zNzIsMC0yLjYwNCwwLjc2NS0zLjIxMSwxLjk5NiAgTDE2LjM1MiwxNGMtMC4yMywwLjQ2Ny0wLjY3NiwwLjc5LTEuMTkxLDAuODY1TDMuMDY5LDE2LjYyMmMtMS4zNTksMC4xOTctMi40NjcsMS4xMzEtMi44OTIsMi40MzggIGMtMC40MjQsMS4zMDctMC4wNzcsMi43MTMsMC45MDYsMy42NzFsOC43NDksOC41MjhjMC4zNzMsMC4zNjQsMC41NDQsMC44ODgsMC40NTYsMS40TDguMjI0LDQ0LjcwMSAgYy0wLjE4MywxLjA2LDAuMDk1LDIuMDkxLDAuNzgxLDIuOTA0YzEuMDY2LDEuMjY3LDIuOTI3LDEuNjUzLDQuNDE1LDAuODcxbDEwLjgxNC01LjY4NmMwLjQ1Mi0wLjIzNywxLjAyMS0wLjIzNSwxLjQ3MiwwICBsMTAuODE1LDUuNjg2YzAuNTI2LDAuMjc3LDEuMDg3LDAuNDE3LDEuNjY2LDAuNDE3YzEuMDU3LDAsMi4wNTktMC40NywyLjc0OC0xLjI4OGMwLjY4Ny0wLjgxMywwLjk2NC0xLjg0NiwwLjc4MS0yLjkwNCAgbC0yLjA2NS0xMi4wNDJjLTAuMDg4LTAuNTEzLDAuMDgzLTEuMDM2LDAuNDU2LTEuNEw0OC44NTYsMjIuNzN6IiBmaWxsPSIjRkZEQTQ0Ii8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=);
+                              width: 23px;
+                              height: 23px;
+                              display: inline-block;
+                              background-size: 100%;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            #audio {
+              position: relative;
               section#block-views-review-audio-block {
                 .view-review-audio {
                   .view-content {
+                    display: -webkit-flex;
+                    display: -moz-flex;
+                    display: -ms-flex;
+                    display: -o-flex;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    margin: -2%;
                     .views-row {
-                      margin: 0 0 90px;
-                      width: 400px;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-
-
-    // -----КАКОЙ-ТО БЛОК 2----- 1499-1200
-
-    .anotherTwo {
-      .container {
-        .anotherTwoContent {
-          padding: 45px 0 40px;
-          p.content {
-            margin: 10px 0 22px 0;
-          }
-          a.btn.btn-warning {
-            padding: 12px 64px;
-          }
-        }
-      } 
-    } 
-
-
-
-    // -----КАКОЙ-ТО БЛОК 3----- 1499-1200
-
-    .anotherThree {
-      padding: 25px 0;
-      &:before {
-        top: 48px;
-      }
-      .container {
-        .anotherThreeContent {
-          padding: 35px 0 0;
-          align-items: flex-start;
-          .left {
-            iframe {
-              height: 317px;
-              margin: 0;
-            }
-          } 
-          .right {
-            margin-left: 20px;
-            padding-right: 0;
-            p.title {
-              margin-bottom: 5px;
-              line-height: 20px;
-            }
-            p.content {
-              line-height: 19px;
-              padding: 0 0 10px;
-              &:last-child {
-                padding: 0;
-              }
-            }
-          }
-        } 
-      } 
-    }
-
-
-
-    // -----КОНТАКТЫ----- 1499-1200
-
-    .contacts {
-      padding: 45px 0;
-      &:before {
-        top: 68px;
-      }
-      .container {
-        .contactsContent {
-          padding: 35px 0;
-          .addressContacts {
-            margin-right: 0;
-            padding-left: 110px;
-            &:before {
-              top: 7px;
-              left: 70px;
-              width: 23px;
-              height: 43px;
-              background-size: 23px;
-            }
-            p.title {
-              margin: 0;
-            }
-            p.content {
-              margin: 0;
-            }
-            p.find-us {
-              margin: 0;
-              padding-left: 24px;
-              &:before {
-                width: 20px;
-                height: 18px;
-                top: 3px;
-                left: 0;
-                background-size: 20px;
-              }
-            }
-          }
-          .workTimeContacts {
-            padding-right: 25px;
-            &:before {
-              top: 7px;
-              left: 80px;
-              width: 23px;
-              height: 42px;
-              background-size: 23px;
-            }
-            p.title {
-              margin: 0 0 0 -10px;
-            }
-            p.content {
-              margin: 0;
-              & + p.content {
-                margin: 0 0 0 67px;
-              }
-            } 
-          }
-          .phoneContacts {
-            padding-left: 150px;
-            margin: 0;
-            &:before {
-              top: 7px;
-              left: 93px;
-              width: 40px;
-              height: 40px;
-              background-size: 40px;
-              p.title {
-                margin: 0;
-              }
-              p.content {
-                margin: 0;
-              }
-            }
-          }
-        }
-        .bannerContacts {
-          .banner {
-            height: 197px;
-            width: 32.8%;
-          }
-        } 
-      } 
-    }
-
-
-
-    // -----КАРТА----- 1499-1200
-
-    .maps {
-      .container {
-        iframe {
-          margin: 0;
-        }
-      } 
-    } 
-
-
-
-    // -----ФОРМА----- 1499-1200
-
-    .forma {
-      padding: 74px 0 0;
-      .container {
-        .formWrapp {
-          padding: 42px 0;
-          .wrap {
-            .heading {
-              padding: 0;
-              .formHeading {
-                margin-left: 150px;
-                width: 610px;
-              }
-            } 
-            .formContent {
-              padding: 30px 0 120px;
-              form {
-                .formInputs {
-                  width: 590px;
-                  margin-left: 163px;
-                  input.name {
-                    width: 272px;
-                    padding: 8px 0 8px 25px;
-                    line-height: 22px;
-                    margin-right: 10px;
-                  }
-                  input.phone {
-                    width: 272px;
-                    padding: 8px 0 8px 25px;
-                    line-height: 22px;
-                    margin-bottom: 17px;
-                  }
-                  input.reason {
-                    padding: 10px 25px;
-                    width: 370px;
-                    margin-right: 10px;
-                  }
-                  .btn-primary {
-                    padding: 8px 49px;
-                    line-height: 20px;
-                    height: 38px;
-                  } 
-                }
-              } 
-            }
-          }
-        }
-      } 
-    }
-
-
-
-    // -----ПОДВАЛ----- 1499-1200
-
-    .footer {
-      padding: 50px 0 40px;
-      .container {
-        .footerContent {
-          .addressWorkTime {
-            .address {
-              p.title {
-                margin: 0 0 5px;
-              }
-            } 
-          } 
-          p.find-us {
-            margin: -10px 0 0;
-            padding-left: 25px;
-            &:before {
-              width: 20px;
-              height: 18px;
-              top: 2px;
-              left: 0;
-              background: url(/sites/all/themes/idoctor_theme/image/logo-map.png) no-repeat;
-              background-size: 20px;
-            }
-          }
-          .addressWorkTime {
-            .workTime {
-              p.title {
-                margin: 18px 0 -10px 0px;
-              }
-              p.content {
-                margin: 12px 0 0;
-                line-height: 21px;
-              }
-            } 
-          } 
-          .item {
-            ul {
-              li {
-                margin: 4px 0 16px;
-              }
-            } 
-          } 
-          .social   {
-            .socialDiv {
-              width: 160px;
-              margin: 25px 0px 0px 65px;
-              padding-bottom: 25px;
-              .socialItem {
-                width: 46px;
-                height: 46px;
-              }
-              .vkIcon {
-                a:before {
-                  width: 29px;
-                  height: 17px;
-                  top: 16px;
-                  left: 7px;
-                  background-size: 29px;
-                }
-              } 
-              .fbIcon {
-                a:before {
-                  width: 14px;
-                  height: 38px;
-                  top: 9px;
-                  left: 16px;
-                  background-size: 14px;
-                }
-              } 
-              .instaIcon {
-                a:before {
-                  width: 24px;
-                  height: 24px;
-                  top: 11px;
-                  left: 11px;
-                  background-size: 24px;
-                }
-              } 
-            } 
-          } 
-        } 
-      }
-    }
-  }
-
-
-
-
-
-  @media (min-width: 300px) and (max-width: 1199px) {
-
-    .container {
-      width: 990px;
-    }
-
-    .div-heading, .equipment .container section h2, .discounts .container section h2, .masters .container section h2 {
-      padding: 0 35px;
-    }
-
-    header#navbar, .header, .serviceCenter, .lowPrices, .completing, .discounts, .selectBreakage, .masters, .another, .comments, .anotherTwo, .anotherThree, .contacts, .forma, .footer {
-      letter-spacing: 0.5px;
-    }
-
-
-
-    // -----МЕНЮ----- 1199-992
-
-    header#navbar {
-      .container {
-        .navbar-collapse {
-          nav {
-            ul.menu.nav.navbar-nav {
-              li {
-                margin-right: 35px;
-              }
-            } 
-            .btn.btn-primary {
-              line-height: 10px;
-              width: 135px;
-              margin: 9px 0;
-              height: 22px;
-              font-size: 1em;
-            }
-          } 
-        } 
-      } 
-    } 
-
-
-
-    // -----ШАПКА----- 1199-992
-
-    .header {
-      .container {
-        .headerTop {
-          padding: 21px 0;
-          .headerTopContent {
-            .col-md-3 {
-              &:nth-child(1) {
-                margin-right: 0px;
-              }
-              .find-us {
-                margin-left: -10px;
-                p.find-us-bottom {
-                  padding-left: 23px;
-                  &:before {
-                    background-size: 18px;
-                  }
-                }
-              }
-              .address {
-                width: 270px;
-                margin-left: -30px;
-                p.addBottom {
-                  letter-spacing: -0.3px;
-                  font-size: 1.1em;
-                }
-              }
-              .telephone {
-                &:before {
-                  top: 8px;
-                  left: 28px;
-                  height: 37px;
-                }
-                p.telTop {
-                  margin: -8px 0 7px;
-                }
-                p.telBottom {
-                  &:before {
-                    top: -12px;
-                    left: 45px;
-                    width: 24px;
-                    height: 24px;
-                    background-size: 24px;
-                  }
-                }
-              } 
-            } 
-          } 
-        }
-      } 
-      .headerBottomBanner {
-        .bannerContent {
-          .container {
-            .leftBanner {
-              padding: 46px 20px 47px 25px;
-              .heading {
-                margin-bottom: 5px;
-                line-height: 26px;
-              }
-              p.title {
-                padding-bottom: 8px;
-                margin-top: 0;
-                width: 210px;
-              }
-              ul {
-                padding: 0px 0 0 34px;
-                max-width: 460px;
-                li {
-                  padding-bottom: 0px;
-                  line-height: 20px;
-                }
-              }
-              .phoneBanner a.btn.btn-warning {
-                padding: 5px 19px;
-                font-size: 1em;
-                margin-right: 7px;
-              }
-            }
-          }
-          .rightBanner{
-            .twentyBlock {
-              img {
-                height: 316px;
-              }
-            }
-          }
-        }
-      } 
-    } 
-
-      // .header {
-      //   .container {
-      //     .headerTop {
-      //       padding: 21px 0;
-      //       .headerTopContent {
-      //         .col-md-3 {
-      //           &:nth-child(1) {
-      //             margin-right: 0px;
-      //           }
-      //           .find-us {
-      //             margin-left: -10px;
-      //             p.find-us-bottom {
-      //               padding-left: 23px;
-      //               &:before {
-      //                 background-size: 18px;
-      //               }
-      //             }
-      //           }
-      //           .address {
-      //             width: 270px;
-      //             margin-left: -30px;
-      //             p.addBottom {
-      //               letter-spacing: -0.3px;
-      //               font-size: 1.1em;
-      //             }
-      //           }
-      //           .telephone {
-      //             &:before {
-      //               top: 8px;
-      //               left: 28px;
-      //               height: 37px;
-      //             }
-      //             p.telTop {
-      //               margin: -8px 0 7px;
-      //             }
-      //             p.telBottom {
-      //               &:before {
-      //                 top: -12px;
-      //                 left: 45px;
-      //                 width: 24px;
-      //                 height: 24px;
-      //                 background-size: 24px;
-      //               }
-      //             }
-      //           } 
-      //         } 
-      //       } 
-      //     }
-      //   } 
-      //   .headerBottomBanner {
-      //     .bannerContent {
-      //       .container {
-      //         height: 296px;
-      //         .leftBanner {
-      //           width: 601px;
-      //           padding: 34px 44px 20px 180px;
-      //           left: -165px;
-      //           .heading {
-      //             margin-bottom: 5px;
-      //             line-height: 26px;
-      //           }
-      //           p.title {
-      //             padding-bottom: 8px;
-      //             margin-top: -7px;
-      //           }
-      //           ul {
-      //             padding: 0px 0 0px 34px;
-      //             li {
-      //               padding-bottom: 0px;
-      //               line-height: 20px;
-      //             }
-      //           }
-      //           .phoneBanner a.btn.btn-warning {
-      //             padding: 5px 19px;
-      //             font-size: 1em;
-      //           }
-      //         }
-      //       }
-      //     } 
-      //   }
-      // } 
-
-
-
-    // -----СЕРВИСНЫЙ ЦЕНТР----- 1199-992
-
-    .serviceCenter {
-      padding: 34px 0 0;
-      .container2 {
-        &:after {
-          top: 33px;
-        }
-        .heading {
-          font-size: 2em;
-          &:before {
-            top: 45px;
-            width: 410px;
-          }
-          &:after {
-            width: 410px;
-            top: 45px;
-          }
-        }
-        .serviceContent {
-          font-size: 1.4em;
-          .serviceItem {
-            width: 285px;
-          }
-        }
-      } 
-    }
-
-
-
-    // -----ОБОРУДОВАНИЕ----- 1199-992
-
-    .equipment {
-      &:before {
-        top: 75px;
-      }
-      padding: 50px 0 70px;
-    }
-
-
-
-    // -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 1199-992
-
-    .lowPrices {
-      padding: 48px 0 36px;
-      &:before {
-        top: 70px;
-      }
-      .container3 {
-        p.heading {
-          padding-top: 0;
-        }
-        .topModels {
-          max-width: 738px;
-        }
-        .topModelsItem {
-          height: 285px;
-          &:nth-child(1) {
-            background-size: 90px;
-            background-position: center 80px;
-          }
-          &:nth-child(2) {
-            background-position: center 68px;
-            background-size: 136px;
-          }
-          &:nth-child(3) {
-            background-position: center 120px;
-            background-size: 190px;
-          }
-        }
-        .bottomModels {
-          max-width: 630px;
-          .bottomModelsItem {
-            height: 252px;
-            background-position: center 80px;
-            background-size: 71px 140px;
-            p.model {
-              bottom: 3%;
-            }
-          }
-        }
-      } 
-      div#dinamicBlock1 {
-        max-width: 680px;
-      }
-      .container3 .buttons#dinamicBlock2 {
-        padding: 20px 140px;
-        a.btn.btn-primary {
-          padding: 6px 22px;
-          font-size: 1.1em;
-        }
-      }
-    }
-
-
-
-    // -----КОМПЛЕКТАЦИЯ----- 1199-992
-
-    .completing {
-      padding: 39px 0;
-      &:before {
-        top: 62px;
-      }
-      .container {
-        .completingContent {
-          padding: 40px 0 0 53px;
-          .left {
-            ul {
-              margin: 0;
-              padding-left: 0;
-              li {
-                &:nth-child(1):before {
-                  width: 24px;
-                  height: 50px;
-                  top: 15px;
-                  left: -45px;
-                  background-size: 24px;
-                }
-                &:nth-child(2):before {
-                  width: 34px;
-                  height: 60px;
-                  top: 13px;
-                  left: -47px;
-                  background-size: 28px;
-                }
-                &:nth-child(3):before {
-                  width: 35px;
-                  height: 58px;
-                  top: 15px;
-                  left: -49px;
-                  background-size: 30px;
-                }
-                p.content {
-                  font-size: 1.5em;
-                }
-              } 
-            }
-          } 
-          .right {
-            margin-left: 15px;
-            iframe {
-              height: 263px;
-            }
-          }
-        }
-      } 
-    }
-
-
-
-    // -----АКЦИИ----- 1199-992
-
-    .discounts {
-      padding: 30px 0 60px;
-      .container {
-        section {
-          .view-promotions {
-            margin-top: 30px;
-            .view-content {
-              .views-row {
-                &:nth-child(1) {
-                  height: 400px;
-                  padding: 65px 15px;
-                  .views-field-field-title-discount {
-                    .field-content {
-                      p {
-                        width: 60%;
-                        margin-bottom: 30px;
-                        font-size: 2.7em;
-                        line-height: 40px;
-                      }
-                    }
-                  }
-                  .views-field-field-content-discount {
-                    .field-content {
-                      margin-bottom: 30px;
-                    }
-                  }
-                }
-                &:nth-child(2) {
-                  padding: 50px 0px 45px 20px;
-                  width: 34.4%;
-                  height: 197px;
-                  .views-field-field-title-discount {
-                    .field-content {
-                      p {
-                        line-height: 30px;
-                        font-size: 2em;
-                      }
-                    }
-                  }
-                }
-                &:nth-child(3) {
-                  width: 34.4%;
-                  height: 198px;
-                  padding: 63px 0 0 20px;
-                  .views-field-field-title-discount {
-                    .field-content {
-                      p {
-                        line-height: 30x;
-                        font-size: 2em;                      
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-
-
-    // -----"ПРОБЛЕМНЫЙ" БЛОК----- 1199-992
-
-    .selectBreakage {
-      padding: 35px 0;
-      &:before {
-        top: 58px;
-      }
-      .container {
-        p.heading {
-          margin-top: 5px;
-          margin-bottom: 15px;
-        }
-        .wrap {
-          .selectBreakageContent {
-            padding: 30px 0 26px;
-            .selectBreakWrapp2 {
-              .selectBreakRowItem {
-                padding-left: 70px;
-                margin-bottom: 20px;
-                width: 300px;
-                p.title {
-                  font-size: 1.4em;
-                }
-                .checkbox-label  {
-                  input[type=checkbox]+span {
-                    top: 1px;
-                  }
-                  p.check {
-                    line-height: 16px;
-                    padding: 0 0 0 25px;
-                    font-size: 1.2em;
-                    letter-spacing: 0;
-                  }
-                } 
-                &:nth-child(1) p.title:after, &:nth-child(2) p.title:after, &:nth-child(5) p.title:after, &:nth-child(6) p.title:after, &:nth-child(8) p.title:after, &:nth-child(9) p.title:after {
-                  right: -20px;
-                }
-              }
-            } 
-          }
-        } 
-      } 
-    }
-
-
-
-    // -----МАСТЕРЫ----- 1199-992
-
-    .masters {
-      &:before {
-        top: 100px;
-      }
-      .container {
-        section {
-          h2 {
-            width: 82%;
-          }
-        }
-      }
-
-    }
-
-
-
-    // -----КАКОЙ-ТО БЛОК 1----- 1199-992
-
-    .another {
-      padding: 50px 0 30px;
-      .container {
-        .anotherContent {
-          align-items: flex-start;
-          .left {
-            margin-right: 0;
-            .heading {
-              padding: 0 0 4px 0;
-            }
-            .leftContent {
-              ul {
-                margin: 0;
-                padding: 7px 0 0 0;
-                li {
-                  padding: 5px 0px 7px 32px;
-                  p {
-                    line-height: 20px;
-                    font-size: 1.5em;
-                    letter-spacing: 0;
-                    &:before {
-                      left: -30px;
-                    }
-                  }
-                }
-              }
-            } 
-          }
-          .right {
-            height: 406px;
-            margin-top: 12px;
-          }
-        }
-      } 
-    }
-
-
-
-    // -----КАКОЙ-ТО БЛОК 2----- 1199-992
-
-    .anotherTwo {
-      .container {
-        .anotherTwoContent {
-          padding: 38px 0;
-          p.content {
-            margin: 8px 0 17px;
-          }
-          a.btn.btn-warning {
-            padding: 10px 50px;
-          }
-        }
-      } 
-    } 
-
-
-
-    // -----КОММЕНТАРИИ----- 1199-992
-
-    .comments {
-
-    }
-
-
-
-    // -----КАКОЙ-ТО БЛОК 3----- 1199-992
-
-    .anotherThree {
-      padding: 21px 0;
-      &:before {
-        top: 45px;
-      }
-      .container {
-        .anotherThreeContent {
-          padding: 30px 0 0;
-          .left {
-            iframe {
-              height: 263px;
-              margin: 0;
-            }
-          } 
-          .right {
-            margin-left: 15px;
-            p.title {
-              margin-bottom: 5px;
-              p.content {
-                line-height: 20px;
-                padding: 0;
-                font-size: 1.5em;
-                letter-spacing: 0;
-              }
-            }
-          }
-        }
-      } 
-    }
-
-
-
-    // -----КОНТАКТЫ----- 1199-992
-
-    .contacts {
-      padding: 38px 0;
-      &:before {
-        top: 60px;
-      }
-      .container {
-        .contactsContent {
-          padding: 30px 0;
-          p.title {
-            margin: 0;
-          }
-          .addressContacts {
-            margin-right: 0;
-            padding-left: 80px;
-            &:before {
-              left: 35px;
-            }
-          }
-          .workTimeContacts {
-            padding-left: 35px;
-            padding-right: 0;
-            width: 1175px;
-            &:before {
-              left: 50px;
-            }
-            p.content+p.content {
-              margin: 0 0 0 58px;
-              letter-spacing: 0px;
-            }
-          }
-          .phoneContacts {
-            padding-left: 160px;
-            margin: 0;
-            &:before {
-              left: 100px;
-            }
-            p.content {
-              margin: 0;
-            }
-          }
-        }
-        .row {
-          .bannerContacts {
-            .banner {
-              height: 168px;
-            }
-          }
-        }  
-      } 
-    }
-
-
-
-    // -----КАРТА----- 1199-992
-
-    .maps {
-      .container {
-        iframe {
-          height: 267px;
-        }
-      } 
-    } 
-
-
-
-    // -----ФОРМА----- 1199-992
-
-    .forma {
-      .container {
-        .formWrapp {
-          padding: 36px 0;
-          background-position: 100% 0;
-          .wrap {
-            .heading {
-              padding: 0;
-              .formHeading {
-                width: 100%;
-                margin: 0 auto 10px;
-              }
-            }
-            .formContent {
-              form {
-                .formInputs {
-                  width: 100%;
-                  text-align: center;
-                  margin: 0;
-                  input {
-                    margin-bottom: 14px;
-                    font-size: 1.3em;
-                  }
-                  input.name {
-                    margin-right: 10px;
-                    width: 277px;
-                  }
-                  input.phone {
-                    width: 277px;
-                  }
-                  input.reason {
-                    padding: 11px 25px;
-                    width: 380px;
-                    margin-right: 10px;
-                    letter-spacing: 0;
-                  }
-                }
-              } 
-            } 
-          }
-        }
-      } 
-    } 
-
-
-
-    // -----ПОДВАЛ----- 1199-992
-
-    .footer {
-      padding: 43px 0 34px;
-      .container {
-        .footerContent {
-          p.content {
-            font-size: 1.5em;
-          }
-          p.find-us {
-            margin: -5px 0 0;
-          }
-          .addressWorkTime {
-            .workTime {
-              p.title {
-                margin: 15px 0 -10px;
-              }
-              p.content {
-                line-height: 25px;
-              }
-            } 
-          } 
-          .col-lg-3.col-md-6.leftList.list.item {
-            padding-left: 20px;
-          }
-          .col-lg-3.col-md-6.rightList.list.item {
-            padding-left: 20px;
-          }
-          .item {
-            padding-left: 0;
-            ul {
-              li {
-                margin: 3px 0 14px;
-                a {
-                  font-size: 1.5em;
-                }
-              }
-            } 
-          }
-          .social .socialDiv {
-            margin: 25px 0 0 65px;
-            padding-bottom: 25px;
-          }
-          .copy {
-            padding: 20px 0;
-            font-size: 1.2em;
-          }
-        } 
-      } 
-    }
-  }
-
-
-
-
-
-  @media (min-width: 300px) and (max-width: 991px) {
-
-    .container {
-      width: 750px;
-    }
-
-    .div-heading, .equipment .container section h2, .discounts .container section h2, .masters .container section h2 {
-      font-size: 2.7em;
-      padding: 0 20px;
-    }
-
-
-
-    // -----МОДАЛКА В "ПРОБЛЕМАХ"----- 991-768
-
-    .modal#problemsModal {
-      .modal-dialog {
-        width: 711px;
-        &:before {
-          width: 688px;
-        }
-        &:after {
-          height: 301px;
-        }
-        .modal-content {
-          border: 5px solid rgba(0,0,0,0);
-          .modal-header {
-            padding: 20px 20px 25px;
-            width: 350px;
-            button.close {
-              span {
-                top: -55px;
-                left: 352px;
-              }
-            }
-            form {
-              .formProblems {
-                .name {
-                  font-size: 1.3em;
-                  line-height: 36px;
-                }
-                select {
-                  width: 200px;
-                  height: 32px;
-                }
-                .problemsBlock {  
-                  width: 200px;
-                }
-              }
-            }
-          }
-          .modal-body {
-            padding: 20px 20px 25px;
-            width: 350px;
-            p {
-              &:before {
-                top: 68px;
-              }
-              &:after {
-                bottom: -34px;
-              }
-            }
-            form {
-              input {
-                margin-top: 20px;
-                padding: 12px 12px 12px 24px ;
-              }
-              .btn.btn-primary {
-                margin-top: 20px;
-                padding: 12px;
-                font-size: 1.2em;
-              }
-            }
-          }
-        }
-      }
-    }
-
-
-
-    // -----МЕНЮ----- 991-768
-
-    header#navbar {
-      .container {
-        .navbar-collapse {
-          nav {
-            ul.menu.nav.navbar-nav {
-              li {
-                margin-right: 14px;
-                a {
-                  font-size: 1em;
-                }
-              }
-            }
-            .btn.btn-primary {
-              font-size: 1em;
-              line-height: 9px;
-            }
-          }
-        }
-      }
-    }
-
-
-
-    // -----ШАПКА----- 991-768
-
-    .header {
-      .container {
-        .headerTop {
-          .row {
-            .col-md-3 {
-              .logotype {
-                margin-left: -30px;
-                p.logo {
-                  margin: -5px 0 0 4px;
-                }
-              }
-              .address {
-                width: auto;
-                margin: 0;
-                p.addBottom {
-                  font-size: 1.2em;
-                }
-              }
-              .telephone {
-                p.telTop {
-                  margin: -11px 0 14px;
-                  line-height: 17px;
-                }
-                p.telBottom {
-                  margin: -12px 0 0;
-                  &:before {
-                    display: none; 
-                  }
-                }
-                &:before {
-                  display: none;
-                }
-              } 
-            } 
-            div#find-us {
-              display: none; 
-            }
-            div#find-us, div#address {
-              margin-top: 8px; 
-            }
-          } 
-        } 
-      } 
-      .headerBottomBanner {
-        .bannerContent {
-          display: block;
-          .container {
-            padding: 0;
-            margin: 0;
-            width: 100%;
-            height: auto;
-            .leftBanner {
-              width: 100%;
-              padding: 50px 30px;
-              position: static;
-              text-align: center;
-              .wrapper {
-                max-width: 750px;
-                padding-left: 15px;
-                padding-right: 15px;
-                margin-left: auto;
-                margin-right: auto;
-                .heading {
-                  font-size: 2.6em;
-                }
-                p.title {
-                  padding-bottom: 10px;
-                  margin: 0 auto;
-                  max-width: 300px;
-                  font-size: 2em;
-                  width: 300px;
-                }
-                ul {
-                  padding: 0 0 0 30px;
-                  text-align: left;
-                  margin: 20px auto;
-                  max-width: 720px;
-                  li {
-                    font-size: 2em;
-                    line-height: 28px;
-                    &:before {
-                      top: 12px;
-                      left: -18px;
-                    }
-                  }
-                }
-                .phoneBanner p.phone {
-                  font-size: 2.5em;
-                  margin-left: 10px;
-                  margin-bottom: 0;
-                  a.btn.btn-warning {
-                    padding: 5px 19px;
-                    font-size: 1.2em;
-                    margin: 0;
-                  }
-                }
-              }
-            }
-          }
-          .rightBanner {
-            width: 100%;
-            position: static;
-            .twentyBlock {
-              img {
-                height: auto;
-              }
-            }
-          }
-        } 
-      }
-    } 
-
-
-
-    // -----СЕРВИСНЫЙ ЦЕНТР----- 991-768
-
-    .serviceCenter {
-      padding: 26px 0 0;
-      .container2 {
-        &:after {
-          top: 30px;
-        }
-        .heading {
-          margin-bottom: 26px;
-          font-size: 1.6em;
-          &:before {
-            width: 320px;
-            top: 40px;
-          }
-          &:after {
-            width: 320px;
-            top: 40px;
-          }
-        }
-        .serviceContent {
-          letter-spacing: 0;
-          font-size: 1.3em;
-          .serviceItem {
-            padding-bottom: 30px;
-            line-height: 17px;
-            width: 250px;
-            &:nth-child(1) {
-              padding: 0 0px 30px 53px;
-              &:before {
-                top: 0px;
-                left: 14px;
-                width: 30px;
-                height: 30px;
-                background-size: 30px;
-              }
-            }
-            &:nth-child(2) {
-              padding: 0 0px 30px 45px;
-              &:before {
-                top: 0px;
-                left: 9px;
-                width: 30px;
-                height: 30px;
-                background-size: 30px;
-              }
-            }
-            &:nth-child(3) {
-              margin-top: 10px;
-              padding: 0 0 40px 50px;
-              &:before {
-                top: 3px;
-                left: 22px;
-                width: 18px;
-                height: 34px;
-                background-size: 18px;
-              }
-            }
-          }
-        }
-      } 
-    }
-
-
-
-    // -----ОБОРУДОВАНИЕ----- 991-768
-
-    .equipment {
-      &:before {
-        top: 65px;
-      }
-      padding: 40px 0 60px;
-    }
-
-
-
-    // -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 991-768
-
-    .lowPrices {
-      padding: 36px 0 20px;
-      &:before {
-        top: 55px;
-      }
-      .container3 {
-        .topModels {
-          max-width: 720px;
-        }
-        .bottomModels {
-          max-width: 600px;
-          .bottomModelsItem {
-            p.model {
-              left: 27%;
-            }
-          } 
-        }
-      } 
-      div#dinamicBlock1 {
-        max-width: 600px;
-      }
-      .container3 {
-        .buttons#dinamicBlock2 {
-          padding: 15px 50px;
-          a.btn.btn-primary {
-            padding: 5px 20px;
-            font-size: 1.1em;
-          }
-        }
-      }
-    }
-
-
-
-    // -----КОМПЛЕКТАЦИЯ----- 991-768
-
-    .completing {
-      padding: 30px 0;
-      &:before {
-        top: 50px;
-      }
-      .container {
-        .completingContent {
-          display: block;
-          padding: 0;
-          margin-top: 20px;
-          .left {
-            width: 100%;
-            margin-bottom: 30px;
-            ul {
-              margin: 0;
-              padding-left: 30px;
-              li {
-                margin-bottom: 10px;
-                &:nth-child(1):before {
-                  width: 18px;
-                  height: 38px;
-                  top: 15px;
-                  left: -35px;
-                  background-size: 18px;
-                }
-                &:nth-child(2):before {
-                  width: 34px;
-                  height: 60px;
-                  top: 13px;
-                  left: -37px;
-                  background-size: 21px;
-                }
-                &:nth-child(3):before {
-                  width: 35px;
-                  height: 58px;
-                  top: 15px;
-                  left: -39px;
-                  background-size: 23px;
-                }
-                p.title {
-                  margin-bottom: 5px;
-                }
-                p.content {
-                  line-height: 22px;
-                  text-align: left;
-                  letter-spacing: 0;
-                }
-              }
-            }
-          }
-          .right {
-            margin-left: 0;
-            width: 100%;
-            padding: 0;
-            iframe {
-              height: 400px;
-            }
-          }
-        }
-      } 
-    }
-
-
-
-    // -----АКЦИИ----- 991-768
-
-    .discounts {
-      &:before {
-        top: 47px;
-      }
-      .container {
-        section {
-          .view-promotions {
-            .view-content {
-              .views-row {
-                &:nth-child(1) {
-                  width: 100%;
-                  height: 395px;
-                  margin-bottom: 5px;
-                  .views-field-field-title-discount {
-                    .field-content {
-                      p {
-                        width: 50%;
-                      }
-                    }
-                  }
-                }
-                &:nth-child(2) {
-                  padding: 80px 0 80px 30px;
-                  width: 49.6%;
-                  height: 248px;
-                  margin: 0;
-                }
-                &:nth-child(3) {
-                  width: 49.7%;
-                  height: 198px;
-                  padding: 90px 0 0 30px;
-                  height: 248px;
-                  margin-left: 5px;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-
-
-    // -----"ПРОБЛЕМНЫЙ" БЛОК----- 991-768
-
-    .selectBreakage {
-      .container {
-        .wrap {
-          .selectBreakageContent {
-            padding: 40px 0;
-            .selectBreakWrapp2 {
-              justify-content: center;
-              .selectBreakRowItem {
-                width: 50%;
-                padding-left: 100px;
-                &:nth-child(2) {
-                  order: 8;
-                }
-                &:nth-child(7) {
-                  order: 7;
-                }
-                &:nth-child(9) {
-                  order: 9;
-                }
-                p.title {
-                  letter-spacing: 0;
-                }
-                &:nth-child(1) p.title:after, &:nth-child(5) p.title:after, &:nth-child(7) p.title:after, &:nth-child(8) p.title:after {
-                  content: '';
-                  width: 1px;
-                  height: 100px;
-                  border-right: 1px solid #ccc;
-                  position: absolute;
-                  top: 0;
-                  right: -30px;
-                }
-                &:nth-child(2) p.title:after, &:nth-child(6) p.title:after, &:nth-child(9) p.title:after  {
-                  display: none;
-                }
-              }
-            }
-          }
-        } 
-      } 
-    } 
-
-
-
-    // -----МАСТЕРЫ----- 991-768
-
-    .masters {
-      padding: 40px 0;
-      &:before {
-        top: 80px;
-      }
-      .container {
-        section {
-          h2 {
-            width: 94%;
-          }
-          .view-masters {
-            .view-header {
-              p.heading {
-                line-height: 26px;
-                font-size: 1.7em;
-              }
-            }
-            .owl-carousel {
-              margin-top: 80px;
-            }
-          } 
-        }
-      }
-    }
-
-
-
-    // -----КАКОЙ-ТО БЛОК 1----- 991-768
-
-    .another {
-      padding: 38px 0;
-      text-align: center;
-      .container {
-        .anotherContent {
-          display: block;
-          .left {
-            margin-right: 0;
-            padding: 0;
-            margin-bottom: 20px;
-            width: 100%;
-            .heading {
-              max-width: 400px;
-              margin: 0 auto;
-              text-align: center;
-            }
-            .leftContent {
-              ul {
-                margin: 0;
-                padding: 10px 0 0 5px;
-                li {
-                  p {
-                    line-height: 22px;
-                    text-align: left;
-                    &:before {
-                      left: -32px;
-                    }
-                  } 
-                } 
-              }
-            } 
-          }
-          .right {
-            height: 387px;
-            margin-top: 0;
-            padding: 0;
-            width: 100%;
-          }
-        }
-      } 
-    }
-
-
-
-    // -----КАКОЙ-ТО БЛОК 2----- 991-768
-
-    .anotherTwo {
-      .container {
-        .anotherTwoContent {
-          padding: 29px 0;
-          p.title {
-            margin-bottom: 5px;
-            font-size: 2.6em;
-          }
-          p.content {
-            margin: 0px 0 15px;
-            font-size: 1.45em;
-            letter-spacing: 0;
-          }
-          a.btn.btn-warning {
-            padding: 6px 50px;
-          }
-        }
-      } 
-    } 
-
-
-
-    // -----КОММЕНТАРИИ----- 991-768
-
-    .comments {
-
-    }
-
-
-
-    // -----КАКОЙ-ТО БЛОК 3----- 991-768
-
-    .anotherThree {
-      padding: 20px 0;
-      &:before {
-        top: 40px;
-      }
-      .container {
-        .anotherThreeContent {
-          padding: 25px 0 0;
-          display: block;
-          .left {
-            width: 100%;
-            margin-bottom: 20px;
-            iframe {
-              height: 400px;
-              margin: 0;
-            }
-          }
-          .right {
-            width: 100%;
-            margin: 0;
-            p.content {
-              line-height: 22px;
-              margin-bottom: 15px;
-              letter-spacing: 0;
-            }
-          }
-        }
-      } 
-    }
-
-
-
-    // -----КОНТАКТЫ----- 991-768
-
-    .contacts {
-      padding: 30px 0;
-      &:before {
-        top: 50px;
-      }
-      .container {
-        .contactsContent {
-          padding: 20px 0;
-          text-align: center;
-          .item {
-            width: 240px;
-            padding: 0;
-            margin: 0;
-          }
-          p.content {
-            font-size: 1.5em;
-            letter-spacing: 0;
-          }
-          .addressContacts {
-            p.find-us {
-              padding-left: 20px;
-              display: inline;
-              &:before {
-                width: 16px;
-                height: 15px;
-                top: 4px;
-                left: 0;
-                background-size: 16px;
-              }
-            }
-            &:before {
-              left: 55px;
-              background-size: 16px;
-              width: 16px;
-              height: 30px;
-              top: 0;
-            }
-          } 
-          .workTimeContacts {
-            p.title {
-              margin: 0;
-            }
-            p.content+p.content {
-              margin: 0;
-            }
-            &:before {
-              background-size: 16px;
-              left: 14px;
-              width: 16px;
-              height: 30px;
-              top: 0;
-            }
-          } 
-          .phoneContacts:before {
-            left: 28px;
-            background-size: 29px;
-            width: 29px;
-            height: 29px;
-            top: 0;
-          }
-        }
-        .bannerContacts .banner {
-          height: 126px;
-        }
-      } 
-    }
-
-
-
-    // -----КАРТА----- 991-768
-
-    .maps {
-      .container {
-        iframe {
-          height: 200px;
-        }
-      } 
-    } 
-
-
-
-    // -----ФОРМА----- 991-768
-
-    .forma {
-      padding: 70px 0 0;
-      .container {
-        .formWrapp {
-          padding: 27px 0 0;
-          background-position: 100% 0;
-          .wrap {
-            .heading {
-              padding: 0;
-              .formHeading {
-                width: 100%;
-                margin: 0;
-                text-align: center;
-              }
-            } 
-            .formContent {
-              padding: 30px 0;
-              form {
-                .formInputs {
-                  input.name {
-                    padding: 7px 0 7px 25px;
-                  }
-                  input.phone {
-                    padding: 7px 0 7px 25px;
-                    margin-bottom: 15px;
-                  }
-                  input.reason {
-                    padding: 8px 25px;
-                    width: 370px;
-                  }
-                  .btn-primary {
-                    padding: 6px 49px;
-                    height: 36px;
-                    font-size: 1.3em;
-                    line-height: 21px;
-                  }
-                } 
-              } 
-            }
-          }
-        }
-      }  
-    }
-
-
-
-    // -----ПОДВАЛ----- 991-768
-
-    .footer {
-      padding: 30px 0 20px;
-      .container {
-        .footerContent {
-          flex-wrap: wrap;
-          text-align: center;
-          .item {
-            padding: 0;
-            margin: 0 0 20px 0;
-            width: 50%;
-            ul {
-              padding: 0;
-              margin: 0;
-              li {
-                margin: 0 0 7px; 
-              }
-            }
-          }
-          p.find-us {
-            margin: -7px 0 0;
-            display: inline;
-          }
-          .addressWorkTime {
-            order: 3;
-            .address p.content {
-              margin-bottom: 0;
-            }
-          }
-          .leftList {
-            order: 1;
-            padding: 0!important;
-          } 
-          .rightList {
-            order: 2;
-            padding: 0!important;
-          }
-          .social {
-            order: 4;
-            .socialDiv {
-              margin: 25px auto;
-              padding-bottom: 25px;
-            }
-            p.title {
-              text-align: center;
-              margin-bottom: 25px;
-            }
-            .copy {
-              text-align: center;
-              padding: 0;
-            }
-          } 
-        }
-      } 
-    }
-  }
-
-
-
-
-
-  @media (min-width: 300px) and (max-width: 767px) {
-
-    .container {
-      width: 570px;
-    }
-
-    .div-heading, .equipment .container section h2, .discounts .container section h2, .masters .container section h2 {
-      line-height: 36px;
-      font-size: 2.6em;
-      padding: 0 10px;
-    }
-
-
-
-    // -----МОДАЛКА В "ПРОБЛЕМАХ"----- 767-576
-
-    .modal#problemsModal {
-      .modal-dialog {
-        width: 440px;
-        &:before {
-          width: 415px;
-        }
-        &:after {
-          height: 554px;
-        }
-        .modal-content {
-          display: block;
-          .modal-header {
-            padding: 20px;
-            width: 100%;
-            button.close {
-              span {
-                top: -55px;
-                left: 0;
-                &:before {
-                  width: 20px;
-                  left: 24px;
-                }
-              }
-            }
-            form {
-              .formProblems {
-                select {
-                  width: 270px;
-                }
-                .problemsBlock {  
-                  width: 270px;
-                }
-              }
-            }
-          }
-          .modal-body {
-            padding: 20px;
-            width: 100%;
-            p {
-              &:before {
-                top: 44px;
-              }
-            }
-          }
-        }
-      }
-    }
-
-
-
-    // -----МЕНЮ----- 767-576
-
-    header#navbar {
-      height: 0;
-      .container {
-        .navbar-collapse {
-          top: 61px;
-          width: 100%;
-          position: absolute;
-          margin: 0px;
-          z-index: 1000;
-          background: rgb(65, 86, 107);
-          left: 0px;
-          padding-bottom: 100px;
-          nav {
-            padding-top: 20px;
-            ul.menu.nav.navbar-nav {
-              width: 100%;
-              margin: 0;
-              li {
-                text-align: center;
-                margin: 0;
-                a {
-                  font-size: 1.4em;
-                  display: inline;
-                  padding: 0;
-                }
-                &:first-child {
-                  a:after {
-                    top: 9px;
-                    right: -30px;
-                    background-size: 16px;
-                    width: 16px;
-                    height: 6px;
-                  }
-                } 
-              }
-            }
-            .btn.btn-primary {
-              position: absolute;
-              bottom: 150px;
-              left: 50%;
-              margin: -100px;
-              width: 200px;
-              height: 36px;
-              line-height: 24px;
-              a {
-                font-size: 1.1em;
-              }
-            }
-          }
-        }
-        .navbar-header {
-          .navbar-toggle {
-            position: absolute;
-            top: 0;
-            right: 0;
-            padding: 23px;
-            margin: 0;
-            z-index: 50;
-            .icon-bar {
-              background: #000;
-            }
-          }
-        }
-      }
-    }
-
-
-
-    // -----ШАПКА----- 767-576
-
-    .header {
-      .container {
-        .headerTop {
-          padding: 16px 0 13px;
-          .headerTopContent {
-            display: inline;
-            .col-md-3 {
-              .logotype {
-                margin: 0;
-                img {
-                  width: 40px;
-                }
-                p.logo {
-                  font-size: 2.5em;
-                }
-              }
-            } 
-            #address, #telephone {
-              display: none;
-            }
-          }
-        }
-      } 
-      .headerBottomBanner {
-        .bannerContent {
-          .container {
-            .leftBanner {
-              padding: 40px 0;
-              .wrapper {
-                width: 570px;
-                .phoneBanner {
-                  a.btn.btn-warning {
-                    font-size: 1.1em;
-                    margin: 0 15px 0 0;
-                  }
-                } 
-              }
-            }
-          } 
-        } 
-      } 
-    }  
-
-
-
-    // -----СЕРВИСНЫЙ ЦЕНТР----- 767-576
-
-    .serviceCenter {
-      display: none;
-    }
-
-
-
-    // -----ОБОРУДОВАНИЕ----- 767-576
-
-    .equipment {
-      &:before {
-        top: 60px;
-      }
-      .container {
-        section {
-          .view-equipments {
-            margin-top: 35px;
-            .owl-carousel {
-              .owl-stage-outer {
-                .owl-stage {
-                  .owl-item {
-                    .views-row {
-                      .views-field-field-photo {
-                        .field-content {
-                          img.img-responsive {
-                            width: 50%;
+                      position: relative;
+                      padding: 10px 20px;
+                      text-align: left;
+                      margin: 2%;
+                      width: 370px;
+                      article.node-teaser {
+                        .field-name-field-review-audio-photo {
+                          position: relative;
+                          z-index: 5;
+                          .field-items {
+                            .field-item {
+                              img {
+                                width: 150px;
+                                height: 150px;
+                                border-radius: 50%;
+                                border: 5px solid #00bdf1;
+                                float: left;
+                                margin-right: 15px;
+                              }
+                            }
+                          }
+                        }
+                        .field-name-field-review-audio-name {
+                          background: #f1f3f4;
+                          top: 17px;
+                          left: 63px;
+                          position: absolute;
+                          padding: 41px 0 73px 120px;
+                          z-index: 0;
+                          width: 257px;
+                          border-radius: 70px;
+                          color: #393939;
+                          .field-items {
+                            .field-item {
+                              font-weight: 800;
+                              float: left;    
+                            }
+                          } 
+                        }
+                        .field-name-field-review-audio-years {
+                          .field-items {
+                            .field-item {
+                              position: absolute;
+                              top: 90px;
+                              color: #393939;
+                              z-index: 5;
+                              left: 183px;
+                            }
                           }
                         } 
-                      } 
-                      .views-field-title {
-                        span.field-content {
-                          margin: 0 auto;
+                      }
+                      audio {
+                        margin-top: 20px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            #flamp {
+              section#block-views-review-flamp-block {
+                .view-review-flamp {
+                  .view-content {
+                    display: -webkit-flex;
+                    display: -moz-flex;
+                    display: -ms-flex;
+                    display: -o-flex;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    .views-row {
+                      position: relative;
+                      padding: 10px;
+                      text-align: center;
+                      width: 48%;
+                      margin: 10px;
+                      border-top: 1px solid #eee;
+                      .views-field-field-review-flamp-photo {
+                        .field-content {
+                          img {
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 50%;
+                            margin: 0 auto 60px;
+                          }
                         }
-                      }     
-                    } 
-                  } 
-                }
-              }
-            } 
-          }
-        }
-      }
-    }
-
-
-
-    // -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 767-576
-
-    .lowPrices {
-      padding: 36px 0;
-      &:before {
-        top: 71px;
-      }
-      .container3 {
-        .div-heading {
-          width: 90%;
-          margin: 0 auto 20px;
-          display: block;
-        }
-      } 
-      .mobileBlock {
-        display: block;
-      }
-      .container3 .topModels, .container3 .bottomModels, #dinamicBlock1 {
-        display: none;
-      }
-      .container3 {
-        .buttons#dinamicBlock2 {
-          display: none;  
-          padding: 30px 0 0; 
-          a.btn.btn-primary {
-            padding: 10px;
-            font-size: 1.27em;
-            display: block;
-            width: 200px;
-            margin: 0 auto 15px;
-            border-radius: 25px;  
-          } 
-        }
-      } 
-    } 
-
-
-
-    // -----КОМПЛЕКТАЦИЯ----- 767-576
-
-    .completing {
-      &:before {
-        top: 66px;
-      }
-      .container {
-        .div-heading {
-          width: 80%;
-          margin: 0 auto 20px;
-          display: block;
-        }
-        .completingContent {
-          .left {
-            ul {
-              padding-left: 60px;
-              li {
-                &:nth-child(1):before {
-                  width: 29px;
-                  height: 60px;
-                  top: 4px;
-                  left: -52px;
-                  background-size: 29px;
-                }
-                &:nth-child(2):before {
-                  width: 34px;
-                  height: 60px;
-                  top: 7px;
-                  left: -54px;
-                  background-size: 34px;
-                }
-                &:nth-child(3):before {
-                  width: 35px;
-                  height: 58px;
-                  top: 4px;
-                  left: -55px;
-                  background-size: 35px;
-                }
-              }
-            }
-          } 
-          .right iframe {
-            height: 300px;
-          }
-        } 
-      } 
-    } 
-
-
-
-    // -----АКЦИИ----- 767-576
-
-    .discounts {
-      padding: 30px 0 50px;
-      .container {
-        section {
-          .view-promotions {
-            .view-content {
-              .views-row {
-                &:nth-child(1) {
-                  height: auto;
-                  margin: 0;
-                  margin-bottom: 5px;
-                  .views-field-field-title-discount {
-                    .field-content {
-                      p {
-                        width: auto; 
+                      }
+                      .views-field-field-review-flamp-name {
+                        .field-content {
+                          color: #42648b;
+                          font-weight: 800;
+                        }
+                      }
+                      .views-field-field-review-flamp-date {
+                        .field-content {
+                          color: #a7a7a7;
+                        }
+                      }
+                      .views-field-field-review-flamp-body {
+                        .field-content {
+                          p {
+                            font-size: 1em;
+                            line-height: 22px;
+                          }
+                        }
+                      }
+                      .views-field-nid {
+                        position: absolute;
+                        left: 50%;
+                        margin-left: -67px;
+                        top: 125px;
+                        span.field-content {
+                          .green_circle {
+                            display: -webkit-flex;
+                            display: -moz-flex;
+                            display: -ms-flex;
+                            display: -o-flex;
+                            display: flex;
+                            justify-content: center;
+                            .circle {
+                              background: #1cbf60;
+                              width: 27px;
+                              height: 27px;
+                              color: #fff;
+                              border-radius: 50%;
+                              padding: 5px 10px;
+                              font-size: 0.8em;
+                            }
+                          }
+                        }
                       }
                     }
                   }
                 }
-                &:nth-child(2) {
-                  padding: 60px 15px;
-                  width: 100%;
-                  height: auto;
-                  margin: 0 0 5px 0;
-                  text-align: center;
-                  .views-field-field-title-discount {
-                    .field-content {
-                      p {
-                        width: 85%;
-                        margin: 0 auto 20px;
+              }
+            }
+            #vk {
+              section#block-views-review-social-block {
+                .view-review-social {
+                  .view-content {
+                    display: -webkit-flex;
+                    display: -moz-flex;
+                    display: -ms-flex;
+                    display: -o-flex;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    .views-row {
+                      padding: 10px 20px;
+                      width: 48%;
+                      margin: 10px 0;
+                      border-left: 1px solid #eee;
+                      .views-field-field-review-social-photo {
+                        .field-content {
+                          img {
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 50%;
+                            margin: 0 auto 10px;
+                          }
+                        }
                       }
-
+                      .views-field-field-review-social-name {
+                        .field-content {
+                          color: #42648b;
+                          font-weight: 800;
+                        }
+                      }
+                      .views-field-field-review-social-date {
+                        .field-content {
+                          color: #a7a7a7;
+                        }
+                      }
+                      .views-field-field-review-social-body {
+                        .field-content {
+                          p {
+                            font-size: 1em;
+                            line-height: 22px;
+                          }
+                        }
+                      }
                     }
                   }
                 }
-                &:nth-child(3) {
-                  text-align: center;
-                  width: 100%;
-                  padding: 77px 15px;
-                  height: auto;
-                  margin: 0;
-                }
               }
             }
-          }
-        }
-      }
-    }
-
-
-    // -----"ПРОБЛЕМНЫЙ" БЛОК----- 767-576
-
-    .selectBreakage {
-      &:before {
-        top: 53px;
-      }
-      .container {
-        .div-heading {
-          margin: 0 auto;
-          display: block;
-        }
-        .wrap {
-          .selectBreakageContent {
-            overflow: hidden;
-            height: 404px;
-            .selectBreakWrapp2 {
-              .selectBreakRowItem {
-                width: 100%;
-                padding-left: 28%; 
-                margin-bottom: 25px;
-                order: 0!important;
-                p.title {
-                  font-size: 1.63em;
-                  margin-bottom: 15px;
-                  padding-left: 32px;
-                }
-                p.title:before {
-                  top: 0;
-                  background-size: 17px; 
-                }
-                &:nth-child(1) p.title:before {
-                  top: 0;
-                  background-size: 17px;
-                }
-                #title2:before {
-                  background-size: 11px;
-                  width: 11px;
-                  height: 30px;
-                }
-                &:nth-child(3) p.title:before {
-                  top: 0;
-                  background-size: 16px;
-                }
-                #title4:before {
-                  background-size: 28px;
-                  width: 28px;
-                  height: 28px;
-                  top: -1px;
-                  left: -9px;
-                }
-                #title5:before {
-                  background-size: 18px;
-                  width: 18px;
-                  height: 21px;
-                  top: 3px;
-                }
-                #title7:before {
-                  background-size: 26px;
-                  width: 26px;
-                  height: 27px;
-                  left: -6px;
-                }
-                #title9:before {
-                  background-size: 21px;
-                  width: 21px;
-                  height: 27px;
-                  left: -5px;
-                }
-                .checkbox-label {
-                  margin-bottom: 10px;
-                  input[type=checkbox]+span {
-                    top: -1px;
-                    width: 16px;
-                    height: 16px;
+            #id_70 {
+              section#block-views-review-id70-block {
+                .view-review-id70 {
+                  .view-content {
+                    display: -webkit-flex;
+                    display: -moz-flex;
+                    display: -ms-flex;
+                    display: -o-flex;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    .views-row {
+                      position: relative;
+                      padding: 10px;
+                      text-align: center;
+                      width: 48%;
+                      margin: 10px;
+                      border-top: 1px solid #eee;
+                      .views-field-field-review-flamp-photo {
+                        .field-content {
+                          img {
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 50%;
+                            margin: 0 auto 20px;
+                          }
+                        }
+                      }
+                      .views-field-field-review-flamp-name {
+                        .field-content {
+                          color: #42648b;
+                          font-weight: 800;
+                        }
+                      }
+                      .views-field-field-review-flamp-date {
+                        .field-content {
+                          color: #a7a7a7;
+                        }
+                      }
+                      .views-field-field-review-flamp-body {
+                        .field-content {
+                          p {
+                            font-size: 1em;
+                            line-height: 22px;
+                          }
+                        }
+                      }
+                    }
                   }
-                  input[type=checkbox]:checked+span {
-                    top: -1px;
-                    padding: 0px;
-                    width: 16px;
-                    height: 16px;
-                    background-size: 16px;
-                  }
-                  p.check {
-                    padding: 0 0 0 32px;
-                    font-size: 1.15em;
-                  }
-                } 
-                &:nth-child(1) p.title:after, &:nth-child(5) p.title:after, &:nth-child(7) p.title:after, &:nth-child(8) p.title:after {
-                  display: none;
                 }
               }
-              .mobileOpenButton, .mobileCloseButton {
-                display: block;
+            }
+            .new_comment {
+              border: 1px solid #aaa;
+              margin: 100px auto 0;
+              width: 100%;
+              background: #f9f9f9;
+              h3 {
+                text-transform: uppercase;
+                font-size: 30px;
+                text-align: center;
               }
-            } 
-            .buttonForm {
-              a.btn.btn-primary {
-                padding: 10px 30px;
-              }
-            } 
-          } 
-        } 
-      } 
-    } 
-
-
-
-    // -----КАКОЙ-ТО БЛОК 1----- 767-576
-
-    .another {
-      padding: 30px 0 0;
-      .container {
-        .anotherContent {
-          .left {
-            .heading {
-              max-width: 350px;
-            }
-          } 
-          .right {
-            display: none;
-          }
-        } 
-      } 
-    }
-
-
-
-    // -----КАКОЙ-ТО БЛОК 2----- 767-576
-
-    .anotherTwo {
-      .container {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        .anotherTwoContent {
-          .wrap {
-            width: 570px;
-            padding-left: 15px;
-            padding-right: 15px;
-            margin-left: auto;
-            margin-right: auto;
-            p.title {
-              margin: 0 auto 15px;
-              max-width: 400px;
-              line-height: 34px;
-            }
-            p.content {
-              margin: 0 auto 15px;
-              font-size: 1.45em;
-              max-width: 70%;
-            }
-          }
-        } 
-      }
-    } 
-
-
-
-    // -----КОММЕНТАРИИ----- 767-576
-
-
-
-    // -----КАКОЙ-ТО БЛОК 3----- 767-576
-
-    .anotherThree {
-      .container {
-        .anotherThreeContent {
-          .left {
-            iframe {
-              height: 300px;
-            }
-          } 
-        } 
-      } 
-    } 
-
-
-
-    // -----КОНТАКТЫ----- 767-576
-
-    .contacts {
-      &:before {
-        top: 47px;
-      }
-      .container {
-        .contactsContent { 
-          display: block;
-          .addressContacts:before {
-            left: -50px;
-            background-size: 33px;
-            width: 16px;
-            height: 30px;
-            top: 0;
-            width: 33px;
-            height: 61px;
-          }
-          .workTimeContacts:before {
-            background-size: 25px;
-            left: -46px;
-            width: 25px;
-            height: 48px;
-            top: 0;
-          }
-          .phoneContacts:before {
-            left: -58px;
-            background-size: 47px;
-            width: 47px;
-            height: 47px;
-            top: 0;
-          }
-          .item {
-            max-width: 230px;
-            padding: 0;
-            text-align: left;
-            margin: 0 auto 30px;
-          }
-        }
-        .bannerContacts {
-          .banner {
-            width: 100%;
-            height: 290px;
-            &:nth-child(1), &:nth-child(3) {
-              display: none;
-            }
-          }
-        } 
-      } 
-    } 
-
-
-
-    // -----ФОРМА----- 767-576
-
-    .forma {
-      .container {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        .formWrapp {
-          .wrap {
-            width: 570px;
-            padding-left: 15px;
-            padding-right: 15px;
-            margin-left: auto;
-            margin-right: auto;
-            .heading {
-              padding: 0;
-              .formHeading {
-                line-height: 36px;
-              }
-            } 
-            .formContent {
               form {
-                .formInputs {
-                  input.name, input.phone, input.reason {
-                    width: 300px;
-                    margin: 0 0 10px 0;
-                    letter-spacing: 0;
-                    font-size: 1.1em;
-                  }
-                  input.reason {
-                    padding: 9.5px 25px;
-                  }
-                  .btn-primary  {
-                    display: block;
-                    max-width: 300px;
-                    margin: 0 auto;
-                  }
-                } 
-              } 
-            } 
-          }
-        }
-      }
-    } 
-
-
-
-    // -----ПОДВАЛ----- 767-576
-
-    .footer {
-      .container {
-        .footerContent {
-          display: block;
-          .addressWorkTime {
-            display: none;
-          }
-          .social {
-            p.title {
-              display: none;
-              .socialDiv {  
-                border: none;
-                padding: 0; 
+                padding: 30px;
               }
-            }
-          } 
-          .item {
-            width: 100%;
-            margin-bottom: 40px;
-          }
-        }
-      } 
-    } 
-  }
-
-
-
-
-
-  @media (min-width: 300px) and (max-width: 575px) {
-
-    .container, .header .headerBottomBanner .bannerContent .container .leftBanner .wrapper, .anotherTwo .container .anotherTwoContent .wrap, .forma .container .formWrapp .wrap {
-      width: 100%;
-    }
-
-    .div-heading, .equipment .container section h2, .discounts .container section h2, .masters .container section h2 {
-      font-size: 2.3em;
-    }
-
-
-
-    // -----МОДАЛКА В МЕНЮ----- 575-450
-
-    .modal#menuModal {
-      .modal-dialog {
-        width: 250px;
-        &:before {
-          width: 230px;
-        }
-        &:after {
-          height: 470px;
-        }
-        .modal-content {
-          .modal-header {
-            button.close {
-              span {
-                width: 37px;
-                height: 37px;
-                font-size: 30px;
-                top: -28px;
-                left: -14px;
-                padding: 2px 0 0 2px;
-                &:before {
-                  top: 36px;
-                  left: 18px;
-                  width: 19px;
-                }
-                &:after {
-                  height: 26px;
-                }
-              }
-            }
-            .modal-header-top {
-              height: 100px;
-            }
-            .modal-header-bottom {
-              p {
-                width: 100%;
-                padding: 0 10px;
-              }
-            }
-          }
-          .modal-body {
-            padding: 20px 20px 30px;
-            p {
-              width: 80%;
-              margin: 0 auto;
-            }
-            form {
-              input {
-                padding: 8px 12px 8px 32px;
-                margin-top: 15px;
-              }
-              .btn.btn-primary {
-                padding: 8px;
-                font-size: 1em;
-                margin-top: 15px;
-              }
-            }
-          }
-        }
-      }
-    } 
-
-
-
-    // -----МОДАЛКА В "ПРОБЛЕМАХ"----- 575-450
-
-    .modal#problemsModal {
-      .modal-dialog {
-        width: 250px;
-        &:before {
-          width: 229px;
-        }
-        &:after {
-          height: 616px;
-        }
-        .modal-content {
-          .modal-header {
-            button.close {
-              span {
-                width: 37px;
-                height: 37px;
-                font-size: 30px;
-                top: -48px;
-                left: 4px;
-                &:before {
-                  width: 17px;
-                  left: 20px;
-                  top: 35px;
-                }
-                &:after {
-                  height: 25px;
-                }
-              }
-            }
-            form {
-              .formProblems {
-                display: block;
-                .name {
-                  line-height: 24px;
-                }
-                select {
-                  width: 100%;
-                }
-                .problemsBlock {  
-                  width: 100%;
-                }
-              }
-            }
-          }
-          .modal-body {
-            p {
-              &:before {
-                top: 66px;
-              }
-            }
-            form {
-              input {
-                margin-top: 15px;
-                padding: 10px 10px 10px 20px;
-              }
-              .btn.btn-primary {
-                margin-top: 15px;
+              input[type="text"] {
                 padding: 10px;
-                font-size: 1em;
-              }
-            }
-          }
-        }
-      }
-    }
-
-
-
-    // -----МЕНЮ----- 575-450
-
-    header#navbar {
-      .container {
-        .navbar-collapse {
-          nav {
-            .btn.btn-primary {
-              margin-left: -80px;
-              width: 160px;
-              height: 32px;
-              line-height: 20px;
-              a {
-                font-size: 1.05em;
-              }
-            }
-          }
-        }
-      }
-    }
-
-
-
-    // -----ШАПКА----- 575-450
-
-    .header {
-      .headerBottomBanner {
-        .bannerContent {
-          .container {
-            .leftBanner {
-              .wrapper {
-                .phoneBanner {
-                  display: block;
-                  p.phone {
-                    margin: 0;
-                  }
-                  a.btn.btn-warning {
-                    max-width: 280px;
-                    font-size: 1.4em;
-                    margin: 10px auto 0;
-                  }
-                }
+                width: 100%;
               } 
-            }  
-          } 
-        } 
-      } 
-    } 
-
-
-
-    // -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 575-450
-
-    .lowPrices {
-      .container3 {
-        .div-heading {
-          width: 100%;
-          margin: 0 auto 10px;
-        }
-      } 
-      .mobileBlock {
-        .mobileBlockContent {
-          ul.mobileLeft {
-            padding-left: 55px;
-          }
-        } 
-      } 
-    } 
-
-
-
-    // -----КОМПЛЕКТАЦИЯ----- 575-450
-
-    .completing {
-      &:before {
-        top: 63px;
-      }
-      .container {
-        .div-heading {
-          width: 90%;
-          margin: 0 auto 10px;
-        }
-        .completingContent {
-          .right {
-            iframe {
-              height: 237px;
-            }
-          } 
-        } 
-      } 
-    } 
-
-
-
-    // -----"ПРОБЛЕМНЫЙ" БЛОК----- 575-450
-
-    .selectBreakage {
-      &:before {
-        top: 70px;
-      }
-      .container {
-        .div-heading {
-          width: 80%;
-        }
-      } 
-    } 
-
-
-
-    // -----МАСТЕРЫ----- 575-450
-
-    .masters {
-      &:before {
-        top: 95px;
-      }
-      .container {
-        section {
-          h2 {
-            width: 75%;
-          }
-        }
-      }
-    }
-
-
-
-    // -----КАКОЙ-ТО БЛОК 2----- 575-450
-
-    .anotherTwo {
-      .container {
-        .anotherTwoContent {
-          p.title {
-            font-size: 2.4em;
-          }
-          p.content {
-            max-width: 380px;
-          }
-          a.btn.btn-warning {
-            padding: 10px 70px;
-            font-size: 1.3em;
-            margin-top: 10px;
-          }
-        } 
-      } 
-    } 
-
-
-
-    // -----КАКОЙ-ТО БЛОК 3----- 575-450
-
-    .anotherThree {
-      .container {
-        .anotherThreeContent {
-          .left {
-            iframe {
-              height: 237px;
-            }
-          }  
-        } 
-      } 
-    }
-
-
-
-    // -----КОНТАКТЫ----- 575-450
-
-    .contacts {
-      .container {
-        .contactsContent {
-          .item {
-            margin-left: 30%;
-          }
-        } 
-        .bannerContacts .banner {
-          height: 226px;
-        }
-      } 
-    } 
-  }
-
-
-
-
-
-  @media (min-width: 300px) and (max-width: 449px) {
-
-    .div-heading, .equipment .container section h2, .discounts .container section h2, .masters .container section h2 {
-      line-height: 32px;
-      font-size: 2.3em;
-    }
-
-
-
-    // -----ШАПКА----- 449-400
-
-    .header {
-      .headerBottomBanner {
-        .bannerContent {
-          .container {
-            .leftBanner {
-              .heading {
-                font-size: 2.3em;
+              textarea {
+                width: 100%;
+                height: 100px;
+                margin: 20px 0;
+                padding: 10px; 
               }
-              p.title {
-                font-size: 1.7em;
+              p.add_photo {
+                text-align: left;
+                text-transform: uppercase;
+                font-weight: bold;
+                margin-top: -10px;
               }
-              ul {
-                li {
-                  font-size: 1.7em;
-                }
-              } 
-            } 
-          } 
-        } 
-      } 
-    } 
-
-
-
-    // -----ОБОРУДОВАНИЕ----- 449-400
-
-    .equipment {
-      &:before {
-        top: 56px;
-      }
-      .container {
-        section {
-          h2 {
-            letter-spacing: -1.1px;
-          }
-        }
-      }
-    }
-
-
-
-    // -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 449-400
-
-    .lowPrices {
-      .container3 {
-        p.heading {
-          font-size: 1.5em;
-        }
-      } 
-      .mobileBlock {
-        padding: 40px 0 0;
-        .mobileBlockContent {
-          ul {
-            li {
-              font-size: 1.3em;
-              margin-bottom: 35px;
-              &:before {
-                top: -5px;
-                left: -42px;
-                width: 30px;
-                height: 30px;
-                background-size: 30px;
-                background-repeat: no-repeat;
+              input[type="file"] {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #aaa;
               }
-              &:hover:after {
-                width: 30px;
-                height: 30px;
-                top: -5px;
-                left: -41px;
+              .btn {
+                text-transform: uppercase;
+                padding: 10px 20px;
+                width: 100%;
               }
             }
-          } 
-        } 
-      }
-    }  
-
-
-
-    // -----КОМПЛЕКТАЦИЯ----- 449-400
-
-    .completing {
-      .container {
-        .completingContent {
-          margin-top: 40px;
-          .left {
-            ul {
-              padding-left: 0;
-              li {
-                margin-bottom: 30px;
-                &:before {
-                  top: 0!important;
-                  left: 0!important;
-                }
-                &:nth-child(1) p.title {
-                  margin-bottom: 20px;
-                }
-                p.title {
-                  margin-bottom: 30px;
-                  width: 200px;
-                  padding-left: 60px;
-                }
-              }
-            }
-          } 
-        }
-      } 
-    } 
-
-
-
-    // -----"ПРОБЛЕМНЫЙ" БЛОК----- 449-400
-
-    .selectBreakage {
-      .container {
-        p.heading {
-          font-size: 1.5em;
-          margin-top: 10px;
-        }
-        .wrap {
-          .selectBreakageContent {
-            .selectBreakWrapp2 {
-              .selectBreakRowItem {
-                padding-left: 20%; 
-              }
-            } 
-          } 
-        } 
-      } 
-    } 
-
-
-
-    // -----АКЦИИ----- 449-400
-
-    .discounts {
-      padding: 30px 0;
-      .container {
-        section {
-          .view-promotions {
-            .view-content {
-              .views-row {
-                &:nth-child(1) {
-                  .views-field-nid {
-                    span.field-content {
-                      .btn.btn-warning {
-                        width: 100%;
-                        padding: 8px 0;
-                      }
-                    }
-                  }
-                }
-                &:nth-child(2) {
-                  .views-field-field-title-discount {
-                    .field-content {
-                      p {
-                        width: auto;
-                      }
-                    }
-                  }
-                }
-              }    
-            }
           }
         }
-      }
-    }
-
-
-
-    // -----МАСТЕРЫ----- 449-400
-
-    .masters {
-      &:before {
-        top: 90px;
-      }
-      .container {
-        section {
-          h2 {
+        .sidebar {
+          width: 25%;
+          margin-left: 5%;
+          background: #f9f9f9;
+          padding: 20px;
+          padding-bottom: 0;
+          position: sticky;
+          top: 0;
+          h3 {
+            margin-top: 0;
+          }
+          iframe {
             width: 100%;
+            height: auto;
+            margin-bottom: 20px;
           }
         }
       }
-    }
-
-
-
-    // -----КАКОЙ-ТО БЛОК 2----- 449-400
-
-    .anotherTwo {
-      .container {
-        .anotherTwoContent {
-          p.title {
-            max-width: 300px;
-          }
-          p.content {
-            max-width: 250px;
-          }
-        } 
-      } 
-    } 
-
-
-
-    // -----КОНТАКТЫ----- 449-400
-
-    .contacts .container .bannerContacts .banner {
-      height: 200px;
+      .add_comment_scroll {
+        position: absolute;
+        top: 100px;
+        left: 15px;
+        background: #eee;
+        text-transform: uppercase;
+        color: #333;
+        font-weight: bold;
+        border: 1px solid #333;
+        padding: 10px 20px;
+      }
     }
   }
-
-
-
-
-
-  @media (min-width: 300px) and (max-width: 399px) {
-
-    .div-heading, .equipment .container section h2 {
-      line-height: 24px;
-      font-size: 1.77em;
-    }
-
-
-
-     // -----ШАПКА----- 399-350
-     
-     .header {
-      .headerBottomBanner {
-        .bannerContent {
-          .container {
-            .leftBanner {
-              .wrapper {
-                .heading {
-                  font-size: 1.9em;
-                }
-                p.title {
-                  font-size: 1.5em;
-                  width: 230px;
-                }
-                ul {
-                  padding: 0px 0 0 20px;
-                  li {
-                    font-size: 1.5em;
-                  }
-                } 
-              }    
-            } 
-          } 
-        } 
-      } 
-    } 
-
-
-
-    // -----Оборудование----- 399-350
-
-    .equipment {
-      &:before {
-        top: 52px;
-      }
-    }
-
-
-    // -----НИЗКИЕ ЦЕНЫ НА РЕМОНТ----- 399-350
-
-    .lowPrices {
-      padding: 20px 0 10px;
-      &:before {
-        top: 44px;
-      }
-      .container3 {
-        p.heading {
-          font-size: 1.3em;
-          line-height: 17px;
-        }
-      } 
-      .mobileBlock {
-        .mobileBlockContent {
-          ul.mobileLeft {
-            padding-left: 40px;
-          }
-        } 
-      } 
-    }
-
-
-
-    // -----КОМПЛЕКТАЦИЯ----- 399-350
-
-    .completing {
-      &:before {
-        top: 54px;
-      }
-      .container {
-        .div-heading {
-          width: 85%;
-        }
-        .completingContent {
-          .left {
-            ul {
-              li {
-                &:nth-child(1) {
-                  p.title {
-                    margin-bottom: 10px;
-                  }
-                } 
-                p.title {
-                  margin-bottom: 20px;
-                  width: 200px;
-                  padding-left: 60px;
-                  font-size: 1.4em;
-                }
-              } 
-            } 
-          } 
-          .right iframe {
-            height: 164px;
-          }
-        } 
-      }
-    } 
-
-
-
-    // -----"ПРОБЛЕМНЫЙ" БЛОК----- 399-350
-
-    .selectBreakage {
-      &:before {
-        top: 60px;
-      }
-      .container {
-        p.heading {
-          font-size: 1.3em;
-          width: 70%;
-          margin: 10px auto;
-        }
-        .wrap {
-          .selectBreakageContent {
-            .buttonForm {
-              a.btn.btn-primary {
-                font-size: 1.1em;
-              }
-            } 
-          } 
-        } 
-      } 
-    } 
-
-
-
-    // -----МАСТЕРЫ----- 399-350
-
-    .masters {
-      &:before {
-        top: 77px;
-      }
-      .container {
-        section {
-          h2 {
-            width: 90%;
-            font-size: 1.9em;
-            line-height: 24px;
-          }
-          .view-masters {
-            .view-header {
-              p.heading {
-                font-size: 1.4em;
-                line-height: 20px;
-              }
-            }
-          }
-        }
-      }
-    }
-
-
-
-    // -----КАКОЙ-ТО БЛОК 1----- 399-350
-
-    .another {
-      .container {
-        .anotherContent {
-          .left {
-            .heading {
-              padding-bottom: 5px;
-              font-size: 1.9em;
-            }
-          } 
-        } 
-      } 
-    } 
-
-
-
-    // -----КАКОЙ-ТО БЛОК 2----- 399-350
-
-    .anotherTwo {
-      .container {
-        .anotherTwoContent {
-          p.title {
-            line-height: 26px;
-            font-size: 1.9em;
-          }
-          p.content {
-            font-size: 1.3em;
-          }
-        } 
-      } 
-    } 
-
-
-
-    // -----КАКОЙ-ТО БЛОК 3----- 399-350
-
-    .anotherThree {
-      &:before {
-        top: 32px;
-      }
-      .container {
-        .div-heading {
-          font-size: 1.9em;
-        }
-        .anotherThreeContent {
-          .right {
-            p.title {
-              margin-bottom: 10px;
-              width: 75%;
-            }
-            p.content {
-              margin-bottom: 30px;
-            }
-          } 
-          .left iframe {
-            height: 164px;
-          }
-        } 
-      } 
-    } 
-
-
-
-    // -----КОНТАКТЫ----- 399-350
-
-    .contacts {
-      &:before {
-        top: 40px;
-      }
-      .container {
-        .div-heading {
-          font-size: 1.9em;
-        }
-        .contactsContent {
-          .item {
-            margin-left: 23%;
-          }
-        } 
-        .bannerContacts {
-          .banner {
-            height: 182px;
-          }
-        } 
-      } 
-    } 
-
-
-
-    // -----ФОРМА----- 399-350
-
-    .forma {
-      .container {
-        .heading {
-          .formHeading {
-            line-height: 24px;
-          }
-        } 
-      } 
-    } 
-
-
-
-    // -----ПОДВАЛ----- 399-350
-
-    .footer {
-      .container {
-        .footerContent {
-          .item {
-            margin-bottom: 30px;
-          }
-        } 
-      } 
-    } 
-  }
-
-
-
-
-
-  @media (min-width: 300px) and (max-width: 349px) {
-
-
-
-     // -----"ПРОБЛЕМНЫЙ" БЛОК----- 349-300
-     
-     .selectBreakage {
-      .container {
-        .wrap {
-          .selectBreakageContent {
-            .selectBreakWrapp2 {
-              .selectBreakRowItem {
-                padding-left: 14%;
-              }
-            } 
-          } 
-        } 
-      } 
-    } 
-  }
-
-
-
-
-
-
 
 
 
@@ -8499,6 +4118,336 @@
   }
 }
 
+
+
+
+
+// Страница Переклейка дисплея
+
+#page_wrap {
+  .display_plywood_block_1 {
+    background: #0BBCEF;
+    padding: 60px 0;
+    .container {
+      .row {
+        .col-md-12 {
+          h1 {
+            color: #fff;
+            font-size: 50px;
+            text-transform: uppercase;
+            text-align: center;
+            width: 70%;
+            margin: 0 auto 60px;
+          } 
+          .row {
+            .col-md-6.left {
+              width: 40%;
+              img.img-thumbnail {
+                width: 100%;
+                border: 1px solid #aaa; 
+              }
+              p.pd_formtext {
+                font-size: 29px;
+                color: #fff;
+                position: relative;
+                margin-bottom: 0;
+                margin: 24px 0 15px;
+                text-align: center;
+                padding: 0 30px;
+              }
+              form#send_zakaz_zvonok_form {
+                .form-group {
+                  margin-bottom: 15px;
+                  input.form-control {
+                    height: 40px;
+                    border: 1px solid #aaa;
+                  }
+                }
+                .box-footer {
+                  text-align: center;
+                  button#zakaz_zvonok_submit {
+                    margin: 15px auto;
+                    font-size: 17px;
+                    padding: 12px 51px;
+                    text-transform: uppercase;
+                    background: #E14938;
+                    border: 1px solid #3071a9;
+                    color: #FFF;
+                    border-color: #FFF;
+                  }
+                  .politika {
+                    color: #fff;
+                    font-size: 12px;
+                    a {
+                      color: #333;
+                    }
+                  }
+                }
+              }
+            }
+            .col-md-6.right {
+              width: 60%;
+              margin-top: -25px;
+              .cost_iphone {
+                h2 {
+                  color: #fff;
+                  text-align: center;
+                  margin: 20px auto 40px;
+                  width: 80%;
+                }
+                ul {
+                  font-size: 29px;
+                  color: #fff;
+                  li {
+                    position: relative;
+                    list-style: none;
+                    margin-bottom: 1px;
+                    b {
+                      background: #0BBCEF;
+                      z-index: 1;
+                      padding-right: 5px;
+                      position: relative;
+                    }
+                    span {
+                      float: right;
+                      background: #0BBCEF;
+                      z-index: 1;
+                      display: block;
+                      padding-left: 5px;
+                      position: relative;
+                    }
+                    &:after {
+                      content: "";
+                      display: block;
+                      width: 100%;
+                      height: 1px;
+                      border: 1px dotted;
+                      position: absolute;
+                      bottom: 9px;
+                      z-index: 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }   
+
+  .display_plywood_block_2 {
+    padding: 60px 0;
+    background: #f9f9f9;
+    .container {
+      width: 1680px;
+      h2 {
+        text-align: center;
+        line-height: 60px;
+        width: 75%;
+        font-size: 40px;
+        margin: 0 auto;
+        padding: 0 30px;
+        text-transform: uppercase;
+        margin-bottom: 60px;
+      }
+      .row {
+        .col-md-12 {
+          iframe.video_perekleyka {
+            float: left;
+            margin-right: 70px;
+            width: 39%;
+            height: 380px;
+            border: 1px solid #aaa;
+          }
+          p {
+            font-size: 24px;
+            line-height: 38px;
+            text-align: justify;
+          }
+        }
+      }
+    }
+  }
+
+  .display_plywood_block_3 {
+    background: #fff;
+    padding: 60px 0;
+    .container {
+      h2 {
+        text-align: center;
+        line-height: 40px;
+        font-size: 40px;
+        margin: 0 auto 50px;
+        text-transform: uppercase;
+      }
+      .row {
+        .col-md-6.display_left {
+          margin-right: 50px;
+          width: 40%;
+          p {
+            font-size: 26px;
+            line-height: 40px;
+            text-align: justify;
+          }
+        }
+      }
+      .col-md-6.display_right {
+        width: 56%;
+        margin-top: 10px;
+        .vosst_steps {
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: -o-flex;
+          display: flex;
+          flex-wrap: wrap;
+          margin: -1%;
+          .img_wrap {
+            width: 31%;
+            margin: 1%;
+            border: 1px solid #aaa;
+            a.fancybox {
+              display: block;
+              overflow: hidden;
+              position: relative;
+              .number {
+                position: absolute;
+                left: 50%;
+                background: #0BBCEF;
+                color: #fff;
+                font-size: 19px;
+                border-radius: 50%;
+                width: 27px;
+                height: 27px;
+                margin-left: -14px;
+                z-index: 1;
+                padding: 0 8px;
+              }
+              img.img-rounded {
+                width: 100%;
+                -webkit-transition: all .2s;
+                -moz-transition: all .2s;
+                -ms-transition: all .2s;
+                -o-transition: all .2s;
+                transition: all .2s;
+              }
+              &:hover img {
+                -webkit-transform: scale(1.3) rotate(2deg);
+                -moz-transform: scale(1.3) rotate(2deg);
+                -ms-transform: scale(1.3) rotate(2deg);
+                -o-transform: scale(1.3) rotate(2deg);
+                transform: scale(1.3) rotate(2deg);
+              }
+            }
+            .img_title {
+              text-align: center;
+              font-size: 14px;
+              padding: 10px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .display_plywood_block_4 {
+    color: #333;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 60px 0;
+    text-align: center;
+    background: #f9f9f9;
+    .container {
+      h2 {
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;      
+        font-size: 40px;
+        line-height: 40px;
+      }
+      .table-responsive {
+        margin-top: 30px;
+        table.table {
+          margin: 0;
+          width: 100%;
+          thead {
+            tr {
+              th {
+                h3 {
+                  text-align: center;
+                  font-size: 30px;
+                }
+              }
+            }
+          }
+          tbody {
+            tr {
+              &:hover {
+                background: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .display_plywood_block_5 {
+    background: #fff;
+    padding: 60px 0 0;
+    .container {
+      h2 {
+        text-align: center;
+        margin-bottom: 25px;
+        line-height: 40px;
+        text-transform: uppercase;
+        font-size: 40px;
+      }
+    }
+    .steps_perekleyka {
+      margin-top: 40px;
+      .color_block {
+        padding: 30px 0;
+        .container {
+          &:before {
+            display: table;
+            content: " ";
+          }
+          .step_num {
+            font-size: 50px;
+            border: 1px solid;
+            padding: 15px 20px;
+            width: 103px;
+            text-align: center;
+            box-shadow: 4px 4px 0;
+            float: left;
+            margin-right: 40px;
+          }
+          .step_num_right {
+            float: right;
+          }
+          h3 {
+            text-transform: uppercase;
+            font-size: 26px;
+          }
+          p {
+            font-size: 22px;
+            line-height: 40px;
+          }
+        }
+      }
+      .red_bg {
+        background-color: #FA6257;
+        color: #fff;
+      }
+      .darkblue_bg {
+        background-color: #425178;
+        color: #fff;
+      }
+    }
+  }
+} 
 
 
 
@@ -8669,774 +4618,6 @@
           margin-top: 10px;
         }
       }
-    }
-  }
-}
-
-
-
-
-
-
-// Страница Переклейка дисплея
-
-#page_wrap {
-  .display_plywood_block_1 {
-    background: #0BBCEF;
-    padding: 60px 0;
-    .container {
-      .row {
-        .col-md-12 {
-          h1 {
-            color: #fff;
-            font-size: 50px;
-            text-transform: uppercase;
-            text-align: center;
-            width: 70%;
-            margin: 0 auto 60px;
-          } 
-          .row {
-            .col-md-6.left {
-              width: 40%;
-              img.img-thumbnail {
-                width: 100%;
-                border: 1px solid #aaa; 
-              }
-              p.pd_formtext {
-                font-size: 29px;
-                color: #fff;
-                position: relative;
-                margin-bottom: 0;
-                margin: 24px 0 15px;
-                text-align: center;
-                padding: 0 30px;
-              }
-              form#send_zakaz_zvonok_form {
-                .form-group {
-                  margin-bottom: 15px;
-                  input.form-control {
-                    height: 40px;
-                    border: 1px solid #aaa;
-                  }
-                }
-                .box-footer {
-                  text-align: center;
-                  button#zakaz_zvonok_submit {
-                    margin: 15px auto;
-                    font-size: 17px;
-                    padding: 12px 51px;
-                    text-transform: uppercase;
-                    background: #E14938;
-                    border: 1px solid #3071a9;
-                    color: #FFF;
-                    border-color: #FFF;
-                  }
-                  .politika {
-                    color: #fff;
-                    font-size: 12px;
-                    a {
-                      color: #333;
-                    }
-                  }
-                  // .banner_block {
-                  //  display: -webkit-flex;
-                  //  display: -moz-flex;
-                  //  display: -ms-flex;
-                  //  display: -o-flex;
-                  //  display: flex;
-                  //  margin: -1%;
-                  //  margin-top: 20px;
-                  //  img {
-                  //    margin: 1%;
-                  //    width: 48%;
-                  //    height: auto;
-                  //  }
-                  // }
-                }
-              }
-            }
-            .col-md-6.right {
-              width: 60%;
-              margin-top: -25px;
-              .cost_iphone {
-                h2 {
-                  color: #fff;
-                  text-align: center;
-                  margin: 20px auto 40px;
-                  width: 80%;
-                }
-                ul {
-                  font-size: 29px;
-                  color: #fff;
-                  li {
-                    position: relative;
-                    list-style: none;
-                    margin-bottom: 1px;
-                    b {
-                      background: #0BBCEF;
-                      z-index: 1;
-                      padding-right: 5px;
-                      position: relative;
-                    }
-                    span {
-                      float: right;
-                      background: #0BBCEF;
-                      z-index: 1;
-                      display: block;
-                      padding-left: 5px;
-                      position: relative;
-                    }
-                    &:after {
-                      content: "";
-                      display: block;
-                      width: 100%;
-                      height: 1px;
-                      border: 1px dotted;
-                      position: absolute;
-                      bottom: 9px;
-                      z-index: 0;
-                    }
-                  }
-                }
-              }
-              // .pd_text {
-              //  position: absolute;
-              //  text-align: center;
-              //  bottom: -65px;
-              //  right: 180px;
-              //  p {
-              //    background: #E14938;
-              //    padding: 15px 85px 15px 28px;
-              //    border-radius: 17px;
-              //    font-size: 24px;
-              //    width: 417px;
-              //    position: absolute;
-              //    text-align: left;
-              //    display: block;
-              //    border: 3px solid;
-              //    right: 37px;
-              //    top: -9px;
-              //    z-index: 0;
-              //    box-shadow: 5px 6px 0 2px;
-              //  }
-              //  span {
-              //    color: #fff;
-              //    font-size: 55px;
-              //    background: #E14938;
-              //    padding: 38px 0 0 15px;
-              //    border-radius: 50%;
-              //    width: 160px;
-              //    position: absolute;
-              //    height: 160px;
-              //    display: block;
-              //    border: 3px solid;
-              //    right: 10px;
-              //    top: -37px;
-              //    box-shadow: 4px 5px 0 6px;
-              //    z-index: 0;
-              //  }
-              // }
-            }
-          }
-        }
-      }
-    }
-  }   
-
-  .display_plywood_block_2 {
-    padding: 60px 0;
-    background: #f9f9f9;
-    .container {
-      width: 1680px;
-      h2 {
-        text-align: center;
-        line-height: 60px;
-        width: 75%;
-        font-size: 40px;
-        margin: 0 auto;
-        padding: 0 30px;
-        text-transform: uppercase;
-        margin-bottom: 60px;
-      }
-      .row {
-        .col-md-12 {
-          iframe.video_perekleyka {
-            float: left;
-            margin-right: 70px;
-            width: 39%;
-            height: 380px;
-            border: 1px solid #aaa;
-          }
-          p {
-            font-size: 24px;
-            line-height: 38px;
-            text-align: justify;
-          }
-        }
-      }
-    }
-  }
-
-
-  .display_plywood_block_3 {
-    background: #fff;
-    padding: 60px 0;
-    .container {
-      h2 {
-        text-align: center;
-        line-height: 40px;
-        font-size: 40px;
-        margin: 0 auto 50px;
-        text-transform: uppercase;
-      }
-      .row {
-        .col-md-6.display_left {
-          margin-right: 50px;
-          width: 40%;
-          p {
-            font-size: 26px;
-            line-height: 40px;
-            text-align: justify;
-          }
-        }
-      }
-      .col-md-6.display_right {
-        width: 56%;
-        margin-top: 10px;
-        .vosst_steps {
-          display: -webkit-flex;
-          display: -moz-flex;
-          display: -ms-flex;
-          display: -o-flex;
-          display: flex;
-          flex-wrap: wrap;
-          margin: -1%;
-          .img_wrap {
-            width: 31%;
-            margin: 1%;
-            border: 1px solid #aaa;
-            a.fancybox {
-              display: block;
-              overflow: hidden;
-              position: relative;
-              .number {
-                position: absolute;
-                left: 50%;
-                background: #0BBCEF;
-                color: #fff;
-                font-size: 19px;
-                border-radius: 50%;
-                width: 27px;
-                height: 27px;
-                margin-left: -14px;
-                z-index: 1;
-                padding: 0 8px;
-              }
-              img.img-rounded {
-                width: 100%;
-                -webkit-transition: all .2s;
-                -moz-transition: all .2s;
-                -ms-transition: all .2s;
-                -o-transition: all .2s;
-                transition: all .2s;
-              }
-              &:hover img {
-                -webkit-transform: scale(1.3) rotate(2deg);
-                -moz-transform: scale(1.3) rotate(2deg);
-                -ms-transform: scale(1.3) rotate(2deg);
-                -o-transform: scale(1.3) rotate(2deg);
-                transform: scale(1.3) rotate(2deg);
-              }
-            }
-            .img_title {
-              text-align: center;
-              font-size: 14px;
-              padding: 10px 0;
-            }
-          }
-        }
-      }
-    }
-  }
-
-
-
-  .display_plywood_block_4 {
-    color: #333;
-    font-size: 18px;
-    line-height: 30px;
-    padding: 60px 0;
-    text-align: center;
-    background: #f9f9f9;
-    .container {
-      h2 {
-        text-align: center;
-        text-transform: uppercase;
-        margin: 0;      
-        font-size: 40px;
-        line-height: 40px;
-      }
-      .table-responsive {
-        margin-top: 30px;
-        table.table {
-          margin: 0;
-          width: 100%;
-          thead {
-            tr {
-              th {
-                h3 {
-                  text-align: center;
-                  font-size: 30px;
-                }
-              }
-            }
-          }
-          tbody {
-            tr {
-              &:hover {
-                background: #fff;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .display_plywood_block_5 {
-    background: #fff;
-    padding: 60px 0;
-    .container {
-      h2 {
-        text-align: center;
-        margin-bottom: 25px;
-        line-height: 40px;
-        text-transform: uppercase;
-        font-size: 40px;
-      }
-    }
-    .steps_perekleyka {
-      margin-top: 40px;
-      .color_block {
-        padding: 30px 0;
-        .container {
-          &:before {
-            display: table;
-            content: " ";
-          }
-          .step_num {
-            font-size: 99px;
-            border: 1px solid;
-            padding: 15px 20px;
-            width: 173px;
-            text-align: center;
-            box-shadow: 4px 4px 0;
-            margin-top: 40px;
-            float: left;
-            margin-bottom: 40px;
-            margin-right: 40px;
-          }
-          .step_num_right {
-            float: right;
-          }
-          h3 {
-            margin-top: 35px;
-            text-transform: uppercase;
-            font-size: 26px;
-          }
-          p {
-            font-size: 22px;
-            line-height: 40px;
-          }
-        }
-      }
-      .red_bg {
-        background-color: #FA6257;
-        color: #fff;
-      }
-      .darkblue_bg {
-        background-color: #425178;
-        color: #fff;
-      }
-    }
-  }
-} 
-
-
-
-
-// Страница Отзывы
-
-.comments_page {
-  padding: 80px 0 150px;
-  text-align: center;
-  display: block;
-  &:before {
-    height: 29px;
-  }
-  .container {
-    position: relative;
-    h2 {
-      font-size: 3em;
-      text-transform: uppercase;
-      width: 33%;
-      margin: 0 auto 25px;
-      line-height: 55px;
-      display: block;
-      background: #fff;
-      position: relative;
-    }
-    p.heading {
-      font-size: 1.88em;
-      text-transform: uppercase;
-      max-width: 1000px;
-      margin: 0 auto;
-      line-height: 40px;
-    }
-    .comments_content {
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
-      display: flex;
-      padding: 60px 0;
-      align-items: flex-start;
-      .wrapper {
-        width: 70%;
-        ul.nav-tabs {
-          font-size: 1.125em;
-          text-transform: uppercase;
-          display: -webkit-flex;
-          display: -moz-flex;
-          display: -ms-flex;
-          display: -o-flex;
-          display: flex;
-          justify-content: center;
-          border: 2px solid #ccc;
-          margin: 0 auto 60px;
-          margin-right: -1px;
-          li {
-            width: 100%;
-            a {
-              font-weight: 600;
-              color: #00bdf1;
-              padding: 15px;
-              margin: 0;
-              border: none;
-              border-radius: 0;
-              &:hover {
-                color: #fff;
-                background: #f9a400;
-              }
-            }
-            &.active { 
-              border: none;
-              a {
-                color: #fff;
-                background: #00bdf1;
-                margin: 0;
-                border: none;
-              }
-            }
-            &:nth-child(1) {
-              a {
-
-              }
-            }
-            &:nth-child(2) {
-              a {
-
-              }
-            }
-            &:last-child {
-              a {
-
-              }
-            }
-          } 
-        }
-        .tab-content {
-          #google {
-
-          }
-          #yandex {
-
-          }
-          #audio {
-            position: relative;
-            section#block-views-review-audio-block {
-              .view-review-audio {
-                .view-content {
-                  display: -webkit-flex;
-                  display: -moz-flex;
-                  display: -ms-flex;
-                  display: -o-flex;
-                  display: flex;
-                  justify-content: center;
-                  flex-wrap: wrap;
-                  margin: -2%;
-                  .views-row {
-                    position: relative;
-                    padding: 10px 20px;
-                    text-align: left;
-                    margin: 2%;
-                    width: 370px;
-                    article.node-teaser {
-                      .field-name-field-review-audio-photo {
-                        position: relative;
-                        z-index: 5;
-                        .field-items {
-                          .field-item {
-                            img {
-                              width: 150px;
-                              height: 150px;
-                              border-radius: 50%;
-                              border: 5px solid #00bdf1;
-                              float: left;
-                              margin-right: 15px;
-                            }
-                          }
-                        }
-                      }
-                      .field-name-field-review-audio-name {
-                        background: #f1f3f4;
-                        top: 17px;
-                        left: 63px;
-                        position: absolute;
-                        padding: 41px 0 73px 120px;
-                        z-index: 0;
-                        width: 257px;
-                        border-radius: 70px;
-                        color: #393939;
-                        .field-items {
-                          .field-item {
-                            font-weight: 800;
-                            float: left;    
-                          }
-                        } 
-                      }
-                      .field-name-field-review-audio-years {
-                        .field-items {
-                          .field-item {
-                            position: absolute;
-                            top: 90px;
-                            color: #393939;
-                            z-index: 5;
-                            left: 183px;
-                          }
-                        }
-                      } 
-                    }
-                    audio {
-                      margin-top: 30px;
-                    }
-                  }
-                }
-              }
-            }
-          }
-          #flamp {
-            section#block-views-review-flamp-block {
-              .view-review-flamp {
-                .view-content {
-                  display: -webkit-flex;
-                  display: -moz-flex;
-                  display: -ms-flex;
-                  display: -o-flex;
-                  display: flex;
-                  justify-content: center;
-                  flex-wrap: wrap;
-                  align-items: flex-start;
-                  .views-row {
-                    position: relative;
-                    padding: 10px;
-                    text-align: center;
-                    width: 35%;
-                    margin: 10px;
-                    border-top: 1px solid #eee;
-                    .views-field-field-review-flamp-photo {
-                      .field-content {
-                        img {
-                          width: 100px;
-                          height: 100px;
-                          border-radius: 50%;
-                          margin: 0 auto 60px;
-                        }
-                      }
-                    }
-                    .views-field-field-review-flamp-name {
-                      .field-content {
-                        color: #42648b;
-                        font-weight: 800;
-                      }
-                    }
-                    .views-field-field-review-flamp-date {
-                      .field-content {
-                        color: #a7a7a7;
-                      }
-                    }
-                    .views-field-field-review-flamp-body {
-                      .field-content {
-                        p {
-                          font-size: 1em;
-                          line-height: 22px;
-                        }
-                      }
-                    }
-                    .views-field-nid {
-                      position: absolute;
-                      left: 50%;
-                      margin-left: -67px;
-                      top: 125px;
-                      span.field-content {
-                        .green_circle {
-                          display: -webkit-flex;
-                          display: -moz-flex;
-                          display: -ms-flex;
-                          display: -o-flex;
-                          display: flex;
-                          justify-content: center;
-                          .circle {
-                            background: #1cbf60;
-                            width: 27px;
-                            height: 27px;
-                            color: #fff;
-                            border-radius: 50%;
-                            padding: 4px 10px;
-                            font-size: 0.8em;
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-          #vk {
-            section#block-views-review-social-block {
-              .view-review-social {
-                .view-content {
-                  display: -webkit-flex;
-                  display: -moz-flex;
-                  display: -ms-flex;
-                  display: -o-flex;
-                  display: flex;
-                  justify-content: center;
-                  flex-wrap: wrap;
-                  align-items: flex-start;
-                  .views-row {
-                    padding: 10px 20px;
-                    width: 35%;
-                    margin: 10px 0;
-                    border-left: 1px solid #eee;
-                    .views-field-field-review-social-photo {
-                      .field-content {
-                        img {
-                          width: 100px;
-                          height: 100px;
-                          border-radius: 50%;
-                          margin: 0 auto 10px;
-                        }
-                      }
-                    }
-                    .views-field-field-review-social-name {
-                      .field-content {
-                        color: #42648b;
-                        font-weight: 800;
-                      }
-                    }
-                    .views-field-field-review-social-date {
-                      .field-content {
-                        color: #a7a7a7;
-                      }
-                    }
-                    .views-field-field-review-social-body {
-                      .field-content {
-                        p {
-                          font-size: 1em;
-                          line-height: 22px;
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-          #id_70 {
-
-          }
-          .new_comment {
-            border: 1px solid #aaa;
-            margin: 100px auto 0;
-            width: 50%;
-            background: #f9f9f9;
-            h3 {
-              text-transform: uppercase;
-              font-size: 30px;
-              text-align: center;
-            }
-            form {
-              padding: 30px;
-            }
-            input[type="text"] {
-              padding: 10px;
-              width: 100%;
-            } 
-            textarea {
-              width: 100%;
-              height: 100px;
-              margin: 20px 0;
-              padding: 10px; 
-            }
-            p.add_photo {
-              text-align: left;
-              text-transform: uppercase;
-              font-weight: bold;
-              margin-top: -10px;
-            }
-            input[type="file"] {
-              width: 100%;
-              padding: 10px;
-              border: 1px solid #aaa;
-            }
-            .btn {
-              text-transform: uppercase;
-              padding: 10px 20px;
-              width: 100%;
-            }
-          }
-        }
-      }
-      .sidebar {
-        width: 25%;
-        margin-left: 5%;
-        background: #f9f9f9;
-        padding: 20px;
-        padding-bottom: 0;
-        position: sticky;
-        top: 0;
-        h3 {
-          margin-top: 0;
-        }
-        iframe {
-          width: 100%;
-          height: auto;
-          margin-bottom: 20px;
-        }
-      }
-    }
-    .add_comment_scroll {
-      position: absolute;
-      top: 100px;
-      left: 15px;
-      background: #eee;
-      text-transform: uppercase;
-      color: #333;
-      font-weight: bold;
-      border: 1px solid #333;
-      padding: 10px 20px;
     }
   }
 }
