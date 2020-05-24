@@ -106,6 +106,15 @@
     font-size: 16px;
   }
 
+  .container3 {
+    max-width: 1270px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+  }
+
 
 
   // -----МОДАЛКА В ШАПКЕ----- 1920-1710
@@ -1127,6 +1136,7 @@
               color: #feffff;
               font-size: 2.25em;
               font-weight: 700;
+              letter-spacing: -1.2px;
             }
             p.title {
               font-size: 1.5em;
@@ -1355,7 +1365,7 @@
                         font-size: 1em;
                         position: absolute;
                         left: 0;
-                        top: -1000px;
+                        top: -320px;
                       }
                     }
                   }
@@ -1460,12 +1470,6 @@
       top: 125px;
     }
     .container3 {
-      max-width: 1270px;
-      margin-left: auto;
-      margin-right: auto;
-      padding-left: 15px;
-      padding-right: 15px;
-      position: relative;
       .div-heading {
         background: #f9f9f9;
       }
@@ -1480,25 +1484,27 @@
           position: relative;
           width: 33%;
           cursor: pointer;
-          background-position: center 66%;
+          background-position: 50% 70%;
           background-repeat: no-repeat;
-          height: 520px;
+          height: 450px;
           p.model {
             position: absolute;
             color: #00bdf1;
             font-size: 1.13em;
             font-weight: 600;
             bottom: 0;
-            left: 41%;
+            left: 50%;
+            transform: translate(-50%, 0);
           }
           &:before {
             content: '';
             background: url(/sites/all/themes/idoctor_theme/image/unselected-model.png) no-repeat;
             position: absolute;
-            width: 39px;
-            height: 39px;
-            top: 9.5%;
-            left: 45.5%;
+            width: 40px;
+            height: 40px;
+            top: 10%;
+            left: 50%;
+            margin-left: -20px;
             background-position: center;
           }
           &:hover:before {
@@ -1510,26 +1516,22 @@
             border-radius: 30px;
             z-index: 10;
           }
-          &:nth-child(1) {
+          &#device_iphone {
             background-image: url(/sites/all/themes/idoctor_theme/image/iphone-pic.png);
-            background-size: 171px;
+            background-size: 120px;
           }
-          &:nth-child(2) {
+          &#device_ipad {
             background-image: url(/sites/all/themes/idoctor_theme/image/ipad-pic.png);
-            background-size: 242px;
-            margin: 0 60px;
-            p.model {
-              left: 45%;
-            }
+            background-size: 180px;
           }
-          &:nth-child(3) {
+          &#device_macbook {
             background-image: url(/sites/all/themes/idoctor_theme/image/macbook-pic.png);
-            background-position: 180% 67.3%;
-            background-size: 365px;
+            background-size: 320px;
+          } 
+          &#device_apple_watch {
+            background-image: url(/sites/all/themes/idoctor_theme/image/apple_watch-pic.png);
+            background-size: 140px;
           }  
-          &:nth-child(3):before, &:nth-child(3):after  {
-            left: 47.5%;
-          }
           &:hover p.model {
             color: #f5a720;
             text-decoration: underline;
@@ -1538,16 +1540,17 @@
         }   
       }
       .bottomModels {
-        max-width: 1130px;
-        margin: 25px auto 2px;
-        padding-right: 30px;
+        // max-width: 1130px;
+        margin: 25px auto 0;
+        flex-wrap: wrap;
+        justify-content: center;
         .bottomModelsItem {
           height: 350px;
-          width: 20%;
+          width: 10%;
           cursor: pointer;
           position: relative;
           background-repeat: no-repeat;
-          background-position: 63% 59%;
+          background-position: 50% 60%;
           background-size: 84px;
           p.model {
             position: absolute;
@@ -1555,23 +1558,25 @@
             font-size: 1.13em;
             font-weight: 600;
             bottom: 4%;
-            left: 43%;
+            left: 50%;
+            transform: translate(-50%, 0);
           }
           &:before {
             content: '';
             position: absolute;
-            width: 39px;
-            height: 39px;
+            width: 40px;
+            height: 40px;
             background: url(/sites/all/themes/idoctor_theme/image/unselected-model.png) no-repeat;
-            top: 13%;
+            top: 10%;
             left: 50%;
             background-position: center;
+            margin-left: -20px;
           }
           &:hover:before {
             content: '';
             position: absolute;
-            width: 41px;
-            height: 41px;
+            width: 42px;
+            height: 42px;
             border: 4px solid #f5a720;
             border-radius: 30px;
             z-index: 10;
@@ -1581,27 +1586,35 @@
             text-decoration: underline;
             transition: 0.5s ease;
           }
-          &:nth-child(1) {
+          &#device_samsung {
             background-image: url(/sites/all/themes/idoctor_theme/image/samsung-pic.png);
-             p.model {
-              left: 38%;
-            }
           }
-          &:nth-child(2) {
+          &#device_xiaomi {
+            background-image: url(/sites/all/themes/idoctor_theme/image/xiomi-pic.png);
+          }
+          &#device_honor {
             background-image: url(/sites/all/themes/idoctor_theme/image/honor-pic.png);
           }
-          &:nth-child(3) {
+          &#device_huawei {
             background-image: url(/sites/all/themes/idoctor_theme/image/huawei-pic.png);
-            margin: 0 -10px;
           }
-          &:nth-child(4) {
-            background-image: url(/sites/all/themes/idoctor_theme/image/meizu-pic.png);
-            p.model {
-              left: 46%;
-            }
-          }
-          &:nth-child(5) {
+          &#device_asus {
             background-image: url(/sites/all/themes/idoctor_theme/image/xiomi-pic.png);
+          }
+          &#device_meizu {
+            background-image: url(/sites/all/themes/idoctor_theme/image/meizu-pic.png);
+          }
+          &#device_zte {
+            background-image: url(/sites/all/themes/idoctor_theme/image/samsung-pic.png);
+          }
+          &#device_lenovo {
+            background-image: url(/sites/all/themes/idoctor_theme/image/xiomi-pic.png);
+          }
+          &#device_sony {
+            background-image: url(/sites/all/themes/idoctor_theme/image/honor-pic.png);
+          }
+          &#device_oppo {
+            background-image: url(/sites/all/themes/idoctor_theme/image/huawei-pic.png);
           }
         } 
       }  
@@ -1642,7 +1655,7 @@
               color: #f5a720;
               transition: .5s ease;
             }
-            &:hover:after {
+            &:hover:before {
              content: '';
              position: absolute;
              width: 41px;
@@ -1692,29 +1705,36 @@
   }
   .container3 {
     .buttons#dinamicBlock2 {
-      padding: 40px;
+      padding: 0 0 40px;
       .models {
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        flex-wrap: wrap;
-        a.btn.btn-primary {
-          padding: 5px;
-          margin: 0 5px 10px;
-          color: #000;
-          font-weight: 600;
+        h2 {
+          margin: 20px 0;
           text-transform: uppercase;
-          border-radius: 6px;
-          background: #f9f9f9;
-          border: 2px solid #00bdf1;
-          width: 280px;
-          &:hover {
+        }
+        .wrapper {
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: -o-flex;
+          display: flex;
+          flex-wrap: wrap;
+          a.btn.btn-primary {
+            padding: 5px;
+            margin: 0 4px 8px;
             color: #000;
-            background: #f5a720;
-            transition: 0.5s ease;
-          }
+            font-weight: 600;
+            text-transform: capitalize;
+            border-radius: 6px;
+            background: #f9f9f9;
+            border: 2px solid #00bdf1;
+            width: 147px;
+            &:hover {
+              color: #000;
+              background: #f5a720;
+              border: 2px solid #f5a720;
+              transition: 0.5s ease;
+            }
+          }  
         }
       }
       .hidden_block_models {
@@ -1722,7 +1742,7 @@
         width: 100%;
       }
       .models_iphone {
-        display: flex;
+        display: block;
       }
     }
   }
@@ -1933,8 +1953,8 @@
                   height: 100%;
                 }
                 .views-field-field-title-discount {
-                position: relative;
-                z-index: 500;
+                  position: relative;
+                  z-index: 500;
                   .field-content {
                     p {
                       font-size: 2.3em;
@@ -2449,14 +2469,14 @@
     display: block;
     position: relative;
     &:before {
-      top: 29px;
+      top: 106px;
     }
     .container {
       .comments_content {
         h2 {
           font-size: 3em;
           text-transform: uppercase;
-          width: 33%;
+          width: 37%;
           margin: 0 auto 25px;
           line-height: 55px;
           display: block;
@@ -2528,8 +2548,8 @@
         .tab-content {
           #home {
             position: relative;
-            section#block-views-review-audio-block {
-              .view-review-audio {
+            section#block-views-review-audio-main-block {
+              .view-review-audio-main {
                 .view-content {
                   display: -webkit-flex;
                   display: -moz-flex;
@@ -2544,7 +2564,7 @@
                     padding: 10px 20px;
                     text-align: left;
                     margin: 1%;
-                    width: 320px;
+                    width: 380px;
                     article.node-teaser {
                       .field-name-field-review-audio-photo {
                         position: relative;
@@ -2600,23 +2620,24 @@
             }
           }
           #menu1 {
-            section#block-views-review-flamp-block {
-              .view-review-flamp {
+            section#block-views-review-flamp-main-block {
+              .view-review-flamp-main {
                 .view-content {
                   display: -webkit-flex;
                   display: -moz-flex;
                   display: -ms-flex;
                   display: -o-flex;
                   display: flex;
+                  margin: -1%;
                   justify-content: center;
                   flex-wrap: wrap;
                   align-items: flex-start;
                   .views-row {
                     position: relative;
-                    padding: 10px 10px 10px 30px;
+                    padding: 20px 10px 20px 30px;
                     text-align: left;
-                    width: 35%;
-                    margin: 10px;
+                    width: 48%;
+                    margin: 1%;
                     border-top: 1px solid #eee;
                     display: -webkit-flex;
                     display: -moz-flex;
@@ -2632,7 +2653,7 @@
                           height: 100px;
                           border-radius: 50%;
                           float: left;
-                          margin-right: 15px;
+                          margin-right: 25px;
                         }
                       }
                     }
@@ -2650,7 +2671,7 @@
                       }
                     }
                     .views-field-field-review-flamp-body {
-                      margin-left: 115px;
+                      margin-left: 125px;
                       margin-top: -70px;
                       .field-content {
                         p {
@@ -2662,7 +2683,7 @@
                     .views-field-nid {
                       position: absolute;
                       left: 0;
-                      top: 125px;
+                      top: 135px;
                       span.field-content {
                         .green_circle {
                           display: -webkit-flex;
@@ -2688,22 +2709,23 @@
             }
           }
           #menu2 {
-            section#block-views-review-social-block {
-              .view-review-social {
+            section#block-views-review-social-main-block {
+              .view-review-social-main {
                 .view-content {
                   display: -webkit-flex;
                   display: -moz-flex;
                   display: -ms-flex;
                   display: -o-flex;
                   display: flex;
+                  margin: -1%;
                   justify-content: center;
                   flex-wrap: wrap;
                   align-items: flex-start;
                   .views-row {
                     padding: 10px 20px;
                     text-align: left;
-                    width: 35%;
-                    margin: 10px 0;
+                    width: 48%;
+                    margin: 1%;
                     border-left: 1px solid #eee;
                     display: -webkit-flex;
                     display: -moz-flex;
@@ -2719,7 +2741,7 @@
                           height: 100px;
                           border-radius: 50%;
                           float: left;
-                          margin-right: 15px;
+                          margin-right: 20px;
                         }
                       }
                     }
@@ -2737,7 +2759,7 @@
                       }
                     }
                     .views-field-field-review-social-body {
-                      margin-left: 115px;
+                      margin-left: 120px;
                       margin-top: -70px;
                       .field-content {
                         p {
@@ -3256,6 +3278,370 @@
 
 
 
+  // Страница "ТИП УСТРОЙСТВА"----- 1920-1710
+  
+  .affordable-price {
+    .buttonsBlock {
+      border-bottom: none;
+      .container3 {
+        .buttonsBlockContent_type_of_device {
+          text-align: left;
+          .apple_device {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            justify-content: center;
+            a {
+              width: 25%;
+              .device {
+                position: relative;
+                cursor: pointer;
+                background-position: 50% 70%;
+                background-repeat: no-repeat;
+                height: 450px;
+                p.model {
+                  position: absolute;
+                  color: #00bdf1;
+                  font-size: 1.13em;
+                  font-weight: 600;
+                  bottom: 0;
+                  left: 50%;
+                  transform: translate(-50%, 0);
+                }
+                &:before {
+                  content: '';
+                  background: url(/sites/all/themes/idoctor_theme/image/unselected-model.png) no-repeat;
+                  position: absolute;
+                  width: 40px;
+                  height: 40px;
+                  top: 10%;
+                  left: 50%;
+                  margin-left: -20px;
+                  background-position: center;
+                }
+                &:hover:before {
+                  content: '';
+                  position: absolute;
+                  width: 41px;
+                  height: 41px;
+                  border: 4px solid #f5a720;
+                  border-radius: 30px;
+                  z-index: 10;
+                }
+                &.device_iphone {
+                  background-image: url(/sites/all/themes/idoctor_theme/image/iphone-pic.png);
+                  background-size: 120px;
+                }
+                &.device_ipad {
+                  background-image: url(/sites/all/themes/idoctor_theme/image/ipad-pic.png);
+                  background-size: 180px;
+                }
+                &.device_macbook {
+                  background-image: url(/sites/all/themes/idoctor_theme/image/macbook-pic.png);
+                  background-size: 320px;
+                } 
+                &.device_apple_watch {
+                  background-image: url(/sites/all/themes/idoctor_theme/image/apple_watch-pic.png);
+                  background-size: 140px;
+                }  
+                &:hover p.model {
+                  color: #f5a720;
+                  text-decoration: underline;
+                  transition: 0.5s ease;
+                }
+              } 
+            }
+          }
+          .smartphone_device {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            justify-content: center;
+            a {
+              width: 25%;
+              .device {
+                position: relative;
+                cursor: pointer;
+                background-position: 50% 70%;
+                background-repeat: no-repeat;
+                height: 350px;
+                p.model {
+                  position: absolute;
+                  color: #00bdf1;
+                  font-size: 1.13em;
+                  font-weight: 600;
+                  bottom: 0;
+                  left: 50%;
+                  transform: translate(-50%, 0);
+                }
+                &:before {
+                  content: '';
+                  background: url(/sites/all/themes/idoctor_theme/image/unselected-model.png) no-repeat;
+                  position: absolute;
+                  width: 40px;
+                  height: 40px;
+                  top: 10%;
+                  left: 50%;
+                  margin-left: -20px;
+                  background-position: center;
+                }
+                &:hover:before {
+                  content: '';
+                  position: absolute;
+                  width: 41px;
+                  height: 41px;
+                  border: 4px solid #f5a720;
+                  border-radius: 30px;
+                  z-index: 10;
+                }
+                &.device_samsung {
+                  background-image: url(/sites/all/themes/idoctor_theme/image/samsung-pic.png);
+                  background-size: 100px;
+                }
+                &.device_xiaomi {
+                  background-image: url(/sites/all/themes/idoctor_theme/image/xiomi-pic.png);
+                  background-size: 100px;
+                }
+                &.device_honor {
+                  background-image: url(/sites/all/themes/idoctor_theme/image/honor-pic.png);
+                  background-size: 100px;
+                } 
+                &.device_huawei {
+                  background-image: url(/sites/all/themes/idoctor_theme/image/huawei-pic.png);
+                  background-size: 100px;
+                }  
+                &.device_asus {
+                  background-image: url(/sites/all/themes/idoctor_theme/image/samsung-pic.png);
+                  background-size: 100px;
+                }
+                &.device_meizu {
+                  background-image: url(/sites/all/themes/idoctor_theme/image/meizu-pic.png);
+                  background-size: 100px;
+                }
+                &.device_zte {
+                  background-image: url(/sites/all/themes/idoctor_theme/image/samsung-pic.png);
+                  background-size: 100px;
+                } 
+                &.device_lenovo {
+                  background-image: url(/sites/all/themes/idoctor_theme/image/samsung-pic.png);
+                  background-size: 100px;
+                }  
+                &.device_sony {
+                  background-image: url(/sites/all/themes/idoctor_theme/image/samsung-pic.png);
+                  background-size: 100px;
+                }
+                &.device_oppo {
+                  background-image: url(/sites/all/themes/idoctor_theme/image/samsung-pic.png);
+                  background-size: 100px;
+                }
+                &:hover p.model {
+                  color: #f5a720;
+                  text-decoration: underline;
+                  transition: 0.5s ease;
+                }
+              } 
+            }
+          }
+          .tablet_device {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            a {
+              width: 13%;
+              .device {
+                position: relative;
+                cursor: pointer;
+                background-position: 50% 70%;
+                background-repeat: no-repeat;
+                height: 350px;
+                p.model {
+                  position: absolute;
+                  color: #00bdf1;
+                  font-size: 1.13em;
+                  font-weight: 600;
+                  bottom: 0;
+                  left: 50%;
+                  transform: translate(-50%, 0);
+                }
+                &:before {
+                  content: '';
+                  background: url(/sites/all/themes/idoctor_theme/image/unselected-model.png) no-repeat;
+                  position: absolute;
+                  width: 40px;
+                  height: 40px;
+                  top: 10%;
+                  left: 50%;
+                  margin-left: -20px;
+                  background-position: center;
+                }
+                &:hover:before {
+                  content: '';
+                  position: absolute;
+                  width: 41px;
+                  height: 41px;
+                  border: 4px solid #f5a720;
+                  border-radius: 30px;
+                  z-index: 10;
+                }
+                &.t_device_lg {
+                  background-image: url(/sites/all/themes/idoctor_theme/image/tablet.png);
+                  background-size: 230px;
+                }
+                &.t_device_asus {
+                  background-image: url(/sites/all/themes/idoctor_theme/image/tablet.png); 
+                  background-size: 230px;
+                }
+                &.t_device_nokia {
+                  background-image: url(/sites/all/themes/idoctor_theme/image/tablet.png);
+                  background-size: 230px;              
+                } 
+                &.t_device_lenovo {
+                  background-image: url(/sites/all/themes/idoctor_theme/image/tablet.png);
+                  background-size: 230px;
+                }  
+                &.t_device_samsung {
+                  background-image: url(/sites/all/themes/idoctor_theme/image/tablet.png);
+                  background-size: 230px;
+                }
+                &.t_device_xiaomi {
+                  background-image: url(/sites/all/themes/idoctor_theme/image/tablet.png);
+                  background-size: 230px;   
+                }           
+                &.t_device_huawei {
+                  background-image: url(/sites/all/themes/idoctor_theme/image/tablet.png);;
+                  background-size: 230px;
+                } 
+                &.t_device_sony {
+                  background-image: url(/sites/all/themes/idoctor_theme/image/tablet.png);
+                  background-size: 230px;
+                }  
+              } 
+            }
+          }
+          select {  
+            padding: 5px 20px;
+            font-weight: 600;
+            border-radius: 6px;
+            background: #fff;
+            border: 2px solid #00bdf1;
+            color: #333;
+            transition: all 0.5s ease;
+            text-transform: uppercase;
+            font-size: 14px;
+            cursor: pointer;
+            width: 350px;
+            margin-top: 50px;
+            margin-right: 20px;
+            &:hover {
+              color: #333;
+              background: #f5a720;
+              border: 2px solid #f5a720;
+            }
+            option {
+              background: #fff;
+              color: #c32;
+              font-size: 1em;
+            }
+            &.select {
+              margin-left: 100px;
+            }
+          }
+          .new_select {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+  
+
+
+
+
+
+  // -----СТРАНИЦА "ТИП МОДЕЛИ УСТРОЙСТВА"----- 1920-1710
+  
+  .affordable-price {
+    .buttonsBlock {
+      .container3 {
+        .buttonsBlockContent_type_of_model_device {
+          text-align: left;
+          h2 {
+            text-transform: uppercase;
+            margin-top: -10px;
+            margin-bottom: 20px;
+            text-align: center;
+          }
+          .models_block {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            flex-wrap: wrap;
+            margin: -4px;
+            a.btn.btn-primary {
+              padding: 5px;
+              margin: 0 4px 8px;
+              color: #000;
+              font-weight: 600;
+              text-transform: capitalize;
+              border-radius: 6px;
+              background: #fff;
+              border: 2px solid #00bdf1;
+              width: 148px;
+              &:hover {
+                color: #333;
+                background: #f5a720;
+                border: 2px solid #f5a720;
+                transition: 0.5s ease;
+              }
+            }
+          }
+          select {  
+            padding: 5px 20px;
+            font-weight: 600;
+            border-radius: 6px;
+            background: #fff;
+            border: 2px solid #00bdf1;
+            color: #333;
+            transition: all 0.5s ease;
+            text-transform: uppercase;
+            font-size: 14px;
+            cursor: pointer;
+            width: 350px;
+            height: 34px;
+            margin-right: 20px;
+            margin-top: 20px;
+            &:hover {
+              color: #333;
+              background: #f5a720;
+              border: 2px solid #f5a720;
+            }
+            option {
+              background: #fff;
+              color: #c32;
+              font-size: 1em;
+            }
+          }
+          .new_select {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
   // -----СТРАНИЦА "УСТРОЙСТВА"----- 1920-1710
   
   img.device_image {
@@ -3265,6 +3651,9 @@
   video.device_video {
     width: 790px;
     height: 470px;
+  }
+  .breadcrumb {
+    display: none;
   }
 
   .affordable-price {
@@ -3295,19 +3684,20 @@
           display: -o-flex;
           display: flex;
           flex-wrap: wrap;
+          margin: -4px;
           a.btn.btn-primary {
-            padding: 5px 30px;
-            color: #333;
+            padding: 5px 20px;
+            margin-right: 20px;
+            color: #000;
             font-weight: 600;
-            text-transform: uppercase;
+            text-transform: capitalize;
             border-radius: 6px;
             background: #fff;
             border: 2px solid #00bdf1;
-            margin-right: 20px;
-            margin-bottom: 20px;
             &:hover {
               color: #333;
               background: #f5a720;
+              border: 2px solid #f5a720;
               transition: 0.5s ease;
             }
           }
@@ -3322,12 +3712,13 @@
             text-transform: uppercase;
             font-size: 14px;
             cursor: pointer;
-            margin-right: 20px;
-            margin-bottom: 20px;
             width: 350px;
+            height: 34px;
+            margin-right: 20px;
             &:hover {
               color: #333;
               background: #f5a720;
+              border: 2px solid #f5a720;
             }
             option {
               background: #fff;
@@ -3556,15 +3947,15 @@
                     display: -ms-flex;
                     display: -o-flex;
                     display: flex;
-                    justify-content: center;
                     flex-wrap: wrap;
                     align-items: flex-start;
+                    margin: -1%;
                     .views-row {
                       position: relative;
-                      padding: 10px;
+                      padding: 20px;
                       text-align: center;
                       width: 48%;
-                      margin: 10px;
+                      margin: 1%;
                       border-top: 1px solid #eee;
                       .views-field-field-review-flamp-photo {
                         .field-content {
@@ -3599,7 +3990,7 @@
                         position: absolute;
                         left: 50%;
                         margin-left: -91px;
-                        top: 110px;
+                        top: 120px;
                         span.field-content {
                           .gold_star {
                             display: flex;
@@ -3630,15 +4021,15 @@
                     display: -ms-flex;
                     display: -o-flex;
                     display: flex;
-                    justify-content: center;
                     flex-wrap: wrap;
                     align-items: flex-start;
+                    margin: -1%;
                     .views-row {
                       position: relative;
-                      padding: 10px;
+                      padding: 20px;
                       text-align: center;
                       width: 48%;
-                      margin: 10px;
+                      margin: 1%;
                       border-left: 1px solid #eee;
                       .views-field-field-review-flamp-photo {
                         .field-content {
@@ -3661,7 +4052,7 @@
                           color: #a7a7a7;
                         }
                       }
-                      .views-field-field-review-flamp -body {
+                      .views-field-field-review-flamp-body {
                         .field-content {
                           p {
                             font-size: 1em;
@@ -3673,7 +4064,7 @@
                         position: absolute;
                         left: 50%;
                         margin-left: -91px;
-                        top: 110px;
+                        top: 120px;
                         span.field-content {
                           .gold_star {
                             display: flex;
@@ -3705,15 +4096,14 @@
                     display: -ms-flex;
                     display: -o-flex;
                     display: flex;
-                    justify-content: center;
                     flex-wrap: wrap;
-                    margin: -2%;
+                    margin: -1%;
                     .views-row {
                       position: relative;
-                      padding: 10px 20px;
+                      padding: 20px;
                       text-align: left;
-                      margin: 2%;
-                      width: 370px;
+                      margin: 1%;
+                      width: 48%;
                       article.node-teaser {
                         .field-name-field-review-audio-photo {
                           position: relative;
@@ -3733,18 +4123,19 @@
                         }
                         .field-name-field-review-audio-name {
                           background: #f1f3f4;
-                          top: 17px;
-                          left: 63px;
-                          position: absolute;
-                          padding: 41px 0 73px 120px;
+                          top: 15px;
+                          position: relative;
+                          height: 120px;
                           z-index: 0;
-                          width: 257px;
+                          width: 100%;
                           border-radius: 70px;
                           color: #393939;
                           .field-items {
                             .field-item {
                               font-weight: 800;
-                              float: left;    
+                              top: 30%;
+                              left: 50%;
+                              position: absolute;
                             }
                           } 
                         }
@@ -3752,16 +4143,17 @@
                           .field-items {
                             .field-item {
                               position: absolute;
-                              top: 90px;
+                              bottom: 55%;
                               color: #393939;
                               z-index: 5;
-                              left: 183px;
+                              left: 50%;
                             }
                           }
                         } 
                       }
                       audio {
                         margin-top: 20px;
+                        width: 100%;
                       }
                     }
                   }
@@ -3777,15 +4169,15 @@
                     display: -ms-flex;
                     display: -o-flex;
                     display: flex;
-                    justify-content: center;
                     flex-wrap: wrap;
                     align-items: flex-start;
+                    margin: -1%;
                     .views-row {
                       position: relative;
-                      padding: 10px;
+                      padding: 20px;
                       text-align: center;
                       width: 48%;
-                      margin: 10px;
+                      margin: 1%;
                       border-top: 1px solid #eee;
                       .views-field-field-review-flamp-photo {
                         .field-content {
@@ -3820,7 +4212,7 @@
                         position: absolute;
                         left: 50%;
                         margin-left: -67px;
-                        top: 125px;
+                        top: 135px;
                         span.field-content {
                           .green_circle {
                             display: -webkit-flex;
@@ -3855,13 +4247,13 @@
                     display: -ms-flex;
                     display: -o-flex;
                     display: flex;
-                    justify-content: center;
                     flex-wrap: wrap;
                     align-items: flex-start;
+                    margin: -1%;
                     .views-row {
-                      padding: 10px 20px;
+                      padding: 20px;
                       width: 48%;
-                      margin: 10px 0;
+                      margin: 1%;
                       border-left: 1px solid #eee;
                       .views-field-field-review-social-photo {
                         .field-content {
@@ -3906,15 +4298,15 @@
                     display: -ms-flex;
                     display: -o-flex;
                     display: flex;
-                    justify-content: center;
                     flex-wrap: wrap;
                     align-items: flex-start;
+                    margin: -1%;
                     .views-row {
                       position: relative;
-                      padding: 10px;
+                      padding: 20px;
                       text-align: center;
                       width: 48%;
-                      margin: 10px;
+                      margin: 1%;
                       border-top: 1px solid #eee;
                       .views-field-field-review-flamp-photo {
                         .field-content {
@@ -4028,7 +4420,7 @@
 
 
 
-// Страница О нас
+// СТРАНИЦА О НАС-----1920
 
 .about_us {
   text-align: center;
@@ -4122,7 +4514,7 @@
 
 
 
-// Страница Переклейка дисплея
+// СТРАНИЦА ПЕРЕКЛЕЙКА ДИСПЛЕЯ
 
 #page_wrap {
   .display_plywood_block_1 {

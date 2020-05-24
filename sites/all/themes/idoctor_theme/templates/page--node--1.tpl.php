@@ -14,7 +14,7 @@
             </div>
             <p class="title">от 390 руб за 15 минут</p>
             <ul>
-              <li>Работаем в Томске уже 8 лет!</li>
+              <li>Работаем в Томске уже 9 лет!</li>
               <li>Сертифицированное оборудование, не имеющее аналогов в Томске</li>
               <li>Оригинальные запчасти Apple</li>
               <li>Гарантия  от 1 месяца</li>
@@ -108,28 +108,43 @@
         <p class="model">MACBOOK</p>
       </div>
 
+      <div class="col-md-4 topModelsItem devices" id="device_apple_watch">
+        <p class="model">APPLE WATCH</p>
+      </div>
+
     </div>
 
-    <div class="row d-flex j-content-between bottomModels">
+    <div class="row d-flex bottomModels">
 
       <div class="col-md-3 bottomModelsItem devices" id="device_samsung">
         <p class="model">SAMSUNG</p>
       </div>
-
+      <div class="col-md-3 bottomModelsItem devices" id="device_xiaomi">
+        <p class="model">XIAOMI</p>
+      </div>
       <div class="col-md-3 bottomModelsItem devices" id="device_honor">
         <p class="model">HONOR</p>
       </div>
-
       <div class="col-md-3 bottomModelsItem devices" id="device_huawei">
         <p class="model">HUAWEI</p>
       </div>
-
+      <div class="col-md-3 bottomModelsItem devices" id="device_asus">
+        <p class="model">ASUS</p>
+      </div>
       <div class="col-md-3 bottomModelsItem devices" id="device_meizu">
         <p class="model">MEIZU</p>
       </div>
-
-      <div class="col-md-3 bottomModelsItem devices" id="device_xiaomi">
-        <p class="model">XIAOMI</p>
+      <div class="col-md-3 bottomModelsItem devices" id="device_zte">
+        <p class="model">ZTE</p>
+      </div>
+      <div class="col-md-3 bottomModelsItem devices" id="device_lenovo">
+        <p class="model">LENOVO</p>
+      </div>
+      <div class="col-md-3 bottomModelsItem devices" id="device_sony">
+        <p class="model">SONY</p>
+      </div>
+      <div class="col-md-3 bottomModelsItem devices" id="device_oppo">
+        <p class="model">OPPO</p>
       </div>
 
     </div>
@@ -138,17 +153,22 @@
   <div class="mobileBlock">
     <div class="mobileBlockContent">
       <ul class="mobileLeft">
-        <li id="device_iphone">iphone</li>
-        <li id="device_ipad">IPAD</li>
-        <li id="device_macbook">MACBOOK</li>
-        <li id="device_xiaomi">XIAOMI</li>
-        <li id="device_honor">HONOR</li>       
+        <li id="m_device_iphone">iphone</li>
+        <li id="m_device_ipad">IPAD</li>
+        <li id="m_device_macbook">MACBOOK</li>
+        <li id="m_device_apple_watch">Apple Watch</li>
+        <li id="m_device_samsung">SAMSUNG</li>
+        <li id="m_device_xiaomi">XIAOMI</li>
+        <li id="m_device_honor">HONOR</li>       
       </ul>
       <ul class="mobileRight">
-        <li id="device_huawei">HUAWEI</li>
-        <li id="device_meizu">MEIZU</li>
-        <li id="device_samsung">SAMSUNG</li>
-        <li id="device_oppo">Oppo</li>
+        <li id="m_device_huawei">HUAWEI</li>
+        <li id="m_device_asus">Asus</li>
+        <li id="m_device_meizu">MEIZU</li>
+        <li id="m_device_zte">ZTE</li>
+        <li id="m_device_lenovo">Lenovo</li>
+        <li id="m_device_sony">Sony</li>
+        <li id="m_device_oppo">Oppo</li>
       </ul>
     </div>
     <div class="chooseBlock">
@@ -163,123 +183,328 @@
   <div class="container3">
     <div class="row buttons" id="dinamicBlock2">
       <div class="models_iphone models hidden_block_models">
-        <a href="/node/71" class="btn btn-primary">iphone 4</a>
-        <a href="/node/71" class="btn btn-primary">iphone 4s</a>
-        <a href="/node/72" class="btn btn-primary">iphone 5</a>
-        <a href="/node/72" class="btn btn-primary">iphone 5c</a>
-        <a href="/node/72" class="btn btn-primary">iphone 5s</a>
-        <a class="btn btn-primary">iphone 6</a>
-        <a class="btn btn-primary">iphone 6 Plus</a>
-        <a class="btn btn-primary">iphone 6s</a>
-        <a class="btn btn-primary">iphone 6s Plus</a>
-        <a class="btn btn-primary">iphone SE</a>
-        <a href="/node/60" class="btn btn-primary">iphone 7</a>
-        <a href="/node/60" class="btn btn-primary">iphone 7 Plus</a>
-        <a href="/node/59" class="btn btn-primary">iphone 8</a>
-        <a href="/node/59" class="btn btn-primary">iphone 8 Plus</a>
-        <a class="btn btn-primary">iphone X</a>
-        <a class="btn btn-primary">iphone XS</a>
-        <a class="btn btn-primary">iphone XS Max</a>
-        <a class="btn btn-primary">iphone XR</a>
-        <a class="btn btn-primary">iphone 11</a>
-        <a class="btn btn-primary">iphone 11 PRO</a>
-        <a class="btn btn-primary">iphone 11 PRO Max</a>
+        <h2>Iphone</h2>
+        <div class="wrapper">
+          <a href="/node/71/" class="btn btn-primary">4</a>
+          <a href="/node/89/" class="btn btn-primary">4s</a>
+          <a href="/node/72/" class="btn btn-primary">5</a>
+          <a href="/node/90/" class="btn btn-primary">5c</a>
+          <a href="/node/91/" class="btn btn-primary">5s</a>
+          <a href="/node/92/" class="btn btn-primary">6</a>
+          <a href="/node/94/" class="btn btn-primary">6 Plus</a>
+          <a href="/node/93/" class="btn btn-primary">6s</a>
+          <a href="/node/95/" class="btn btn-primary">6s Plus</a>
+          <a href="/node/96/" class="btn btn-primary">SE</a>
+          <a href="/node/60/" class="btn btn-primary">7</a>
+          <a href="/node/97/" class="btn btn-primary">7 Plus</a>
+          <a href="/node/59/" class="btn btn-primary">8</a>
+          <a href="/node/98/" class="btn btn-primary">8 Plus</a>
+          <a href="/node/99/" class="btn btn-primary">X</a>
+          <a href="/node/100/" class="btn btn-primary">XS</a>
+          <a href="/node/101/" class="btn btn-primary">XS Max</a>
+          <a href="/node/102/" class="btn btn-primary">XR</a>
+          <a href="/node/103/" class="btn btn-primary">11</a>
+          <a href="/node/104/" class="btn btn-primary">11 Pro</a>
+          <a href="/node/105/" class="btn btn-primary">11 Pro Max</a>
+        </div>
       </div>
 
       <div class="models_ipad models hidden_block_models">
-        <a class="btn btn-primary">ipad 2</a>
-        <a class="btn btn-primary">ipad 3</a>
-        <a class="btn btn-primary">ipad 4</a>
-        <a class="btn btn-primary">ipad mini</a>
-        <a class="btn btn-primary">ipad mini 2</a>
-        <a class="btn btn-primary">ipad mini 3</a>
-        <a class="btn btn-primary">ipad mini 4</a>
-        <a class="btn btn-primary">ipad air</a>
-        <a class="btn btn-primary">ipad air 2</a>
-        <a class="btn btn-primary">ipad air pro</a>
-      </div>
+        <h2>ipad</h2>
+          <div class="wrapper">
+            <a href="/node/106/" class="btn btn-primary">2</a>
+            <a href="/node/107/" class="btn btn-primary">3</a>
+            <a href="/node/108/" class="btn btn-primary">4</a>
+            <a href="/node/109/" class="btn btn-primary">mini</a>
+            <a href="/node/110/" class="btn btn-primary">mini 2</a>
+            <a href="/node/111/" class="btn btn-primary">mini 3</a>
+            <a href="/node/112/" class="btn btn-primary">mini 4</a>
+            <a href="/node/113/" class="btn btn-primary">air</a>
+            <a href="/node/114/" class="btn btn-primary">air 2</a>
+            <a href="/node/115/" class="btn btn-primary">air pro</a>
+        </div>
+    </div>
 
-      <div class="models_macbook models hidden_block_models">
-        <a class="btn btn-primary">MacBook Air 11"</a>
-        <a class="btn btn-primary">MacBook Air 13"</a>
-        <a class="btn btn-primary">MacBook Air 15"</a>
+    <div class="models_macbook models hidden_block_models">
+      <h2>macbook</h2>
+        <div class="wrapper">
+          <a href="/node/116/" class="btn btn-primary">Air 11"</a>
+          <a href="/node/117/" class="btn btn-primary">Air 13"</a>
+          <a href="/node/118/" class="btn btn-primary">Air 15"</a>
       </div>
+  </div>
 
-      <div class="models_apple_watch models hidden_block_models">
-        <a class="btn btn-primary">Apple Watch Series 1</a>
-        <a class="btn btn-primary">Apple Watch Series 2</a>
-        <a class="btn btn-primary">Apple Watch Series 3</a>
-        <a class="btn btn-primary">Apple Watch Series 4</a>
-        <a class="btn btn-primary">Apple Watch Series 5</a>
-      </div>
+  <div class="models_apple_watch models hidden_block_models">
+      <h2>apple watch</h2>
+        <div class="wrapper">
+          <a href="/node/119/" class="btn btn-primary">Series 1</a>
+          <a href="/node/120/" class="btn btn-primary">Series 2</a>
+          <a href="/node/121/" class="btn btn-primary">Series 3</a>
+          <a href="/node/122/" class="btn btn-primary">Series 4</a>
+          <a href="/node/123/" class="btn btn-primary">Series 5</a>
+        </div>
+    </div>
 
-      <div class="models_xiaomi models hidden_block_models">
-        <a href="/node/71" class="btn btn-primary">Xiaomi Mi A1</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Mi A2 Lite</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Mi 5, 5S, 5S Plus</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Mi Mix 2</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Mi Note, Note 2</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Mi 4, 4i, 4C, 6</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Redmi Note 2 Prime</a>
-        <a href="/node/71" class="btn btn-primary">Xaiomi Redmi 3, 3S</a>
-        <a href="/node/71" class="btn btn-primary">Xaiomi Redmi 4, 4A, 4X</a>
-        <a href="/node/71" class="btn btn-primary">Xaiomi Redmi 5A, 5 Plus</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Redmi Note 4, 4x</a>
-        <a href="/node/71" class="btn btn-primary">Xaiomi Redmi Note 5A</a>
-        <a href="/node/71" class="btn btn-primary">Xaiomi Redmi 6, 6A</a>
-        <a href="/node/71" class="btn btn-primary">Xaiomi Redmi 7, 7A</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Redmi Note 3, 3 PRO</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Redmi Note 5, 5 Lite</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Redmi Note 5 PRO, 6 Pro</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Redmi S2</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Mi 8, 8 Lite, 8 Pro</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Mi 9, 9 Lite, 9T Pro</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Mi 8se</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Redmi Note 7</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Black Shark</a>
-        <a href="/node/71" class="btn btn-primary">Xiaomi Mi Max, Max 2</a>
-      </div>
-
-      <div class="models_honor models hidden_block_models">
-        <a href="/node/71" class="btn btn-primary">Honor 9, 9 Lite</a>
-        <a href="/node/71" class="btn btn-primary">Honor 8, 8 Lite, 8 Pro</a>
-        <a href="/node/71" class="btn btn-primary">Honor 5a, 6A</a>
-        <a href="/node/71" class="btn btn-primary">Honor 3X, 4x, 5x, 6x, 7x</a>
-        <a href="/node/71" class="btn btn-primary">Honor 7C, 7c Lite, 7c Pro</a>
-        <a href="/node/71" class="btn btn-primary">Honor 7A, 7a Pro</a>
-        <a href="/node/71" class="btn btn-primary">Honor 3C Lite</a>
-        <a href="/node/71" class="btn btn-primary">Honor 4C Pro</a>
-        <a href="/node/71" class="btn btn-primary">Honor 8C</a>
-        <a href="/node/71" class="btn btn-primary">Honor 5C</a>
-        <a href="/node/71" class="btn btn-primary">Honor View 10</a>
-        <a href="/node/71" class="btn btn-primary">Honor Play</a>
-        <a href="/node/71" class="btn btn-primary">Honor Note 8</a>
-        <a href="/node/71" class="btn btn-primary">Honor Magic 2</a>
-        <a href="/node/71" class="btn btn-primary">Honor 8X, 8x Max</a>
-        <a href="/node/71" class="btn btn-primary">Honor 6, 6 Plus</a>
-        <a href="/node/71" class="btn btn-primary">Honor 10, 10 Lite</a>
-        <a href="/node/71" class="btn btn-primary">Honor 7, 7 Lite, 7 Pro</a>
-        <a href="/node/71" class="btn btn-primary">Honor 6C, 6C Lite, 6c Pro</a>
-        <a href="/node/71" class="btn btn-primary">Honor 10i</a>
-        <a href="/node/71" class="btn btn-primary">Honor View 20</a>
-        <a href="/node/71" class="btn btn-primary">Honor 20, 20 Pro</a>
-        <a href="/node/71" class="btn btn-primary">Honor 8A, 8a Pro,8a Lite</a>
-      </div>
-
-      <div class="models_huawei models hidden_block_models">
-        <a href="/node/71" class="btn btn-primary">Huawei Y5 II</a>
-      </div>
-
-      <div class="models_meizu models hidden_block_models">
-        <a href="/node/71" class="btn btn-primary">Meizu MX2</a>
-      </div>
-
-      <div class="models_samsung models hidden_block_models">
-        <a href="/node/71" class="btn btn-primary">Samsung Galaxy A9</a>
-      </div>
-
+  <div class="models_samsung models hidden_block_models">
+    <h2>samsung</h2>
+    <div class="wrapper">
+      <a href="/node/130/" class="btn btn-primary">Galaxy S6</a>
+      <a href="/node/131/" class="btn btn-primary">Galaxy S6 Edge</a>
+      <a href="/node/132/" class="btn btn-primary">Galaxy S6 Edge Plus</a>
+      <a href="/node/133/" class="btn btn-primary">Galaxy S3</a>
+      <a href="/node/134/" class="btn btn-primary">Galaxy S4</a>
+      <a href="/node/135/" class="btn btn-primary">Galaxy S5</a>
+      <a href="/node/136/" class="btn btn-primary">Galaxy A6</a>
+      <a href="/node/137/" class="btn btn-primary">Galaxy A6 Plus</a>
+      <a href="/node/138/" class="btn btn-primary">Galaxy A9</a>
+      <a href="/node/139/" class="btn btn-primary">Galaxy A30</a>
+      <a href="/node/140/" class="btn btn-primary">Galaxy A40</a>
+      <a href="/node/141/" class="btn btn-primary">Galaxy A50</a>
+      <a href="/node/142/" class="btn btn-primary">Galaxy Note 8</a>
+      <a href="/node/143/" class="btn btn-primary">Galaxy Note 9</a>
+      <a href="/node/144/" class="btn btn-primary">Galaxy S9</a>
+      <a href="/node/145/" class="btn btn-primary">Galaxy S9 Plus</a>
+      <a href="/node/146/" class="btn btn-primary">Galaxy S7</a>
+      <a href="/node/147/" class="btn btn-primary">Galaxy S7 Edge</a>
+      <a href="/node/148/" class="btn btn-primary">Galaxy S8</a>
+      <a href="/node/149/" class="btn btn-primary">Galaxy S8 Plus</a>
+      <a href="/node/150/" class="btn btn-primary">Galaxy J1</a>
+      <a href="/node/151/" class="btn btn-primary">Galaxy J2</a>
+      <a href="/node/152/" class="btn btn-primary">Galaxy S10</a>
+      <a href="/node/153/" class="btn btn-primary">Galaxy S10 Plus</a>
+      <a href="/node/154/" class="btn btn-primary">Galaxy A3</a>
+      <a href="/node/155/" class="btn btn-primary">Galaxy A5</a>
+      <a href="/node/156/" class="btn btn-primary">Galaxy A7</a>
+      <a href="/node/157/" class="btn btn-primary">Galaxy A8</a>
+      <a href="/node/158/" class="btn btn-primary">Galaxy J3</a>
+      <a href="/node/159/" class="btn btn-primary">Galaxy J4</a>
+      <a href="/node/160/" class="btn btn-primary">Galaxy J5</a>
+      <a href="/node/161/" class="btn btn-primary">Galaxy J6</a>
+      <a href="/node/162/" class="btn btn-primary">Galaxy J7</a>
+      <a href="/node/163/" class="btn btn-primary">Galaxy J8</a>
+      <a href="/node/164/" class="btn btn-primary">Galaxy Grand 2</a>
     </div>
   </div>
+
+  <div class="models_xiaomi models hidden_block_models">
+    <h2>xiaomi</h2>
+    <div class="wrapper">
+      <a href="/node/165/" class="btn btn-primary">Mi A1</a>
+      <a href="/node/166/" class="btn btn-primary">Mi A2 Lite</a>
+      <a href="/node/167/" class="btn btn-primary">Mi 5</a>
+      <a href="/node/168/" class="btn btn-primary">Mi 5S</a>
+      <a href="/node/169/" class="btn btn-primary">Mi 5S Plus</a>
+      <a href="/node/170/" class="btn btn-primary">Mi Mix 2</a>
+      <a href="/node/171/" class="btn btn-primary">Mi Note</a>
+      <a href="/node/172/" class="btn btn-primary">Mi Note 2</a>
+      <a href="/node/173/" class="btn btn-primary">Mi 4</a>
+      <a href="/node/174/" class="btn btn-primary">Mi 4i</a>
+      <a href="/node/175/" class="btn btn-primary">Mi 4C</a>
+      <a href="/node/176/" class="btn btn-primary">Mi 6</a>
+      <a href="/node/177/" class="btn btn-primary">Redmi Note 2 Prime</a>
+      <a href="/node/178/" class="btn btn-primary">Redmi 3</a>
+      <a href="/node/179/" class="btn btn-primary">Redmi 3S</a>
+      <a href="/node/180/" class="btn btn-primary">Redmi 4</a>
+      <a href="/node/181/" class="btn btn-primary">Redmi 4A</a>
+      <a href="/node/182/" class="btn btn-primary">Redmi 4X</a>
+      <a href="/node/183/" class="btn btn-primary">Redmi 5A</a>
+      <a href="/node/184/" class="btn btn-primary">Redmi 5 Plus</a>
+      <a href="/node/185/" class="btn btn-primary">Redmi Note 4</a>
+      <a href="/node/186/" class="btn btn-primary">Redmi Note 4x</a>
+      <a href="/node/187/" class="btn btn-primary">Redmi Note 5a</a>
+      <a href="/node/188/" class="btn btn-primary">Redmi 6</a>
+      <a href="/node/189/" class="btn btn-primary">Redmi 6A</a>
+      <a href="/node/190/" class="btn btn-primary">Redmi 7</a>
+      <a href="/node/191/" class="btn btn-primary">Redmi 7A</a>
+      <a href="/node/192/" class="btn btn-primary">Redmi Note 3</a>
+      <a href="/node/193/" class="btn btn-primary">Redmi Note 3 Pro</a>
+      <a href="/node/194/" class="btn btn-primary">Redmi Note 5</a>
+      <a href="/node/195/" class="btn btn-primary">Redmi Note 5 Lite</a>
+      <a href="/node/196/" class="btn btn-primary">Redmi Note 5 Pro</a>
+      <a href="/node/197/" class="btn btn-primary">Redmi Note 6 Pro</a>
+      <a href="/node/198/" class="btn btn-primary">Redmi S2</a>
+      <a href="/node/199/" class="btn btn-primary">Mi 8</a>
+      <a href="/node/200/" class="btn btn-primary">Mi 8 Lite</a>
+      <a href="/node/201/" class="btn btn-primary">Mi 8 Pro</a>
+      <a href="/node/202/" class="btn btn-primary">Mi 9</a>
+      <a href="/node/203/" class="btn btn-primary">Mi 9 Lite</a>
+      <a href="/node/204/" class="btn btn-primary">Mi 9T Pro</a>
+      <a href="/node/205/" class="btn btn-primary">Mi 8se</a>
+      <a href="/node/206/" class="btn btn-primary">Redmi Note 7</a>
+      <a href="/node/207/" class="btn btn-primary">Black Shark</a>
+      <a href="/node/208/" class="btn btn-primary">Mi Max</a>
+      <a href="/node/209/" class="btn btn-primary">Mi Max 2</a>
+    </div>
+  </div>
+
+  <div class="models_honor models hidden_block_models">
+    <h2>honor</h2>
+    <div class="wrapper">
+      <a href="/node/210/" class="btn btn-primary">9</a>
+      <a href="/node/211/" class="btn btn-primary">9 Lite</a>
+      <a href="/node/212/" class="btn btn-primary">8</a>
+      <a href="/node/213/" class="btn btn-primary">8 Pro</a>
+      <a href="/node/214/" class="btn btn-primary">5a</a>
+      <a href="/node/215/" class="btn btn-primary">6A</a>
+      <a href="/node/216/" class="btn btn-primary">3X</a>
+      <a href="/node/217/" class="btn btn-primary">4x</a>
+      <a href="/node/218/" class="btn btn-primary">5x</a>
+      <a href="/node/219/" class="btn btn-primary">6x</a>
+      <a href="/node/220/" class="btn btn-primary">7x</a>
+      <a href="/node/221/" class="btn btn-primary">7C</a>
+      <a href="/node/222/" class="btn btn-primary">7c Lite</a>
+      <a href="/node/223/" class="btn btn-primary">7c Pro</a>   
+      <a href="/node/224/" class="btn btn-primary">7A</a>
+      <a href="/node/225/" class="btn btn-primary">7a Pro</a>
+      <a href="/node/226/" class="btn btn-primary">3C Lite</a>
+      <a href="/node/227/" class="btn btn-primary">4C Pro</a>
+      <a href="/node/228/" class="btn btn-primary">8C</a>
+      <a href="/node/229/" class="btn btn-primary">5C</a>
+      <a href="/node/230/" class="btn btn-primary">View 10</a>
+      <a href="/node/231/" class="btn btn-primary">Play</a>
+      <a href="/node/232/" class="btn btn-primary">Note 8</a>
+      <a href="/node/233/" class="btn btn-primary">Magic 2</a>
+      <a href="/node/234/" class="btn btn-primary">8X</a>
+      <a href="/node/235/" class="btn btn-primary">8x Max</a>      
+      <a href="/node/236/" class="btn btn-primary">6</a>
+      <a href="/node/237/" class="btn btn-primary">6 Plus</a>
+      <a href="/node/238/" class="btn btn-primary">10</a>
+      <a href="/node/239/" class="btn btn-primary">10 Lite</a>
+      <a href="/node/240/" class="btn btn-primary">7</a>
+      <a href="/node/241/" class="btn btn-primary">7 Lite</a>
+      <a href="/node/242/" class="btn btn-primary">7 Pro</a>
+      <a href="/node/243/" class="btn btn-primary">6C</a>
+      <a href="/node/244/" class="btn btn-primary">6C Lite</a>
+      <a href="/node/245/" class="btn btn-primary">6c Pro</a>
+      <a href="/node/246/" class="btn btn-primary">10i</a>
+      <a href="/node/247/" class="btn btn-primary">View 20</a>
+      <a href="/node/248/" class="btn btn-primary">20</a>
+      <a href="/node/249/" class="btn btn-primary">20 Pro</a>
+      <a href="/node/250/" class="btn btn-primary">8A</a>
+      <a href="/node/251/" class="btn btn-primary">8a Pro</a>
+      <a href="/node/252/" class="btn btn-primary">8a Lite</a>
+    </div>
+  </div>
+
+  
+
+  <div class="models_huawei models hidden_block_models">
+    <h2>huawei</h2>
+    <div class="wrapper">
+      <a href="/node/254/" class="btn btn-primary">Ascend Mate 2</a>
+      <a href="/node/255*" class="btn btn-primary">Ascend Mate 7</a>
+      <a href="/node/256/" class="btn btn-primary">P10</a>
+      <a href="/node/257/" class="btn btn-primary">P10 Lite</a>
+      <a href="/node/258/" class="btn btn-primary">Ascend Mate 10</a>
+      <a href="/node/259/" class="btn btn-primary">Ascend Mate 10 Lite</a>
+      <a href="/node/260/" class="btn btn-primary">Ascend Mate 10 Pro</a>
+      <a href="/node/261/" class="btn btn-primary">Ascend P7</a>
+      <a href="/node/262/" class="btn btn-primary">Y5 II</a>
+      <a href="/node/263/" class="btn btn-primary">Y3 2017</a>
+      <a href="/node/264/" class="btn btn-primary">P20</a>
+      <a href="/node/265/" class="btn btn-primary">P20 Lite</a>
+      <a href="/node/266/" class="btn btn-primary">P20 Pro</a>
+      <a href="/node/267/" class="btn btn-primary">P8 Lite</a>
+      <a href="/node/268/" class="btn btn-primary">P9</a>
+      <a href="/node/269/" class="btn btn-primary">P9 Lite</a>
+      <a href="/node/270/" class="btn btn-primary">P9 Pro</a>
+      <a href="/node/271/" class="btn btn-primary">Y9</a>
+      <a href="/node/272/" class="btn btn-primary">Y6 Prime</a>
+      <a href="/node/273/" class="btn btn-primary">Mate 20</a>
+      <a href="/node/274/" class="btn btn-primary">Mate 20 Pro</a>
+      <a href="/node/275/" class="btn btn-primary">Mate 20 Lite</a>
+      <a href="/node/276/" class="btn btn-primary">Y7</a>
+      <a href="/node/277/" class="btn btn-primary">Y5</a>
+      <a href="/node/278/" class="btn btn-primary">Y3 II</a>
+      <a href="/node/279/" class="btn btn-primary">Nova 2s</a>
+      <a href="/node/280/" class="btn btn-primary">Nova 3i</a>
+      <a href="/node/281/" class="btn btn-primary">P Smart</a>
+      <a href="/node/282/" class="btn btn-primary">Nova 2 Plus</a>
+      <a href="/node/283/" class="btn btn-primary">P9 Plus</a>
+      <a href="/node/284/" class="btn btn-primary">P10 Plus</a>
+      <a href="/node/285/" class="btn btn-primary">Nova 2i</a>
+      <a href="/node/286/" class="btn btn-primary">Mate 9</a>
+      <a href="/node/287/" class="btn btn-primary">Mate 9 Lite</a>
+      <a href="/node/288/" class="btn btn-primary">Mate 9 Pro</a>
+    </div>
+  </div>
+
+  <div class="models_asus models hidden_block_models">
+    <h2>asus</h2>
+    <div class="wrapper">
+      <a href="/node/290/" class="btn btn-primary">Zenfone Max</a>
+      <a href="/node/291/" class="btn btn-primary">Zenfone 2</a>
+      <a href="/node/292/" class="btn btn-primary">Zenfone 3</a>
+      <a href="/node/293/" class="btn btn-primary">Zenfone 2 Laser</a>
+      <a href="/node/294/" class="btn btn-primary">Zenfone 3 Max</a>
+    </div>
+  </div>
+
+  <div class="models_meizu models hidden_block_models">
+    <h2>meizu</h2>
+    <div class="wrapper">
+      <a href="/node/296/" class="btn btn-primary">MX4</a>
+      <a href="/node/297/" class="btn btn-primary">MX4 PRO</a>
+      <a href="/node/298/" class="btn btn-primary">MX 6</a>
+      <a href="/node/299/" class="btn btn-primary">U10</a>
+      <a href="/node/300/" class="btn btn-primary">U20</a>
+      <a href="/node/301/" class="btn btn-primary">M5</a>
+      <a href="/node/302/" class="btn btn-primary">M5 Note</a>
+      <a href="/node/303/" class="btn btn-primary">M5S</a>
+      <a href="/node/304/" class="btn btn-primary">MX2</a>
+      <a href="/node/305/" class="btn btn-primary">M3s mini</a>
+      <a href="/node/306/" class="btn btn-primary">M3 Note</a>
+    </div>
+  </div>
+
+  <div class="models_zte models hidden_block_models">
+    <h2>zte</h2>
+    <div class="wrapper">
+      <a href="/node/308/" class="btn btn-primary">Blade V7</a>
+      <a href="/node/309/" class="btn btn-primary">Blade V8</a>
+      <a href="/node/310/" class="btn btn-primary">Blade X3</a>
+      <a href="/node/311/" class="btn btn-primary">Blade A6</a>
+      <a href="/node/312/" class="btn btn-primary">Blade A610</a>
+    </div>
+  </div>
+
+  <div class="models_lenovo models hidden_block_models">
+    <h2>lenovo</h2>
+    <div class="wrapper">
+      <a href="/node/314/" class="btn btn-primary">P780</a>
+      <a href="/node/315/" class="btn btn-primary">Vibe Z2</a>
+      <a href="/node/316/" class="btn btn-primary">A2010</a>
+      <a href="/node/317/" class="btn btn-primary">P70</a>
+      <a href="/node/318/" class="btn btn-primary">K910 Vibe Z</a>
+    </div>
+  </div>
+
+  <div class="models_sony models hidden_block_models">
+    <h2>sony</h2>
+    <div class="wrapper">
+      <a href="/node/320/" class="btn btn-primary">Xperia Z3</a>
+      <a href="/node/321/" class="btn btn-primary">Xperia Z3 Compact</a>
+      <a href="/node/322/" class="btn btn-primary">Xperia Z</a>
+      <a href="/node/323/" class="btn btn-primary">Xperia Z1</a>
+      <a href="/node/324/" class="btn btn-primary">Xperia Z2</a>
+      <a href="/node/325/" class="btn btn-primary">Xperia Z5</a>
+    </div>
+  </div>
+
+  <div class="models_oppo models hidden_block_models">
+    <h2>oppo</h2>
+    <div class="wrapper">
+      <a href="/node/327/" class="btn btn-primary">А5 2020</a>
+      <a href="/node/328/" class="btn btn-primary">А9 2020</a>
+      <a href="/node/329/" class="btn btn-primary">Realme 5</a>
+      <a href="/node/330/" class="btn btn-primary">Reno 2</a>
+      <a href="/node/331/" class="btn btn-primary">Viva Y17</a>
+      <a href="/node/332/" class="btn btn-primary">Reno 2z</a>
+    </div>
+  </div>
+
+  </div>
+</div>
 </div>
 
 
@@ -625,7 +850,7 @@
         <div class="tab-content">
           <div id="home" class="tab-pane fade in active">
             <?php 
-            $block = block_load('views', 'review_audio-block');
+            $block = block_load('views', 'review_audio_main-block');
             $blocks = _block_render_blocks(array($block));
             $blocks_build = _block_get_renderable_array($blocks);
             echo drupal_render($blocks_build);
@@ -633,7 +858,7 @@
           </div>
           <div id="menu1" class="tab-pane fade">
             <?php 
-            $block = block_load('views', 'review_flamp-block');
+            $block = block_load('views', 'review_flamp_main-block');
             $blocks = _block_render_blocks(array($block));
             $blocks_build = _block_get_renderable_array($blocks);
             echo drupal_render($blocks_build);
@@ -641,7 +866,7 @@
           </div>
           <div id="menu2" class="tab-pane fade">
             <?php 
-            $block = block_load('views', 'review_social-block');
+            $block = block_load('views', 'review_social_main-block');
             $blocks = _block_render_blocks(array($block));
             $blocks_build = _block_get_renderable_array($blocks);
             echo drupal_render($blocks_build);

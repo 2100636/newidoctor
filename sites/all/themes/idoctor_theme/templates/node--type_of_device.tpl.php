@@ -56,7 +56,7 @@ require_once 'header.tpl.php';
 
 
   <!-- крупнейший сервисный центр ...  -->
-  <div class="serviceCenter">
+  <div class="serviceCenter" style="background-color: #fff">
     <div class="container2">
       <div class="heading">крупнейший сервисный центр по ремонту iphone, samsung, xiaomi в томске</div>
       <div class="row d-flex j-content-between serviceContent">
@@ -78,26 +78,142 @@ require_once 'header.tpl.php';
 
 
   <!-- Доступные цены -->
-  <div class="affordable-price">
+  <div class="affordable-price" style="background-color: #f9f9f9">
     <div class="container">
-      <div class="heading div-heading">
+      <div class="heading div-heading" style="background-color: #f9f9f9">
         ДОСТУПНЫЕ ЦЕНЫ
       </div>
-      <p class="heading">выберите модель вашего устройства</p>
+      <p class="heading" style="background-color: #f9f9f9">выберите модель вашего устройства</p>
     </div>
     <div class="buttonsBlock">
-      <div class="container">
-        <div class="buttonsBlockContent">
+      <div class="container3">
+        <div class="buttonsBlockContent_type_of_device">
 
-          <?php  
-          for ($i = 0; $i < 10; $i++) {
-            if(!empty($node -> field_model['und'][$i]['value'])) {
-              echo '<a href="/'.$node -> field_link_of_button['und'][$i]['value'].'/" class="btn btn-primary">'. $node -> field_model['und'][$i]['value'].'</a>';
-            }
-            else {
-              break;
-            }
+        <?php 
+
+          if($node -> nid == 73){
+            echo '<div class="apple_device grandparents_device">
+                    <a href="/node/75/">
+                      <div class="device device_iphone">
+                        <p class="model">IPHONE</p>
+                      </div>
+                    </a>
+                    <a href="/node/125/">
+                      <div class="device device_ipad">
+                        <p class="model">IPAD</p>
+                      </div>
+                    </a>
+                    <a href="/node/126/">
+                      <div class="device device_macbook">
+                        <p class="model">MACBOOK</p>
+                      </div>
+                    </a>
+                    <a href="/node/127/">
+                      <div class="device device_apple_watch">
+                        <p class="model">APPLE WATCH</p>
+                      </div>
+                    </a>
+                  </div>';
           }
+          elseif ($node -> nid == 74) {
+            echo '<div class="smartphone_device grandparents_device">
+                    <a href="/node/128/">
+                      <div class="device device_samsung">
+                        <p class="model">SAMSUNG</p>
+                      </div>
+                    </a>
+                    <a href="/node/129/">
+                      <div class="device device_xiaomi">
+                        <p class="model">XIAOMI</p>
+                      </div>
+                    </a>
+                    <a href="/node/164/">
+                      <div class="device device_honor">
+                        <p class="model">HONOR</p>
+                      </div>
+                    </a>
+                    <a href="/node/253/">
+                      <div class="device device_huawei">
+                        <p class="model">HUAWEI</p>
+                      </div>
+                    </a>
+                    <a href="/node/289/">
+                      <div class="device device_asus">
+                        <p class="model">ASUS</p>
+                      </div>
+                    </a>
+                    <a href="/node/295/">
+                      <div class="device device_meizu">
+                        <p class="model">MEIZU</p>
+                      </div>
+                    </a>
+                    <a href="/node/307/">
+                      <div class="device device_zte">
+                        <p class="model">ZTE</p>
+                      </div>
+                    </a>
+                    <a href="/node/313/">
+                      <div class="device device_lenovo">
+                        <p class="model">LENOVO</p>
+                      </div>
+                    </a>
+                    <a href="/node/319/">
+                      <div class="device device_sony">
+                        <p class="model">SONY</p>
+                      </div>
+                    </a>
+                    <a href="/node/326/">
+                      <div class="device device_oppo">
+                        <p class="model">OPPO</p>
+                      </div>
+                    </a>
+                  </div>';
+          }
+          elseif ($node -> nid == 124) {
+            echo '<div class="tablet_device grandparents_device">
+                    <a href="/node/333/">
+                      <div class="device t_device_lg">
+                        <p class="model">LG</p>
+                      </div>
+                    </a>
+                    <a href="/node/334/">
+                      <div class="device t_device_asus">
+                        <p class="model">Asus</p>
+                      </div>
+                    </a>
+                    <a href="/node/335/">
+                      <div class="device t_device_nokia">
+                        <p class="model">Nokia</p>
+                      </div>
+                    </a>
+                    <a href="/node/336/">
+                      <div class="device t_device_lenovo">
+                        <p class="model">Lenovo</p>
+                      </div>
+                    </a>
+                    <a href="/node/337/">
+                      <div class="device t_device_samsung">
+                        <p class="model">Samsung</p>
+                      </div>
+                    </a>
+                    <a href="/node/338/">
+                      <div class="device t_device_xiaomi">
+                        <p class="model">Xiaomi</p>
+                      </div>
+                    </a>
+                    <a href="/node/339/">
+                      <div class="device t_device_huawei">
+                        <p class="model">Huawei</p>
+                      </div>
+                    </a>
+                    <a href="/node/340/">
+                      <div class="device t_device_sony">
+                        <p class="model">Sony</p>
+                      </div>
+                    </a>
+                  </div>';
+        }
+
           ?>
 
           <select name="" class="select">
@@ -115,7 +231,8 @@ require_once 'header.tpl.php';
             <option value="ZTE">ZTE</option>
             <option value="Lenovo">Lenovo</option>
             <option value="Sony">Sony</option>
-            <option value="Sony">Планшеты</option>
+            <option value="Oppo">Oppo</option>
+            <option value="Планшеты">Планшеты</option>
           </select>
 
         </div>
@@ -125,11 +242,10 @@ require_once 'header.tpl.php';
 
 
 
-
   <!-- "ПРОБЛЕМНЫЙ" БЛОК  -->
-  <div class="selectBreakage">
+  <div class="selectBreakage" style="background-color: #fff">
     <div class="container">
-      <div class="heading div-heading">Ваше устройство неисправно?</div>
+      <div class="heading div-heading" style="background-color: #fff">Ваше устройство неисправно?</div>
       <p class="heading">выберите вашу проблему из списка</p>
       <div class="wrap">
         <form method="POST">
@@ -314,9 +430,9 @@ require_once 'header.tpl.php';
 
 
   <!-- БЛОК комплектующие высокого качества -->
-  <div class="completing">
+  <div class="completing" style="background-color: #f9f9f9">
     <div class="container">
-      <div class="heading div-heading">комплектующие высокого качества!</div>
+      <div class="heading div-heading" style="background-color: #f9f9f9">комплектующие высокого качества!</div>
       <div class="completingContent d-flex j-content-between">
         <div class="left">
           <ul>
@@ -415,7 +531,7 @@ require_once 'header.tpl.php';
 
 
     <!-- БЛОК с каким-то текстом   -->
-    <div class="another">
+    <div class="another" style="background-color: #f9f9f9">
       <div class="container">
         <div class="row d-flex j-content-between anotherContent">
           <div class="col-md-6 left">
@@ -469,7 +585,7 @@ require_once 'header.tpl.php';
             <div class="tab-content">
               <div id="home" class="tab-pane fade in active">
                 <?php 
-                $block = block_load('views', 'review_audio-block');
+                $block = block_load('views', 'review_audio_main-block');
                 $blocks = _block_render_blocks(array($block));
                 $blocks_build = _block_get_renderable_array($blocks);
                 echo drupal_render($blocks_build);
@@ -477,7 +593,7 @@ require_once 'header.tpl.php';
               </div>
               <div id="menu1" class="tab-pane fade">
                 <?php 
-                $block = block_load('views', 'review_flamp-block');
+                $block = block_load('views', 'review_flamp_main-block');
                 $blocks = _block_render_blocks(array($block));
                 $blocks_build = _block_get_renderable_array($blocks);
                 echo drupal_render($blocks_build);
@@ -485,7 +601,7 @@ require_once 'header.tpl.php';
               </div>
               <div id="menu2" class="tab-pane fade">
                 <?php 
-                $block = block_load('views', 'review_social-block');
+                $block = block_load('views', 'review_social_main-block');
                 $blocks = _block_render_blocks(array($block));
                 $blocks_build = _block_get_renderable_array($blocks);
                 echo drupal_render($blocks_build);

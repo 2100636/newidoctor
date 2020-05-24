@@ -86,19 +86,18 @@ require_once 'header.tpl.php';
       <p class="heading">выберите модель вашего устройства</p>
     </div>
     <div class="buttonsBlock">
-      <div class="container">
-        <div class="buttonsBlockContent">
-
-          <?php  
-          for ($i = 0; $i < 10; $i++) {
-            if(!empty($node -> field_model['und'][$i]['value'])) {
-              echo '<a href="/'.$node -> field_link_of_button['und'][$i]['value'].'/" class="btn btn-primary">'. $node -> field_model['und'][$i]['value'].'</a>';
-            }
-            else {
-              break;
-            }
-          }
-          ?>
+      <div class="container3">
+        <div class="buttonsBlockContent_type_of_model_device">
+          <h2><?php echo $node -> field_header_of_device['und'][0]['value']; ?></h2>
+          <div class="models_block">      
+            <?php  
+              for ($i = 0; $i < count($node -> field_model['und']); $i++) {
+                if(!empty($node -> field_model['und'][$i]['value'])) {
+                  echo '<a href="/'.$node -> field_link_of_button['und'][$i]['value'].'/" class="btn btn-primary">'. $node -> field_model['und'][$i]['value'].'</a>';
+                }
+              }
+            ?>
+          </div>
 
           <select name="" class="select">
             <option value="Выберите устройство" selected>Выберите устройство</option>
@@ -115,7 +114,8 @@ require_once 'header.tpl.php';
             <option value="ZTE">ZTE</option>
             <option value="Lenovo">Lenovo</option>
             <option value="Sony">Sony</option>
-            <option value="Sony">Планшеты</option>
+            <option value="Oppo">Oppo</option>
+            <option value="Планшеты">Планшеты</option>
           </select>
 
         </div>
@@ -469,7 +469,7 @@ require_once 'header.tpl.php';
             <div class="tab-content">
               <div id="home" class="tab-pane fade in active">
                 <?php 
-                $block = block_load('views', 'review_audio-block');
+                $block = block_load('views', 'review_audio_main-block');
                 $blocks = _block_render_blocks(array($block));
                 $blocks_build = _block_get_renderable_array($blocks);
                 echo drupal_render($blocks_build);
@@ -477,7 +477,7 @@ require_once 'header.tpl.php';
               </div>
               <div id="menu1" class="tab-pane fade">
                 <?php 
-                $block = block_load('views', 'review_flamp-block');
+                $block = block_load('views', 'review_flamp_main-block');
                 $blocks = _block_render_blocks(array($block));
                 $blocks_build = _block_get_renderable_array($blocks);
                 echo drupal_render($blocks_build);
@@ -485,7 +485,7 @@ require_once 'header.tpl.php';
               </div>
               <div id="menu2" class="tab-pane fade">
                 <?php 
-                $block = block_load('views', 'review_social-block');
+                $block = block_load('views', 'review_social_main-block');
                 $blocks = _block_render_blocks(array($block));
                 $blocks_build = _block_get_renderable_array($blocks);
                 echo drupal_render($blocks_build);

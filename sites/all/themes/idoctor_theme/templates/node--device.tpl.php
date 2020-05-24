@@ -127,8 +127,7 @@ require_once 'header.tpl.php';
         <?php 
         
 
-        // for($i = 0; $i < 1000; $i++) {
-        //   if(!empty($prices = $node -> field_price['und'][$i]['value'])) {
+        // 
         //     list($name, $time, $cost, $protection, $help) = explode('||', $prices);
 
         //     echo '<div class="priceRow">
@@ -150,15 +149,40 @@ require_once 'header.tpl.php';
         //             </div>
         //           </div>'; 
         //   }
-        //   else {
-        //     break;
-        //   }
-        // }
+        
+
+        // $price = $node->field_price_of_device['und'];
+
+          // foreach($price as $key => $value) {
+          //   list($name, $time, $cost, $protection, $help) = explode('||', $value['value']);
+          //   echo '<div class="priceRow">
+          //           <div class="priceRowItem">
+          //             <div class="service-name">
+          //               <p>'. 
+          //                 $name . 
+          //                 '<span>' . 
+          //                   $protection . 
+          //                 '</span>
+          //               </p>
+          //             </div>
+          //             <div class="time">' . 
+          //               $time . 
+          //             '</div>
+          //             <div class="price">' . 
+          //               $cost . ' &#8381;
+          //             </div>
+          //           </div>
+          //         </div>'; 
+          // }
 
 
-        if (!empty($node->field_price['und'])):
-          foreach($node->field_price['und'] as $key => $value) {
-            list($name, $time, $cost, $protection, $help) = explode('||', $value['value']);
+      
+       
+      $prices = $node->field_price_of_device['und'];
+      $str_of_price = explode('&&', $prices[0]['value']);
+
+      foreach($str_of_price as $value) {
+        list($name, $protection, $time, $cost, $help) = explode('||', $value);
             echo '<div class="priceRow">
                     <div class="priceRowItem">
                       <div class="service-name">
@@ -177,230 +201,297 @@ require_once 'header.tpl.php';
                       </div>
                     </div>
                   </div>'; 
-          }
-        endif;
+      }
+?>
 
-        ?>
-
-      </div>
-    </div>
-  </div>
+</div>
+</div>
+</div>
 
 
 
 
-  <!-- "ПРОБЛЕМНЫЙ" БЛОК  -->
-  <div class="selectBreakage">
-    <div class="container">
-      <div class="heading div-heading">Ваше устройство неисправно?</div>
-      <p class="heading">выберите вашу проблему из списка</p>
-      <div class="wrap">
-        <form method="POST">
-          <div class="selectBreakageContent">
-            <div class="selectBreakWrapp">
-              <div class="selectBreakWrapp2">
+<!-- "ПРОБЛЕМНЫЙ" БЛОК  -->
+<div class="selectBreakage">
+  <div class="container">
+    <div class="heading div-heading">Ваше устройство неисправно?</div>
+    <p class="heading">выберите вашу проблему из списка</p>
+    <div class="wrap">
+      <form method="POST">
+        <div class="selectBreakageContent">
+          <div class="selectBreakWrapp">
+            <div class="selectBreakWrapp2">
 
-                <div class="col-lg-4 col-md-12 selectBreakRowItem">
-                  <p class="title" id="title1">ЭКРАН / ДИСПЛЕЙ</p>
-                  <label class="checkbox-label">
-                    <input type="checkbox" name="pid[]" value="Разбилось стекло" class="qwerty"><span></span>
-                    <p class="check">разбилось стекло</p>
-                  </label><br>
-                  <label class="checkbox-label">
-                    <input type="checkbox" name="pid[]" value="Не работает экран" class="qwerty"><span></span>
-                    <p class="check">не работает экран</p>
-                  </label><br>
-                  <label class="checkbox-label">
-                    <input type="checkbox" name="pid[]" value="Нет подсветки" class="qwerty"><span></span>
-                    <p class="check">нет подсветки</p>
-                  </label><br>  
-                </div>
-
-                <div class="col-lg-4 col-md-12 selectBreakRowItem">
-                  <p class="title" id="title2">ЗАРЯДКА</p>
-                  <label class="checkbox-label">
-                    <input type="checkbox" value="Не заряжается"><span></span>
-                    <p class="check">не заряжается</p>
-                  </label><br>
-                  <label class="checkbox-label">
-                    <input type="checkbox" value="Быстро рязряжается"><span></span>
-                    <p class="check">быстро рязряжается</p>
-                  </label><br>
-                  <label class="checkbox-label">
-                    <input type="checkbox" value="Греется батарея"><span></span>
-                    <p class="check">греется батарея</p>  
-                  </label><br>
-                  <label class="checkbox-label">
-                    <input type="checkbox" value="Не работает беспр. зарядка"><span></span>
-                    <p class="check">не работает беспр. зарядка</p>
-                  </label><br>
-                </div>
-
-                <div class="btn btn-rimary mobileOpenButton">Показать весь список</div>
-
-                <div class="col-lg-4 col-md-12 selectBreakRowItem">
-                  <p class="title" id="title3">КНОПКИ</p>
-                  <label class="checkbox-label">
-                    <input type="checkbox" value="Не работает вкл / выкл"><span></span>
-                    <p class="check">не работает вкл / выкл</p>
-                  </label><br>
-                  <label class="checkbox-label">
-                    <input type="checkbox" value="Не работает кнопка HOME"><span></span>
-                    <p class="check">не работает кнопка HOME</p>
-                  </label><br>
-                  <label class="checkbox-label">
-                    <input type="checkbox" value="Не работают кнопки громкости"><span></span>
-                    <p class="check">не работают кнопки громкости</p>
-                  </label><br>
-                </div>
-
-                <div class="col-lg-4 col-md-12 selectBreakRowItem">
-                  <p class="title" id="title4">ОБЩЕЕ</p>
-                  <label class="checkbox-label">
-                    <input type="checkbox" value="Не включается"><span></span>
-                    <p class="check">не включается</p>
-                  </label><br>
-                  <label class="checkbox-label">
-                    <input type="checkbox" value="Попала влага / утонул"><span></span>
-                    <p class="check">попала влага / утонул</p>
-                  </label><br>
-                  <label class="checkbox-label">
-                    <input type="checkbox" value="Не работает wi-Fi"><span></span>
-                    <p class="check">не работает wi-Fi</p>
-                  </label><br>
-                </div>
-
-                <div class="col-lg-4 col-md-12 selectBreakRowItem">
-                  <p class="title" id="title5">ПО</p>
-                  <label class="checkbox-label">
-                    <input type="checkbox" value="Зависает"><span></span>
-                    <p class="check">зависает</p><br>
-                  </label><br>
-                  <label class="checkbox-label">
-                    <input type="checkbox" value="Просит itunes"><span></span>
-                    <p class="check">просит itunes</p>
-                  </label><br>
-                  <label class="checkbox-label">
-                    <input type="checkbox" value="Не обновляется"><span></span>
-                    <p class="check">не обновляется</p>
-                  </label><br>
-                </div>
-
-                <div class="col-lg-4 col-md-12 selectBreakRowItem">
-                  <p class="title" id="title6">КАМЕРА</p>
-                  <label class="checkbox-label">
-                    <input type="checkbox" value="Не работает задняя камера"><span></span>
-                    <p class="check">не работает задняя камера</p>
-                  </label><br>
-                  <label class="checkbox-label">
-                    <input type="checkbox" value="Не работает фронтальная"><span></span>
-                    <p class="check">не работает фронтальная</p>
-                  </label><br>
-                  <label class="checkbox-label">
-                    <input type="checkbox" value="Не работает face id"><span></span>
-                    <p class="check">не работает face id</p>
-                  </label><br>
-                </div>
-
-                <div class="col-lg-4 col-md-12 selectBreakRowItem">
-                  <p class="title" id="title7">ДИНАМИКИ / МИКРОФОН</p>
-                  <label class="checkbox-label">
-                    <input type="checkbox" value="Не работает динамик"><span></span>
-                    <p class="check">не работает динамик</p>
-                  </label><br>
-                  <label class="checkbox-label">
-                    <input type="checkbox" value="Собеседник не слышит"><span></span>
-                    <p class="check">собеседник не слышит</p>
-                  </label><br>
-                  <label class="checkbox-label">
-                    <input type="checkbox" value="Не работает микрофон"><span></span>
-                    <p class="check">не работает микрофон</p>
-                  </label><br>
-                  <label class="checkbox-label">
-                    <input type="checkbox" value="Не слышу собеседника"><span></span>
-                    <p class="check">не слышу собеседника</p>
-                  </label><br>
-                </div>
-
-                <div class="col-lg-4 col-md-12 selectBreakRowItem">
-                  <p class="title" id="title8">КОРПУС</p>
-                  <label class="checkbox-label">
-                    <input type="checkbox" value="Разбилось заднее стекло"><span></span>
-                    <p class="check">разбилось заднее стекло</p>
-                  </label><br>
-                  <label class="checkbox-label">
-                    <input type="checkbox" value="Замят / согнут корпус"><span></span>
-                    <p class="check">замят / согнут корпус</p>
-                  </label><br>
-                  <label class="checkbox-label">
-                    <input type="checkbox" value="Разбито стекло камеры"><span></span>
-                    <p class="check">разбито стекло камеры</p>
-                  </label><br>
-                </div>
-
-                <div class="col-lg-4 col-md-12 selectBreakRowItem">
-                  <p class="title" id="title9">ДРУГОЕ</p>
-                  <label class="checkbox-label">
-                    <input type="checkbox" value="Не работают наушники"><span></span>
-                    <p class="check">не работают наушники</p>
-                  </label><br>
-                  <label class="checkbox-label">
-                    <input type="checkbox" value="Не работает вибрация"><span></span>
-                    <p class="check">не работает вибрация</p>
-                  </label><br>
-                  <label class="checkbox-label">
-                    <input type="checkbox" value="Не ловит сеть"><span></span>
-                    <p class="check">не ловит сеть</p>
-                  </label><br>
-                  <label class="checkbox-label">
-                    <input type="checkbox" value="Не видит sim-карту"><span></span>
-                    <p class="check">не видит sim-карту</p>
-                  </label><br>
-                </div>
-
-                <div class="btn btn-rimary mobileCloseButton">Скрыть список</div>
+              <div class="col-lg-4 col-md-12 selectBreakRowItem">
+                <p class="title" id="title1">ЭКРАН / ДИСПЛЕЙ</p>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="pid[]" value="Разбилось стекло" class="qwerty"><span></span>
+                  <p class="check">разбилось стекло</p>
+                </label><br>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="pid[]" value="Не работает экран" class="qwerty"><span></span>
+                  <p class="check">не работает экран</p>
+                </label><br>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="pid[]" value="Нет подсветки" class="qwerty"><span></span>
+                  <p class="check">нет подсветки</p>
+                </label><br>  
               </div>
-              <div class="buttonForm">
-                <div class="btn btn-primary problemsButton">рассчитать стоимость ремонта</div>
+
+              <div class="col-lg-4 col-md-12 selectBreakRowItem">
+                <p class="title" id="title2">ЗАРЯДКА</p>
+                <label class="checkbox-label">
+                  <input type="checkbox" value="Не заряжается"><span></span>
+                  <p class="check">не заряжается</p>
+                </label><br>
+                <label class="checkbox-label">
+                  <input type="checkbox" value="Быстро рязряжается"><span></span>
+                  <p class="check">быстро рязряжается</p>
+                </label><br>
+                <label class="checkbox-label">
+                  <input type="checkbox" value="Греется батарея"><span></span>
+                  <p class="check">греется батарея</p>  
+                </label><br>
+                <label class="checkbox-label">
+                  <input type="checkbox" value="Не работает беспр. зарядка"><span></span>
+                  <p class="check">не работает беспр. зарядка</p>
+                </label><br>
               </div>
+
+              <div class="btn btn-rimary mobileOpenButton">Показать весь список</div>
+
+              <div class="col-lg-4 col-md-12 selectBreakRowItem">
+                <p class="title" id="title3">КНОПКИ</p>
+                <label class="checkbox-label">
+                  <input type="checkbox" value="Не работает вкл / выкл"><span></span>
+                  <p class="check">не работает вкл / выкл</p>
+                </label><br>
+                <label class="checkbox-label">
+                  <input type="checkbox" value="Не работает кнопка HOME"><span></span>
+                  <p class="check">не работает кнопка HOME</p>
+                </label><br>
+                <label class="checkbox-label">
+                  <input type="checkbox" value="Не работают кнопки громкости"><span></span>
+                  <p class="check">не работают кнопки громкости</p>
+                </label><br>
+              </div>
+
+              <div class="col-lg-4 col-md-12 selectBreakRowItem">
+                <p class="title" id="title4">ОБЩЕЕ</p>
+                <label class="checkbox-label">
+                  <input type="checkbox" value="Не включается"><span></span>
+                  <p class="check">не включается</p>
+                </label><br>
+                <label class="checkbox-label">
+                  <input type="checkbox" value="Попала влага / утонул"><span></span>
+                  <p class="check">попала влага / утонул</p>
+                </label><br>
+                <label class="checkbox-label">
+                  <input type="checkbox" value="Не работает wi-Fi"><span></span>
+                  <p class="check">не работает wi-Fi</p>
+                </label><br>
+              </div>
+
+              <div class="col-lg-4 col-md-12 selectBreakRowItem">
+                <p class="title" id="title5">ПО</p>
+                <label class="checkbox-label">
+                  <input type="checkbox" value="Зависает"><span></span>
+                  <p class="check">зависает</p><br>
+                </label><br>
+                <label class="checkbox-label">
+                  <input type="checkbox" value="Просит itunes"><span></span>
+                  <p class="check">просит itunes</p>
+                </label><br>
+                <label class="checkbox-label">
+                  <input type="checkbox" value="Не обновляется"><span></span>
+                  <p class="check">не обновляется</p>
+                </label><br>
+              </div>
+
+              <div class="col-lg-4 col-md-12 selectBreakRowItem">
+                <p class="title" id="title6">КАМЕРА</p>
+                <label class="checkbox-label">
+                  <input type="checkbox" value="Не работает задняя камера"><span></span>
+                  <p class="check">не работает задняя камера</p>
+                </label><br>
+                <label class="checkbox-label">
+                  <input type="checkbox" value="Не работает фронтальная"><span></span>
+                  <p class="check">не работает фронтальная</p>
+                </label><br>
+                <label class="checkbox-label">
+                  <input type="checkbox" value="Не работает face id"><span></span>
+                  <p class="check">не работает face id</p>
+                </label><br>
+              </div>
+
+              <div class="col-lg-4 col-md-12 selectBreakRowItem">
+                <p class="title" id="title7">ДИНАМИКИ / МИКРОФОН</p>
+                <label class="checkbox-label">
+                  <input type="checkbox" value="Не работает динамик"><span></span>
+                  <p class="check">не работает динамик</p>
+                </label><br>
+                <label class="checkbox-label">
+                  <input type="checkbox" value="Собеседник не слышит"><span></span>
+                  <p class="check">собеседник не слышит</p>
+                </label><br>
+                <label class="checkbox-label">
+                  <input type="checkbox" value="Не работает микрофон"><span></span>
+                  <p class="check">не работает микрофон</p>
+                </label><br>
+                <label class="checkbox-label">
+                  <input type="checkbox" value="Не слышу собеседника"><span></span>
+                  <p class="check">не слышу собеседника</p>
+                </label><br>
+              </div>
+
+              <div class="col-lg-4 col-md-12 selectBreakRowItem">
+                <p class="title" id="title8">КОРПУС</p>
+                <label class="checkbox-label">
+                  <input type="checkbox" value="Разбилось заднее стекло"><span></span>
+                  <p class="check">разбилось заднее стекло</p>
+                </label><br>
+                <label class="checkbox-label">
+                  <input type="checkbox" value="Замят / согнут корпус"><span></span>
+                  <p class="check">замят / согнут корпус</p>
+                </label><br>
+                <label class="checkbox-label">
+                  <input type="checkbox" value="Разбито стекло камеры"><span></span>
+                  <p class="check">разбито стекло камеры</p>
+                </label><br>
+              </div>
+
+              <div class="col-lg-4 col-md-12 selectBreakRowItem">
+                <p class="title" id="title9">ДРУГОЕ</p>
+                <label class="checkbox-label">
+                  <input type="checkbox" value="Не работают наушники"><span></span>
+                  <p class="check">не работают наушники</p>
+                </label><br>
+                <label class="checkbox-label">
+                  <input type="checkbox" value="Не работает вибрация"><span></span>
+                  <p class="check">не работает вибрация</p>
+                </label><br>
+                <label class="checkbox-label">
+                  <input type="checkbox" value="Не ловит сеть"><span></span>
+                  <p class="check">не ловит сеть</p>
+                </label><br>
+                <label class="checkbox-label">
+                  <input type="checkbox" value="Не видит sim-карту"><span></span>
+                  <p class="check">не видит sim-карту</p>
+                </label><br>
+              </div>
+
+              <div class="btn btn-rimary mobileCloseButton">Скрыть список</div>
+            </div>
+            <div class="buttonForm">
+              <div class="btn btn-primary problemsButton">рассчитать стоимость ремонта</div>
             </div>
           </div>
-        </form>
+        </div>
+      </form>
+    </div>
+  </div>
+</div> 
+
+
+
+
+
+
+
+<!-- БЛОК комплектующие высокого качества -->
+<div class="completing">
+  <div class="container">
+    <div class="heading div-heading">комплектующие высокого качества!</div>
+    <div class="completingContent d-flex j-content-between">
+      <div class="left">
+        <ul>
+          <li>
+            <p class="title">дисплеи с оригинальной матрицей</p>
+            <p class="content">Дисплеи, произведенные на заводах Apple, Samsung и Xiaomi, с восстановленным стеклом. Оригинальная сочность и цветопередача изображения, не идет в сравнение с некачественными китайскими аналогами “Класса ориджинал”</p>
+          </li>
+          <li>
+            <p class="title">аккумуляторые батареи</p>
+            <p class="content">За 8 лет работы, мы научились выбирать поставщиков с действительно новыми батареями, на которые даем гарантию 6 месяцев</p>
+          </li>
+          <li>
+            <p class="title">ОБЯЗАТЕЛЬНАЯ ПРОВЕРКА</p>
+            <p class="content">Все запчасти и комплектующие проходят обязательную проверку, и тестируются на 100% работоспособность преждем, чем их установят на Ваше устройство</p>
+          </li>
+        </ul>
+      </div>
+      <div class="right">
+        <iframe src="https://www.youtube.com/embed/idEsr8ph0r4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
-  </div> 
+  </div>
+</div>
 
 
 
 
 
-
-
-  <!-- БЛОК комплектующие высокого качества -->
-  <div class="completing">
+<!-- СКИДКИ И АКЦИИ -->
+<div class="discounts">
+  <!-- <div class="discounts" data-toggle="modal" data-target="#discountModal"> -->
     <div class="container">
-      <div class="heading div-heading">комплектующие высокого качества!</div>
-      <div class="completingContent d-flex j-content-between">
-        <div class="left">
-          <ul>
-            <li>
-              <p class="title">дисплеи с оригинальной матрицей</p>
-              <p class="content">Дисплеи, произведенные на заводах Apple, Samsung и Xiaomi, с восстановленным стеклом. Оригинальная сочность и цветопередача изображения, не идет в сравнение с некачественными китайскими аналогами “Класса ориджинал”</p>
-            </li>
-            <li>
-              <p class="title">аккумуляторые батареи</p>
-              <p class="content">За 8 лет работы, мы научились выбирать поставщиков с действительно новыми батареями, на которые даем гарантию 6 месяцев</p>
-            </li>
-            <li>
-              <p class="title">ОБЯЗАТЕЛЬНАЯ ПРОВЕРКА</p>
-              <p class="content">Все запчасти и комплектующие проходят обязательную проверку, и тестируются на 100% работоспособность преждем, чем их установят на Ваше устройство</p>
-            </li>
-          </ul>
+      <?php 
+      $block = block_load('views', 'promotions-block');
+      $blocks = _block_render_blocks(array($block));
+      $blocks_build = _block_get_renderable_array($blocks);
+      echo drupal_render($blocks_build);
+      ?>
+    </div>
+  </div>
+
+  <script>
+    (function($) {
+      $('.discounts .container .view-promotions .views-row').on('click', function() {
+        $(this).attr('data-toggle', 'modal').attr('data-target', '#discountModal');
+        var text = $(this).find('.views-field-field-modal-description').text();
+        $(this).parents().find('#discountModal').children().find('.header_bottom').text(text);
+        var modalBg = $(this).css('background');
+        $(this).parents().find('#discountModal').children().find('.header_top').css('background', modalBg);
+      })
+
+    })(jQuery); 
+  </script>
+
+
+  <div class="modal fade" id="discountModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" type="button" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+          <div class="header_top"></div>
+          <div class="header_bottom"></div>
         </div>
-        <div class="right">
-          <iframe src="https://www.youtube.com/embed/idEsr8ph0r4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="modal-body text-justify">
+          <p>Заполните форму ниже и мы свяжемся с Вами!</p>
+          <form action="">  
+            <input type="text" name="email" class="email" placeholder="email" >
+            <input type="text" name="phone" class="phone" placeholder="телефон" >
+            <a class="btn btn-primary">Подробнее</a>
+          </form>
         </div>
       </div>
+    </div>      
+  </div>
+
+
+
+
+
+  <!-- Мастера -->
+  <div class="masters">
+    <div class="container">
+      <?php 
+      $block = block_load('views', 'masters-block');
+      $blocks = _block_render_blocks(array($block));
+      $blocks_build = _block_get_renderable_array($blocks);
+      echo drupal_render($blocks_build);
+      ?>
     </div>
   </div>
 
@@ -408,83 +499,14 @@ require_once 'header.tpl.php';
 
 
 
-  <!-- СКИДКИ И АКЦИИ -->
-  <div class="discounts">
-    <!-- <div class="discounts" data-toggle="modal" data-target="#discountModal"> -->
-      <div class="container">
-        <?php 
-        $block = block_load('views', 'promotions-block');
-        $blocks = _block_render_blocks(array($block));
-        $blocks_build = _block_get_renderable_array($blocks);
-        echo drupal_render($blocks_build);
-        ?>
-      </div>
-    </div>
-
-    <script>
-      (function($) {
-        $('.discounts .container .view-promotions .views-row').on('click', function() {
-          $(this).attr('data-toggle', 'modal').attr('data-target', '#discountModal');
-          var text = $(this).find('.views-field-field-modal-description').text();
-          $(this).parents().find('#discountModal').children().find('.header_bottom').text(text);
-          var modalBg = $(this).css('background');
-          $(this).parents().find('#discountModal').children().find('.header_top').css('background', modalBg);
-        })
-
-      })(jQuery); 
-    </script>
-
-
-    <div class="modal fade" id="discountModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button class="close" type="button" data-dismiss="modal">
-              <span>&times;</span>
-            </button>
-            <div class="header_top"></div>
-            <div class="header_bottom"></div>
-          </div>
-          <div class="modal-body text-justify">
-            <p>Заполните форму ниже и мы свяжемся с Вами!</p>
-            <form action="">  
-              <input type="text" name="email" class="email" placeholder="email" >
-              <input type="text" name="phone" class="phone" placeholder="телефон" >
-              <a class="btn btn-primary">Подробнее</a>
-            </form>
-          </div>
-        </div>
-      </div>      
-    </div>
-
-
-
-
-
-    <!-- Мастера -->
-    <div class="masters">
-      <div class="container">
-        <?php 
-        $block = block_load('views', 'masters-block');
-        $blocks = _block_render_blocks(array($block));
-        $blocks_build = _block_get_renderable_array($blocks);
-        echo drupal_render($blocks_build);
-        ?>
-      </div>
-    </div>
-
-
-
-
-
-    <!-- БЛОК с каким-то текстом   -->
-    <div class="another">
-      <div class="container">
-        <div class="row d-flex j-content-between anotherContent">
-          <div class="col-md-6 left">
-            <div class="heading div-heading"><?php echo $node -> field_text_1_header['und'][0]['value']; ?></div>
-            <div class="leftContent">
-              <ul>
+  <!-- БЛОК с каким-то текстом   -->
+  <div class="another">
+    <div class="container">
+      <div class="row d-flex j-content-between anotherContent">
+        <div class="col-md-6 left">
+          <div class="heading div-heading"><?php echo $node -> field_text_1_header['und'][0]['value']; ?></div>
+          <div class="leftContent">
+            <ul>
                 <!-- <li><p>Каждый владелец <span>IPHONE 10, XS, XS Max, X2</span> старается максимально использовать его возможности. Но иногда случаются неисправности в работе гаджета, которые в один момент лишают человека доступа к обычной мобильной связи. Что делать? Срочно обрашаться к мастерам сервисного центра IDoctor</p></li>
                   <li><p>Наша компания является одной из первых по ремонту смартфонов в городе Томске. Основная специализация СЦ - обслуживающее техники Apple. Мастера сервис-центра имеют в своем арсенале все необходимое оборудование, инструментарий и Оригинальные комплектующие. Поэтому ремонт <span>IPHONE X, XC MAX, XP</span> выполняется на высоком качественном уровне</p></li> -->
                   <?php echo $node -> field_text_1_content['und'][0]['value']; ?>
@@ -532,7 +554,7 @@ require_once 'header.tpl.php';
             <div class="tab-content">
               <div id="home" class="tab-pane fade in active">
                 <?php 
-                $block = block_load('views', 'review_audio-block');
+                $block = block_load('views', 'review_audio_main-block');
                 $blocks = _block_render_blocks(array($block));
                 $blocks_build = _block_get_renderable_array($blocks);
                 echo drupal_render($blocks_build);
@@ -540,7 +562,7 @@ require_once 'header.tpl.php';
               </div>
               <div id="menu1" class="tab-pane fade">
                 <?php 
-                $block = block_load('views', 'review_flamp-block');
+                $block = block_load('views', 'review_flamp_main-block');
                 $blocks = _block_render_blocks(array($block));
                 $blocks_build = _block_get_renderable_array($blocks);
                 echo drupal_render($blocks_build);
@@ -548,7 +570,7 @@ require_once 'header.tpl.php';
               </div>
               <div id="menu2" class="tab-pane fade">
                 <?php 
-                $block = block_load('views', 'review_social-block');
+                $block = block_load('views', 'review_social_main-block');
                 $blocks = _block_render_blocks(array($block));
                 $blocks_build = _block_get_renderable_array($blocks);
                 echo drupal_render($blocks_build);
